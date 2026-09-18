@@ -1,0 +1,581 @@
+
+==== engine_process_layer_send_cmd_send @ 0x491dec sz=0x110 (.text) ====
+  0x491dec: stp      x29, x30, [sp, #-0x40]!
+  0x491df0: mov      x29, sp
+  0x491df4: str      wzr, [sp, #0x14]
+  0x491df8: str      wzr, [sp, #0x10]
+  0x491dfc: adrp     x0, #0xa76000
+  0x491e00: add      x0, x0, #0xf0
+  0x491e04: ldr      x0, [x0]
+  0x491e08: cmp      x0, #0
+  0x491e0c: b.eq     #0x491e30
+  0x491e10: adrp     x0, #0xa76000
+  0x491e14: add      x0, x0, #0xf0
+  0x491e18: ldr      x0, [x0]
+  0x491e1c: ldr      x2, [x0, #0x130]
+  0x491e20: adrp     x0, #0x77e000
+  0x491e24: add      x1, x0, #0xe98
+  0x491e28: mov      x0, x2
+  0x491e2c: bl       #0x44afe0
+  0x491e30: adrp     x0, #0xa76000
+  0x491e34: add      x0, x0, #0xf0
+  0x491e38: ldr      x0, [x0]
+  0x491e3c: add      x0, x0, #8
+  0x491e40: bl       #0x4681cc
+  0x491e44: cmp      w0, #0
+  0x491e48: b.eq     #0x491e84
+  0x491e4c: adrp     x0, #0xa76000
+  0x491e50: add      x0, x0, #0xf0
+  0x491e54: ldr      x0, [x0]
+  0x491e58: cmp      x0, #0
+  0x491e5c: b.eq     #0x4921a4
+  0x491e60: adrp     x0, #0xa76000
+  0x491e64: add      x0, x0, #0xf0
+  0x491e68: ldr      x0, [x0]
+  0x491e6c: ldr      x2, [x0, #0x130]
+  0x491e70: adrp     x0, #0x77e000
+  0x491e74: add      x1, x0, #0xe98
+  0x491e78: mov      x0, x2
+  0x491e7c: bl       #0x44b1e0
+  0x491e80: b        #0x4921a4
+  0x491e84: adrp     x0, #0xa76000
+  0x491e88: add      x0, x0, #0xf0
+  0x491e8c: ldr      x0, [x0]
+  0x491e90: ldr      x0, [x0, #8]
+  0x491e94: str      x0, [sp, #0x18]
+  0x491e98: ldr      x0, [sp, #0x18]
+  0x491e9c: str      x0, [sp, #0x20]
+  0x491ea0: ldr      x0, [sp, #0x20]
+  0x491ea4: cmp      x0, #0
+  0x491ea8: b.eq     #0x49216c
+  0x491eac: ldr      x0, [sp, #0x20]
+  0x491eb0: ldr      w0, [x0, #0x14]
+  0x491eb4: cmp      w0, #0
+  0x491eb8: b.eq     #0x49216c
+  0x491ebc: ldr      x0, [sp, #0x20]
+  0x491ec0: ldr      w0, [x0, #0x2c]
+  0x491ec4: cmp      w0, #0
+  0x491ec8: b.eq     #0x491f04
+  0x491ecc: adrp     x0, #0xa76000
+  0x491ed0: add      x0, x0, #0xf0
+  0x491ed4: ldr      x0, [x0]
+  0x491ed8: cmp      x0, #0
+  0x491edc: b.eq     #0x4921ac
+  0x491ee0: adrp     x0, #0xa76000
+  0x491ee4: add      x0, x0, #0xf0
+  0x491ee8: ldr      x0, [x0]
+  0x491eec: ldr      x2, [x0, #0x130]
+  0x491ef0: adrp     x0, #0x77e000
+  0x491ef4: add      x1, x0, #0xe98
+  0x491ef8: mov      x0, x2
+
+
+
+==== engine_process_layer_receive_parse_frame @ 0x491500 sz=0x160 (.text) ====
+  0x491500: stp      x29, x30, [sp, #-0x10]!
+  0x491504: mov      x29, sp
+  0x491508: sub      sp, sp, #0x850
+  0x49150c: strb     w0, [sp, #0xf]
+  0x491510: str      x1, [sp]
+  0x491514: str      w2, [sp, #8]
+  0x491518: adrp     x0, #0x8a5000
+  0x49151c: add      x0, x0, #0xcb0
+  0x491520: ldr      x1, [x0]
+  0x491524: str      x1, [sp, #0x848]
+  0x491528: mov      x1, #0
+  0x49152c: str      wzr, [sp, #0x18]
+  0x491530: str      wzr, [sp, #0x1c]
+  0x491534: add      x0, sp, #0x20
+  0x491538: mov      x2, #0x28
+  0x49153c: mov      w1, #0
+  0x491540: bl       #0x44a6c0
+  0x491544: ldr      w0, [sp, #8]
+  0x491548: cmp      w0, #0
+  0x49154c: b.le     #0x491580
+  0x491550: adrp     x0, #0xa75000
+  0x491554: add      x0, x0, #0x8c4
+  0x491558: ldr      w0, [x0]
+  0x49155c: sxtw     x1, w0
+  0x491560: adrp     x0, #0xa75000
+  0x491564: add      x0, x0, #0x8c8
+  0x491568: add      x0, x1, x0
+  0x49156c: ldrsw    x1, [sp, #8]
+  0x491570: mov      x2, x1
+  0x491574: ldr      x1, [sp]
+  0x491578: bl       #0x44ab40
+  0x49157c: b        #0x4915a4
+  0x491580: bl       #0x493e30
+  0x491584: cmp      w0, #1
+  0x491588: b.le     #0x4915a4
+  0x49158c: mov      w2, #0x6e
+  0x491590: adrp     x0, #0x77e000
+  0x491594: add      x1, x0, #0x538
+  0x491598: adrp     x0, #0x77e000
+  0x49159c: add      x0, x0, #0x6f8
+  0x4915a0: bl       #0x44bda0
+  0x4915a4: adrp     x0, #0xa75000
+  0x4915a8: add      x0, x0, #0x8c4
+  0x4915ac: ldr      w0, [x0]
+  0x4915b0: ldr      w1, [sp, #8]
+  0x4915b4: add      w0, w1, w0
+  0x4915b8: str      w0, [sp, #0x1c]
+  0x4915bc: adrp     x0, #0xa75000
+  0x4915c0: add      x0, x0, #0x8c8
+  0x4915c4: str      x0, [sp, #0x28]
+  0x4915c8: adrp     x0, #0xa75000
+  0x4915cc: add      x0, x0, #0x8c8
+  0x4915d0: str      x0, [sp, #0x20]
+  0x4915d4: add      x0, sp, #0x48
+  0x4915d8: str      x0, [sp, #0x30]
+  0x4915dc: b        #0x491820
+  0x4915e0: adrp     x0, #0xa75000
+  0x4915e4: add      x0, x0, #0x8a8
+  0x4915e8: ldr      x0, [x0]
+  0x4915ec: ldr      x4, [x0, #0x4d0]
+  0x4915f0: add      x0, sp, #0x20
+  0x4915f4: mov      w3, #0
+  0x4915f8: mov      w2, #0
+  0x4915fc: ldr      w1, [sp, #0x1c]
+  0x491600: blr      x4
+  0x491604: str      w0, [sp, #0x18]
+  0x491608: ldr      w0, [sp, #0x18]
+  0x49160c: cmp      w0, #6
+  0x491610: b.ne     #0x491654
+  0x491614: bl       #0x493e30
+  0x491618: cmp      w0, #5
+  0x49161c: b.le     #0x491638
+  0x491620: mov      w2, #0x7c
+  0x491624: adrp     x0, #0x77e000
+  0x491628: add      x1, x0, #0x560
+  0x49162c: adrp     x0, #0x77e000
+  0x491630: add      x0, x0, #0x6f8
+  0x491634: bl       #0x44a8f0
+  0x491638: ldr      w1, [sp, #0x3c]
+  0x49163c: adrp     x0, #0xa75000
+  0x491640: add      x0, x0, #0x8c4
+  0x491644: str      w1, [x0]
+  0x491648: str      wzr, [sp, #0x18]
+  0x49164c: ldr      w0, [sp, #0x18]
+  0x491650: b        #0x491844
+  0x491654: ldr      w0, [sp, #0x18]
+  0x491658: cmn      w0, #0xa
+  0x49165c: b.ne     #0x4916b0
+
+
+
+==== engine_hal_interface_send @ 0x490948 sz=0x130 (.text) ====
+  0x490948: stp      x29, x30, [sp, #-0x10]!
+  0x49094c: mov      x29, sp
+  0x490950: mov      x13, #0x1030
+  0x490954: sub      sp, sp, x13
+  0x490958: str      x0, [sp, #8]
+  0x49095c: str      w1, [sp, #4]
+  0x490960: adrp     x0, #0x8a5000
+  0x490964: add      x0, x0, #0xcb0
+  0x490968: ldr      x1, [x0]
+  0x49096c: str      x1, [sp, #0x1028]
+  0x490970: mov      x1, #0
+  0x490974: str      wzr, [sp, #0x24]
+  0x490978: str      wzr, [sp, #0x1c]
+  0x49097c: add      x0, sp, #0x28
+  0x490980: mov      x1, #0x1000
+  0x490984: mov      x2, x1
+  0x490988: mov      w1, #0
+  0x49098c: bl       #0x44a6c0
+  0x490990: str      wzr, [sp, #0x20]
+  0x490994: adrp     x0, #0xa75000
+  0x490998: add      x0, x0, #0x880
+  0x49099c: ldr      x2, [x0, #8]
+  0x4909a0: adrp     x0, #0x77e000
+  0x4909a4: add      x1, x0, #0x3f8
+  0x4909a8: mov      x0, x2
+  0x4909ac: bl       #0x44afe0
+  0x4909b0: adrp     x0, #0xa75000
+  0x4909b4: add      x0, x0, #0x880
+  0x4909b8: ldr      x0, [x0]
+  0x4909bc: cmp      x0, #0
+  0x4909c0: b.ne     #0x490a0c
+  0x4909c4: adrp     x0, #0xa75000
+  0x4909c8: add      x0, x0, #0x880
+  0x4909cc: ldr      x2, [x0, #8]
+  0x4909d0: adrp     x0, #0x77e000
+  0x4909d4: add      x1, x0, #0x3f8
+  0x4909d8: mov      x0, x2
+  0x4909dc: bl       #0x44b1e0
+  0x4909e0: bl       #0x493e30
+  0x4909e4: cmp      w0, #1
+  0x4909e8: b.le     #0x490a04
+  0x4909ec: mov      w2, #0x49
+  0x4909f0: adrp     x0, #0x77e000
+  0x4909f4: add      x1, x0, #0x128
+  0x4909f8: adrp     x0, #0x77e000
+  0x4909fc: add      x0, x0, #0x418
+  0x490a00: bl       #0x44bda0
+  0x490a04: mov      w0, #-1
+  0x490a08: b        #0x490b18
+  0x490a0c: adrp     x0, #0xa75000
+  0x490a10: add      x0, x0, #0x880
+  0x490a14: ldr      x0, [x0]
+  0x490a18: ldr      x3, [x0, #0x58]
+  0x490a1c: adrp     x0, #0xa75000
+  0x490a20: add      x0, x0, #0x880
+  0x490a24: ldr      x0, [x0]
+  0x490a28: ldr      w1, [sp, #4]
+  0x490a2c: mov      x2, x1
+  0x490a30: ldr      x1, [sp, #8]
+  0x490a34: blr      x3
+  0x490a38: str      w0, [sp, #0x24]
+  0x490a3c: ldr      w0, [sp, #0x24]
+  0x490a40: cmp      w0, #0
+  0x490a44: b.ge     #0x490a50
+  0x490a48: mov      w0, #-1
+  0x490a4c: str      w0, [sp, #0x1c]
+  0x490a50: adrp     x0, #0xa75000
+  0x490a54: add      x0, x0, #0x880
+  0x490a58: ldr      x2, [x0, #8]
+  0x490a5c: adrp     x0, #0x77e000
+  0x490a60: add      x1, x0, #0x3f8
+  0x490a64: mov      x0, x2
+  0x490a68: bl       #0x44b1e0
+  0x490a6c: ldr      w0, [sp, #4]
+  0x490a70: cmp      w0, #1
+  0x490a74: b.ls     #0x490b14
+
+
+
+==== engine_hal_send_data @ 0x490b50 sz=0x130 (.text) ====
+  0x490b50: stp      x29, x30, [sp, #-0x10]!
+  0x490b54: mov      x29, sp
+  0x490b58: sub      sp, sp, #0x220
+  0x490b5c: str      x0, [sp, #8]
+  0x490b60: str      w1, [sp, #4]
+  0x490b64: adrp     x0, #0x8a5000
+  0x490b68: add      x0, x0, #0xcb0
+  0x490b6c: ldr      x1, [x0]
+  0x490b70: str      x1, [sp, #0x218]
+  0x490b74: mov      x1, #0
+  0x490b78: str      wzr, [sp, #0x14]
+  0x490b7c: adrp     x0, #0xa75000
+  0x490b80: add      x0, x0, #0x880
+  0x490b84: ldr      x0, [x0]
+  0x490b88: cmp      x0, #0
+  0x490b8c: b.ne     #0x490bbc
+  0x490b90: bl       #0x493e30
+  0x490b94: cmp      w0, #1
+  0x490b98: b.le     #0x490bb4
+  0x490b9c: mov      w2, #0x7c
+  0x490ba0: adrp     x0, #0x77e000
+  0x490ba4: add      x1, x0, #0x170
+  0x490ba8: adrp     x0, #0x77e000
+  0x490bac: add      x0, x0, #0x438
+  0x490bb0: bl       #0x44bda0
+  0x490bb4: mov      w0, #-1
+  0x490bb8: b        #0x490c40
+  0x490bbc: ldr      x0, [sp, #8]
+  0x490bc0: cmp      x0, #0
+  0x490bc4: b.ne     #0x490bf4
+  0x490bc8: bl       #0x493e30
+  0x490bcc: cmp      w0, #1
+  0x490bd0: b.le     #0x490bec
+  0x490bd4: mov      w2, #0x82
+  0x490bd8: adrp     x0, #0x77e000
+  0x490bdc: add      x1, x0, #0x1a0
+  0x490be0: adrp     x0, #0x77e000
+  0x490be4: add      x0, x0, #0x438
+  0x490be8: bl       #0x44bda0
+  0x490bec: mov      w0, #-1
+  0x490bf0: b        #0x490c40
+  0x490bf4: add      x0, sp, #0x18
+  0x490bf8: mov      x2, #0x200
+  0x490bfc: mov      w1, #0
+  0x490c00: bl       #0x44a6c0
+  0x490c04: ldr      w1, [sp, #4]
+  0x490c08: add      x0, sp, #0x18
+  0x490c0c: mov      x2, x1
+  0x490c10: ldr      x1, [sp, #8]
+  0x490c14: bl       #0x44ab40
+  0x490c18: add      x0, sp, #0x18
+  0x490c1c: ldr      w1, [sp, #4]
+  0x490c20: bl       #0x490948
+  0x490c24: str      w0, [sp, #0x14]
+  0x490c28: ldr      w0, [sp, #0x14]
+  0x490c2c: cmp      w0, #0
+  0x490c30: b.eq     #0x490c3c
+  0x490c34: mov      w0, #-1
+  0x490c38: str      w0, [sp, #0x14]
+  0x490c3c: mov      w0, #0
+  0x490c40: mov      w1, w0
+  0x490c44: adrp     x0, #0x8a5000
+  0x490c48: add      x0, x0, #0xcb0
+  0x490c4c: ldr      x3, [sp, #0x218]
+  0x490c50: ldr      x2, [x0]
+  0x490c54: subs     x3, x3, x2
+  0x490c58: mov      x2, #0
+  0x490c5c: b.eq     #0x490c64
+  0x490c60: bl       #0x44be20
+  0x490c64: mov      w0, w1
+  0x490c68: add      sp, sp, #0x220
+  0x490c6c: ldp      x29, x30, [sp], #0x10
+  0x490c70: ret      
+  0x490c74: stp      x29, x30, [sp, #-0x30]!
+  0x490c78: mov      x29, sp
+  0x490c7c: str      w0, [sp, #0x1c]
+
+
+
+==== engine_hal_pend @ 0x490c74 sz=0x100 (.text) ====
+  0x490c74: stp      x29, x30, [sp, #-0x30]!
+  0x490c78: mov      x29, sp
+  0x490c7c: str      w0, [sp, #0x1c]
+  0x490c80: str      w1, [sp, #0x18]
+  0x490c84: mov      w0, #-1
+  0x490c88: str      w0, [sp, #0x2c]
+  0x490c8c: adrp     x0, #0xa75000
+  0x490c90: add      x0, x0, #0x880
+  0x490c94: ldr      x0, [x0]
+  0x490c98: cmp      x0, #0
+  0x490c9c: b.eq     #0x490d04
+  0x490ca0: adrp     x0, #0xa75000
+  0x490ca4: add      x0, x0, #0x880
+  0x490ca8: ldr      x0, [x0]
+  0x490cac: cmp      x0, #0
+  0x490cb0: b.eq     #0x490cfc
+  0x490cb4: adrp     x0, #0xa75000
+  0x490cb8: add      x0, x0, #0x880
+  0x490cbc: ldr      x0, [x0]
+  0x490cc0: ldr      x0, [x0, #0x48]
+  0x490cc4: cmp      x0, #0
+  0x490cc8: b.eq     #0x490cfc
+  0x490ccc: adrp     x0, #0xa75000
+  0x490cd0: add      x0, x0, #0x880
+  0x490cd4: ldr      x0, [x0]
+  0x490cd8: ldr      x4, [x0, #0x48]
+  0x490cdc: adrp     x0, #0xa75000
+  0x490ce0: add      x0, x0, #0x880
+  0x490ce4: ldr      x0, [x0]
+  0x490ce8: ldr      w3, [sp, #0x18]
+  0x490cec: ldr      w2, [sp, #0x1c]
+  0x490cf0: mov      w1, #1
+  0x490cf4: blr      x4
+  0x490cf8: b        #0x490d00
+  0x490cfc: mov      w0, #-0x65
+  0x490d00: str      w0, [sp, #0x2c]
+  0x490d04: ldr      w0, [sp, #0x2c]
+  0x490d08: ldp      x29, x30, [sp], #0x30
+  0x490d0c: ret      
+  0x490d10: stp      x29, x30, [sp, #-0x50]!
+  0x490d14: mov      x29, sp
+  0x490d18: str      x0, [sp, #0x38]
+  0x490d1c: str      x1, [sp, #0x30]
+  0x490d20: str      w2, [sp, #0x2c]
+  0x490d24: str      w3, [sp, #0x28]
+  0x490d28: str      w4, [sp, #0x24]
+  0x490d2c: str      x5, [sp, #0x18]
+  0x490d30: str      wzr, [sp, #0x4c]
+  0x490d34: str      wzr, [sp, #0x48]
+  0x490d38: adrp     x0, #0xa75000
+  0x490d3c: add      x0, x0, #0x880
+  0x490d40: ldr      x0, [x0]
+  0x490d44: cmp      x0, #0
+  0x490d48: b.ne     #0x490d84
+  0x490d4c: bl       #0x493e30
+  0x490d50: cmp      w0, #1
+  0x490d54: b.le     #0x490d70
+  0x490d58: mov      w2, #0xc5
+  0x490d5c: adrp     x0, #0x77e000
+  0x490d60: add      x1, x0, #0x170
+  0x490d64: adrp     x0, #0x77e000
+  0x490d68: add      x0, x0, #0x450
+  0x490d6c: bl       #0x44bda0
+  0x490d70: adrp     x0, #0xa75000
+
+
+
+==== engine_hal_dev_com_init @ 0x490fa8 sz=0x130 (.text) ====
+  0x490fa8: stp      x29, x30, [sp, #-0x10]!
+  0x490fac: mov      x29, sp
+  0x490fb0: mov      w5, #0
+  0x490fb4: mov      w4, #1
+  0x490fb8: mov      w3, #1
+  0x490fbc: mov      w2, #8
+  0x490fc0: mov      w1, #0x9600
+  0x490fc4: mov      w0, #7
+  0x490fc8: bl       #0x44bb70
+  0x490fcc: mov      x1, x0
+  0x490fd0: adrp     x0, #0xa75000
+  0x490fd4: add      x0, x0, #0x880
+  0x490fd8: str      x1, [x0]
+  0x490fdc: adrp     x0, #0x77e000
+  0x490fe0: add      x1, x0, #0x468
+  0x490fe4: mov      w0, #1
+  0x490fe8: bl       #0x44a410
+  0x490fec: mov      x1, x0
+  0x490ff0: adrp     x0, #0xa75000
+  0x490ff4: add      x0, x0, #0x880
+  0x490ff8: str      x1, [x0, #8]
+  0x490ffc: adrp     x0, #0xa75000
+  0x491000: add      x0, x0, #0x880
+  0x491004: ldr      x0, [x0]
+  0x491008: cmp      x0, #0
+  0x49100c: b.eq     #0x491018
+  0x491010: mov      w0, #0
+  0x491014: b        #0x49101c
+  0x491018: mov      w0, #-1
+  0x49101c: ldp      x29, x30, [sp], #0x10
+  0x491020: ret      
+  0x491024: stp      x29, x30, [sp, #-0x10]!
+  0x491028: mov      x29, sp
+  0x49102c: adrp     x0, #0xa75000
+  0x491030: add      x0, x0, #0x880
+  0x491034: ldr      x0, [x0]
+  0x491038: cmp      x0, #0
+  0x49103c: b.ne     #0x49106c
+  0x491040: bl       #0x493e30
+  0x491044: cmp      w0, #1
+  0x491048: b.le     #0x491064
+  0x49104c: mov      w2, #0x13a
+  0x491050: adrp     x0, #0x77e000
+  0x491054: add      x1, x0, #0x248
+  0x491058: adrp     x0, #0x77e000
+  0x49105c: add      x0, x0, #0x480
+  0x491060: bl       #0x44bda0
+  0x491064: mov      w0, #-1
+  0x491068: b        #0x4910c4
+  0x49106c: adrp     x0, #0xa75000
+  0x491070: add      x0, x0, #0x880
+  0x491074: ldr      x0, [x0]
+  0x491078: ldr      x1, [x0, #0x40]
+  0x49107c: adrp     x0, #0xa75000
+  0x491080: add      x0, x0, #0x880
+  0x491084: ldr      x0, [x0]
+  0x491088: blr      x1
+  0x49108c: adrp     x0, #0xa75000
+  0x491090: add      x0, x0, #0x880
+  0x491094: str      xzr, [x0]
+  0x491098: adrp     x0, #0xa75000
+  0x49109c: add      x0, x0, #0x880
+  0x4910a0: ldr      x2, [x0, #8]
+  0x4910a4: adrp     x0, #0x77e000
+  0x4910a8: add      x1, x0, #0x4a0
+  0x4910ac: mov      x0, x2
+  0x4910b0: bl       #0x44b200
+  0x4910b4: adrp     x0, #0xa75000
+  0x4910b8: add      x0, x0, #0x880
+  0x4910bc: str      xzr, [x0, #8]
+  0x4910c0: mov      w0, #0
+  0x4910c4: ldp      x29, x30, [sp], #0x10
+  0x4910c8: ret      
+  0x4910cc: stp      x29, x30, [sp, #-0x20]!
+  0x4910d0: mov      x29, sp
+  0x4910d4: str      wzr, [sp, #0x1c]
+
+==== s_engframework_api_array @ 0x8b06f0 (.data) ====
+  [ 0] 0x8b06f0 : 0x505b44 <- .text
+  [ 1] 0x8b06f8 : 0x505b24 <- .text
+  [ 2] 0x8b0700 : 0x505b24 <- .text
+  [ 3] 0x8b0708 : 0x505f38 <- .text
+  [ 4] 0x8b0710 : 0x505fc0 <- .text
+  [ 5] 0x8b0718 : 0x5060d0 <- .text
+  [ 6] 0x8b0720 : 0x5062d0 <- .text
+  [ 7] 0x8b0728 : 0x5064dc <- .text
+  [ 8] 0x8b0730 : 0x506e88 <- .text
+  [ 9] 0x8b0738 : 0x506fbc <- .text
+  [10] 0x8b0740 : 0x5071b4 <- .text
+  [11] 0x8b0748 : 0x5072c4 <- .text
+  [12] 0x8b0750 : 0x5074c4 <- .text
+  [13] 0x8b0758 : 0x5076d0 <- .text
+  [14] 0x8b0760 : 0x5080bc <- .text
+  [15] 0x8b0768 : 0x5081dc <- .text
+  [16] 0x8b0770 : 0x508328 <- .text
+  [17] 0x8b0778 : 0x50844c <- .text
+  [18] 0x8b0780 : 0x508660 <- .text
+  [19] 0x8b0788 : 0x508880 <- .text
+  [20] 0x8b0790 : 0x509240 <- .text
+  [21] 0x8b0798 : 0x505b24 <- .text
+  [22] 0x8b07a0 : 0x509360 <- .text
+  [23] 0x8b07a8 : 0x505b24 <- .text
+  [24] 0x8b07b0 : 0x50939c <- .text
+  [25] 0x8b07b8 : 0x509774 <- .text
+  [26] 0x8b07c0 : 0x5098ec <- .text
+  [27] 0x8b07c8 : 0x505b24 <- .text
+  [28] 0x8b07d0 : 0x505b24 <- .text
+  [29] 0x8b07d8 : 0x505b24 <- .text
+  [30] 0x8b07e0 : 0x505b24 <- .text
+  [31] 0x8b07e8 : 0x505b24 <- .text
+
+==== s_Engine_If_Hardware @ 0xa75880 (.bss) ====
+  [ 0] 0xa75880 : 0x1a0301950000 
+  [ 1] 0xa75888 : 0x197000031fc0196 
+  [ 2] 0xa75890 : 0x15e7019800003cd5 
+  [ 3] 0xa75898 : 0x4c6501990000 
+  [ 4] 0xa758a0 : 0x19b00003cf9019a 
+  [ 5] 0xa758a8 : 0x2a0d019c000018bb 
+  [ 6] 0xa758b0 : 0x3372019d0000 
+  [ 7] 0xa758b8 : 0x19f00001d4d019e 
+  [ 8] 0xa758c0 : 0x3f3501a000004ec8 
+  [ 9] 0xa758c8 : 0xa2501a10000 
+  [10] 0xa758d0 : 0x1a300002ab101a2 
+  [11] 0xa758d8 : 0x130001a400003b1f 
+  [12] 0xa758e0 : 0x2fd601a50000 
+  [13] 0xa758e8 : 0x1a70000192f01a6 
+  [14] 0xa758f0 : 0x920600a800000585 
+  [15] 0xa758f8 : 0x900201111200005f 
+
+==== engine_general_if_layer_frame_unpack @ 0x50bc38 sz=0x90 (.text) ====
+  0x50bc38: stp      x29, x30, [sp, #-0x50]!
+  0x50bc3c: mov      x29, sp
+  0x50bc40: str      x0, [sp, #0x28]
+  0x50bc44: str      w1, [sp, #0x24]
+  0x50bc48: str      w2, [sp, #0x20]
+  0x50bc4c: str      w3, [sp, #0x1c]
+  0x50bc50: str      wzr, [sp, #0x40]
+  0x50bc54: str      xzr, [sp, #0x48]
+  0x50bc58: strb     wzr, [sp, #0x3f]
+  0x50bc5c: str      wzr, [sp, #0x44]
+  0x50bc60: ldr      x0, [sp, #0x28]
+  0x50bc64: cmp      x0, #0
+  0x50bc68: b.ne     #0x50bca0
+  0x50bc6c: bl       #0x493e30
+  0x50bc70: cmp      w0, #1
+  0x50bc74: b.le     #0x50bc98
+  0x50bc78: adrp     x0, #0x7b0000
+  0x50bc7c: add      x3, x0, #0xfe0
+  0x50bc80: mov      w2, #0x4662
+  0x50bc84: adrp     x0, #0x7ad000
+  0x50bc88: add      x1, x0, #0xb60
+  0x50bc8c: adrp     x0, #0x7b0000
+  0x50bc90: add      x0, x0, #0xfb8
+  0x50bc94: bl       #0x44bda0
+  0x50bc98: mov      w0, #-1
+  0x50bc9c: b        #0x50c0f0
+  0x50bca0: bl       #0x493e30
+  0x50bca4: cmp      w0, #5
+  0x50bca8: b.le     #0x50bcc4
+  0x50bcac: mov      w2, #0x4665
+  0x50bcb0: adrp     x0, #0x7ae000
+  0x50bcb4: add      x1, x0, #0xa48
+  0x50bcb8: adrp     x0, #0x7b0000
+  0x50bcbc: add      x0, x0, #0xfb8
+  0x50bcc0: bl       #0x44a8f0
+  0x50bcc4: ldr      x0, [sp, #0x28]
+
+
+==== 5) 0x77xxxx 日志串引用再查（4B/8B 数据/代码页） ====
+
+  .text 中 adrp page=0x77.. 的引用计数统计:
+  adrp #0x770000 : 204 次
+  adrp #0x771000 : 140 次
+  adrp #0x772000 : 125 次
+  adrp #0x773000 : 143 次
+  adrp #0x774000 : 72 次
+  adrp #0x775000 : 176 次
+  adrp #0x776000 : 148 次
+  adrp #0x777000 : 123 次
+  adrp #0x778000 : 71 次
+  adrp #0x779000 : 233 次
+  adrp #0x77a000 : 83 次
+  adrp #0x77b000 : 216 次
+  adrp #0x77c000 : 224 次
+  adrp #0x77d000 : 90 次
+  adrp #0x77e000 : 200 次
+  adrp #0x77f000 : 190 次

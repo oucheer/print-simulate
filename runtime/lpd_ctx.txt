@@ -1,0 +1,659 @@
+
+=== lpd_dispatch_thread @ 0x68365c (size=0x830) ===
+  0x68365c: sub       sp, sp, #0x80
+  0x683660: stp       x29, x30, [sp, #0x70]
+  0x683664: add       x29, sp, #0x70
+  0x683668: str       x0, [sp, #8]
+  0x68366c: adrp      x0, #0x8a5000
+  0x683670: add       x0, x0, #0xcb0
+  0x683674: ldr       x1, [x0]
+  0x683678: str       x1, [sp, #0x68]
+  0x68367c: mov       x1, #0
+  0x683680: str       xzr, [sp, #0x28]
+  0x683684: adrp      x0, #0xc92000
+  0x683688: add       x0, x0, #0x730
+  0x68368c: ldr       x0, [x0]
+  0x683690: ldr       x2, [x0, #0x78]
+  0x683694: adrp      x0, #0x80d000
+  0x683698: add       x1, x0, #0x860
+  0x68369c: mov       x0, x2
+  0x6836a0: bl        #0x44afe0  ; pi_sem_wait_ent(plt)
+  0x6836a4: adrp      x0, #0x8b5000
+  0x6836a8: add       x0, x0, #0x7a0
+  0x6836ac: ldr       w0, [x0]
+  0x6836b0: cmp       w0, #4
+  0x6836b4: b.le      #0x6836cc
+  0x6836b8: adrp      x0, #0x80d000
+  0x6836bc: add       x1, x0, #0x860
+  0x6836c0: adrp      x0, #0x80c000
+  0x6836c4: add       x0, x0, #0xe38
+  0x6836c8: bl        #0x44ac00  ; printf(plt)
+  0x6836cc: adrp      x0, #0x80c000
+  0x6836d0: add       x1, x0, #0xe68
+  0x6836d4: adrp      x0, #0x80d000
+  0x6836d8: add       x0, x0, #0x878
+  0x6836dc: bl        #0x44a8f0  ; log_debug(plt)
+  0x6836e0: add       x0, sp, #0x30
+  0x6836e4: mov       x2, #0x38
+  0x6836e8: mov       w1, #0
+  0x6836ec: bl        #0x44a6c0  ; memset(plt)
+  0x6836f0: add       x0, sp, #0x30
+  0x6836f4: bl        #0x683510  ; lpd_list_take
+  0x6836f8: cmp       w0, #0
+  0x6836fc: b.eq      #0x683740
+  0x683700: adrp      x0, #0x8b5000
+  0x683704: add       x0, x0, #0x7a0
+  0x683708: ldr       w0, [x0]
+  0x68370c: cmp       w0, #1
+  0x683710: b.le      #0x683728
+  0x683714: adrp      x0, #0x80d000
+  0x683718: add       x1, x0, #0x860
+  0x68371c: adrp      x0, #0x80c000
+  0x683720: add       x0, x0, #0xe88
+  0x683724: bl        #0x44ac00  ; printf(plt)
+  0x683728: adrp      x0, #0x80c000
+  0x68372c: add       x1, x0, #0xeb8
+  0x683730: adrp      x0, #0x80d000
+  0x683734: add       x0, x0, #0x878
+  0x683738: bl        #0x44bda0  ; log_error(plt)
+  0x68373c: b         #0x683e08  ; sub_683e08
+  0x683740: adrp      x0, #0xc92000
+  0x683744: add       x0, x0, #0x730
+  0x683748: ldr       x0, [x0]
+  0x68374c: cmp       x0, #0
+  0x683750: b.eq      #0x68378c
+  0x683754: adrp      x0, #0xc92000
+  0x683758: add       x0, x0, #0x730
+  0x68375c: ldr       x0, [x0]
+  0x683760: ldr       x0, [x0, #0x80]
+  0x683764: cmp       x0, #0
+  0x683768: b.eq      #0x68378c
+  0x68376c: adrp      x0, #0xc92000
+  0x683770: add       x0, x0, #0x730
+  0x683774: ldr       x0, [x0]
+  0x683778: ldr       x2, [x0, #0x80]
+  0x68377c: adrp      x0, #0x80d000
+  0x683780: add       x1, x0, #0x860
+  0x683784: mov       x0, x2
+  0x683788: bl        #0x44b510  ; pi_mutex_lock_ent(plt)
+  0x68378c: str       xzr, [sp, #0x28]
+  0x683790: mov       w0, #-1
+  0x683794: str       w0, [sp, #0x1c]
+  0x683798: str       wzr, [sp, #0x18]
+  0x68379c: b         #0x6838bc  ; sub_6838bc
+  0x6837a0: adrp      x0, #0xc92000
+  0x6837a4: add       x0, x0, #0x730
+  0x6837a8: ldr       x1, [x0]
+  0x6837ac: ldrsw     x0, [sp, #0x18]
+  0x6837b0: lsl       x0, x0, #3
+  0x6837b4: add       x0, x1, x0
+  0x6837b8: ldr       x0, [x0, #8]
+  0x6837bc: cmp       x0, #0
+  0x6837c0: b.eq      #0x68389c
+  0x6837c4: adrp      x0, #0xc92000
+  0x6837c8: add       x0, x0, #0x730
+  0x6837cc: ldr       x1, [x0]
+  0x6837d0: ldrsw     x0, [sp, #0x18]
+  0x6837d4: lsl       x0, x0, #3
+  0x6837d8: add       x0, x1, x0
+  0x6837dc: ldr       x0, [x0, #8]
+  0x6837e0: ldr       w1, [x0, #0x10]
+  0x6837e4: ldr       w0, [sp, #0x44]
+  0x6837e8: cmp       w1, w0
+  0x6837ec: b.ne      #0x6838b0
+  0x6837f0: adrp      x0, #0xc92000
+  0x6837f4: add       x0, x0, #0x730
+  0x6837f8: ldr       x1, [x0]
+  0x6837fc: ldrsw     x0, [sp, #0x18]
+  0x683800: lsl       x0, x0, #3
+  0x683804: add       x0, x1, x0
+  0x683808: ldr       x0, [x0, #8]
+  0x68380c: ldr       w1, [x0, #0x14]
+  0x683810: ldr       w0, [sp, #0x48]
+  0x683814: cmp       w1, w0
+  0x683818: b.ne      #0x6838b0
+  0x68381c: adrp      x0, #0x8b5000
+  0x683820: add       x0, x0, #0x7a0
+  0x683824: ldr       w0, [x0]
+  0x683828: cmp       w0, #4
+  0x68382c: b.le      #0x683854
+  0x683830: ldr       w0, [sp, #0x44]
+  0x683834: ldr       w1, [sp, #0x48]
+  0x683838: mov       w3, w1
+  0x68383c: mov       w2, w0
+  0x683840: adrp      x0, #0x80d000
+  0x683844: add       x1, x0, #0x860
+  0x683848: adrp      x0, #0x80c000
+  0x68384c: add       x0, x0, #0xed8
+  0x683850: bl        #0x44ac00  ; printf(plt)
+  0x683854: ldr       w0, [sp, #0x44]
+  0x683858: ldr       w1, [sp, #0x48]
+  0x68385c: mov       w3, w1
+  0x683860: mov       w2, w0
+  0x683864: adrp      x0, #0x80c000
+  0x683868: add       x1, x0, #0xf18
+  0x68386c: adrp      x0, #0x80d000
+  0x683870: add       x0, x0, #0x878
+  0x683874: bl        #0x44a8f0  ; log_debug(plt)
+  0x683878: adrp      x0, #0xc92000
+  0x68387c: add       x0, x0, #0x730
+  0x683880: ldr       x1, [x0]
+  0x683884: ldrsw     x0, [sp, #0x18]
+  0x683888: lsl       x0, x0, #3
+  0x68388c: add       x0, x1, x0
+  0x683890: ldr       x0, [x0, #8]
+  0x683894: str       x0, [sp, #0x28]
+  0x683898: b         #0x6838c8  ; sub_6838c8
+  0x68389c: ldr       w0, [sp, #0x1c]
+  0x6838a0: cmn       w0, #1
+  0x6838a4: b.ne      #0x6838b0
+  0x6838a8: ldr       w0, [sp, #0x18]
+  0x6838ac: str       w0, [sp, #0x1c]
+  0x6838b0: ldr       w0, [sp, #0x18]
+  0x6838b4: add       w0, w0, #1
+  0x6838b8: str       w0, [sp, #0x18]
+  0x6838bc: ldr       w0, [sp, #0x18]
+  0x6838c0: cmp       w0, #9
+  0x6838c4: b.le      #0x6837a0
+  0x6838c8: ldr       x0, [sp, #0x28]
+  0x6838cc: cmp       x0, #0
+  0x6838d0: b.ne      #0x683a30
+  0x6838d4: ldrb      w0, [sp, #0x30]
+  0x6838d8: cmp       w0, #2
+  0x6838dc: b.ne      #0x683a30
+  0x6838e0: ldr       w0, [sp, #0x1c]
+  0x6838e4: cmn       w0, #1
+  0x6838e8: b.eq      #0x6839ec
+  0x6838ec: ldr       w0, [sp, #0x44]
+  0x6838f0: ldr       w1, [sp, #0x48]
+  0x6838f4: bl        #0x682858  ; init_ptask
+  0x6838f8: str       x0, [sp, #0x28]
+  0x6838fc: ldr       x0, [sp, #0x28]
+  0x683900: cmp       x0, #0
+  0x683904: b.eq      #0x6839ac
+  0x683908: adrp      x0, #0xc92000
+  0x68390c: add       x0, x0, #0x730
+  0x683910: ldr       x1, [x0]
+  0x683914: ldrsw     x0, [sp, #0x1c]
+  0x683918: lsl       x0, x0, #3
+  0x68391c: add       x0, x1, x0
+  0x683920: ldr       x1, [sp, #0x28]
+  0x683924: str       x1, [x0, #8]
+  0x683928: adrp      x0, #0xc92000
+  0x68392c: add       x0, x0, #0x730
+  0x683930: ldr       x0, [x0]
+  0x683934: add       x0, x0, #0x58
+  0x683938: mov       w1, #1
+  0x68393c: ldaddal   w1, w0, [x0]
+  0x683940: adrp      x0, #0x8b5000
+  0x683944: add       x0, x0, #0x7a0
+  0x683948: ldr       w0, [x0]
+  0x68394c: cmp       w0, #3
+  0x683950: b.le      #0x683978
+  0x683954: ldr       w0, [sp, #0x44]
+  0x683958: ldr       w1, [sp, #0x48]
+  0x68395c: mov       w3, w1
+  0x683960: mov       w2, w0
+  0x683964: adrp      x0, #0x80d000
+  0x683968: add       x1, x0, #0x860
+  0x68396c: adrp      x0, #0x80c000
+  0x683970: add       x0, x0, #0xf48
+  0x683974: bl        #0x44ac00  ; printf(plt)
+  0x683978: ldr       w0, [sp, #0x44]
+  0x68397c: ldr       w1, [sp, #0x48]
+  0x683980: mov       w3, w1
+  0x683984: mov       w2, w0
+  0x683988: adrp      x0, #0x80c000
+  0x68398c: add       x1, x0, #0xf80
+  0x683990: adrp      x0, #0x80d000
+  0x683994: add       x0, x0, #0x878
+  0x683998: bl        #0x44b6f0  ; log_info(plt)
+  0x68399c: ldr       x0, [sp, #0x28]
+  0x6839a0: ldr       x0, [x0, #8]
+  0x6839a4: bl        #0x6830a4  ; lpd_start_job
+  0x6839a8: b         #0x683a30  ; sub_683a30
+  0x6839ac: adrp      x0, #0x8b5000
+  0x6839b0: add       x0, x0, #0x7a0
+  0x6839b4: ldr       w0, [x0]
+  0x6839b8: cmp       w0, #1
+  0x6839bc: b.le      #0x6839d4
+  0x6839c0: adrp      x0, #0x80d000
+  0x6839c4: add       x1, x0, #0x860
+  0x6839c8: adrp      x0, #0x80c000
+  0x6839cc: add       x0, x0, #0xfa8
+  0x6839d0: bl        #0x44ac00  ; printf(plt)
+  0x6839d4: adrp      x0, #0x80c000
+  0x6839d8: add       x1, x0, #0xfd8
+  0x6839dc: adrp      x0, #0x80d000
+  0x6839e0: add       x0, x0, #0x878
+  0x6839e4: bl        #0x44bda0  ; log_error(plt)
+  0x6839e8: b         #0x683a30  ; sub_683a30
+  0x6839ec: adrp      x0, #0x8b5000
+  0x6839f0: add       x0, x0, #0x7a0
+  0x6839f4: ldr       w0, [x0]
+  0x6839f8: cmp       w0, #1
+  0x6839fc: b.le      #0x683a18
+  0x683a00: mov       w2, #0xa
+  0x683a04: adrp      x0, #0x80d000
+  0x683a08: add       x1, x0, #0x860
+  0x683a0c: adrp      x0, #0x80c000
+  0x683a10: add       x0, x0, #0xff8
+  0x683a14: bl        #0x44ac00  ; printf(plt)
+  0x683a18: mov       w2, #0xa
+  0x683a1c: adrp      x0, #0x80d000
+  0x683a20: add       x1, x0, #0x30
+  0x683a24: adrp      x0, #0x80d000
+  0x683a28: add       x0, x0, #0x878
+  0x683a2c: bl        #0x44bda0  ; log_error(plt)
+  0x683a30: adrp      x0, #0xc92000
+  0x683a34: add       x0, x0, #0x730
+  0x683a38: ldr       x0, [x0]
+  0x683a3c: cmp       x0, #0
+  0x683a40: b.eq      #0x683a7c
+  0x683a44: adrp      x0, #0xc92000
+  0x683a48: add       x0, x0, #0x730
+  0x683a4c: ldr       x0, [x0]
+  0x683a50: ldr       x0, [x0, #0x80]
+  0x683a54: cmp       x0, #0
+  0x683a58: b.eq      #0x683a7c
+  0x683a5c: adrp      x0, #0xc92000
+  0x683a60: add       x0, x0, #0x730
+  0x683a64: ldr       x0, [x0]
+  0x683a68: ldr       x2, [x0, #0x80]
+  0x683a6c: adrp      x0, #0x80d000
+  0x683a70: add       x1, x0, #0x860
+  0x683a74: mov       x0, x2
+  0x683a78: bl        #0x44b820  ; pi_mutex_unlock_ent(plt)
+  0x683a7c: ldr       x0, [sp, #0x28]
+  0x683a80: cmp       x0, #0
+  0x683a84: b.eq      #0x683db8
+  0x683a88: ldurh     w0, [sp, #0x31]
+  0x683a8c: cmp       w0, #3
+  0x683a90: b.ne      #0x683b00
+  0x683a94: adrp      x0, #0x8b5000
+  0x683a98: add       x0, x0, #0x7a0
+  0x683a9c: ldr       w0, [x0]
+  0x683aa0: cmp       w0, #4
+  0x683aa4: b.le      #0x683acc
+  0x683aa8: ldr       w0, [sp, #0x44]
+  0x683aac: ldr       w1, [sp, #0x48]
+  0x683ab0: mov       w3, w1
+  0x683ab4: mov       w2, w0
+  0x683ab8: adrp      x0, #0x80d000
+  0x683abc: add       x1, x0, #0x860
+  0x683ac0: adrp      x0, #0x80d000
+  0x683ac4: add       x0, x0, #0x58
+  0x683ac8: bl        #0x44ac00  ; printf(plt)
+  0x683acc: ldr       w0, [sp, #0x44]
+  0x683ad0: ldr       w1, [sp, #0x48]
+  0x683ad4: mov       w3, w1
+  0x683ad8: mov       w2, w0
+  0x683adc: adrp      x0, #0x80d000
+  0x683ae0: add       x1, x0, #0xa0
+  0x683ae4: adrp      x0, #0x80d000
+  0x683ae8: add       x0, x0, #0x878
+  0x683aec: bl        #0x44a8f0  ; log_debug(plt)
+  0x683af0: ldr       x0, [sp, #0x28]
+  0x683af4: mov       w1, #1
+  0x683af8: strb      w1, [x0, #0x22]
+  0x683afc: b         #0x683db8  ; sub_683db8
+  0x683b00: ldurh     w0, [sp, #0x31]
+  0x683b04: cmp       w0, #4
+  0x683b08: b.ne      #0x683b78
+  0x683b0c: adrp      x0, #0x8b5000
+  0x683b10: add       x0, x0, #0x7a0
+  0x683b14: ldr       w0, [x0]
+  0x683b18: cmp       w0, #4
+  0x683b1c: b.le      #0x683b44
+  0x683b20: ldr       w0, [sp, #0x44]
+  0x683b24: ldr       w1, [sp, #0x48]
+  0x683b28: mov       w3, w1
+  0x683b2c: mov       w2, w0
+  0x683b30: adrp      x0, #0x80d000
+  0x683b34: add       x1, x0, #0x860
+  0x683b38: adrp      x0, #0x80d000
+  0x683b3c: add       x0, x0, #0xe0
+  0x683b40: bl        #0x44ac00  ; printf(plt)
+  0x683b44: ldr       w0, [sp, #0x44]
+  0x683b48: ldr       w1, [sp, #0x48]
+  0x683b4c: mov       w3, w1
+  0x683b50: mov       w2, w0
+  0x683b54: adrp      x0, #0x80d000
+  0x683b58: add       x1, x0, #0x130
+  0x683b5c: adrp      x0, #0x80d000
+  0x683b60: add       x0, x0, #0x878
+  0x683b64: bl        #0x44a8f0  ; log_debug(plt)
+  0x683b68: ldr       x0, [sp, #0x28]
+  0x683b6c: mov       w1, #1
+  0x683b70: strb      w1, [x0, #0x21]
+  0x683b74: b         #0x683db8  ; sub_683db8
+  0x683b78: ldr       x0, [sp, #0x50]
+  0x683b7c: cmp       x0, #0
+  0x683b80: b.eq      #0x683db8
+  0x683b84: ldr       w0, [sp, #0x4c]
+  0x683b88: cmp       w0, #0
+  0x683b8c: b.eq      #0x683db8
+  0x683b90: str       wzr, [sp, #0x20]
+  0x683b94: b         #0x683cec  ; sub_683cec
+  0x683b98: ldr       x0, [sp, #0x28]
+  0x683b9c: ldr       x2, [x0]
+  0x683ba0: adrp      x0, #0x80d000
+  0x683ba4: add       x1, x0, #0x860
+  0x683ba8: mov       x0, x2
+  0x683bac: bl        #0x674f08  ; ring_buffer_writable
+  0x683bb0: cmp       w0, #0
+  0x683bb4: b.eq      #0x683ca8
+  0x683bb8: adrp      x0, #0x8b5000
+  0x683bbc: add       x0, x0, #0x7a0
+  0x683bc0: ldr       w0, [x0]
+  0x683bc4: cmp       w0, #3
+  0x683bc8: b.le      #0x683be8
+  0x683bcc: ldr       w0, [sp, #0x4c]
+  0x683bd0: mov       w2, w0
+  0x683bd4: adrp      x0, #0x80d000
+  0x683bd8: add       x1, x0, #0x860
+  0x683bdc: adrp      x0, #0x80d000
+  0x683be0: add       x0, x0, #0x170
+  0x683be4: bl        #0x44ac00  ; printf(plt)
+  0x683be8: ldr       w0, [sp, #0x4c]
+  0x683bec: mov       w2, w0
+  0x683bf0: adrp      x0, #0x80d000
+  0x683bf4: add       x1, x0, #0x1a8
+  0x683bf8: adrp      x0, #0x80d000
+  0x683bfc: add       x0, x0, #0x878
+  0x683c00: bl        #0x44b6f0  ; log_info(plt)
+  0x683c04: ldr       x0, [sp, #0x28]
+  0x683c08: ldr       x4, [x0]
+  0x683c0c: ldr       x1, [sp, #0x50]
+  0x683c10: ldr       w0, [sp, #0x20]
+  0x683c14: add       x5, x1, x0
+  0x683c18: ldr       w1, [sp, #0x4c]
+  0x683c1c: ldr       w0, [sp, #0x20]
+  0x683c20: sub       w0, w1, w0
+  0x683c24: mov       w1, w0
+  0x683c28: adrp      x0, #0x80d000
+  0x683c2c: add       x3, x0, #0x860
+  0x683c30: mov       x2, x1
+  0x683c34: mov       x1, x5
+  0x683c38: mov       x0, x4
+  0x683c3c: bl        #0x6752c4  ; ring_buffer_write
+  0x683c40: str       w0, [sp, #0x24]
+  0x683c44: ldr       w0, [sp, #0x24]
+  0x683c48: cmp       w0, #0
+  0x683c4c: b.le      #0x683cec
+  0x683c50: ldr       w0, [sp, #0x24]
+  0x683c54: ldr       w1, [sp, #0x20]
+  0x683c58: add       w0, w1, w0
+  0x683c5c: str       w0, [sp, #0x20]
+  0x683c60: adrp      x0, #0x8b5000
+  0x683c64: add       x0, x0, #0x7a0
+  0x683c68: ldr       w0, [x0]
+  0x683c6c: cmp       w0, #3
+  0x683c70: b.le      #0x683c8c
+  0x683c74: ldr       w2, [sp, #0x24]
+  0x683c78: adrp      x0, #0x80d000
+  0x683c7c: add       x1, x0, #0x860
+  0x683c80: adrp      x0, #0x80d000
+  0x683c84: add       x0, x0, #0x1d0
+  0x683c88: bl        #0x44ac00  ; printf(plt)
+  0x683c8c: ldr       w2, [sp, #0x24]
+  0x683c90: adrp      x0, #0x80d000
+  0x683c94: add       x1, x0, #0x208
+  0x683c98: adrp      x0, #0x80d000
+  0x683c9c: add       x0, x0, #0x878
+  0x683ca0: bl        #0x44b6f0  ; log_info(plt)
+  0x683ca4: b         #0x683cec  ; sub_683cec
+  0x683ca8: adrp      x0, #0x8b5000
+  0x683cac: add       x0, x0, #0x7a0
+  0x683cb0: ldr       w0, [x0]
+  0x683cb4: cmp       w0, #3
+  0x683cb8: b.le      #0x683cd0
+  0x683cbc: adrp      x0, #0x80d000
+  0x683cc0: add       x1, x0, #0x860
+  0x683cc4: adrp      x0, #0x80d000
+  0x683cc8: add       x0, x0, #0x230
+  0x683ccc: bl        #0x44ac00  ; printf(plt)
+  0x683cd0: adrp      x0, #0x80d000
+  0x683cd4: add       x1, x0, #0x268
+  0x683cd8: adrp      x0, #0x80d000
+  0x683cdc: add       x0, x0, #0x878
+  0x683ce0: bl        #0x44b6f0  ; log_info(plt)
+  0x683ce4: mov       w0, #0x32
+  0x683ce8: bl        #0x44b320  ; pi_msleep(plt)
+  0x683cec: ldr       x0, [sp, #0x28]
+  0x683cf0: ldrb      w0, [x0, #0x20]
+  0x683cf4: cmp       w0, #0
+  0x683cf8: b.eq      #0x683d0c
+  0x683cfc: ldr       w0, [sp, #0x4c]
+  0x683d00: ldr       w1, [sp, #0x20]
+  0x683d04: cmp       w1, w0
+  0x683d08: b.lo      #0x683b98
+  0x683d0c: ldr       x0, [sp, #0x28]
+  0x683d10: ldr       x1, [x0, #0x18]
+  0x683d14: ldr       w0, [sp, #0x20]
+  0x683d18: add       x1, x1, x0
+  0x683d1c: ldr       x0, [sp, #0x28]
+  0x683d20: str       x1, [x0, #0x18]
+  0x683d24: adrp      x0, #0x8b5000
+  0x683d28: add       x0, x0, #0x7a0
+  0x683d2c: ldr       w0, [x0]
+  0x683d30: cmp       w0, #4
+  0x683d34: b.le      #0x683d78
+  0x683d38: ldr       x0, [sp, #0x28]
+  0x683d3c: ldr       x1, [x0, #0x18]
+  0x683d40: ldr       x0, [sp, #0x28]
+  0x683d44: ldrb      w0, [x0, #0x20]
+  0x683d48: mov       w2, w0
+  0x683d4c: ldr       x0, [sp, #0x28]
+  0x683d50: ldrb      w0, [x0, #0x21]
+  0x683d54: mov       w5, w0
+  0x683d58: mov       w4, w2
+  0x683d5c: mov       x3, x1
+  0x683d60: ldr       w2, [sp, #0x20]
+  0x683d64: adrp      x0, #0x80d000
+  0x683d68: add       x1, x0, #0x860
+  0x683d6c: adrp      x0, #0x80d000
+  0x683d70: add       x0, x0, #0x290
+  0x683d74: bl        #0x44ac00  ; printf(plt)
+  0x683d78: ldr       x0, [sp, #0x28]
+  0x683d7c: ldr       x1, [x0, #0x18]
+  0x683d80: ldr       x0, [sp, #0x28]
+  0x683d84: ldrb      w0, [x0, #0x20]
+  0x683d88: mov       w2, w0
+  0x683d8c: ldr       x0, [sp, #0x28]
+  0x683d90: ldrb      w0, [x0, #0x21]
+  0x683d94: mov       w5, w0
+  0x683d98: mov       w4, w2
+  0x683d9c: mov       x3, x1
+  0x683da0: ldr       w2, [sp, #0x20]
+  0x683da4: adrp      x0, #0x80d000
+  0x683da8: add       x1, x0, #0x2e8
+  0x683dac: adrp      x0, #0x80d000
+  0x683db0: add       x0, x0, #0x878
+  0x683db4: bl        #0x44a8f0  ; log_debug(plt)
+  0x683db8: ldr       x0, [sp, #0x50]
+  0x683dbc: cmp       x0, #0
+  0x683dc0: b.eq      #0x683684
+  0x683dc4: adrp      x0, #0x8b5000
+  0x683dc8: add       x0, x0, #0x7a0
+  0x683dcc: ldr       w0, [x0]
+  0x683dd0: cmp       w0, #4
+  0x683dd4: b.le      #0x683dec
+  0x683dd8: adrp      x0, #0x80d000
+  0x683ddc: add       x1, x0, #0x860
+  0x683de0: adrp      x0, #0x80d000
+  0x683de4: add       x0, x0, #0x330
+  0x683de8: bl        #0x44ac00  ; printf(plt)
+  0x683dec: adrp      x0, #0x80d000
+  0x683df0: add       x1, x0, #0x368
+  0x683df4: adrp      x0, #0x80d000
+  0x683df8: add       x0, x0, #0x878
+  0x683dfc: bl        #0x44a8f0  ; log_debug(plt)
+  0x683e00: ldr       x0, [sp, #0x50]
+  0x683e04: bl        #0x44be50  ; free(plt)
+  0x683e08: b         #0x683684  ; sub_683684
+  0x683e0c: stp       x29, x30, [sp, #-0x30]!
+  0x683e10: mov       x29, sp
+  0x683e14: str       x0, [sp, #0x18]
+  0x683e18: str       w1, [sp, #0x14]
+  0x683e1c: ldr       x0, [sp, #0x18]
+  0x683e20: str       x0, [sp, #0x28]
+  0x683e24: ldr       x0, [sp, #0x18]
+  0x683e28: cmp       x0, #0
+  0x683e2c: b.eq      #0x683e3c
+  0x683e30: ldr       w0, [sp, #0x14]
+  0x683e34: cmp       w0, #0x1f
+  0x683e38: b.hi      #0x683e90
+  0x683e3c: adrp      x0, #0x8b5000
+  0x683e40: add       x0, x0, #0x7a0
+  0x683e44: ldr       w0, [x0]
+  0x683e48: cmp       w0, #2
+  0x683e4c: b.le      #0x683e6c
+  0x683e50: mov       x3, #-1
+  0x683e54: mov       w2, #0x232
+  0x683e58: adrp      x0, #0x80d000
+  0x683e5c: add       x1, x0, #0x890
+  0x683e60: adrp      x0, #0x80d000
+  0x683e64: add       x0, x0, #0x390
+  0x683e68: bl        #0x44ac00  ; printf(plt)
+  0x683e6c: mov       x3, #-1
+  0x683e70: mov       w2, #0x232
+  0x683e74: adrp      x0, #0x80d000
+  0x683e78: add       x1, x0, #0x3f8
+  0x683e7c: adrp      x0, #0x80d000
+  0x683e80: add       x0, x0, #0x8a8
+  0x683e84: bl        #0x44ad40  ; log_warn(plt)
+  0x683e88: mov       w0, #-1
+
+=== callers of 0x66cf28 (sub_66cf28) ===
+  (none via direct bl)
+
+=== net_socket_peek_connection @ 0x66cee0 (size=0x200) ===
+  0x66cee0: b.le      #0x66cf00
+  0x66cee4: ldr       w3, [sp, #0x4c]
+  0x66cee8: ldr       x2, [sp, #0x28]
+  0x66ceec: adrp      x0, #0x802000
+  0x66cef0: add       x1, x0, #0xb30
+  0x66cef4: adrp      x0, #0x802000
+  0x66cef8: add       x0, x0, #0x678
+  0x66cefc: bl        #0x44ac00  ; printf(plt)
+  0x66cf00: ldr       w3, [sp, #0x4c]
+  0x66cf04: ldr       x2, [sp, #0x28]
+  0x66cf08: adrp      x0, #0x802000
+  0x66cf0c: add       x1, x0, #0x6a0
+  0x66cf10: adrp      x0, #0x802000
+  0x66cf14: add       x0, x0, #0xb50
+  0x66cf18: bl        #0x44b6f0  ; log_info(plt)
+  0x66cf1c: ldr       x0, [sp, #0x38]
+  0x66cf20: ldr       w0, [x0]
+  0x66cf24: ldr       x1, [sp, #0x28]
+  0x66cf28: bl        #0x66c058  ; net_socket_peek_readable_number
+  0x66cf2c: str       w0, [sp, #0x4c]
+  0x66cf30: ldr       w0, [sp, #0x4c]
+  0x66cf34: cmp       w0, #0
+  0x66cf38: b.gt      #0x66cffc
+  0x66cf3c: adrp      x0, #0x8b5000
+  0x66cf40: add       x0, x0, #0x7a0
+  0x66cf44: ldr       w0, [x0]
+  0x66cf48: cmp       w0, #4
+  0x66cf4c: b.le      #0x66cfa4
+  0x66cf50: ldr       x0, [sp, #0x38]
+  0x66cf54: add       x1, x0, #0xc
+  0x66cf58: ldr       x0, [sp, #0x38]
+  0x66cf5c: ldrh      w0, [x0, #0x4c]
+  0x66cf60: mov       w2, w0
+  0x66cf64: ldr       x0, [sp, #0x38]
+  0x66cf68: ldrh      w0, [x0, #0x8e]
+  0x66cf6c: mov       w3, w0
+  0x66cf70: ldr       x0, [sp, #0x38]
+  0x66cf74: ldr       w0, [x0]
+  0x66cf78: mov       w7, w0
+  0x66cf7c: ldr       w6, [sp, #0x4c]
+  0x66cf80: mov       w5, w3
+  0x66cf84: mov       w4, w2
+  0x66cf88: mov       x3, x1
+  0x66cf8c: ldr       x2, [sp, #0x28]
+  0x66cf90: adrp      x0, #0x802000
+  0x66cf94: add       x1, x0, #0xb30
+  0x66cf98: adrp      x0, #0x802000
+  0x66cf9c: add       x0, x0, #0x6c0
+  0x66cfa0: bl        #0x44ac00  ; printf(plt)
+  0x66cfa4: ldr       x0, [sp, #0x38]
+  0x66cfa8: add       x1, x0, #0xc
+  0x66cfac: ldr       x0, [sp, #0x38]
+  0x66cfb0: ldrh      w0, [x0, #0x4c]
+  0x66cfb4: mov       w2, w0
+  0x66cfb8: ldr       x0, [sp, #0x38]
+  0x66cfbc: ldrh      w0, [x0, #0x8e]
+  0x66cfc0: mov       w3, w0
+  0x66cfc4: ldr       x0, [sp, #0x38]
+  0x66cfc8: ldr       w0, [x0]
+  0x66cfcc: mov       w7, w0
+  0x66cfd0: ldr       w6, [sp, #0x4c]
+  0x66cfd4: mov       w5, w3
+  0x66cfd8: mov       w4, w2
+  0x66cfdc: mov       x3, x1
+  0x66cfe0: ldr       x2, [sp, #0x28]
+  0x66cfe4: adrp      x0, #0x802000
+  0x66cfe8: add       x1, x0, #0x710
+  0x66cfec: adrp      x0, #0x802000
+  0x66cff0: add       x0, x0, #0xb50
+  0x66cff4: bl        #0x44a8f0  ; log_debug(plt)
+  0x66cff8: b         #0x66d0b0  ; sub_66d0b0
+  0x66cffc: adrp      x0, #0x8b5000
+  0x66d000: add       x0, x0, #0x7a0
+  0x66d004: ldr       w0, [x0]
+  0x66d008: cmp       w0, #4
+  0x66d00c: b.le      #0x66d060
+  0x66d010: ldr       x0, [sp, #0x38]
+  0x66d014: add       x1, x0, #0xc
+  0x66d018: ldr       x0, [sp, #0x38]
+  0x66d01c: ldrh      w0, [x0, #0x4c]
+  0x66d020: mov       w2, w0
+  0x66d024: ldr       x0, [sp, #0x38]
+  0x66d028: ldrh      w0, [x0, #0x8e]
+  0x66d02c: mov       w3, w0
+  0x66d030: ldr       x0, [sp, #0x38]
+  0x66d034: ldr       w0, [x0]
+  0x66d038: mov       w6, w0
+  0x66d03c: mov       w5, w3
+  0x66d040: mov       w4, w2
+  0x66d044: mov       x3, x1
+  0x66d048: ldr       x2, [sp, #0x28]
+  0x66d04c: adrp      x0, #0x802000
+  0x66d050: add       x1, x0, #0xb30
+  0x66d054: adrp      x0, #0x802000
+  0x66d058: add       x0, x0, #0x750
+  0x66d05c: bl        #0x44ac00  ; printf(plt)
+  0x66d060: ldr       x0, [sp, #0x38]
+  0x66d064: add       x1, x0, #0xc
+  0x66d068: ldr       x0, [sp, #0x38]
+  0x66d06c: ldrh      w0, [x0, #0x4c]
+  0x66d070: mov       w2, w0
+  0x66d074: ldr       x0, [sp, #0x38]
+  0x66d078: ldrh      w0, [x0, #0x8e]
+  0x66d07c: mov       w3, w0
+  0x66d080: ldr       x0, [sp, #0x38]
+  0x66d084: ldr       w0, [x0]
+  0x66d088: mov       w6, w0
+  0x66d08c: mov       w5, w3
+  0x66d090: mov       w4, w2
+  0x66d094: mov       x3, x1
+  0x66d098: ldr       x2, [sp, #0x28]
+  0x66d09c: adrp      x0, #0x802000
+  0x66d0a0: add       x1, x0, #0x798
+  0x66d0a4: adrp      x0, #0x802000
+  0x66d0a8: add       x0, x0, #0xb50
+  0x66d0ac: bl        #0x44a8f0  ; log_debug(plt)
+  0x66d0b0: ldr       w0, [sp, #0x4c]
+  0x66d0b4: ldr       x19, [sp, #0x10]
+  0x66d0b8: ldp       x29, x30, [sp], #0x50
+  0x66d0bc: ret       
+  0x66d0c0: stp       x29, x30, [sp, #-0x20]!
+  0x66d0c4: mov       x29, sp
+  0x66d0c8: str       x0, [sp, #0x18]
+  0x66d0cc: str       x1, [sp, #0x10]
+  0x66d0d0: ldr       x0, [sp, #0x18]
+  0x66d0d4: cmp       x0, #0
+  0x66d0d8: b.ne      #0x66d124
+  0x66d0dc: adrp      x0, #0x8b5000

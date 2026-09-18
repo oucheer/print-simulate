@@ -1,0 +1,1281 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e175018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000148] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.021249] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.102884] Console: colour dummy device 80x25
+[    0.141980] ACPI: Core revision 20240827
+[    0.218689] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.219264] pid_max: default: 32768 minimum: 301
+[    0.298678] LSM: initializing lsm=lockdown,capability,landlock
+[    0.314195] landlock: Up and running.
+[    0.348059] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.348268] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.307949] rcu: Hierarchical SRCU implementation.
+[    1.308159] rcu: 	Max phase no-delay instances is 1000.
+[    1.366645] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    1.465433] Remapping and enabling EFI services.
+[    1.483181] smp: Bringing up secondary CPUs ...
+[    1.519034] Detected PIPT I-cache on CPU1
+[    1.526580] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    1.554650] smp: Brought up 1 node, 2 CPUs
+[    1.555010] SMP: Total of 2 processors activated.
+[    1.555114] CPU: All CPU(s) started at EL1
+[    1.555594] CPU features: detected: 32-bit EL0 Support
+[    1.555718] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    1.555816] CPU features: detected: Common not Private translations
+[    1.555829] CPU features: detected: CRC32 instructions
+[    1.556277] CPU features: detected: RCpc load-acquire (LDAPR)
+[    1.556380] CPU features: detected: LSE atomic instructions
+[    1.556394] CPU features: detected: Privileged Access Never
+[    1.556407] CPU features: detected: RAS Extension Support
+[    1.556540] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    1.588479] alternatives: applying system-wide alternatives
+[    1.685408] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    1.720724] Memory: 3996224K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193648K reserved, 0K cma-reserved)
+[    1.833241] devtmpfs: initialized
+[    1.887021] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    1.888191] 24304 pages in range for non-PLT usage
+[    1.888265] 515824 pages in range for PLT usage
+[    1.899638] pinctrl core: initialized pinctrl subsystem
+[    1.913353] SMBIOS 3.0.0 present.
+[    1.913710] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    1.914088] DMI: Memory slots populated: 1/1
+[    1.990666] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    2.039433] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    2.050145] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    2.052310] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    2.056710] audit: initializing netlink subsys (disabled)
+[    2.072813] audit: type=2000 audit(0.810:1): state=initialized audit_enabled=0 res=1
+[    2.103686] thermal_sys: Registered thermal governor 'step_wise'
+[    2.115034] cpuidle: using governor ladder
+[    2.123808] cpuidle: using governor menu
+[    2.137316] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    2.141511] ASID allocator initialised with 65536 entries
+[    2.146885] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    2.152775] Serial: AMBA PL011 UART driver
+[    2.203514] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    2.203575] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    2.203603] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    2.203615] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    2.203629] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    2.203638] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    2.203652] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    2.203662] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    2.319803] ACPI: Added _OSI(Module Device)
+[    2.319911] ACPI: Added _OSI(Processor Device)
+[    2.319928] ACPI: Added _OSI(Processor Aggregator Device)
+[    2.536678] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    2.713283] ACPI: Interpreter enabled
+[    2.713373] ACPI: Using GIC for interrupt routing
+[    2.720531] ACPI: MCFG table detected, 1 entries
+[    3.035075] ACPI: CPU0 has been hot-added
+[    3.076392] ACPI: CPU1 has been hot-added
+[    3.185302] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    3.200286] printk: legacy console [ttyAMA0] enabled
+[    3.605890] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    3.607416] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    3.608998] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    3.609457] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    3.615898] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    3.623472] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    3.653785] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    3.656490] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    3.672840] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    3.680226] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    3.696455] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    3.732302] PCI host bridge to bus 0000:00
+[    3.734558] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    3.735218] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    3.736417] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    3.738270] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    3.747683] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    3.802226] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    3.806026] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    3.806522] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    3.806904] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    3.819229] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    3.820316] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    3.820678] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    3.831752] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    3.839333] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    3.842311] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    3.843073] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    3.855869] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    3.856692] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    3.857101] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    3.858019] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    3.858428] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    3.871287] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    3.929791] iommu: Default domain type: Translated
+[    3.930213] iommu: DMA domain TLB invalidation policy: lazy mode
+[    4.020868] efivars: Registered efivars operations
+[    4.146690] clocksource: Switched to clocksource arch_sys_counter
+[    4.216739] VFS: Disk quotas dquot_6.6.0
+[    4.217590] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    4.268755] pnp: PnP ACPI init
+[    4.289122] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    4.294920] pnp: PnP ACPI: found 1 devices
+[    4.781827] NET: Registered PF_INET protocol family
+[    4.806691] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    5.557111] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    5.598161] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    5.599442] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    5.620355] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    5.622140] TCP: Hash tables configured (established 32768 bind 32768)
+[    5.640915] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    5.649440] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    5.650637] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    5.659404] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    5.667446] NET: Registered PF_XDP protocol family
+[    5.668697] PCI: CLS 0 bytes, default 64
+[    5.725653] kvm [1]: HYP mode not available
+[    5.751945] Unpacking initramfs...
+[    5.918313] Initialise system trusted keyrings
+[    5.966645] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[    6.309467] Key type asymmetric registered
+[    6.310156] Asymmetric key parser 'x509' registered
+[    6.321426] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    6.326865] io scheduler mq-deadline registered
+[    6.329677] io scheduler kyber registered
+[    6.333569] io scheduler bfq registered
+[    6.532106] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    6.537177] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    6.576693] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    6.738952] hv_vmbus: registering driver hyperv_keyboard
+[    6.804014] rtc-efi rtc-efi.0: registered as rtc0
+[    6.819813] rtc-efi rtc-efi.0: setting system clock to 2026-09-17T10:05:08 UTC (1789639508)
+[    6.839350] NET: Registered PF_INET6 protocol family
+[    6.930066] Segment Routing with IPv6
+[    6.933794] In-situ OAM (IOAM) with IPv6
+[    7.288406] registered taskstats version 1
+[    7.305637] Loading compiled-in X.509 certificates
+[    7.796784] Freeing initrd memory: 5272K
+[    8.437822] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    8.515536] Demotion targets for Node 0: null
+[    8.519200] Key type .fscrypt registered
+[    8.519620] Key type fscrypt-provisioning registered
+[    8.591667] clk: Disabling unused clocks
+[    8.598159] PM: genpd: Disabling unused power domains
+[    8.735728] Freeing unused kernel memory: 1920K
+[    8.739941] Run /init as init process
+[    9.370624] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    9.422887] Loading boot drivers...
+ * Loading boot drivers: [    9.566494] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    9.706218] Invalid ELF header magic: != ELF
+[    9.838563] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    9.897716] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    9.981995] Invalid ELF header magic: != ELF
+[   10.020718] Invalid ELF header magic: != ELF
+[   10.054508] Invalid ELF header magic: != ELF
+[   10.120186] Invalid ELF header magic: != ELF
+[   10.299911] Invalid ELF header magic: != ELF
+[   11.166482] Invalid ELF header magic: != ELF
+[   11.247246] e1000: Intel(R) PRO/1000 Network Driver
+[   11.247930] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   11.252067] ACPI: \_SB_.L001: Enabled at IRQ 36
+[   11.253192] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[   11.962787] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   11.964502] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[   13.176009] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: baked netdata_get_lpd_switch->mov w0,#1;ret
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+THP_ENABLED=always madvise [never]
+THP_DEFRAG=always defer defer+madvise madvise [never]
+[   27.856601] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 17 10:05 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 17 10:05 /tmp/virtual_hal.c
+=== VHAL: extract ===
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+-rwxr-xr-x 1 root root 17056 Sep 17 10:05 /lib/virtual_hal.so
+=== VHAL: done ===
+CACHE_WARMED
+MemTotal:        4007848 kB
+MemFree:         3944412 kB
+MemAvailable:    3936404 kB
+Buffers:            1156 kB
+SIMBOOT_PREP_DONE
+MFP_PID=499
+[   52.278975] random: crng init done
+GDBHOLD STARTED pid=511
+HOLD_OK=1
+[New LWP 501]
+[New LWP 502]
+[New LWP 503]
+[New LWP 504]
+POLL 10: N=11
+POLL 20: N=32
+POLL 30: N=50
+POLL 38: passed print_info_status_init (N=107)
+POLL_END N=107 tries=0
+GDBHOLD STOPPED N=128
+[New LWP 509]
+[New LWP 510]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffff8cf4e1f8 in fsync () from /lib64/libc.so.6
+HOLD armed
+Hardware watchpoint 1: *(unsigned int*)(0xa91370+0x7c)
+Quit
+LPD_OWNED fd=41 ino=87422 decport=45565
+LPD_SOCK_READY k=1
+SIMBOOT_LPD_PORT=45565
+SIMBOOT_LPD_PORTS=B1FD
+--- THREAD COUNT PRE-INJECT ---
+168
+--- THREAD NAMES (top30) ---
+178 mfp.afx
+1 pub_client
+--- PRE: THREADS (tid comm wchan) ---
+499 mfp.afx hrtimer_nanosleep
+501 pub_client 0
+502 mfp.afx 0
+503 mfp.afx hrtimer_nanosleep
+504 mfp.afx do_epoll_wait
+505 mfp.afx 0
+506 mfp.afx do_wait_intr_irq
+507 mfp.afx do_epoll_wait
+508 mfp.afx do_wait_intr_irq
+509 mfp.afx do_wait_intr_irq
+510 mfp.afx wait_for_partner
+562 mfp.afx do_select
+563 mfp.afx 0
+564 mfp.afx do_select
+565 mfp.afx hrtimer_nanosleep
+566 mfp.afx futex_wait_queue
+567 mfp.afx futex_wait_queue
+570 mfp.afx 0
+572 mfp.afx do_select
+573 mfp.afx do_select
+574 mfp.afx 0
+575 mfp.afx do_select
+588 mfp.afx 0
+589 mfp.afx do_select
+590 mfp.afx 0
+591 mfp.afx do_select
+592 mfp.afx hrtimer_nanosleep
+593 mfp.afx 0
+594 mfp.afx do_select
+595 mfp.afx inet_csk_accept
+596 mfp.afx 0
+598 mfp.afx 0
+600 mfp.afx do_select
+601 mfp.afx futex_wait_queue
+602 mfp.afx 0
+603 mfp.afx do_select
+605 mfp.afx 0
+606 mfp.afx do_select
+607 mfp.afx do_wait_intr_irq
+608 mfp.afx 0
+609 mfp.afx do_select
+610 mfp.afx 0
+611 mfp.afx 0
+612 mfp.afx do_select
+637 mfp.afx futex_wait_queue
+641 mfp.afx 0
+642 mfp.afx do_select
+643 mfp.afx do_select
+644 mfp.afx 0
+646 mfp.afx do_select
+648 mfp.afx 0
+649 mfp.afx do_select
+650 mfp.afx hrtimer_nanosleep
+652 mfp.afx futex_wait_queue
+653 mfp.afx futex_wait_queue
+654 mfp.afx futex_wait_queue
+655 mfp.afx futex_wait_queue
+656 mfp.afx futex_wait_queue
+657 mfp.afx futex_wait_queue
+664 mfp.afx 0
+666 mfp.afx do_select
+667 mfp.afx futex_wait_queue
+669 mfp.afx futex_wait_queue
+670 mfp.afx __arm64_sys_restart_syscall
+671 mfp.afx 0
+673 mfp.afx do_select
+674 mfp.afx futex_wait_queue
+675 mfp.afx futex_wait_queue
+676 mfp.afx futex_wait_queue
+677 mfp.afx futex_wait_queue
+681 mfp.afx futex_wait_queue
+682 mfp.afx futex_wait_queue
+683 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+687 mfp.afx hrtimer_nanosleep
+688 mfp.afx futex_wait_queue
+689 mfp.afx futex_wait_queue
+690 mfp.afx futex_wait_queue
+691 mfp.afx futex_wait_queue
+693 mfp.afx futex_wait_queue
+694 mfp.afx futex_wait_queue
+695 mfp.afx futex_wait_queue
+696 mfp.afx futex_wait_queue
+697 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx futex_wait_queue
+700 mfp.afx futex_wait_queue
+701 mfp.afx futex_wait_queue
+703 mfp.afx futex_wait_queue
+704 mfp.afx futex_wait_queue
+706 mfp.afx futex_wait_queue
+707 mfp.afx futex_wait_queue
+708 mfp.afx futex_wait_queue
+709 mfp.afx futex_wait_queue
+710 mfp.afx futex_wait_queue
+712 mfp.afx futex_wait_queue
+713 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+717 mfp.afx do_select
+718 mfp.afx futex_wait_queue
+719 mfp.afx 0
+720 mfp.afx do_select
+722 mfp.afx futex_wait_queue
+723 mfp.afx futex_wait_queue
+724 mfp.afx futex_wait_queue
+726 mfp.afx futex_wait_queue
+727 mfp.afx do_select
+728 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx futex_wait_queue
+732 mfp.afx futex_wait_queue
+733 mfp.afx futex_wait_queue
+734 mfp.afx 0
+735 mfp.afx do_select
+736 mfp.afx 0
+737 mfp.afx do_select
+738 mfp.afx futex_wait_queue
+741 mfp.afx 0
+742 mfp.afx 0
+743 mfp.afx hrtimer_nanosleep
+744 mfp.afx 0
+745 mfp.afx hrtimer_nanosleep
+746 mfp.afx hrtimer_nanosleep
+747 mfp.afx hrtimer_nanosleep
+748 mfp.afx futex_wait_queue
+749 mfp.afx 0
+750 mfp.afx do_select
+751 mfp.afx do_msgrcv
+759 mfp.afx futex_wait_queue
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx futex_wait_queue
+764 mfp.afx futex_wait_queue
+765 mfp.afx futex_wait_queue
+766 mfp.afx futex_wait_queue
+767 mfp.afx futex_wait_queue
+768 mfp.afx futex_wait_queue
+769 mfp.afx futex_wait_queue
+770 mfp.afx futex_wait_queue
+771 mfp.afx futex_wait_queue
+772 mfp.afx futex_wait_queue
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+780 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx futex_wait_queue
+789 mfp.afx futex_wait_queue
+790 mfp.afx futex_wait_queue
+791 mfp.afx futex_wait_queue
+792 mfp.afx futex_wait_queue
+793 mfp.afx futex_wait_queue
+794 mfp.afx futex_wait_queue
+795 mfp.afx futex_wait_queue
+796 mfp.afx futex_wait_queue
+797 mfp.afx futex_wait_queue
+798 mfp.afx futex_wait_queue
+799 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+801 mfp.afx futex_wait_queue
+802 mfp.afx futex_wait_queue
+803 mfp.afx futex_wait_queue
+804 mfp.afx futex_wait_queue
+806 mfp.afx futex_wait_queue
+807 mfp.afx 0
+808 mfp.afx futex_wait_queue
+809 mfp.afx 0
+810 mfp.afx do_select
+816 mfp.afx futex_wait_queue
+817 mfp.afx futex_wait_queue
+818 mfp.afx hrtimer_nanosleep
+--- PRE: WCHAN HIST ---
+    111 futex_wait_queue
+     34 0
+     29 do_select
+     10 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 inet_csk_accept
+      1 do_msgrcv
+      1 do_mprotect_pkey
+      1 __arm64_sys_restart_syscall
+--- SOCKET FDS ---
+lrwx------ 1 root root 64 Sep 17 10:07 21 -> socket:[69025]
+lrwx------ 1 root root 64 Sep 17 10:07 22 -> socket:[109319]
+lrwx------ 1 root root 64 Sep 17 10:07 25 -> socket:[69026]
+lrwx------ 1 root root 64 Sep 17 10:07 27 -> socket:[69512]
+lrwx------ 1 root root 64 Sep 17 10:07 28 -> socket:[69513]
+lrwx------ 1 root root 64 Sep 17 10:07 31 -> socket:[69824]
+lrwx------ 1 root root 64 Sep 17 10:07 32 -> socket:[69825]
+lrwx------ 1 root root 64 Sep 17 10:07 33 -> socket:[84409]
+lrwx------ 1 root root 64 Sep 17 10:07 34 -> socket:[84406]
+lrwx------ 1 root root 64 Sep 17 10:07 35 -> socket:[84407]
+lrwx------ 1 root root 64 Sep 17 10:07 37 -> socket:[84410]
+lrwx------ 1 root root 64 Sep 17 10:07 39 -> socket:[87247]
+lrwx------ 1 root root 64 Sep 17 10:07 40 -> socket:[87248]
+lrwx------ 1 root root 64 Sep 17 10:07 41 -> socket:[87422]
+lrwx------ 1 root root 64 Sep 17 10:07 42 -> socket:[93891]
+lrwx------ 1 root root 64 Sep 17 10:07 43 -> socket:[87458]
+lrwx------ 1 root root 64 Sep 17 10:07 44 -> socket:[87459]
+lrwx------ 1 root root 64 Sep 17 10:07 45 -> socket:[87610]
+lrwx------ 1 root root 64 Sep 17 10:07 46 -> socket:[87611]
+lrwx------ 1 root root 64 Sep 17 10:07 47 -> socket:[87875]
+lrwx------ 1 root root 64 Sep 17 10:07 48 -> socket:[87876]
+lrwx------ 1 root root 64 Sep 17 10:07 49 -> socket:[88131]
+lrwx------ 1 root root 64 Sep 17 10:07 50 -> socket:[88132]
+lrwx------ 1 root root 64 Sep 17 10:07 51 -> socket:[84433]
+lrwx------ 1 root root 64 Sep 17 10:07 52 -> socket:[84434]
+lrwx------ 1 root root 64 Sep 17 10:07 54 -> socket:[93348]
+lrwx------ 1 root root 64 Sep 17 10:07 55 -> socket:[93349]
+lrwx------ 1 root root 64 Sep 17 10:07 57 -> socket:[93351]
+lrwx------ 1 root root 64 Sep 17 10:07 58 -> socket:[93352]
+lrwx------ 1 root root 64 Sep 17 10:07 59 -> socket:[93354]
+lrwx------ 1 root root 64 Sep 17 10:07 60 -> socket:[93355]
+lrwx------ 1 root root 64 Sep 17 10:07 61 -> socket:[93892]
+lrwx------ 1 root root 64 Sep 17 10:07 65 -> socket:[104087]
+lrwx------ 1 root root 64 Sep 17 10:07 66 -> socket:[104088]
+lrwx------ 1 root root 64 Sep 17 10:07 69 -> socket:[104090]
+lrwx------ 1 root root 64 Sep 17 10:07 70 -> socket:[104091]
+lrwx------ 1 root root 64 Sep 17 10:07 71 -> socket:[104092]
+lrwx------ 1 root root 64 Sep 17 10:07 72 -> socket:[104093]
+lrwx------ 1 root root 64 Sep 17 10:07 73 -> socket:[106145]
+lrwx------ 1 root root 64 Sep 17 10:07 74 -> socket:[106146]
+lrwx------ 1 root root 64 Sep 17 10:08 75 -> socket:[109320]
+lrwx------ 1 root root 64 Sep 17 10:08 77 -> socket:[109695]
+lrwx------ 1 root root 64 Sep 17 10:08 78 -> socket:[109696]
+lrwx------ 1 root root 64 Sep 17 10:08 79 -> socket:[109698]
+lrwx------ 1 root root 64 Sep 17 10:08 80 -> socket:[109699]
+lrwx------ 1 root root 64 Sep 17 10:08 81 -> socket:[109701]
+lrwx------ 1 root root 64 Sep 17 10:08 82 -> socket:[109702]
+TRACE1 GDB STARTED pid=841
+READY FOR INJECT
+[  317.135066] hrtimer: interrupt took 23519200 ns
+--- TRACE1 AFTER INJECT ---
+206 /tmp/gdbtrace.out
+TRACE1_HITS=0
+[New LWP 824]
+[New LWP 825]
+[New LWP 826]
+[New LWP 827]
+[New LWP 828]
+[New LWP 829]
+[New LWP 830]
+[New LWP 831]
+[New LWP 838]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffff8cf21ae0 in clock_nanosleep () from /lib64/libc.so.6
+Breakpoint 1 at 0x683e0c: file net/lpd/lpd.c, line 560.
+Breakpoint 2 at 0x6831e8: file net/lpd/lpd.c, line 360.
+Breakpoint 3 at 0x6830a4: file net/lpd/lpd.c, line 340.
+Breakpoint 4 at 0x68236c: file net/lpd/lpd.c, line 221.
+Breakpoint 5 at 0x68365c: file net/lpd/lpd.c, line 421.
+Breakpoint 6 at 0x683510: file net/lpd/lpd.c, line 400.
+Breakpoint 7 at 0x66c12c: file net/common/netsock.c, line 398.
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+--- ALIVE ---
+196
+--- PORTS POST ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 00000000:B1FD 00000000:0000 0A 00000000:00000002 00:00000000 00000000     0        0 87422 3 0000000033ecd497 100 0 0 10 0                     
+   1: 0F02000A:B1FD 0202000A:CC7F 08 00000000:00000005 00:00000000 00000000     0        0 0 1 000000004d995804 186 4 28 10 -1                       
+   2: 0F02000A:B1FD 0202000A:F636 08 00000000:00000002 00:00000000 00000000     0        0 113939 1 0000000093afc657 186 4 28 10 -1                  
+   3: 0F02000A:B1FD 0202000A:E2EA 08 00000000:00000005 00:00000000 00000000     0        0 0 1 000000000d3801d7 186 4 28 10 -1                       
+--- LPD OWNED POST ---
+LPD_OWNED fd=41 ino=87422 decport=45565
+--- THREADS POST-INJECT ---
+--- POST: THREADS (tid comm wchan) ---
+499 mfp.afx hrtimer_nanosleep
+501 pub_client 0
+502 mfp.afx 0
+503 mfp.afx 0
+504 mfp.afx do_epoll_wait
+505 mfp.afx 0
+506 mfp.afx do_wait_intr_irq
+507 mfp.afx do_epoll_wait
+508 mfp.afx do_wait_intr_irq
+509 mfp.afx do_wait_intr_irq
+510 mfp.afx wait_for_partner
+562 mfp.afx do_select
+563 mfp.afx 0
+564 mfp.afx do_select
+565 mfp.afx futex_wait_queue
+566 mfp.afx futex_wait_queue
+567 mfp.afx futex_wait_queue
+570 mfp.afx 0
+572 mfp.afx do_select
+573 mfp.afx do_select
+574 mfp.afx 0
+575 mfp.afx do_select
+588 mfp.afx 0
+589 mfp.afx do_select
+590 mfp.afx 0
+591 mfp.afx do_select
+592 mfp.afx 0
+593 mfp.afx 0
+594 mfp.afx do_select
+595 mfp.afx futex_wait_queue
+596 mfp.afx 0
+598 mfp.afx 0
+600 mfp.afx do_select
+601 mfp.afx futex_wait_queue
+602 mfp.afx 0
+603 mfp.afx do_select
+605 mfp.afx 0
+606 mfp.afx do_select
+607 mfp.afx do_wait_intr_irq
+608 mfp.afx 0
+609 mfp.afx do_select
+610 mfp.afx hrtimer_nanosleep
+611 mfp.afx 0
+612 mfp.afx do_select
+637 mfp.afx futex_wait_queue
+641 mfp.afx 0
+642 mfp.afx do_select
+643 mfp.afx do_select
+644 mfp.afx 0
+646 mfp.afx do_select
+648 mfp.afx 0
+649 mfp.afx do_select
+650 mfp.afx hrtimer_nanosleep
+652 mfp.afx futex_wait_queue
+653 mfp.afx futex_wait_queue
+654 mfp.afx futex_wait_queue
+655 mfp.afx futex_wait_queue
+656 mfp.afx futex_wait_queue
+657 mfp.afx futex_wait_queue
+664 mfp.afx 0
+666 mfp.afx do_select
+667 mfp.afx futex_wait_queue
+669 mfp.afx futex_wait_queue
+670 mfp.afx __arm64_sys_restart_syscall
+671 mfp.afx 0
+673 mfp.afx do_select
+674 mfp.afx futex_wait_queue
+675 mfp.afx futex_wait_queue
+676 mfp.afx futex_wait_queue
+677 mfp.afx futex_wait_queue
+681 mfp.afx futex_wait_queue
+682 mfp.afx futex_wait_queue
+683 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+687 mfp.afx hrtimer_nanosleep
+688 mfp.afx futex_wait_queue
+689 mfp.afx futex_wait_queue
+690 mfp.afx futex_wait_queue
+691 mfp.afx futex_wait_queue
+693 mfp.afx futex_wait_queue
+694 mfp.afx futex_wait_queue
+695 mfp.afx futex_wait_queue
+696 mfp.afx futex_wait_queue
+697 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx futex_wait_queue
+700 mfp.afx futex_wait_queue
+701 mfp.afx futex_wait_queue
+703 mfp.afx futex_wait_queue
+704 mfp.afx futex_wait_queue
+706 mfp.afx futex_wait_queue
+707 mfp.afx futex_wait_queue
+708 mfp.afx futex_wait_queue
+709 mfp.afx futex_wait_queue
+710 mfp.afx futex_wait_queue
+712 mfp.afx futex_wait_queue
+713 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+717 mfp.afx do_select
+718 mfp.afx futex_wait_queue
+719 mfp.afx 0
+720 mfp.afx do_select
+722 mfp.afx futex_wait_queue
+723 mfp.afx futex_wait_queue
+724 mfp.afx futex_wait_queue
+726 mfp.afx futex_wait_queue
+727 mfp.afx do_select
+728 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx futex_wait_queue
+732 mfp.afx futex_wait_queue
+733 mfp.afx futex_wait_queue
+734 mfp.afx 0
+735 mfp.afx do_select
+736 mfp.afx 0
+737 mfp.afx do_select
+738 mfp.afx futex_wait_queue
+741 mfp.afx do_mprotect_pkey
+742 mfp.afx 0
+743 mfp.afx hrtimer_nanosleep
+744 mfp.afx hrtimer_nanosleep
+745 mfp.afx hrtimer_nanosleep
+746 mfp.afx hrtimer_nanosleep
+747 mfp.afx futex_wait_queue
+748 mfp.afx futex_wait_queue
+749 mfp.afx 0
+750 mfp.afx do_select
+751 mfp.afx do_msgrcv
+759 mfp.afx futex_wait_queue
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx futex_wait_queue
+764 mfp.afx futex_wait_queue
+765 mfp.afx futex_wait_queue
+766 mfp.afx futex_wait_queue
+767 mfp.afx futex_wait_queue
+768 mfp.afx futex_wait_queue
+769 mfp.afx futex_wait_queue
+770 mfp.afx futex_wait_queue
+771 mfp.afx futex_wait_queue
+772 mfp.afx futex_wait_queue
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+780 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx futex_wait_queue
+789 mfp.afx futex_wait_queue
+790 mfp.afx futex_wait_queue
+791 mfp.afx futex_wait_queue
+792 mfp.afx futex_wait_queue
+793 mfp.afx futex_wait_queue
+794 mfp.afx futex_wait_queue
+795 mfp.afx futex_wait_queue
+796 mfp.afx futex_wait_queue
+797 mfp.afx futex_wait_queue
+798 mfp.afx futex_wait_queue
+799 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+801 mfp.afx futex_wait_queue
+802 mfp.afx futex_wait_queue
+803 mfp.afx futex_wait_queue
+804 mfp.afx futex_wait_queue
+806 mfp.afx futex_wait_queue
+807 mfp.afx 0
+808 mfp.afx futex_wait_queue
+809 mfp.afx 0
+810 mfp.afx do_select
+816 mfp.afx futex_wait_queue
+817 mfp.afx futex_wait_queue
+818 mfp.afx hrtimer_nanosleep
+819 mfp.afx futex_wait_queue
+820 mfp.afx futex_wait_queue
+821 mfp.afx futex_wait_queue
+822 mfp.afx futex_wait_queue
+823 mfp.afx 0
+824 mfp.afx do_select
+825 mfp.afx 0
+826 mfp.afx do_select
+827 mfp.afx futex_wait_queue
+828 mfp.afx 0
+829 mfp.afx futex_wait_queue
+830 mfp.afx 0
+831 mfp.afx do_select
+838 mfp.afx do_select
+--- POST: WCHAN HIST ---
+    112 futex_wait_queue
+     38 0
+     30 do_select
+      6 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 do_msgrcv
+      1 do_mprotect_pkey
+      1 __arm64_sys_restart_syscall
+--- PLOG DIR ---
+total 4
+drwxrwxrwt  4 root root  120 Sep 17 10:05 .
+drwxr-xr-x 33 root root 4096 Sep 17 10:05 ..
+-rw-r--r--  1 root root    0 Sep 17 10:05 all_topic_0.log
+drwxr--r--  2 root root   40 Sep 17 10:05 export
+-rw-r--r--  1 root root    0 Sep 17 10:05 pol_log
+drwxr--r--  2 root root   40 Sep 17 10:05 upgrade
+PLOG_FILE /tslog/all_topic_0.log size=0
+PLOG_FILE /tslog/pol_log size=0
+--- PLOG JOB GREP ---
+PLOG_GREP all_topic_0.log
+PLOG_GREP pol_log
+--- PLOG UPLOAD ---
+PLOG_UP all_topic_0.log rc=0
+PLOG_UP pol_log rc=0
+--- VHAL LOG ---
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+VHAL_UPLOAD_RC=0
+--- AFTER TRACE1 KILL threads=196 ---
+--- ALL BT (filtered) ---
+ALLBT_RC=0 lines=2
+1:warning: process 499 is already traced by process 841
+ALLBT_UP_RC=0
+--- POSTBT: THREADS (tid comm wchan) ---
+499 mfp.afx ptrace_stop.part.0
+501 pub_client ptrace_stop.part.0
+502 mfp.afx ptrace_stop.part.0
+503 mfp.afx ptrace_stop.part.0
+504 mfp.afx ptrace_stop.part.0
+505 mfp.afx ptrace_stop.part.0
+506 mfp.afx ptrace_stop.part.0
+507 mfp.afx ptrace_stop.part.0
+508 mfp.afx ptrace_stop.part.0
+509 mfp.afx ptrace_stop.part.0
+510 mfp.afx ptrace_stop.part.0
+562 mfp.afx ptrace_stop.part.0
+563 mfp.afx ptrace_stop.part.0
+564 mfp.afx ptrace_stop.part.0
+565 mfp.afx ptrace_stop.part.0
+566 mfp.afx ptrace_stop.part.0
+567 mfp.afx ptrace_stop.part.0
+570 mfp.afx ptrace_stop.part.0
+572 mfp.afx ptrace_stop.part.0
+573 mfp.afx ptrace_stop.part.0
+574 mfp.afx ptrace_stop.part.0
+575 mfp.afx ptrace_stop.part.0
+588 mfp.afx ptrace_stop.part.0
+589 mfp.afx ptrace_stop.part.0
+590 mfp.afx ptrace_stop.part.0
+591 mfp.afx ptrace_stop.part.0
+592 mfp.afx ptrace_stop.part.0
+593 mfp.afx ptrace_stop.part.0
+594 mfp.afx ptrace_stop.part.0
+595 mfp.afx ptrace_stop.part.0
+596 mfp.afx ptrace_stop.part.0
+598 mfp.afx ptrace_stop.part.0
+600 mfp.afx ptrace_stop.part.0
+601 mfp.afx ptrace_stop.part.0
+602 mfp.afx ptrace_stop.part.0
+603 mfp.afx ptrace_stop.part.0
+605 mfp.afx ptrace_stop.part.0
+606 mfp.afx ptrace_stop.part.0
+607 mfp.afx ptrace_stop.part.0
+608 mfp.afx ptrace_stop.part.0
+609 mfp.afx ptrace_stop.part.0
+610 mfp.afx ptrace_stop.part.0
+611 mfp.afx ptrace_stop.part.0
+612 mfp.afx ptrace_stop.part.0
+637 mfp.afx ptrace_stop.part.0
+641 mfp.afx ptrace_stop.part.0
+642 mfp.afx ptrace_stop.part.0
+643 mfp.afx ptrace_stop.part.0
+644 mfp.afx ptrace_stop.part.0
+646 mfp.afx ptrace_stop.part.0
+648 mfp.afx ptrace_stop.part.0
+649 mfp.afx ptrace_stop.part.0
+650 mfp.afx ptrace_stop.part.0
+652 mfp.afx ptrace_stop.part.0
+653 mfp.afx ptrace_stop.part.0
+654 mfp.afx ptrace_stop.part.0
+655 mfp.afx ptrace_stop.part.0
+656 mfp.afx ptrace_stop.part.0
+657 mfp.afx ptrace_stop.part.0
+664 mfp.afx ptrace_stop.part.0
+666 mfp.afx ptrace_stop.part.0
+667 mfp.afx ptrace_stop.part.0
+669 mfp.afx ptrace_stop.part.0
+670 mfp.afx ptrace_stop.part.0
+671 mfp.afx 0
+673 mfp.afx ptrace_stop.part.0
+674 mfp.afx ptrace_stop.part.0
+675 mfp.afx ptrace_stop.part.0
+676 mfp.afx ptrace_stop.part.0
+677 mfp.afx ptrace_stop.part.0
+681 mfp.afx ptrace_stop.part.0
+682 mfp.afx ptrace_stop.part.0
+683 mfp.afx ptrace_stop.part.0
+685 mfp.afx ptrace_stop.part.0
+687 mfp.afx ptrace_stop.part.0
+688 mfp.afx ptrace_stop.part.0
+689 mfp.afx ptrace_stop.part.0
+690 mfp.afx ptrace_stop.part.0
+691 mfp.afx ptrace_stop.part.0
+693 mfp.afx ptrace_stop.part.0
+694 mfp.afx ptrace_stop.part.0
+695 mfp.afx ptrace_stop.part.0
+696 mfp.afx ptrace_stop.part.0
+697 mfp.afx ptrace_stop.part.0
+698 mfp.afx ptrace_stop.part.0
+699 mfp.afx ptrace_stop.part.0
+700 mfp.afx ptrace_stop.part.0
+701 mfp.afx ptrace_stop.part.0
+703 mfp.afx ptrace_stop.part.0
+704 mfp.afx ptrace_stop.part.0
+706 mfp.afx ptrace_stop.part.0
+707 mfp.afx ptrace_stop.part.0
+708 mfp.afx ptrace_stop.part.0
+709 mfp.afx ptrace_stop.part.0
+710 mfp.afx ptrace_stop.part.0
+712 mfp.afx ptrace_stop.part.0
+713 mfp.afx ptrace_stop.part.0
+715 mfp.afx ptrace_stop.part.0
+717 mfp.afx ptrace_stop.part.0
+718 mfp.afx ptrace_stop.part.0
+719 mfp.afx ptrace_stop.part.0
+720 mfp.afx ptrace_stop.part.0
+722 mfp.afx ptrace_stop.part.0
+723 mfp.afx ptrace_stop.part.0
+724 mfp.afx ptrace_stop.part.0
+726 mfp.afx ptrace_stop.part.0
+727 mfp.afx ptrace_stop.part.0
+728 mfp.afx ptrace_stop.part.0
+730 mfp.afx ptrace_stop.part.0
+731 mfp.afx ptrace_stop.part.0
+732 mfp.afx ptrace_stop.part.0
+733 mfp.afx ptrace_stop.part.0
+734 mfp.afx ptrace_stop.part.0
+735 mfp.afx ptrace_stop.part.0
+736 mfp.afx ptrace_stop.part.0
+737 mfp.afx ptrace_stop.part.0
+738 mfp.afx ptrace_stop.part.0
+741 mfp.afx ptrace_stop.part.0
+742 mfp.afx ptrace_stop.part.0
+743 mfp.afx ptrace_stop.part.0
+744 mfp.afx ptrace_stop.part.0
+745 mfp.afx ptrace_stop.part.0
+746 mfp.afx ptrace_stop.part.0
+747 mfp.afx ptrace_stop.part.0
+748 mfp.afx ptrace_stop.part.0
+749 mfp.afx ptrace_stop.part.0
+750 mfp.afx ptrace_stop.part.0
+751 mfp.afx ptrace_stop.part.0
+759 mfp.afx ptrace_stop.part.0
+760 mfp.afx ptrace_stop.part.0
+761 mfp.afx ptrace_stop.part.0
+762 mfp.afx ptrace_stop.part.0
+763 mfp.afx ptrace_stop.part.0
+764 mfp.afx ptrace_stop.part.0
+765 mfp.afx ptrace_stop.part.0
+766 mfp.afx ptrace_stop.part.0
+767 mfp.afx ptrace_stop.part.0
+768 mfp.afx ptrace_stop.part.0
+769 mfp.afx ptrace_stop.part.0
+770 mfp.afx ptrace_stop.part.0
+771 mfp.afx ptrace_stop.part.0
+772 mfp.afx ptrace_stop.part.0
+773 mfp.afx ptrace_stop.part.0
+774 mfp.afx ptrace_stop.part.0
+775 mfp.afx ptrace_stop.part.0
+776 mfp.afx ptrace_stop.part.0
+777 mfp.afx ptrace_stop.part.0
+778 mfp.afx ptrace_stop.part.0
+779 mfp.afx ptrace_stop.part.0
+780 mfp.afx ptrace_stop.part.0
+781 mfp.afx ptrace_stop.part.0
+782 mfp.afx ptrace_stop.part.0
+783 mfp.afx ptrace_stop.part.0
+784 mfp.afx ptrace_stop.part.0
+785 mfp.afx ptrace_stop.part.0
+786 mfp.afx ptrace_stop.part.0
+787 mfp.afx ptrace_stop.part.0
+788 mfp.afx ptrace_stop.part.0
+789 mfp.afx ptrace_stop.part.0
+790 mfp.afx ptrace_stop.part.0
+791 mfp.afx ptrace_stop.part.0
+792 mfp.afx ptrace_stop.part.0
+793 mfp.afx ptrace_stop.part.0
+794 mfp.afx ptrace_stop.part.0
+795 mfp.afx ptrace_stop.part.0
+796 mfp.afx ptrace_stop.part.0
+797 mfp.afx ptrace_stop.part.0
+798 mfp.afx ptrace_stop.part.0
+799 mfp.afx ptrace_stop.part.0
+800 mfp.afx ptrace_stop.part.0
+801 mfp.afx ptrace_stop.part.0
+802 mfp.afx ptrace_stop.part.0
+803 mfp.afx ptrace_stop.part.0
+804 mfp.afx ptrace_stop.part.0
+806 mfp.afx ptrace_stop.part.0
+807 mfp.afx ptrace_stop.part.0
+808 mfp.afx ptrace_stop.part.0
+809 mfp.afx ptrace_stop.part.0
+810 mfp.afx ptrace_stop.part.0
+816 mfp.afx ptrace_stop.part.0
+817 mfp.afx ptrace_stop.part.0
+818 mfp.afx ptrace_stop.part.0
+819 mfp.afx ptrace_stop.part.0
+820 mfp.afx ptrace_stop.part.0
+821 mfp.afx ptrace_stop.part.0
+822 mfp.afx ptrace_stop.part.0
+823 mfp.afx ptrace_stop.part.0
+824 mfp.afx ptrace_stop.part.0
+825 mfp.afx ptrace_stop.part.0
+826 mfp.afx ptrace_stop.part.0
+827 mfp.afx ptrace_stop.part.0
+828 mfp.afx ptrace_stop.part.0
+829 mfp.afx ptrace_stop.part.0
+830 mfp.afx ptrace_stop.part.0
+831 mfp.afx ptrace_stop.part.0
+838 mfp.afx ptrace_stop.part.0
+--- POSTBT: WCHAN HIST ---
+    195 ptrace_stop.part.0
+      1 0
+--- TRACE2 ---
+16 /tmp/gdbtrace2.out
+warning: process 499 is already traced by process 841
+ptrace: Operation not permitted.
+Breakpoint 1 at 0x6838f4
+Breakpoint 2 at 0x676ec4
+Breakpoint 3 at 0x61fbf8
+Breakpoint 4 at 0x74c960
+Breakpoint 5 at 0x74c38c
+Breakpoint 6 at 0x6b7570
+Breakpoint 7 at 0x6b6adc
+Breakpoint 8 at 0x6b6b64
+Breakpoint 9 at 0x6b7060
+Breakpoint 10 at 0x6b740c
+Breakpoint 11 at 0x6b7500
+Breakpoint 12 at 0x6b7158
+/tmp/gdbtrace2.txt:78: Error in sourced command file:
+The program is not being run.
+--- CMD REG TABLE (post) ---
+[New LWP 803]
+[New LWP 804]
+[New LWP 806]
+[New LWP 807]
+[New LWP 808]
+[New LWP 809]
+[New LWP 810]
+[New LWP 816]
+[New LWP 817]
+[New LWP 818]
+[New LWP 819]
+[New LWP 820]
+[New LWP 821]
+[New LWP 822]
+[New LWP 823]
+[New LWP 824]
+[New LWP 825]
+[New LWP 826]
+[New LWP 827]
+[New LWP 828]
+[New LWP 829]
+[New LWP 830]
+[New LWP 831]
+[New LWP 838]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffff8cf21ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+node=0x2dff0d00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x2dff0a30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x2dffae10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x2dffae40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x2dffdaf0 cmd=0 cb=0x73b71c arg=(nil)
+node=0x2dffd4a0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x2dffd950 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x2dffff40 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x2e024050 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x2e024080 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x2e0cd550 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x2e0f74c0 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x2e10b6c0 cmd=0xb cb=0x678d20 arg=0x2e0f7730
+node=0x2e10b6f0 cmd=0x10 cb=0x679120 arg=0x2e0f7730
+node=0x2e1620b0 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x2dff0d00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x2dff0a30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x2dffae10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x2dffae40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x2dffdaf0 cmd=0 cb=0x73b71c arg=(nil)
+node=0x2dffd4a0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x2dffd950 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x2dffff40 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x2e024050 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x2e024080 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x2e0cd550 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x2e0f74c0 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x2e10b6c0 cmd=0xb cb=0x678d20 arg=0x2e0f7730
+node=0x2e10b6f0 cmd=0x10 cb=0x679120 arg=0x2e0f7730
+node=0x2e1620b0 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x2dff0d00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x2dff0a30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x2dffae10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x2dffae40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x2dffdaf0 cmd=0 cb=0x73b71c arg=(nil)
+node=0x2dffd4a0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x2dffd950 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x2dffff40 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x2e024050 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x2e024080 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x2e0cd550 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x2e0f74c0 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x2e10b6c0 cmd=0xb cb=0x678d20 arg=0x2e0f7730
+node=0x2e10b6f0 cmd=0x10 cb=0x679120 arg=0x2e0f7730
+node=0x2e1620b0 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x2dff0d00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x2dff0a30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x2dffae10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x2dffae40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x2dffdaf0 cmd=0 cb=0x73b71c arg=(nil)
+node=0x2dffd4a0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x2dffd950 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x2dffff40 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x2e024050 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x2e024080 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x2e0cd550 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x2e0f74c0 cmd=0x1 cb=0x722310 arg=(nil)
+[Inferior 1 (process 499) detached]
+--- HALD LOG ---
+2147483648 hal_daemon process plog lib init 
+--- PLOGD LOG ---
+--- PLOG FINAL GREP ---
+PLOG_FINAL all_topic_0.log
+PLOG_FINAL pol_log
+--- POST PORTS ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 00000000:B1FD 00000000:0000 0A 00000000:00000002 00:00000000 00000000     0        0 87422 3 0000000033ecd497 100 0 0 10 0                     
+   1: 0F02000A:B1FD 0202000A:CC7F 08 00000000:00000005 00:00000000 00000000     0        0 0 1 000000004d995804 186 4 28 10 -1                       
+   2: 0F02000A:B1FD 0202000A:F636 08 00000000:00000002 00:00000000 00000000     0        0 113939 1 0000000093afc657 186 4 28 10 -1                  
+   3: 0F02000A:B1FD 0202000A:E2EA 08 00000000:00000005 00:00000000 00000000     0        0 0 1 000000000d3801d7 186 4 28 10 -1                       

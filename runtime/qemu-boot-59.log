@@ -1,0 +1,688 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 000BFDB6000 start failed: 00000001
+Error: Image at 000BFD6D000 start failed: Not Found
+Error: Image at 000BFCBA000 start failed: Unsupported
+Error: Image at 000BFB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0xbfed0000 MEMATTR=0xbe176018 ACPI 2.0=0xbcb43018 INITRD=0xbcb40f18 MEMRESERVE=0xbcb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000BCB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x00000000BCB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x00000000BCB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BCB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x00000000BCB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x00000000BCB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x00000000BCB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x00000000BCB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x00000000BCB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x00000000BCB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x00000000BCB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0xbf855b80-0xbf857fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000bc76ffff]
+[    0.000000]   node   0: [mem 0x00000000bc770000-0x00000000bcb3ffff]
+[    0.000000]   node   0: [mem 0x00000000bcb40000-0x00000000bfe1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfe20000-0x00000000bfeaffff]
+[    0.000000]   node   0: [mem 0x00000000bfeb0000-0x00000000bfebffff]
+[    0.000000]   node   0: [mem 0x00000000bfec0000-0x00000000bffdffff]
+[    0.000000]   node   0: [mem 0x00000000bffe0000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 524288
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 2MB
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000bf2b4000-0x00000000bf4b4000] (2MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000141] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.011422] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.055900] Console: colour dummy device 80x25
+[    0.087012] ACPI: Core revision 20240827
+[    0.099839] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.100155] pid_max: default: 32768 minimum: 301
+[    0.116367] LSM: initializing lsm=lockdown,capability,landlock
+[    0.127054] landlock: Up and running.
+[    0.136625] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.136780] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.332495] rcu: Hierarchical SRCU implementation.
+[    0.332637] rcu: 	Max phase no-delay instances is 1000.
+[    0.340421] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.355173] Remapping and enabling EFI services.
+[    0.373117] smp: Bringing up secondary CPUs ...
+[    0.391724] Detected PIPT I-cache on CPU1
+[    0.393800] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.404927] smp: Brought up 1 node, 2 CPUs
+[    0.405040] SMP: Total of 2 processors activated.
+[    0.405122] CPU: All CPU(s) started at EL1
+[    0.405546] CPU features: detected: 32-bit EL0 Support
+[    0.405644] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.405769] CPU features: detected: Common not Private translations
+[    0.405780] CPU features: detected: CRC32 instructions
+[    0.406177] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.406246] CPU features: detected: LSE atomic instructions
+[    0.406258] CPU features: detected: Privileged Access Never
+[    0.406265] CPU features: detected: RAS Extension Support
+[    0.406337] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.433336] alternatives: applying system-wide alternatives
+[    0.478284] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.532538] Memory: 2003132K/2097152K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 89464K reserved, 0K cma-reserved)
+[    0.620585] devtmpfs: initialized
+[    0.679779] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.681862] 24304 pages in range for non-PLT usage
+[    0.681989] 515824 pages in range for PLT usage
+[    0.690571] pinctrl core: initialized pinctrl subsystem
+[    0.704577] SMBIOS 3.0.0 present.
+[    0.705192] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.705828] DMI: Memory slots populated: 1/1
+[    0.757092] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.781507] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.783877] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.786771] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.788184] audit: initializing netlink subsys (disabled)
+[    0.793205] audit: type=2000 audit(0.400:1): state=initialized audit_enabled=0 res=1
+[    0.803500] thermal_sys: Registered thermal governor 'step_wise'
+[    0.806813] cpuidle: using governor ladder
+[    0.807300] cpuidle: using governor menu
+[    0.813509] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.815333] ASID allocator initialised with 65536 entries
+[    0.816647] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.820030] Serial: AMBA PL011 UART driver
+[    0.859294] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.859348] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.859370] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.859377] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.859387] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.859394] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.859405] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.859412] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.910222] ACPI: Added _OSI(Module Device)
+[    0.910350] ACPI: Added _OSI(Processor Device)
+[    0.910366] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.951423] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    1.000499] ACPI: Interpreter enabled
+[    1.000585] ACPI: Using GIC for interrupt routing
+[    1.001733] ACPI: MCFG table detected, 1 entries
+[    1.070780] ACPI: CPU0 has been hot-added
+[    1.071832] ACPI: CPU1 has been hot-added
+[    1.096249] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    1.098327] printk: legacy console [ttyAMA0] enabled
+[    1.181539] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    1.182830] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    1.183477] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    1.184029] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    1.186320] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.189861] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    1.200790] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    1.201915] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    1.205736] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    1.206809] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    1.208050] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    1.218156] PCI host bridge to bus 0000:00
+[    1.218898] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    1.219193] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    1.219402] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    1.219893] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.222079] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    1.234082] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    1.234876] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    1.235260] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    1.235638] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    1.237887] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    1.238234] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    1.238561] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    1.238900] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    1.252301] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    1.253214] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    1.254013] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    1.254677] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    1.255075] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    1.255441] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    1.257409] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    1.257930] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    1.258266] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    1.268798] iommu: Default domain type: Translated
+[    1.269182] iommu: DMA domain TLB invalidation policy: lazy mode
+[    1.292965] efivars: Registered efivars operations
+[    1.339495] clocksource: Switched to clocksource arch_sys_counter
+[    1.370395] VFS: Disk quotas dquot_6.6.0
+[    1.372135] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.392852] pnp: PnP ACPI init
+[    1.400778] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    1.401569] pnp: PnP ACPI: found 1 devices
+[    1.473282] NET: Registered PF_INET protocol family
+[    1.475274] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.549748] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    1.550328] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.550715] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.551502] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    1.552012] TCP: Hash tables configured (established 16384 bind 16384)
+[    1.555332] MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+[    1.556209] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.556799] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.559274] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.560044] NET: Registered PF_XDP protocol family
+[    1.560608] PCI: CLS 0 bytes, default 64
+[    1.569070] kvm [1]: HYP mode not available
+[    1.577526] Initialise system trusted keyrings
+[    1.585692] Unpacking initramfs...
+[    1.588915] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[    1.659748] Key type asymmetric registered
+[    1.660155] Asymmetric key parser 'x509' registered
+[    1.660991] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    1.680402] io scheduler mq-deadline registered
+[    1.680940] io scheduler kyber registered
+[    1.681877] io scheduler bfq registered
+[    1.705136] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    1.706377] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    1.721828] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.740558] hv_vmbus: registering driver hyperv_keyboard
+[    1.753883] rtc-efi rtc-efi.0: registered as rtc0
+[    1.757120] rtc-efi rtc-efi.0: setting system clock to 2026-08-24T10:29:18 UTC (1787567358)
+[    1.770263] NET: Registered PF_INET6 protocol family
+[    1.805256] Segment Routing with IPv6
+[    1.805718] In-situ OAM (IOAM) with IPv6
+[    1.830751] registered taskstats version 1
+[    1.840991] Loading compiled-in X.509 certificates
+[    1.906934] Freeing initrd memory: 5268K
+[    2.142199] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    2.172097] Demotion targets for Node 0: null
+[    2.174192] Key type .fscrypt registered
+[    2.174447] Key type fscrypt-provisioning registered
+[    2.214780] clk: Disabling unused clocks
+[    2.215569] PM: genpd: Disabling unused power domains
+[    2.287644] Freeing unused kernel memory: 1920K
+[    2.289678] Run /init as init process
+[    2.518352] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    2.524186] Loading boot drivers...
+ * Loading boot drivers: [    2.563720] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    2.635629] Invalid ELF header magic: != ELF
+[    2.667918] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    2.691919] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    2.730356] Invalid ELF header magic: != ELF
+[    2.743026] Invalid ELF header magic: != ELF
+[    2.755629] Invalid ELF header magic: != ELF
+[    2.772832] Invalid ELF header magic: != ELF
+[    2.828164] Invalid ELF header magic: != ELF
+[    3.009788] Invalid ELF header magic: != ELF
+[    3.040022] e1000: Intel(R) PRO/1000 Network Driver
+[    3.040280] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    3.044439] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    3.049641] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[    3.472192] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    3.473126] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[    4.623877] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+[   11.764064] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+STUB_LS: -rw-r--r-- 1 root root 1762 Aug 24 10:29 /lib/libbinder_stub.so
+STUB_TEST: Mon Aug 24 10:29:28 UTC 2026
+rc=0
+MFP_PID=445
+[   17.729660] random: crng init done
+--- GDB BT MAIN ---
+/bin/sh: line 4: /proc/sys/kernel/yama/ptrace_scope: No such file or directory
+[New LWP 451]
+[New LWP 452]
+[New LWP 453]
+[New LWP 454]
+[New LWP 455]
+[New LWP 456]
+[New LWP 457]
+[New LWP 458]
+[New LWP 459]
+[New LWP 460]
+[New LWP 461]
+[New LWP 462]
+[New LWP 463]
+[New LWP 464]
+[New LWP 465]
+[New LWP 466]
+[New LWP 467]
+[New LWP 468]
+[New LWP 469]
+[New LWP 470]
+[New LWP 471]
+[New LWP 472]
+[New LWP 473]
+[New LWP 474]
+[New LWP 475]
+[New LWP 476]
+[New LWP 477]
+[New LWP 478]
+[New LWP 479]
+[New LWP 480]
+[New LWP 481]
+[New LWP 482]
+[New LWP 483]
+[New LWP 484]
+[New LWP 485]
+[New LWP 486]
+[New LWP 487]
+[New LWP 488]
+[New LWP 489]
+[New LWP 490]
+[New LWP 491]
+[New LWP 492]
+[New LWP 493]
+[New LWP 494]
+[New LWP 495]
+[New LWP 496]
+[New LWP 497]
+[New LWP 498]
+[New LWP 499]
+[New LWP 500]
+[New LWP 501]
+[New LWP 502]
+[New LWP 503]
+[New LWP 504]
+[New LWP 505]
+[New LWP 506]
+[New LWP 507]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffbe321ae0 in clock_nanosleep () from /lib64/libc.so.6
+[Switching to thread 1 (Thread 0xffffb8979960 (LWP 445))]
+#0  0x0000ffffbe321ae0 in clock_nanosleep () from /lib64/libc.so.6
+#0  0x0000ffffbe321ae0 in clock_nanosleep () from /lib64/libc.so.6
+#1  0x0000ffffbe33189c in nanosleep () from /lib64/libc.so.6
+#2  0x0000ffffbf196154 in pi_msleep (msec=500) at osal/pol/pol_time.c:298
+#3  0x00000000005ef110 in print_info_status_init () at print/print_info/print_info_status/print_info_status.c:1734
+#4  0x00000000005ec1ec in print_info_prolog () at print/print_info/print_info_if/print_info_if.c:564
+#5  0x00000000005f32fc in print_func () at print/print.c:14
+#6  0x00000000006a8004 in main () at main/main.c:210
+[Inferior 1 (process 445) detached]
+--- MFP STATE ---
+Name:	mfp.afx
+Umask:	0022
+State:	S (sleeping)
+Tgid:	445
+Ngid:	0
+--- MFP MAIN WCHAN ---
+hrtimer_nanosleep--- THREADS ---
+445 st=S wc=hrtimer_nanosleep
+447 st=R wc=0
+448 st=S wc=futex_wait_queue
+449 st=S wc=0
+450 st=S wc=do_epoll_wait
+451 st=R wc=0
+452 st=S wc=do_wait_intr_irq
+453 st=S wc=do_epoll_wait
+454 st=S wc=do_wait_intr_irq
+455 st=S wc=do_wait_intr_irq
+456 st=S wc=wait_for_partner
+457 st=S wc=do_select
+458 st=R wc=0
+459 st=S wc=do_select
+460 st=S wc=futex_wait_queue
+461 st=S wc=futex_wait_queue
+462 st=S wc=futex_wait_queue
+463 st=R wc=0
+464 st=S wc=do_select
+465 st=S wc=do_select
+466 st=R wc=0
+467 st=S wc=do_select
+468 st=R wc=0
+469 st=S wc=do_select
+470 st=R wc=0
+471 st=S wc=do_select
+472 st=S wc=hrtimer_nanosleep
+473 st=R wc=0
+474 st=S wc=do_select
+475 st=S wc=futex_wait_queue
+476 st=R wc=0
+477 st=R wc=0
+478 st=S wc=do_select
+479 st=S wc=futex_wait_queue
+480 st=R wc=0
+481 st=S wc=do_select
+482 st=R wc=0
+483 st=S wc=do_select
+484 st=S wc=do_wait_intr_irq
+485 st=R wc=0
+486 st=S wc=do_select
+487 st=S wc=hrtimer_nanosleep
+488 st=R wc=0
+489 st=S wc=do_select
+490 st=S wc=futex_wait_queue
+491 st=R wc=0
+492 st=S wc=do_select
+493 st=S wc=do_select
+494 st=R wc=0
+495 st=S wc=do_select
+496 st=R wc=0
+497 st=S wc=do_select
+498 st=S wc=hrtimer_nanosleep
+499 st=R wc=0
+500 st=S wc=futex_wait_queue
+501 st=S wc=futex_wait_queue
+502 st=S wc=futex_wait_queue
+503 st=S wc=futex_wait_queue
+504 st=S wc=futex_wait_queue
+505 st=R wc=0
+506 st=S wc=do_select
+507 st=S wc=futex_wait_queue
+515 st=S wc=do_select
+--- MFP FD SOCK ---
+31
+lrwx------ 1 root root 64 Aug 24 10:33 24 -> socket:[81967]
+lrwx------ 1 root root 64 Aug 24 10:33 25 -> socket:[105289]
+lrwx------ 1 root root 64 Aug 24 10:33 26 -> socket:[81968]
+lrwx------ 1 root root 64 Aug 24 10:33 27 -> socket:[81969]
+lrwx------ 1 root root 64 Aug 24 10:33 28 -> socket:[81970]
+lrwx------ 1 root root 64 Aug 24 10:33 30 -> socket:[81971]
+lrwx------ 1 root root 64 Aug 24 10:33 31 -> socket:[81972]
+lrwx------ 1 root root 64 Aug 24 10:33 32 -> socket:[105290]
+lrwx------ 1 root root 64 Aug 24 10:33 33 -> socket:[102370]
+lrwx------ 1 root root 64 Aug 24 10:33 35 -> socket:[105292]
+lrwx------ 1 root root 64 Aug 24 10:33 36 -> socket:[105293]
+lrwx------ 1 root root 64 Aug 24 10:33 37 -> socket:[105294]
+lrwx------ 1 root root 64 Aug 24 10:33 38 -> socket:[105295]
+lrwx------ 1 root root 64 Aug 24 10:33 39 -> socket:[102371]
+lrwx------ 1 root root 64 Aug 24 10:33 40 -> socket:[102373]
+lrwx------ 1 root root 64 Aug 24 10:33 41 -> socket:[102372]
+lrwx------ 1 root root 64 Aug 24 10:33 42 -> socket:[102377]
+lrwx------ 1 root root 64 Aug 24 10:33 43 -> socket:[102374]
+lrwx------ 1 root root 64 Aug 24 10:33 45 -> socket:[102375]
+lrwx------ 1 root root 64 Aug 24 10:33 46 -> socket:[102376]
+--- MFP FD COUNT ---
+63
+--- NET GLOBALS ---
+s_network_inited @0xa921c8:
+ 00000000
+s_network_context @0xa92298:
+ 0000000000000000
+s_port913x_ctx @0xc92508:
+ 0000000000000000
+s_lpd_ctx @0xc92730:
+ 0000000000000000
+--- MFP MAPS ---
+00400000-008a5000 r-xp 00000000 fd:00 1445                               /usr/bin/mfp.afx
+008a5000-008a6000 r--p 004a4000 fd:00 1445                               /usr/bin/mfp.afx
+008a6000-00a33000 rw-p 004a5000 fd:00 1445                               /usr/bin/mfp.afx
+00a33000-015d1000 rw-p 00000000 00:00 0 
+0c40d000-0c4e0000 rw-p 00000000 00:00 0                                  [heap]
+ffff78000000-ffff7805d000 rw-p 00000000 00:00 0 
+ffff7805d000-ffff7c000000 ---p 00000000 00:00 0 
+ffff7c000000-ffff7c021000 rw-p 00000000 00:00 0 
+--- IP ADDR ---
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 52:54:00:12:34:56 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fec0::5054:ff:fe12:3456/64 scope site dynamic mngtmpaddr proto kernel_ra 
+       valid_lft 86169sec preferred_lft 14169sec
+    inet6 fe80::5054:ff:fe12:3456/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+--- INI FILES ---
+-rw-r--r-- 1 root root 112 Aug 24 10:29 /root/en_machine_config.ini
+-rw-r--r-- 1 root root 112 Aug 24 10:29 /tmp/machine_config.ini
+--- INI DECODED ---
+[DeviceInfo]
+machine_tag=0x1
+mfg_name=PANTUM
+series_name=CM806ADN
+product_name=CM806ADN
+speed=30
+country_code=0
+--- LISTEN TCP ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+--- NET UNIX ---
+Num       RefCount Protocol Flags    Type St Inode Path
+0000000031daf1e3: 00000003 00000000 00000000 0001 03 121840
+0000000099f0a79c: 00000003 00000000 00000000 0001 03 121841
+00000000d743963c: 00000003 00000000 00000000 0001 03 121359
+0000000031136437: 00000002 00000000 00000000 0001 01 218583
+00000000dc0bd66d: 00000003 00000000 00000000 0001 03 105294
+00000000196b9221: 00000003 00000000 00000000 0001 03 105293
+00000000c6ccc970: 00000003 00000000 00000000 0001 03 105292
+00000000d7b9c9dd: 00000003 00000000 00000000 0001 03 81968
+00000000c2ffefb0: 00000003 00000000 00000000 0001 03 81969
+000000006b59efc5: 00000003 00000000 00000000 0001 03 105290
+0000000045cc7012: 00000003 00000000 00000000 0001 03 105289
+00000000d707884f: 00000003 00000000 00000000 0001 03 81967
+0000000033212bb2: 00000003 00000000 00000000 0001 03 81972
+00000000691fbe8d: 00000003 00000000 00000000 0001 03 81971
+00000000ab400403: 00000003 00000000 00000000 0001 03 105295
+0000000071bb71eb: 00000003 00000000 00000000 0001 03 81970
+00000000a2f2f76b: 00000003 00000000 00000000 0001 03 102377
+00000000c00cc0ce: 00000003 00000000 00000000 0001 03 121211
+0000000032027f96: 00000003 00000000 00000000 0001 03 102371
+--- TMP NET ---
+total 32008
+drwxrwxrwt  3 root root      140 Aug 24 10:29 .
+drwxr-xr-x 33 root root     4096 Aug 24 10:29 ..
+srwxr-xr-x  1 root root        0 Aug 24 10:29 .logserver
+drwxr-xr-x  2 root root       40 Aug 24 10:29 .plog
+prwxr--r--  1 root root        0 Aug 24 10:29 cmd
+-rw-r--r--  1 root root      112 Aug 24 10:29 machine_config.ini
+-rw-r--r--  1 root root 32767010 Aug 24 10:33 mfp.log
+--- NETSTAT TCP ---
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+--- MFP LOG MODULES ---
+hello world
+build time: 18:16:03 Aug 14 2026
+hello,CONFIG_STORAGE_MANAGER
+hello,CONFIG_IPM
+hello,CONFIG_PRINT
+--- MFP LOG HEAD 150 ---
+2147483648 mfp process plog lib init 
+pntp socket client init 
+[2026-08-24 10:29:29.182 ] pcie_integrate_features:463 ULOG WARN vd:3 , send_offset:32768 , recv_offset:0
+[2026-08-24 10:29:29.196 ] pcie_integrate_features:463 ULOG WARN vd:5 , send_offset:32768 , recv_offset:0
+error:miss key;line:=
+[10:29:48.480] hal_core_init                  - core/hal_core_init.c L29    [HAL][INFO]  -->  Enter and init hal lib
+[10:29:48.499] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module touch do not have device config
+[10:29:48.499] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module backlight do not have device config
+[10:29:48.499] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module frambuffer do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module low_power do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module print_comm do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module scan_comm do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module beep do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module speaker do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module fan do not have device config
+[10:29:48.500] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module usb_host do not have device config
+[10:29:48.503] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node touch (id 2), do not need to call module init 
+[10:29:48.503] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node backlight (id 3), do not need to call module init 
+[10:29:48.503] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fb (id 4), do not need to call module init 
+[10:29:48.503] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node beep (id 11), do not need to call module init 
+[10:29:48.503] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node speaker (id 12), do not need to call module init 
+[10:29:48.504] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fan (id 13), do not need to call module init 
+[10:29:48.504] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node wifi (id 15), do not need to call module init 
+[10:29:48.504] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node bt (id 16), do not need to call module init 
+[10:29:48.504] storage_init                   - module/storage/storage_init/storage_init.c L23    [HAL][WARN]  -->  storage module has init
+[10:29:48.505] hal_save_proc_info             - intf/hal_init.c      L67    [HAL][ERROR]  -->  attach hal lib process id: 00000445  name: mfp.afx 
+[10:29:48.505] pi_hal_wifi_request            - intf/hal_wifi.c      L21    [HAL][ERROR]  -->  HAL interface pi_hal_wifi_request call failed
+[10:29:53.844] hal_common_ioctl               - core/hal_common_dev.c L128   [HAL][ERROR]  -->  ioctl error errno = No such file or directory
+[10:29:53.844] boardinfo_interface_getinfo    - module/boardinfo/boardinfo_interface.c L151   [HAL][ERROR]  -->  Error to get info from device /dev/board_desc
+[2026-08-24 10:29:53.871 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[10:29:53.943] rtc_interface_time_read        - module/rtc/rtc_interface.c L196   [HAL][INFO]  -->  Read rawtime: 1787567394
+[10:29:53.943] rtc_interface_time_read        - module/rtc/rtc_interface.c L198   [HAL][INFO]  -->  Read RTC time is 2026-08-24 10:29:54.
+[2026-08-24 10:29:54.011 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.012 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.013 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.014 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+[2026-08-24 10:29:54.015 ] _wait_for_peer:747 IBC WARN 445:wait failed
+--- MFP LOG NET ---
+--- MFP LOG TAIL FILTERED ---
+IBC WARN 445:wait failed
+--- PLOG CFG ---
+{"log_state":1,"log_level":2,"log_path":"/tslog","log_size":5120,"machine_name":"RK3588","machine_id":0,"dev_id":0,"root_node":"root","default_topic":"PLOG_PUB","tcp_server_state":0,"upgrade_log_state":0,"ui_connect":0,"debug_mode":0,"slave_config":{"slave_dev_id":0},"slave_dev_id":0,"topic_config":[{"topic_name":"PLOG_PUB","topic_id":0,"console":0,"log_level":2,"subscription":0,"cache_size":512,"auto_register":1,"abort_flag":0,"local_dump":0,"debug_mode":0,"state":1}]}
+--- PLOGD LOG ---

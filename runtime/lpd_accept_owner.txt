@@ -1,0 +1,19 @@
+
+=== callers of 0x66c12c (net_socket_accept_connection) ===
+  (none via direct bl)
+
+=== callers of 0x66ac5c (net_socket_create_tcpserver) ===
+  0x66b6c8  in net_socket_reload_tcpserver
+
+=== callers of 0x683510 (lpd_list_take) ===
+  0x6836f4  in lpd_dispatch_thread
+
+=== xref -> 0x682858 (init_ptask) ===
+  0x85af10: 'socket() error'  [.rodata]
+  0x85af20: '127.0.0.1'  [.rodata]
+  0x85af30: 'strat bind'  [.rodata]
+  0x85af40: 'bind() error'  [.rodata]
+  0x85af50: 'strat listen'  [.rodata]
+  0x85af60: 'listen() error'  [.rodata]
+  0x85af70: 'accept() error'  [.rodata]
+  0x85af80: 'accept success'  [.rodata]

@@ -1,0 +1,283 @@
+{
+  "rkfw": {
+    "format": "RKFW",
+    "chip": "RK3588",
+    "boot_offset": 102,
+    "boot_size": 506304,
+    "update_offset": 506406,
+    "update_size": 785596420
+  },
+  "rkaf": {
+    "model": "RK3588",
+    "manufacturer": "RK3588",
+    "parts": [
+      {
+        "name": "package-file",
+        "path": "package-file",
+        "flash_size": 0,
+        "part_offset": 2048,
+        "flash_offset": 4294967295,
+        "padded_size": 1,
+        "byte_count": 243
+      },
+      {
+        "name": "parameter",
+        "path": "parameter.txt",
+        "flash_size": 16384,
+        "part_offset": 4096,
+        "flash_offset": 0,
+        "padded_size": 1,
+        "byte_count": 979
+      },
+      {
+        "name": "bootloader",
+        "path": "MiniLoaderAll.bin",
+        "flash_size": 0,
+        "part_offset": 6144,
+        "flash_offset": 4294967295,
+        "padded_size": 248,
+        "byte_count": 506304
+      },
+      {
+        "name": "uboot_a",
+        "path": "uboot.img",
+        "flash_size": 10240,
+        "part_offset": 514048,
+        "flash_offset": 16384,
+        "padded_size": 2048,
+        "byte_count": 4194304
+      },
+      {
+        "name": "mmisc",
+        "path": "misc.img",
+        "flash_size": 2048,
+        "part_offset": 4708352,
+        "flash_offset": 26624,
+        "padded_size": 1,
+        "byte_count": 64
+      },
+      {
+        "name": "boot_a",
+        "path": "boot.img",
+        "flash_size": 131072,
+        "part_offset": 4710400,
+        "flash_offset": 28672,
+        "padded_size": 19868,
+        "byte_count": 40689664
+      },
+      {
+        "name": "pantum_a",
+        "path": "pantum.ext4",
+        "flash_size": 524288,
+        "part_offset": 45400064,
+        "flash_offset": 2256896,
+        "padded_size": 8656,
+        "byte_count": 17727488
+      },
+      {
+        "name": "rootfs_a",
+        "path": "rootfs.ext4",
+        "flash_size": 2097152,
+        "part_offset": 63127552,
+        "flash_offset": 159744,
+        "padded_size": 352768,
+        "byte_count": 722468864
+      }
+    ]
+  },
+  "extracted": {
+    "package-file": {
+      "path": "package-file",
+      "offset": 2048,
+      "size": 243
+    },
+    "parameter": {
+      "path": "parameter.txt",
+      "offset": 4096,
+      "size": 967
+    },
+    "bootloader": {
+      "path": "MiniLoaderAll.bin",
+      "offset": 6144,
+      "size": 506304
+    },
+    "uboot_a": {
+      "path": "uboot.img",
+      "offset": 514048,
+      "size": 4194304
+    },
+    "mmisc": {
+      "path": "misc.img",
+      "offset": 4708352,
+      "size": 64
+    },
+    "boot_a": {
+      "path": "boot.img",
+      "offset": 4710400,
+      "size": 40689664
+    },
+    "pantum_a": {
+      "path": "pantum.ext4",
+      "offset": 45400064,
+      "size": 17727488
+    },
+    "rootfs_a": {
+      "path": "rootfs.ext4",
+      "offset": 63127552,
+      "size": 722468864
+    }
+  },
+  "analysis": {
+    "files": [
+      {
+        "path": "usr/bin/mfp.afx",
+        "size": 13228864,
+        "mode": "0o100755"
+      },
+      {
+        "path": "usr/lib/libhal.so",
+        "size": 875560,
+        "mode": "0o100755"
+      },
+      {
+        "path": "usr/lib/libcommon.so",
+        "size": 573936,
+        "mode": "0o100755"
+      },
+      {
+        "path": "usr/lib/libevent_mgr.so",
+        "size": 18408,
+        "mode": "0o100755"
+      },
+      {
+        "path": "usr/lib/libosal.so",
+        "size": 184272,
+        "mode": "0o100755"
+      },
+      {
+        "path": "etc/hal_module_config.json",
+        "size": 4373,
+        "mode": "0o100755"
+      },
+      {
+        "path": "etc/gpio.json",
+        "size": 906,
+        "mode": "0o100755"
+      },
+      {
+        "path": "etc/generic_power.json",
+        "size": 1259,
+        "mode": "0o100755"
+      },
+      {
+        "path": "etc/led.json",
+        "size": 484,
+        "mode": "0o100755"
+      }
+    ],
+    "elf_magic": "7f454c46",
+    "elf_class": 2,
+    "elf_machine": "b700",
+    "readelf_program_headers": "\nElf file type is EXEC (Executable file)\nEntry point 0x44c280\nThere are 9 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset             VirtAddr           PhysAddr\n                 FileSiz            MemSiz              Flags  Align\n  PHDR           0x0000000000000040 0x0000000000400040 0x0000000000400040\n                 0x00000000000001f8 0x00000000000001f8  R      0x8\n  INTERP         0x0000000000000238 0x0000000000400238 0x0000000000400238\n                 0x000000000000001b 0x000000000000001b  R      0x1\n      [Requesting program interpreter: /lib/ld-linux-aarch64.so.1]\n  LOAD           0x0000000000000000 0x0000000000400000 0x0000000000400000\n                 0x00000000004a4988 0x00000000004a4988  R E    0x1000\n  LOAD           0x00000000004a4c80 0x00000000008a5c80 0x00000000008a5c80\n                 0x000000000018d2a8 0x0000000000d2aec8  RW     0x1000\n  DYNAMIC        0x00000000004a4cb8 0x00000000008a5cb8 0x00000000008a5cb8\n                 0x0000000000000310 0x0000000000000310  RW     0x8\n  NOTE           0x0000000000000254 0x0000000000400254 0x0000000000400254\n                 0x0000000000000020 0x0000000000000020  R      0x4\n  GNU_EH_FRAME   0x000000000046b580 0x000000000086b580 0x000000000086b580\n                 0x000000000000b7a4 0x000000000000b7a4  R      0x4\n  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000\n                 0x0000000000000000 0x0000000000000000  RW     0x10\n  GNU_RELRO      0x00000000004a4c80 0x00000000008a5c80 0x00000000008a5c80\n                 0x0000000000000380 0x0000000000000380  R      0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     \n   01     .interp \n   02     .interp .note.ABI-tag .hash .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame \n   03     .init_array .fini_array .data.rel.ro .dynamic .got .got.plt .data .bss \n   04     .dynamic \n   05     .note.ABI-tag \n   06     .eh_frame_hdr \n   07     \n   08     .init_array .fini_array .data.rel.ro .dynamic .got \n",
+    "readelf_dynamic": "\nDynamic section at offset 0x4a4cb8 contains 44 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libcommon.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libevent_mgr.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libosal.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libhal.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libsqlite3mc.so.0]\n 0x0000000000000001 (NEEDED)             Shared library: [libssl.so.3]\n 0x0000000000000001 (NEEDED)             Shared library: [libcrypto.so.3]\n 0x0000000000000001 (NEEDED)             Shared library: [libcjson.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libparser_ips.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libusb-1.0.so.0]\n 0x0000000000000001 (NEEDED)             Shared library: [libcurl.so.4]\n 0x0000000000000001 (NEEDED)             Shared library: [libnvram.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libipm.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libptencryption.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libplog.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-aarch64.so.1]\n 0x000000000000000c (INIT)               0x449ec8\n 0x000000000000000d (FINI)               0x763860\n 0x0000000000000019 (INIT_ARRAY)         0x8a5c80\n 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x8a5c90\n 0x000000000000001c (FINI_ARRAYSZ)       16 (bytes)\n 0x0000000000000004 (HASH)               0x400278\n 0x000000006ffffef5 (GNU_HASH)           0x408428\n 0x0000000000000005 (STRTAB)             0x4276f0\n 0x0000000000000006 (SYMTAB)             0x40ed48\n 0x000000000000000a (STRSZ)              119248 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x8a5fe8\n 0x0000000000000002 (PLTRELSZ)           13224 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x446b20\n 0x0000000000000007 (RELA)               0x446a60\n 0x0000000000000008 (RELASZ)             192 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000006ffffffe (VERNEED)            0x446990\n 0x000000006fffffff (VERNEEDNUM)         5\n 0x000000006ffffff0 (VERSYM)             0x4448c0\n 0x0000000000000000 (NULL)               0x0\n",
+    "hal_virtual_symbols": [
+      "000000000001ee84 T pi_hal_virt_free",
+      "000000000001ef58 T pi_hal_virt_getinfo",
+      "000000000001f034 T pi_hal_virt_platform",
+      "000000000001eda8 T pi_hal_virt_request"
+    ],
+    "virtual_strings": [
+      "pi_hal_virt_request",
+      "pi_hal_virt_free",
+      "pi_hal_virt_platform",
+      "HAL_VIRT_QEMU_PLATFORM",
+      "pi_hal_virt_free",
+      "pi_hal_virt_request",
+      "pi_hal_virt_platform",
+      "pi_hal_virt_request",
+      "pi_hal_virt_free",
+      "pi_hal_virt_platform"
+    ],
+    "hal_modules": [
+      {
+        "module_name": "gpio",
+        "module_id": 6,
+        "state": "true",
+        "json_node": "/etc/gpio.json",
+        "node_parse": "true"
+      },
+      {
+        "module_name": "generic_power",
+        "module_id": 7,
+        "state": "true",
+        "json_node": "/etc/generic_power.json",
+        "node_parse": "true"
+      },
+      {
+        "module_name": "rtc",
+        "module_id": 20,
+        "state": "true",
+        "json_node": "none",
+        "devices": [
+          {
+            "device_name": "rtc",
+            "device_id": 0,
+            "device_node": "/dev/rtc0"
+          }
+        ]
+      },
+      {
+        "module_name": "virtual_platform",
+        "module_id": 21,
+        "state": "true",
+        "json_node": "none",
+        "node_parse": "false",
+        "devices": [
+          {
+            "device_name": "qemu_platform",
+            "device_id": 0,
+            "device_node": "/proc/cmdline"
+          }
+        ]
+      },
+      {
+        "module_name": "pwm",
+        "module_id": 40,
+        "state": "true",
+        "json_node": "virtual",
+        "node_parse": "false"
+      }
+    ]
+  }
+}
+{
+  "normal": {
+    "pass": true,
+    "pages": 1,
+    "events": [
+      "BOOT",
+      "VIRTUAL_HAL=READY",
+      "PRINTER_STATE=IDLE",
+      "SENSOR1=ON (paper inserted)",
+      "JOB_START pages=1",
+      "SENSOR2=ON",
+      "JOB_COMPLETED pages=1"
+    ]
+  },
+  "paper_jam_recovery": {
+    "pass": true,
+    "pages": 1,
+    "events": [
+      "BOOT",
+      "VIRTUAL_HAL=READY",
+      "SENSOR1=ON (paper inserted)",
+      "FAULT=paper_jam",
+      "JOB_START pages=1",
+      "JOB_STOPPED reason=PAPER_JAM",
+      "FAULT_CLEARED=paper_jam",
+      "JOB_START pages=1",
+      "SENSOR2=ON",
+      "JOB_COMPLETED pages=1"
+    ]
+  }
+}

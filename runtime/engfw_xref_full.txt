@@ -1,0 +1,1058 @@
+== 1) 数据指针表（8B 小端）指向目标串 ==
+
+== 2) .text adrp+add / adrp+ldr / ldr-literal 引用目标串页面 ==
+  total: 0
+
+== 3) 反汇编引擎通知函数 0x505b44 ==
+  0x505b44: stp x29, x30, [sp, #-0x30]!
+  0x505b48: mov x29, sp
+  0x505b4c: str x0, [sp, #0x28]
+  0x505b50: str w1, [sp, #0x24]
+  0x505b54: str w2, [sp, #0x20]
+  0x505b58: str w3, [sp, #0x1c]
+  0x505b5c: adrp x0, #0xa7d000
+  0x505b60: add x0, x0, #0x2f8
+  0x505b64: bl #0x4977b8
+  0x505b68: ldr w0, [sp, #0x24]
+  0x505b6c: and w0, w0, #0xff
+  0x505b70: bl #0x491cf4
+  0x505b74: adrp x0, #0xa7d000
+  0x505b78: add x0, x0, #0x300
+  0x505b7c: ldr x2, [x0]
+  0x505b80: adrp x0, #0x7b0000
+  0x505b84: add x1, x0, #0x428
+  0x505b88: mov x0, x2
+  0x505b8c: bl #0x44afe0
+  0x505b90: ldr w0, [sp, #0x24]
+  0x505b94: cmp w0, #1
+  0x505b98: b.ne #0x505bb4
+  0x505b9c: adrp x0, #0xa7d000
+  0x505ba0: add x0, x0, #0x2f8
+  0x505ba4: ldr x0, [x0]
+  0x505ba8: mov w1, #1
+  0x505bac: strb w1, [x0, #0x1e]
+  0x505bb0: b #0x505ec0
+  0x505bb4: ldr w0, [sp, #0x24]
+  0x505bb8: cmp w0, #2
+  0x505bbc: b.ne #0x505c60
+  0x505bc0: adrp x0, #0xa7d000
+  0x505bc4: add x0, x0, #0x2f8
+  0x505bc8: ldr x0, [x0]
+  0x505bcc: strb wzr, [x0, #0x2e]
+  0x505bd0: adrp x0, #0xa7d000
+  0x505bd4: add x0, x0, #0x2f8
+  0x505bd8: ldr x0, [x0]
+  0x505bdc: strb wzr, [x0, #0x2f]
+  0x505be0: adrp x0, #0xa7d000
+  0x505be4: add x0, x0, #0x2f8
+  0x505be8: ldr x0, [x0]
+  0x505bec: strb wzr, [x0, #0x30]
+  0x505bf0: adrp x0, #0xa7d000
+  0x505bf4: add x0, x0, #0x2f8
+  0x505bf8: ldr x0, [x0]
+  0x505bfc: strb wzr, [x0, #0x31]
+  0x505c00: adrp x0, #0xa7d000
+  0x505c04: add x0, x0, #0x2f8
+  0x505c08: ldr x0, [x0]
+  0x505c0c: str wzr, [x0, #0xa8]
+  0x505c10: adrp x0, #0xa7d000
+  0x505c14: add x0, x0, #0x2f8
+  0x505c18: ldr x0, [x0]
+  0x505c1c: str wzr, [x0, #0xa4]
+  0x505c20: adrp x0, #0xa7d000
+  0x505c24: add x0, x0, #0x2f8
+  0x505c28: ldr x0, [x0]
+  0x505c2c: str wzr, [x0, #0xac]
+  0x505c30: adrp x0, #0xa7d000
+  0x505c34: add x0, x0, #0x2f8
+  0x505c38: ldr x0, [x0]
+  0x505c3c: strb wzr, [x0, #0x21]
+  0x505c40: adrp x0, #0xa7d000
+  0x505c44: add x0, x0, #0x2f8
+  0x505c48: ldr x0, [x0]
+  0x505c4c: add x0, x0, #0x14
+  0x505c50: mov x2, #2
+  0x505c54: mov w1, #0
+  0x505c58: bl #0x44a6c0
+  0x505c5c: b #0x505ec0
+  0x505c60: ldr w0, [sp, #0x24]
+  0x505c64: cmp w0, #3
+  0x505c68: b.ne #0x505d30
+  0x505c6c: adrp x0, #0xa7d000
+  0x505c70: add x0, x0, #0x2f8
+  0x505c74: ldr x0, [x0]
+  0x505c78: mov w1, #0xf
+  0x505c7c: str w1, [x0, #0x10]
+  0x505c80: adrp x0, #0xa7d000
+  0x505c84: add x0, x0, #0x2f8
+  0x505c88: ldr x0, [x0]
+  0x505c8c: strb wzr, [x0, #0x2e]
+  0x505c90: adrp x0, #0xa7d000
+  0x505c94: add x0, x0, #0x2f8
+  0x505c98: ldr x0, [x0]
+  0x505c9c: strb wzr, [x0, #0x2f]
+  0x505ca0: adrp x0, #0xa7d000
+  0x505ca4: add x0, x0, #0x2f8
+  0x505ca8: ldr x0, [x0]
+  0x505cac: strb wzr, [x0, #0x30]
+  0x505cb0: adrp x0, #0xa7d000
+  0x505cb4: add x0, x0, #0x2f8
+  0x505cb8: ldr x0, [x0]
+  0x505cbc: strb wzr, [x0, #0x31]
+  0x505cc0: adrp x0, #0xa7d000
+  0x505cc4: add x0, x0, #0x2f8
+  0x505cc8: ldr x0, [x0]
+  0x505ccc: str wzr, [x0, #0xa8]
+  0x505cd0: adrp x0, #0xa7d000
+  0x505cd4: add x0, x0, #0x2f8
+  0x505cd8: ldr x0, [x0]
+  0x505cdc: str wzr, [x0, #0xa4]
+  0x505ce0: adrp x0, #0xa7d000
+  0x505ce4: add x0, x0, #0x2f8
+  0x505ce8: ldr x0, [x0]
+  0x505cec: str wzr, [x0, #0xac]
+  0x505cf0: adrp x0, #0xa7d000
+  0x505cf4: add x0, x0, #0x2f8
+  0x505cf8: ldr x0, [x0]
+  0x505cfc: strb wzr, [x0, #0x21]
+  0x505d00: adrp x0, #0xa7d000
+  0x505d04: add x0, x0, #0x2f8
+  0x505d08: ldr x0, [x0]
+  0x505d0c: strb wzr, [x0, #0x1e]
+  0x505d10: adrp x0, #0xa7d000
+  0x505d14: add x0, x0, #0x2f8
+  0x505d18: ldr x0, [x0]
+  0x505d1c: add x0, x0, #0x14
+  0x505d20: mov x2, #2
+  0x505d24: mov w1, #0
+  0x505d28: bl #0x44a6c0
+  0x505d2c: b #0x505ec0
+  0x505d30: ldr w0, [sp, #0x24]
+  0x505d34: cmp w0, #4
+  0x505d38: b.ne #0x505e00
+  0x505d3c: adrp x0, #0xa7d000
+  0x505d40: add x0, x0, #0x2f8
+
+== 4) 符号表定位 0x505b44 / 0x68eb18 周围全部引擎相关 static 符号 ==
+  0xa330f8  g_engine_config
+  0x46ac7c  video_set_engine_config
+  0x0  engine_mgr.c
+  0xa34600  s_engine_thread_id
+  0x46bdfc  engine_mgr_send_threshhold_to_print
+  0x46bef4  engine_mgr_send_msg_to_process
+  0x46c014  engine_mgr_send_msg_to_print_process
+  0x46c138  engine_mgr_send_paper_type_to_video
+  0x46c298  engine_mgr_engine_data_init
+  0x46c2b0  engine_mgr_start_print
+  0x46c34c  engine_mgr_prepare_calibration
+  0x46c378  engine_mgr_rollback_print
+  0x46c4dc  engine_mgr_calibration_result_param_update
+  0x46c500  engine_mgr_record_watcher_status
+  0x8a8a84  engine_watcher_status.32
+  0x46c57c  engine_mgr_cancel_print
+  0x46c5b4  engine_mgr_pause_print
+  0x46c5c8  engine_mgr_clear_error
+  0x46c5ec  engine_mgr_start_warmup
+  0x46c638  engine_mgr_start_sleep
+  0x46c7b8  engine_mgr_start_wake
+  0x46c99c  engine_mgr_start_reinit
+  0x46cbdc  engine_mgr_video_ready
+  0x46cd34  engine_mgr_video_type
+  0x46d588  engine_mgr_calibration_request
+  0x46d798  engine_mgr_start_calibration
+  0x46d95c  engine_mgr_start_opc_clear
+  0x46dc24  engine_mgr_dot_set
+  0x46dd8c  engine_mgr_enter_maintenance
+  0x46de14  engine_mgr_exit_maintenance
+  0x46de9c  engine_mgr_execute_maintenance
+  0x46df48  engine_mgr_reply_maintenance
+  0x46dfcc  engine_mgr_prepare_print
+  0x46dfe8  engine_mgr_sheet_send_done
+  0x46e00c  engine_mgr_engine_status_change
+  0x46e1c0  engine_mgr_consumption_info_update
+  0x46e22c  engine_mgr_engine_process
+  0x46e2e0  engine_mgr_reset_tray
+  0x46e334  engine_mgr_remove_page
+  0x46e3d0  engine_mgr_notify_nak_id
+  0x46e42c  engine_mgr_notify_image_re_render
+  0x46e480  engine_mgr_thread
+  0x0  engine_process_mgr_calibration_sequence.c
+  0x46ec3c  engine_calibration_sequence_reset_feedtray
+  0x46f020  engine_calibration_sequence_convert_tod
+  0x46f178  engine_calibration_sequence_notify_video
+  0x46f284  engine_calibration_sequence_notify_image_re_render
+  0x46f368  engine_calibration_sequence_notify_engine_iamge
+  0x0  engine_process_mgr.c
+  0xa5e6d8  s_engine_process_mgr_task_id
+  0xa5e6f0  s_eng_print_info
+  0x47136c  engine_process_mgr_diag_timer_restart
+  0x47138c  engine_process_mgr_notify_stop_diagnosis
+  0x471434  engine_process_mgr_send_page_type_to_engine
+  0x4715e4  engine_process_mgr_send_nak_id_to_engine
+  0x4716ec  engine_process_mgr_init
+  0x47195c  engine_process_mgr_warmup
+  0x471c58  engine_process_mgr_reinit
+  0x471f6c  engine_process_mgr_color_calibration
+  0x472064  engine_process_mgr_sleep
+  0x4721b8  engine_process_mgr_print
+  0x472a10  engine_process_mgr_done
+  0x472cb8  engine_process_mgr_finisher
+  0x4730e0  engine_process_mgr_print_supply
+  0x47321c  engine_process_mgr_cancel
+  0x4735f8  engine_process_mgr_pause
+  0x473614  engine_process_mgr_error
+  0x47377c  engine_process_mgr_maintenance
+  0x473bec  engine_process_mgr_state
+  0x473d84  engine_process_mgr_thread
+  0x0  engine_process_mgr_print_sequence.c
+  0xa5e7b4  s_engine_page_id
+  0x4741a8  engine_process_mgr_print_sequence_timer_restart
+  0x4741c8  engine_process_mgr_print_repeat_timer_restart
+  0x4741e8  engine_process_mgr_print_repeat_timer_active
+  0x474210  engine_process_mgr_print_sequence_notify_permission
+  0x474424  engine_process_mgr_print_repeat
+  0x474560  engine_process_mgr_print_sequence_record_attribute
+  0x4746f4  engine_process_mgr_print_sequence_calculate_print_index
+  0x474764  engine_process_mgr_print_sequence_convert_color_mode
+  0x47487c  engine_process_mgr_print_sequence_convert_tray_in
+  0x4750bc  engine_process_mgr_print_sequence_convert_tray_out
+  0x4753e4  engine_process_mgr_print_sequence_convert_dpi
+  0x4754f8  engine_process_mgr_print_sequence_convert_paper_type
+  0x4755cc  engine_process_mgr_print_sequence_convert_paper_size
+  0x4756f0  engine_process_mgr_print_sequence_convert_print_mode
+  0x475804  engine_process_mgr_print_sequence_convert_print_source
+  0x4758d4  engine_process_mgr_print_sequence_convert_print_quality
+  0x475928  engine_process_mgr_print_sequence_convert_page_size_mismatch
+  0x47597c  engine_process_mgr_print_sequence_convert_speed
+  0x4759b4  engine_process_mgr_print_sequence_convert_density
+  0x475a34  engine_process_mgr_print_sequence_convert_finisher_mode
+  0x475e74  engine_process_mgr_print_sequence_convert_tod
+  0x4761e8  engine_process_mgr_print_sequence_set_print_info
+  0x4768a4  engine_process_mgr_print_sequence_print_tod
+  0x476aa8  engine_process_mgr_print_sequence_print_excute
+  0x476ebc  engine_process_mgr_print_sequence_print_excute_without_tod
+  0x0  engine_status_watcher.c
+  0xa5e8c0  s_str_engine_status_watcher
+  0xa5e900  s_engine_status_watcher_task_id
+  0x4787f8  engine_status_watcher_update_basic_status
+  0x478938  engine_status_watcher_update_status
+  0x4789c0  engine_status_watcher_notify_multi_status
+  0x478a8c  engine_status_watcher_check_change_tray_in
+  0x478b88  engine_status_watcher_auto_change_tray_in
+  0x478e08  engine_status_watcher_notify_rollback
+  0x478ec4  engine_status_watcher_clear_tray_status
+  0x478f8c  engine_status_watcher_clear_consumption_status
+  0x479024  engine_status_watcher_check_special_status
+  0x4796f0  engine_status_watcher_update_print_report_status
+  0x479c4c  engine_status_watcher_send_msg_to_engine_mgr
+  0x479d20  engine_status_watcher_update_calibration_report_status
+  0x47a1e0  engine_status_watcher_update_diagnosis_report_status
+  0x47a390  engine_status_watcher_update_data_upload_status
+  0x47a494  engine_status_watcher_update_cancel_report_status
+  0x47a598  engine_status_watcher_update_consumption_info
+  0x47a978  engine_status_watcher_update_machine_info
+  0x47aa24  engine_status_watcher_update_install_info
+  0x47aaec  engine_status_watcher_update_initial_status
+  0x47ac3c  engine_status_watcher_update_warmup_status
+  0x47ad8c  engine_status_watcher_update_reinit_status
+  0x47aedc  engine_status_watcher_notify_error_revert
+  0x47af98  engine_status_watcher_status_process
+  0x47bbfc  engine_status_watcher_thread
+  0x0  engine_status_watcher_handler.c
+  0x47c138  engine_status_handler_set_status_param
+  0x47c200  engine_status_handler_check_empty_error_exist
+  0x47c3a4  engine_status_handler_check_staple_error_exist
+  0x47c494  engine_status_handler_check_toner_empty_exist
+  0x47c5c0  engine_status_handler_check_tray_open_error_exist
+  0x47c764  engine_status_handler_ignore_empty_caution
+  0x47c968  engine_status_handler_ignore_staple_caution
+  0x47ca88  engine_status_handler_ignore_tray_open_caution
+  0x47cc8c  engine_status_handler_ignore_toner_empty_caution
+  0x0  engine_configuration.c
+  0x0  engine_control.c
+  0xa5f1a8  s_str_engine_control
+  0x47e3e4  engine_control_rollback_req_queue_init
+  0x47e454  engine_control_get_rollback_req_queue_size
+  0x47e4ac  engine_control_rollback_req_queue_insert
+  0x47e5a8  engine_control_rollback_req_queue_search_head
+  0x47e6cc  engine_control_rollback_req_queue_search_tail
+  0x47e7f4  engine_control_rollback_req_queue_get
+  0x47e930  engine_control_rollback_req_queue_clear
+  0x47eba8  engine_control_main_status_map
+  0x47ecbc  engine_control_print_status_map
+  0x47ed90  engine_control_update_paper_count_in_machine
+  0x47edc0  engine_control_update_status
+  0x47f2cc  engine_control_regist_to_status_mgr
+  0x47fa7c  engine_control_upload_config_status
+  0x47fb94  engine_control_update_to_finisher_server
+  0x47fcac  engine_control_send_msg_to_process
+  0x47fdcc  engine_control_send_msg_to_engine_mgr
+  0x47fef0  engine_control_send_msg_to_print_process
+  0x48001c  engine_control_send_rollback_msg_to_print_process
+  0x4805a4  engine_control_send_msg_to_video_mgr
+  0x4806c8  engine_control_send_page_print_done
+  0x48097c  engine_control_sheet_send_done_cancel
+  0x480a90  engine_control_state_init
+  0x480c74  engine_control_state_sleep
+  0x480e40  engine_control_state_warmup
+  0x481124  engine_control_state_idle
+  0x4813dc  engine_control_state_print
+  0x481738  engine_control_state_error
+  0x4819cc  engine_control_state_color_calibration
+  0x481c64  engine_control_state_wait
+  0x481f14  engine_control_state_cancel
+  0x482150  engine_control_state_pause
+  0xa5f1d0  engine_page_id.40
+  0x484a68  engine_control_send_msg_to_video
+  0x0  engine_page_list_mgr.c
+  0x4881a4  engine_pending_page_list_init
+  0x488220  engine_printing_page_list_init
+  0x0  engine_if_debug.c
+  0xa71868  s_engine_sheet_array.29
+  0x490574  engfw_debug_set_communication_timeout_times
+  0x4905a8  engfw_debug_set_or_clear_timeout2error
+  0x49061c  engfw_debug_reset_communication
+  0x49063c  engfw_debug_help_info
+  0x0  engine_hal.c
+  0xa75880  s_Engine_If_Hardware
+  0x490948  engine_hal_interface_send
+  0x490c74  engine_hal_pend
+  0x0  engine_process_layer_receive_parse.c
+  0x491490  engine_process_layer_receive_parse_param_init
+  0x491500  engine_process_layer_receive_parse_frame
+  0x491878  tsk_engine_process_layer_receive_parse
+  0x0  engine_process_layer_request_status.c
+  0xa760c8  s_engine_request
+  0xa760e0  s_engprocess_staus_request
+  0x491c18  tsk_engine_process_request_status_machine
+  0x0  engine_process_layer_cmd_list.c
+  0x0  engine_process_layer_send.c
+  0xa760f8  s_engprocess_send
+  0x491dec  engine_process_layer_send_cmd_send
+  0x4921c0  engine_process_layer_send_cmd_resend
+  0x492638  engine_process_layer_send_cmd_remove
+  0x4927c8  tsk_engine_process_layer_send
+  0x4931d8  engine_process_layer_send_cmd_init_link_list
+  0x0  engine_general_if_layer_log_control.c
+  0x8a8b68  s_engfw_debug_level
+  0x8a8b6c  s_eng_if_log_level
+  0x0  engine_general_if_layer_public_if.c
+  0xa76118  s_engine_status_list
+  0xa76128  s_engine_caution_status_list
+  0xa76138  s_engine_special_status_list
+  0x493e98  engine_general_if_layer_public_if_init_status_list
+  0x0  engine_general_if_layer_private_if.c
+  0xa78640  s_p_engine_status_list_head
+  0xa78650  s_p_engine_caution_status_list_head
+  0xa78660  s_p_engine_special_status_list_head
+  0xa78a90  s_eng_general_wakeup_timer
+  0x4974f4  engine_general_if_layer_private_if_timercb
+  0x497670  engine_general_if_layer_private_if_timer_init
+  0x497818  engine_general_if_layer_private_if_register_api
+  0x49b854  print_process_set_engine_threshold_default
+  0x49c178  print_process_send_page_to_engine
+  0x49ccac  print_process_update_engine_empty_status
+  0x49dc98  print_process_change_sheets_video_engine_state
+  0x49e2e0  print_process_save_engine_tray_empty_status
+  0x49e50c  print_process_check_engine_print_permission
+  0x49eb9c  print_process_check_engine_opc_state
+  0x49efa8  print_process_engine_rollback_process
+  0x49f7ec  print_process_engine_cancel_process
+  0x49f9e4  print_process_engine_cancel_ack_rocess
+  0x49fcf8  print_process_engine_differ_broadcast_event
+  0xa78c0c  engine_wakeup_status.6
+  0x0  engine_general_if_layer_adapter_if.c
+  0x8a9dfc  s_engine_adapter_debug_1
+  0xa7d320  s_eng_general_wakeup_record_table
+  0x4f2784  engine_general_if_layer_mmp0_01_handler
+  0x4f2ca0  engine_general_if_layer_mmp0_05_handler
+  0x4f30e4  engine_general_if_layer_mmp0_07_handler
+  0x4f3260  engine_general_if_layer_mmp0_09_handler
+  0x4f330c  engine_general_if_layer_mmp0_0A_handler
+  0x4f36f4  engine_general_if_layer_mmp0_0B_handler
+  0x4f37fc  engine_general_if_layer_mmp0_10_handler
+  0x4f3d2c  engine_general_if_layer_mmp0_11_handler
+  0x4f3f60  engine_general_if_layer_mmp0_12_handler
+  0x4f41d0  engine_general_if_layer_mmp0_14_handler
+  0x4f45a8  engine_general_if_layer_mmp0_15_handler
+  0x4f467c  engine_general_if_layer_mmp0_1B_handler
+  0x4f4b00  engine_general_if_layer_mmp0_1D_handler
+  0x4f4dbc  engine_general_if_layer_mmp0_1E_handler
+  0x4f5004  engine_general_if_layer_mmp0_20_handler
+  0x4f5238  engine_general_if_layer_mmp0_21_handler
+  0x4f5564  engine_general_if_layer_mmp0_23_handler
+  0x4f5608  engine_general_if_layer_mmp0_26_handler
+  0x4f586c  engine_general_if_layer_mmp0_27_handler
+  0x4f5d50  engine_general_if_layer_mmp0_2A_handler
+  0x4f6150  engine_general_if_layer_mmp0_2B_handler
+  0x4f6368  engine_general_if_layer_mmp0_2C_handler
+  0x4f6958  engine_general_if_layer_mmp0_2E_handler
+  0x4f6ba0  engine_general_if_layer_mmp0_30_handler
+  0x4f7738  engine_general_if_layer_mmp0_31_handler
+  0x4f780c  engine_general_if_layer_mmp0_32_handler
+  0x4f7840  engine_general_if_layer_mmp0_33_handler
+  0x4f7cb0  engine_general_if_layer_mmp0_35_handler
+  0x4f7e38  engine_general_if_layer_mmp0_36_handler
+  0x4f860c  engine_general_if_layer_mmp0_38_handler
+  0x4f8be8  engine_general_if_layer_mmp0_39_handler
+  0x4f8cb0  engine_general_if_layer_mmp0_3A_handler
+  0x4f8d78  engine_general_if_layer_mmp0_3C_handler
+  0x4f9020  engine_general_if_layer_mmp0_3E_handler
+  0x4f9268  engine_general_if_layer_mmp0_41_handler
+  0x4f9510  engine_general_if_layer_mmp0_42_handler
+  0x4f9750  engine_general_if_layer_mmp0_43_handler
+  0x4f9914  engine_general_if_layer_mmp0_44_handler
+  0x4f9ac8  engine_general_if_layer_mmp0_46_handler
+  0x4f9d20  engine_general_if_layer_mmp0_47_handler
+  0x4f9f78  engine_general_if_layer_mmp0_48_handler
+  0x4fa238  engine_general_if_layer_mmp0_49_handler
+  0x4fa4f8  engine_general_if_layer_mmp0_4A_handler
+  0x4fa79c  engine_general_if_layer_mmp0_4E_handler
+  0x4fa9cc  engine_general_if_layer_mmp0_5D_handler
+  0x4fac60  engine_general_if_layer_mmp0_5E_handler
+  0x4facf8  engine_general_if_layer_mmp0_5F_handler
+  0x4fad90  engine_general_if_layer_mmp0_61_handler
+  0x4fae50  engine_general_if_layer_mmp0_62_handler
+  0x4faef0  engine_general_if_layer_mmp0_66_handler
+  0x4faf88  engine_general_if_layer_mmp0_6E_handler
+  0x4fb1c4  engine_general_if_layer_mmp0_6F_handler
+  0x4fb284  engine_general_if_layer_mmp1_00_handler
+  0x4fba34  engine_general_if_layer_mmp1_04_handler
+  0x4fbac8  engine_general_if_layer_mmp1_05_handler
+  0x4fbd38  engine_general_if_layer_mmp1_07_handler
+  0x4fbdcc  engine_general_if_layer_mmp1_08_handler
+  0x4fbe60  engine_general_if_layer_mmp1_09_handler
+  0x4fc1b4  engine_general_if_layer_mmp1_0B_handler
+  0x4fc27c  engine_general_if_layer_mmp1_0E_handler
+  0x4fc314  engine_general_if_layer_mmp1_13_handler
+  0x4fc370  engine_general_if_layer_mmp1_15_handler
+  0x4fc3cc  engine_general_if_layer_mmp1_16_handler
+  0x4fc4e0  engine_general_if_layer_mmp1_1E_handler
+  0x4fc428  engine_general_if_layer_mmp1_26_handler
+  0x4fc484  engine_general_if_layer_mmp1_27_handler
+  0x4fc628  engine_general_if_layer_mmp1_2E_handler
+  0x4fc75c  engine_general_if_layer_mmp1_4E_handler
+  0x4fca9c  engine_general_if_layer_mmp1_4F_handler
+  0x4fcdbc  engine_general_if_layer_mmp1_5D_handler
+  0x4fce54  engine_general_if_layer_mmp1_5E_handler
+  0x4fceec  engine_general_if_layer_mmp1_5F_handler
+  0x4fcf84  engine_general_if_layer_mmp1_60_handler
+  0x4fd83c  engine_general_if_layer_mmp1_61_handler
+  0x4fd928  engine_general_if_layer_mmp1_62_handler
+  0x4fe1ec  engine_general_if_layer_mmp1_63_handler
+  0x4fe2d8  engine_general_if_layer_mmp1_64_handler
+  0x4ff8cc  engine_general_if_layer_mmp1_65_handler
+  0x4ffa48  engine_general_if_layer_mmp1_66_handler
+  0x5001c4  engine_general_if_layer_mmp1_67_handler
+  0x5002b0  engine_general_if_layer_mmp1_6B_handler
+  0x50039c  engine_general_if_layer_mmp1_6C_handler
+  0x500710  engine_general_if_layer_mmp1_6E_handler
+  0x5007a8  engine_general_if_layer_mmp1_7E_handler
+  0x500b5c  engine_general_if_layer_mmp2_0E_handler
+  0x500a80  engine_general_if_layer_mmp2_10_handler
+  0x501100  engine_general_if_layer_mmp2_1E_handler
+  0x5016a4  engine_general_if_layer_mmp2_2E_handler
+  0x501b84  engine_general_if_layer_mmp2_2F_handler
+  0x502064  engine_general_if_layer_mmp2_3E_handler
+  0x50251c  engine_general_if_layer_mmp2_3F_handler
+  0x5029d8  engine_general_if_layer_mmp2_4E_handler
+  0x502bd4  engine_general_if_layer_mmp2_5E_handler
+  0x503178  engine_general_if_layer_mmp2_6E_handler
+  0x5037a0  engine_general_if_layer_mmp2_7E_handler
+  0x8b06f0  s_engframework_api_array
+  0x505b44  engine_general_if_layer_notice_engfw_print_status
+  0x505b24  engine_general_if_layer_api_not_support
+  0x505f38  engine_general_if_layer_act_init_step1
+  0x505fc0  engine_general_if_layer_act_init_step2
+  0x5060d0  engine_general_if_layer_act_init_step3
+  0x5062d0  engine_general_if_layer_act_init_step4
+  0x5064dc  engine_general_if_layer_act_init_step5
+  0x506e88  engine_general_if_layer_act_init_step6
+  0x506fbc  engine_general_if_layer_act_warmup_step1
+  0x5071b4  engine_general_if_layer_act_warmup_step2
+  0x5072c4  engine_general_if_layer_act_warmup_step3
+  0x5074c4  engine_general_if_layer_act_warmup_step4
+  0x5076d0  engine_general_if_layer_act_warmup_step5
+  0x5080bc  engine_general_if_layer_act_warmup_step6
+  0x5081dc  engine_general_if_layer_act_reinit_step1
+  0x508328  engine_general_if_layer_act_reinit_step2
+  0x50844c  engine_general_if_layer_act_reinit_step3
+  0x508660  engine_general_if_layer_act_reinit_step4
+  0x508880  engine_general_if_layer_act_reinit_step5
+  0x509240  engine_general_if_layer_act_reinit_step6
+  0x509360  engine_general_if_layer_prepare_print
+  0x50939c  engine_general_if_layer_set_paper_type
+  0x509774  engine_general_if_layer_set_paper_size
+  0x5098ec  engine_general_if_layer_set_print_mode
+  0x509ad4  engine_general_if_layer_print_execute
+  0x50c19c  engine_general_if_layer_get_basic_status
+  0x50c48c  engine_general_if_layer_get_print_report
+  0x50a05c  engine_general_if_layer_set_tod
+  0x50a108  engine_general_if_layer_set_dot
+  0x50a2a4  engine_general_if_layer_set_finisher_mode
+  0x50a390  engine_general_if_layer_act_finisher
+  0x50a194  engine_general_if_layer_set_calibration_mode
+  0x50a21c  engine_general_if_layer_set_gradation_value
+  0x50b844  engine_general_if_layer_set_custom_size
+  0x50b994  engine_general_if_layer_enter_energy_save_mode
+  0x50a79c  engine_general_if_layer_enter_diag_mode
+  0x50a8e0  engine_general_if_layer_exit_diag_mode
+  0x50a994  engine_general_if_layer_execute_diag_func
+  0x50b75c  engine_general_if_layer_stop_diag_func
+  0x50b7c0  engine_general_if_layer_clear_size_error
+  0x50a494  engine_general_if_layer_request_print_cancel
+  0x50a690  engine_general_if_layer_request_send_eng_debug_cmd
+  0x50baf0  engine_general_if_layer_reply_ack
+  0x50bc38  engine_general_if_layer_frame_unpack
+  0x50c0f8  engine_general_if_layer_sync_engine_data
+  0x50cacc  engine_general_if_layer_clear_target_status
+  0x50caf8  engine_general_if_layer_mask_target_status
+  0x50cb24  engine_general_if_layer_unmask_target_status
+  0x50cb50  engine_general_if_layer_get_consumption_info
+  0x50cc24  engine_general_if_layer_cali_print_execute
+  0x50d29c  engine_general_if_layer_get_calibration_type
+  0x50ccfc  engine_general_if_layer_get_calibration_report
+  0x50d400  engine_general_if_layer_get_calibration_pattern
+  0x50d4d0  engine_general_if_layer_get_toner_patch_info
+  0x50d598  engine_general_if_layer_get_color_shift_info
+  0x50d668  engine_general_if_layer_get_color_error_correction_amount
+  0x50d774  engine_general_if_layer_get_calibration_gradation_info
+  0x50d8f0  engine_general_if_layer_get_calibration_permission
+  0x50da60  engine_general_if_layer_request_print_to_calibration
+  0x50dba0  engine_general_if_layer_request_calibration
+  0x50dd20  engine_general_if_layer_get_diagnosis_report
+  0x50de94  engine_general_if_layer_get_initial_step
+  0x50dfa4  engine_general_if_layer_get_warmup_step
+  0x50e0ac  engine_general_if_layer_get_reinit_step
+  0x50e1b4  engine_general_if_layer_get_paper_count_in_machine
+  0x50e2ac  engine_general_if_layer_get_cancel_report
+  0x50e3e4  engine_general_if_layer_get_kit_install
+  0x50e784  engine_general_if_layer_get_color_permission
+  0x50e84c  engine_general_if_layer_get_print_permission
+  0x50e914  engine_general_if_layer_get_data_upload_status
+  0x50ea54  engine_general_if_layer_get_data_with_type
+  0x50ef90  engine_general_if_layer_get_machine_info
+  0x50f6a4  engine_general_if_layer_get_last_print_page_id
+  0x50f76c  engine_general_if_layer_get_last_output_page_id
+  0x50f834  engine_general_if_layer_paper_type_remap
+  0x50f924  engine_general_if_layer_paper_size_remap
+  0x50fa3c  engine_general_if_layer_tray_in_remap
+  0x50fb30  engine_general_if_layer_tray_out_remap
+  0x50fc28  engine_general_if_layer_get_eng_statelist
+  0x51004c  engine_general_if_layer_handle_wakeup_record_table
+  0x4e90f8  get_engine_adapter_debug
+  0x4f1c88  engine_adapter_covert_pantum_paper_size
+  0x4f1df8  engine_adapter_tray_error_info_process
+  0x4f20e4  get_eng_busy_state
+  0x0  engine_image_process.c
+  0xa8dfc8  s_engine_iamge_task_id
+  0x513108  engine_image_thread
+  0x526cb8  print_parser_storage_save_get_tail_length
+  0x52e4ec  print_parser_common_intra_get_engine_input_tray_string
+  0xa90518  s_print_status_thread_handle
+  0x8b3628  print_status_mutux_table
+  0x8b3bb0  length
+  0x8b3bb4  length_jam
+  0xa90590  s_print_status_submod
+  0xa906a8  local_print_status_storage
+  0xa90b90  engine_info
+  0x668adc  netoid_get_wifi_sig_strength
+  0x68b914  acl_set_engine_type
+  0x68ba00  acl_get_engine_type
+  0x68d53c  platformoid_get_eng_fw_version
+  0x68eb18  platform_init_print_engfw_version
+  0xe9c9b8  s_debug_scan_engine
+  0x6ce324  debug_scan_engine_send_ntf_message
+  0x6ce3dc  debug_scan_engine_ntf_page_start
+  0x6ce4e8  debug_scan_engine_ntf_band_done
+  0x6cea9c  debug_scan_engine_ntf_page_end
+  0x6ceb34  debug_scan_engine_ntf_job_end
+  0x6ceba8  debug_scan_engine_recv_memobj
+  0x6cebf8  debug_scan_engine_recv_get_status
+  0x6cecbc  debug_scan_engine_recv_band_submit_process
+  0x6cee70  debug_scan_engine_recv_request_process
+  0x6cf028  debug_scan_engine_recv_pcie_job_start_process
+  0x6cf060  debug_scan_engine_recv_job_pause_process
+  0x6cf0b8  debug_scan_engine_recv_job_restart_process
+  0x6cf110  debug_scan_engine_recv_job_cancel_process
+  0x6cf7d8  debug_scan_engine_thread
+  0x6cfc7c  debug_scan_engine_ntf_thread
+  0x6cfd80  debug_scan_engine_param_set
+  0x6d0590  debug_scan_engine_read_file_test
+  0x0  scan_engine_io.c
+  0x6d08e8  scan_engine_io_pend
+  0x0  scan_engine_mgr.c
+  0x6dc270  scan_engine_mgr_thread
+  0x6dcd8c  scan_engine_debug_send_cmd
+  0x6ddfa4  scan_engine_wakeup
+  0x6e1b30  scan_job_mgr_print_engine_data
+  0x6e7114  scan_mgr_engine_job_end_mesage_process
+  0x6e74c0  scan_mgr_engine_update_mesage_process
+  0x6e9394  build_engine_idle_msg
+  0x6ea7ac  scan_mgr_send_engine_data
+  0x6ffdac  scan_event_engine_sensor_set
+  0x6fff54  scan_event_engine_scaning_set
+  0x70006c  scan_event_adf_engine_param_set
+  0x7001cc  scan_event_fb_engine_param_set
+  0x700330  scan_event_engine_clear_error
+  0x13aaac0  engine_pause_request
+  0x13aaac4  engine_pause_count
+  0x73e568  change_engfwversion
+  0x742138  engine_sleep_exception_handling
+  0x15d090a  f_get_eng_sn
+  0x912668  char_eng_sub
+  0x912710  char_ch_eng_sub
+  0x912728  char_illg_eng_sub
+  0x912740  char_no_ins_eng
+  0x493c18  engine_process_layer_send_get_wait_send_process
+  0x510be4  engine_general_if_layer_mask_consumption_remain
+  0x44cb10  video_pcie_set_engine_config_sync
+  0x47e374  engine_configuration_set_sheet_send_status
+  0x6dd088  get_engine_version
+  0x6dbacc  pt_scan_engine_sleep
+  0x4807d8  engine_control_print_cancel_done
+  0x48bdd8  engine_page_list_mgr_set_paper_feeded
+  0x48af20  engine_page_list_mgr_set_video_not_ready
+  0x49433c  engine_general_if_layer_public_if_get_eng_caution_status_list
+  0x4954fc  engine_general_if_layer_public_if_get_coverage_data
+  0x47be00  engine_status_watcher_prolog
+  0x496af8  engine_general_if_layer_public_if_get_paper_count_in_machine
+  0x495160  engine_general_if_layer_public_if_set_image_level
+  0x474168  engine_process_mgr_print_sequence_timer_destory
+  0x496e10  engine_general_if_layer_public_if_get_print_permission
+  0x489254  engine_page_list_mgr_has_target_page_in_printing_list
+  0x48eeb8  engine_debug_maintenance
+  0x48d840  engine_page_list_mgr_get_print_id_with_engine_id_in_printing_list
+  0x497758  engine_general_if_layer_private_if_get_private_pointer
+  0x493e74  engine_general_if_layer_set_framework_cmd_level
+  0x4882d8  engine_page_list_mgr_clear_pending_list
+  0x48a124  engine_page_list_mgr_remove_target_page_from_printing_list
+  0x496950  engine_general_if_layer_public_if_get_status_change
+  0x495688  engine_general_if_layer_public_if_set_tod
+  0x496430  engine_general_if_layer_public_if_request_print_to_calibration
+  0x493c30  engine_process_layer_send_set_retry_times
+  0x4950dc  engine_general_if_layer_public_if_set_print_source
+  0x474540  engine_process_mgr_print_sequence_timer_start
+  0x485180  engine_control_clear_error
+  0x47d590  engine_status_handler_free_multi_status
+  0x4964b4  engine_general_if_layer_public_if_set_calibration_request
+  0x6d0994  scan_engine_io_read
+  0x6d0adc  scan_engine_io_write
+  0x4704d4  engine_calibration_sequence_send_print
+  0x6dcc54  scan_engine_mgr_get_status
+  0x4710a0  engine_calibration_sequence_request_print_to_cali
+  0x4e9108  set_engine_adapter_debug
+  0x46ecc4  engine_calibration_sequence_save_to_file
+  0x494dc4  engine_general_if_layer_public_if_set_paper_type
+  0x46e740  engine_mgr_prolog
+  0x5ef11c  print_status_config_get_install_info
+  0x474158  engine_process_mgr_get_cancel_request_mark_flag
+  0x6d0840  scan_engine_io_open
+  0x496fa0  engine_general_if_layer_public_if_has_status_exist
+  0x48ff14  engfw_debug_km_debug
+  0x47f280  engine_control_debug_update_status
+  0x489060  engine_page_list_mgr_has_target_page_in_pending_list
+  0x48c3f0  engine_page_list_mgr_get_last_page_from_printing_list
+  0x490fa8  engine_hal_dev_com_init
+  0x48d564  engine_page_list_mgr_remove_page_table_from_pending_list
+  0x47db44  engine_configuration_set_paper_size
+  0x48c278  engine_page_list_mgr_printing_list_check_pre_paper_tod
+  0x49570c  engine_general_if_layer_public_if_set_tray_in
+  0x497620  engine_general_if_layer_private_if_timer_destory
+  0x4991c8  engine_general_if_layer_private_if_get_consumable_serial
+  0x51353c  engine_image_prolog
+  0x493794  engine_process_layer_send_get_recv_sequence_bit
+  0x484188  engine_control_error_revert_status_change
+  0x498a84  engine_general_if_layer_private_if_copy_special_list
+  0x49608c  engine_general_if_layer_public_if_calibration_print_execute
+  0xa90520  s_print_status_submod_tmp
+  0x512348  engine_image_curves_data_init
+  0x48f9ec  engfw_debug_send_cmd
+  0x496194  engine_general_if_layer_public_if_get_calibration_pattern
+  0x4831c4  engine_control_flush_print
+  0x493990  engine_process_layer_send_clear_ever_send_flag
+  0x4855f0  engine_control_bootup_calibration_check
+  0x4953f4  engine_general_if_layer_public_if_req_print_cancel
+  0x494210  engine_general_if_layer_public_if_mask_status
+  0x4827a0  engine_control_get_cancelreq_flag
+  0x496f18  engine_general_if_layer_public_if_get_data_with_type
+  0x52e83c  print_parser_common_intra_convert_media_size_to_engine_long_edge
+  0x495b2c  engine_general_if_layer_public_if_enter_energy_save_mode
+  0x4827fc  engine_control_set_paper_road_capacity
+  0x4740f8  engine_process_mgr_get_print_info_struct
+  0x498208  engine_general_if_layer_private_if_push_status
+  0x4824fc  engine_control_get_first_page
+  0x511cd0  check_engine_data_128
+  0x484ea0  engine_control_execute_maintenance
+  0x52b978  print_parser_common_extra_engine_get_tray_empty_info
+  0x490b50  engine_hal_send_data
+  0x6d1530  scan_engine_print_sensor_size
+  0x497720  engine_general_if_layer_private_if_set_timer_count
+  0x49367c  engine_process_layer_send_get_send_list_head
+  0x4744e8  engine_process_mgr_print_repeat_timer_init
+  0x496218  engine_general_if_layer_public_if_get_toner_request_info
+  0x48a820  engine_page_list_mgr_reset_pending_list_index
+  0x47ea34  engine_control_set_rollback_process_state
+  0x48de74  engine_debug_set_paper_tray_in
+  0x47da0c  engine_configuration_set_paper_type
+  0x4785f4  engine_process_mgr_print_sequence_print_supply
+  0x491aac  engine_process_layer_receive_parse_prolog
+  0x496008  engine_general_if_layer_public_if_get_calibration_report
+  0x483b0c  engine_control_initial_status_change
+  0x4887b0  engine_page_list_mgr_clear_printing_backup_list
+  0x48fc24  engfw_debug_recv_cmd
+  0xa7d3c0  engine_data
+  0x736958  engine_reply_set_func_msg
+  0x48bb74  engine_page_list_mgr_printing_list_set_engine_page_id
+  0x494044  engine_general_if_layer_public_if_prolog
+  0x494504  engine_general_if_layer_public_if_map_caution_list
+  0x478744  engine_process_mgr_print_sequence_done_nak
+  0x494a10  engine_general_if_layer_public_if_act_reinit_step
+  0x47eb2c  engine_control_set_rollback_start_state
+  0x0  EVP_CIPHER_CTX_set_key_length@OPENSSL_3.0.0
+  0x48eb00  engine_debug_calibration_update_param
+  0x497148  engine_general_if_layer_public_if_send_eng_debug_cmd
+  0x49908c  engine_general_if_layer_private_if_check_tonerid_vaild
+  0x484e24  engine_control_exit_maintenance
+  0x47dabc  engine_configuration_get_paper_type
+  0x48507c  engine_control_execute_warmup
+  0x6d0b74  scan_engine_io_close
+  0x52e424  print_parser_common_intra_get_engine_staple_string
+  0x4952ec  engine_general_if_layer_public_if_act_print_execute
+  0x47edb0  engine_control_get_paper_count_in_machine
+  0x470ff4  engine_calibration_sequence_notify_end_cmd_type5
+  0x6dbb48  pt_scan_engine_wakeup
+  0x48d1fc  engine_page_list_mgr_get_last_page_print_step
+  0x494584  engine_general_if_layer_public_if_map_special_list
+  0x496758  engine_general_if_layer_public_if_clear_print_miss
+  0x5ef170  print_status_config_get_process_page_info
+  0x491cf4  engine_process_request_status_nty_app_print_status
+  0x4e4b34  print_data_public_set_engine_consumption_info
+  0x498168  engine_general_if_layer_private_if_clear_has_status_exist_flag
+  0x499430  engine_general_if_layer_private_if_set_consumable_serial
+  0x48e7b8  engine_debug_set_status
+  0x46e93c  engine_calibration_sequence_result_from_file
+  0x496fbc  engine_general_if_layer_public_if_get_machine_info
+  0x495ea0  engine_general_if_layer_public_if_send_factory_param
+  0xe9caac  s_engine_sleep
+  0x49380c  engine_process_layer_send_clear_need_wait_eng_response
+  0x4843ec  engine_control_change_process_finisher
+  0x4843b8  engine_control_change_process_done
+  0x48e6b4  engine_debug_video_ready
+  0x51342c  engine_image_data_init
+  0x4959a0  engine_general_if_layer_public_if_set_calibration_mode
+  0x488de4  engine_page_list_mgr_get_target_page_from_pending_list
+  0x491d3c  engine_process_layer_send_cmd_send_ack
+  0x48da1c  engine_debug_log_level
+  0x4a6980  print_get_str_index_from_print_status_list
+  0x495790  engine_general_if_layer_public_if_set_tray_out
+  0x52e35c  print_parser_common_intra_get_engine_punching_string
+  0x4704b4  engine_calibration_sequence_timer_destory
+  0x484fc4  engine_control_reply_maintenance
+  0x482558  engine_control_set_wait_calibration
+  0x6d4b2c  adf_mode_set_0x3B_selected_length_of_original_in_fd
+  0x46f8dc  engine_calibration_sequence_notify_video_pattern
+  0x494298  engine_general_if_layer_public_if_get_eng_error_status_list
+  0x4710fc  engine_calibration_sequence_wait_end
+  0x477e40  engine_process_mgr_print_sequence_print_video_ready
+  0x490784  engine_debug_init
+  0x46f46c  engine_calibration_sequence_start_calibration
+  0x49797c  engine_general_if_layer_private_if_prolog
+  0x496c84  engine_general_if_layer_public_if_act_finisher
+  0x494fd4  engine_general_if_layer_public_if_set_video_duty
+  0x470c58  engine_calibration_sequence_error_diffusion
+  0x4973ec  engine_general_if_layer_public_if_eng_statelist
+  0x494c14  engine_general_if_layer_public_if_act_handshake
+  0x490d10  engine_hal_receive_data
+  0x48438c  engine_control_change_process_print
+  0x496a74  engine_general_if_layer_public_if_get_reinit_step
+  0x495bb4  engine_general_if_layer_public_if_enter_diagnosis_mode
+  0x488ca8  engine_page_list_mgr_add_page_to_printing_list
+  0x78af38  print_status_list_to_string
+  0x47134c  engine_process_mgr_diag_timer_destory
+  0x4713bc  engine_process_mgr_diag_timer_init
+  0x4963ac  engine_general_if_layer_public_if_get_calibration_gradation_info
+  0x7090b4  scan_transfer_job_engine_restart
+  0x47eab0  engine_control_set_rollback_stop_state
+  0x5ef858  print_info_event_inner_engine_map
+  0x5eab80  print_ctrl_config_update_engine_support_size
+  0x491c48  engine_process_request_status_prolog
+  0x4825c8  engine_control_set_calibration_switch_flag
+  0x4897c8  engine_page_list_mgr_remove_page_from_printing_list_head
+  0x491320  engine_hal_get_gpio_value
+  0x490164  engfw_debug_get_km_log
+  0x48d05c  engine_page_list_mgr_set_last_page_print_step
+  0x4e8428  engine_general_if_layer_init_semaphore
+  0x512060  check_engine_data_256
+  0x497fa0  engine_general_if_layer_private_if_get_status_change_flag
+  0x4e84fc  engine_general_if_layer_get_api_array
+  0x474490  engine_process_mgr_print_sequence_timer_init
+  0x4970c4  engine_general_if_layer_public_if_get_last_output_page_id
+  0x4889a8  engine_page_list_mgr_printing_page_is_empty
+  0x4e837c  engine_get_str_index_from_eng_status_list
+  0x496e94  engine_general_if_layer_public_if_get_data_upload_status
+  0x4910cc  engine_hal_dev_gpio_init
+  0x6de614  scan_engine_mgr_prolog
+  0x49629c  engine_general_if_layer_public_if_get_color_shift_info
+  0x4822f0  engine_control_change_state
+  0x46e8d0  engine_calibration_sequence_save_result_to_file
+  0x48b12c  engine_page_list_mgr_set_tod_not_send
+  0x4951e4  engine_general_if_layer_public_if_set_quality
+  0x5ba390  print_parser_internal_page_pclxl_get_title_length
+  0x471414  engine_process_mgr_diag_timer_start
+  0x495c3c  engine_general_if_layer_public_if_act_diagnosis_func
+  0x48c4f0  engine_page_list_mgr_move_target_page_from_printing_list_to_pending_list
+  0x47d9fc  engine_configuration_get_finisher_install
+  0x495e1c  engine_general_if_layer_public_if_act_eng_calibrate
+  0x46cb5c  engine_mgr_video_type_waitack
+  0x485acc  engine_control_init
+  0x497640  engine_general_if_layer_private_if_timer_restart
+  0x4856e0  engine_control_remove_page
+  0x488470  engine_page_list_mgr_clear_back_page_in_pending_list
+  0x491b70  engine_process_layer_receive_parse_test_cmd
+  0x497710  engine_general_if_layer_private_if_get_timer_status
+  0x47ddb0  engine_configuration_check_tray_in_enable
+  0x4841d8  engine_control_rollback_status_change
+  0x495898  engine_general_if_layer_public_if_set_print_density
+  0x495d14  engine_general_if_layer_public_if_get_tray_info
+  0x497e60  engine_general_if_layer_private_if_set_status_change_flag
+  0x4985b4  engine_general_if_layer_private_if_copy_error_list
+  0x493ab8  engine_process_layer_send_set_abnormal_code
+  0x495604  engine_general_if_layer_public_if_get_print_report
+  0x4857f0  engine_control_check_rollback_queue_try_send
+  0x477354  engine_process_mgr_print_sequence_first_start_print
+  0x48dcc4  engine_debug_set_print_speed
+  0x5eb710  print_status_print_core_jobattr_update
+  0x68ebf8  pi_platform_get_engine_firmware_version
+  0x4712ec  engine_calibration_sequence_cali_to_error
+  0x484150  engine_control_reissue_page_status_change
+  0x48e818  engine_debug_status_change
+  0x488a14  engine_page_list_mgr_add_page_to_pending_list
+  0x511114  engine_general_if_layer_engine_calirequest_manage
+  0x495bf8  engine_general_if_layer_public_if_exit_diagnosis_mode
+  0x476064  engine_process_mgr_print_sequence_find_appropriate_tray
+  0x7542e8  set_machine_eng_info
+  0x497040  engine_general_if_layer_public_if_get_last_print_page_id
+  0x4850d4  engine_control_execute_reinit
+  0x477e90  engine_process_mgr_print_sequence_print_paper_exited
+  0x48dc58  engine_debug_set_color_mode
+  0x511374  engine_image_send_to_target_queue
+  0x483248  engine_control_paper_status_change
+  0x4976e0  engine_general_if_layer_private_if_timer_start
+  0x485128  engine_control_execute_sleep
+  0x5ef140  print_status_config_get_engine_info
+  0x493420  engine_process_layer_send_prolog
+  0x49041c  engfw_debug_function
+  0x498cf8  engine_general_if_layer_private_if_get_status_mask
+  0x48dee0  engine_debug_set_paper_tray_out
+  0x496c00  engine_general_if_layer_public_if_set_finisher_mode
+  0x50ff48  engine_general_if_layer_set_wakeup_record_table
+  0x48994c  engine_page_list_mgr_remove_page_from_printing_list_tail
+  0x4941cc  engine_general_if_layer_public_if_delete_status
+  0x4969f0  engine_general_if_layer_public_if_get_warmup_step
+  0x482f88  engine_control_video_ready
+  0x495c84  engine_general_if_layer_public_if_stop_diagnosis_func
+  0x4846f4  engine_control_get_state
+  0x496650  engine_general_if_layer_public_if_req_share_memory_addr
+  0x4980c8  engine_general_if_layer_private_if_set_has_status_exist_flag
+  0x494f50  engine_general_if_layer_public_if_set_custom_size
+  0x484698  engine_control_set_state
+  0x495b70  engine_general_if_layer_public_if_exit_energy_save_mode
+  0x485698  engine_control_opcclear_finish
+  0x48fe34  engfw_debug_diag_func
+  0x48e920  engine_debug_paper_feed
+  0x4a6a14  print_get_str_from_print_status_list
+  0x6d9384  save_eng_log_to_raw
+  0x4968a8  engine_general_if_layer_public_if_clear_size_error
+  0x47eb1c  engine_control_get_rollback_stop_state
+  0xa90550  local_print_status_pend
+  0x48f4f8  engine_debug_print_calibration
+  0x4965cc  engine_general_if_layer_public_if_set_calibration_frequency
+  0x494e48  engine_general_if_layer_public_if_set_paper_size
+  0x5eb7a8  print_status_print_core_pageinfo_update
+  0x498034  engine_general_if_layer_private_if_get_has_status_exist_flag
+  0x484f40  engine_control_stop_maintenance
+  0x493e64  engine_general_if_layer_get_framework_cmd_level
+  0x497f00  engine_general_if_layer_private_if_clear_status_change_flag
+  0x6cdcb4  debug_scan_get_scan_engine_test_flag
+  0x48ba1c  engine_page_list_mgr_printing_list_check_print_excuted
+  0x736f34  panel_get_engine_data_init
+  0x48f3b4  engine_debug_prohibit_calibration
+  0x5ef128  print_status_config_get_tray_info
+  0x51331c  engine_image_process_init
+  0x4901b4  engfw_debug_push_status
+  0x6a0384  printer_resource_map_engine_support_paper_size
+  0x48b61c  engine_page_list_mgr_printing_list_set_tod_setted
+  0x46f71c  engine_calibration_sequence_notify_toner_patch
+  0x48b334  engine_page_list_mgr_clear_video_ready
+  0x48f624  engfw_debug_basic_status_update
+  0x4911a4  engine_hal_set_gpio_value
+  0xa90538  local_print_status_list
+  0x48b8d4  engine_page_list_mgr_printing_list_set_print_excuted
+  0x52bb00  print_parser_common_extra_engine_get_tray_indeterminate_info
+  0x47ce70  engine_status_handler_get_multi_status
+  0x4937bc  engine_process_layer_send_set_recv_sequence_bit
+  0x489d54  engine_page_list_mgr_remove_page_in_printing_list_by_pageid
+  0x48579c  engine_control_notify_nak_page_id
+  0x495814  engine_general_if_layer_public_if_set_color_mode
+  0x48563c  engine_control_set_calibration_func
+  0x48a59c  engine_page_list_mgr_remove_target_page_from_printing_backup_list
+  0x4972dc  engine_general_if_layer_public_if_tray_in_remap
+  0x483bc4  engine_control_reinit_status_change
+  0x48562c  engine_control_get_calibration_func
+  0x496110  engine_general_if_layer_public_if_get_calibration_type
+  0x75c754  engine_serial_sync_to_signature
+  0x494ecc  engine_general_if_layer_public_if_set_print_mode
+  0x4855cc  engine_control_reset_tray
+  0x48ea10  engine_debug_paper_exit
+  0x494808  engine_general_if_layer_public_if_act_warmup_step
+  0x48da2c  engine_debug_set_log_level
+  0x48f834  engine_debug_wakeup
+  0x496d8c  engine_general_if_layer_public_if_get_color_permission
+  0x493e30  engine_general_if_layer_get_app_log_level
+  0x477ff4  engine_process_mgr_print_sequence_print_execute_done
+  0x473ec4  engine_process_mgr_prolog
+  0x4824a0  engine_control_set_first_page
+  0x495268  engine_general_if_layer_public_if_set_ppm
+  0x44e398  compute_engine_dot_count
+  0x496800  engine_general_if_layer_public_if_clear_jam
+  0x4845c4  engine_control_get_calibration_param
+  0x6d0618  debug_scan_engine_prolog
+  0x6d4270  fb_mode_set_0x77_real_doc_v_length
+  0x7367c4  engine_reply_get_func_msg
+  0x5ed8a4  print_status_config_get_consumption_status_info
+  0x48d454  engine_page_list_mgr_get_last_page_id
+  0x497254  engine_general_if_layer_public_if_paper_size_remap
+  0x474188  engine_process_mgr_print_repeat_timer_destory
+  0x5ef188  print_status_config_get_statistic_copy_info
+  0x482740  engine_control_set_cancelreq_flag
+  0x484364  engine_control_calibration_revert_status_change
+  0x494254  engine_general_if_layer_public_if_unmask_status
+  0x497364  engine_general_if_layer_public_if_tray_out_remap
+  0x47f3d8  engine_control_upload_multi_status
+  0x48dbec  engine_debug_set_print_mode
+  0x6dbb38  pt_scan_engine_is_sleep
+  0x484d40  engine_control_enter_maintenance
+  0x4745ec  engine_process_mgr_print_sequence_get_attribute
+  0x495370  engine_general_if_layer_public_if_req_coverage_data
+  0x47858c  engine_process_mgr_print_sequence_print_cancel
+  0x708f40  scan_transfer_job_engine_pause
+  0x48df4c  engine_debug_print_start
+  0x512680  engine_image_curves_process
+  0x49591c  engine_general_if_layer_public_if_set_dot
+  0x48cc84  engine_page_list_mgr_set_target_page_print_step
+  0x495f24  engine_general_if_layer_public_if_send_eng_param
+  0x48abb0  engine_page_list_mgr_set_video_ready
+  0x4854c4  engine_control_sheet_send_done
+  0x736b50  engine_reply_check_func_msg
+  0x52e6b4  print_parser_common_intra_convert_media_size_to_engine_short_edge
+  0x495aa8  engine_general_if_layer_public_if_get_calibration_permission
+  0x498d58  engine_general_if_layer_private_if_save_log_to_file
+  0x484328  engine_control_cancel_status_change
+  0x48f93c  engfw_debug_test_function
+  0x5f1e2c  print_status_config_get_panel_image_info
+  0x48da98  engine_debug_set_framework_log_level
+  0x49696c  engine_general_if_layer_public_if_get_initial_step
+  0x48dd30  engine_debug_set_page_density
+  0x493c90  engine_process_layer_send_set_timeout_report_flag
+  0x48ebf8  engine_debug_push_status
+  0x488624  engine_page_list_mgr_clear_printing_list
+  0x491024  engine_hal_dev_com_close
+  0x47d984  engine_configuration_set_finisher_install
+  0x495ccc  engine_general_if_layer_public_if_ntf_print_status
+  0x49881c  engine_general_if_layer_private_if_copy_caution_list
+  0x4841b0  engine_control_wait_revert_status_change
+  0x483b68  engine_control_warmup_status_change
+  0x4857c8  engine_control_notify_image_re_render
+  0x492ba0  engine_process_layer_send_cmd_send_data_to_list
+  0x482a50  engine_control_add_page
+  0x4882bc  engine_page_list_mgr_init
+  0x491d18  engine_process_request_status_get_eng_request_pointer
+  0x5eb860  print_status_print_core_finisher_attribute_update
+  0x496d08  engine_general_if_layer_public_if_get_kit_install
+  0x495a24  engine_general_if_layer_public_if_set_gradation_mode
+  0x52bc8c  print_parser_common_extra_engine_get_tray_open_info
+  0x495580  engine_general_if_layer_public_if_get_eng_base_status
+  0x48dd9c  engine_debug_set_paper_type
+  0x4966d4  engine_general_if_layer_public_if_get_share_memory_addr
+  0x470a28  engine_calibration_sequence_gradation_screen
+  0x495058  engine_general_if_layer_public_if_set_size_error_check
+  0x493e40  engine_general_if_layer_set_app_log_level
+  0x47f404  engine_control_calibration_file_check
+  0x47045c  engine_calibration_sequence_timer_init
+  0x4937e4  engine_process_layer_send_set_send_sequence_bit
+  0x47f6ac  engine_control_isCalibrationTime_Exceeded
+  0x484818  engine_control_deal_request_check
+  0x47eaa0  engine_control_get_rollback_process_state
+  0x48d30c  engine_page_list_mgr_get_last_page_print_complete
+  0x494cbc  engine_general_if_layer_public_if_act_prepare_print
+  0x4772ec  engine_process_mgr_print_sequence_prepare_print
+  0x4977b8  engine_general_if_layer_private_if_get_common_data
+  0x484750  engine_control_video_ready_permit
+  0x47dbf4  engine_configuration_get_paper_size
+  0x4825b8  engine_control_get_wait_calibration
+  0x495fa8  engine_general_if_layer_public_if_get_calibration_data
+  0x477524  engine_process_mgr_print_sequence_print
+  0x4d7248  print_data_check_engine_consumption_up
+  0x47eb98  engine_control_get_rollback_start_state
+  0x483cc4  engine_control_data_upload_status_change
+  0x47dc7c  engine_configuration_set_paper_remain
+  0x4826e4  engine_control_get_calibration_pattern_print_flag
+  0x496b7c  engine_general_if_layer_public_if_get_cancel_report
+  0x48893c  engine_page_list_mgr_pending_page_is_empty
+  0x495d98  engine_general_if_layer_public_if_get_consumption_info
+  0x5f1e20  print_status_config_get_outside_info
+  0x47e3d4  engine_configuration_get_sheet_send_status
+  0x4842c0  engine_control_diagnosis_status_change
+  0x496548  engine_general_if_layer_public_if_get_diagnosis_report
+  0x470eec  engine_calibration_sequence_notify_end_cmd
+  0x498f48  engine_general_if_layer_private_if_record_fatal_error
+  0x489bf8  engine_page_list_mgr_remove_page_from_printing_backup_list_tail
+  0x477974  engine_process_mgr_print_sequence_print_without_tod
+  0x48bcc0  engine_page_list_mgr_get_printing_list_engine_page_id
+  0x46ee14  engine_calibration_update_engine_calitime_file
+  0x48db40  engine_debug_set_page_max
+  0x49cdc4  print_process_notify_engine_sheet_position
+  0x494604  engine_general_if_layer_public_if_act_init_step
+  0x6d1918  check_engine_status_and_update_to_scan_mgr
+  0x4971cc  engine_general_if_layer_public_if_paper_type_remap
+  0x495478  engine_general_if_layer_public_if_req_print_cancel_result
+  0x46e9f8  engine_calibration_sequence_debug_log_to_file
+  0x4937a8  engine_process_layer_send_get_send_sequence_bit
+  0x4932e8  GetEngineBusyState
+  0x47dd2c  engine_configuration_get_paper_remain
+  0x4851dc  engine_control_consumption_info_update
+  0x511fb8  check_engine_data_128_K
+  0x5ef164  print_status_config_get_process_job_info
+  0x489420  engine_page_list_mgr_move_page_from_pending_to_printing_list
+  0x5ef158  print_status_config_get_consumption_param_info
+  0x494484  engine_general_if_layer_public_if_map_error_list
+  0x497470  engine_general_if_layer_public_if_handle_wakeup_record_table
+  0x484b88  engine_control_send_calibration_data_to_video
+  0x5ef17c  print_status_config_get_statistic_print_info
+  0x484444  engine_control_transmit_calibration_report
+  0x48f72c  engine_debug_sleep
+  0x477f50  engine_process_mgr_print_sequence_print_done
+  0x48feb4  engfw_debug_adapter_debug
+  0x475fd0  engine_process_mgr_print_sequence_reset_feedtray
+  0x483c20  engine_control_map_fns_type
+  0x47d760  engine_status_handler_replace_to_special_tray_empty
+  0x496320  engine_general_if_layer_public_if_get_color_error_correction_amount
+  0x48f268  engine_debug_force_calibration
+  0x52e298  print_parser_common_intra_get_engine_fold_string
+  0x485428  engine_control_prepare_print
+  0x48de08  engine_debug_set_paper_size
+  0x498c98  engine_general_if_layer_private_if_get_status_record
+  0x5ef14c  print_status_config_get_consumption_info
+  0x484418  engine_control_change_process_cancel
+  0x482628  engine_control_get_calibration_switch_flag
+  0x482684  engine_control_set_calibration_pattern_print_flag
+  0x48a9f8  engine_page_list_mgr_get_page_from_printing_list
+  0x4785ec  engine_process_mgr_print_sequence_print_pause
+  0x48b4c4  engine_page_list_mgr_printing_list_check_video_ready
+  0x48b770  engine_page_list_mgr_printing_list_check_tod_setted
+  0x494d40  engine_general_if_layer_public_if_set_dpi
+  0x48c06c  engine_page_list_mgr_printing_list_check_pre_paper_feeded
+  0x4943e0  engine_general_if_layer_public_if_get_eng_special_status_list
+  0x493cf8  engine_process_layer_send_reset_communication
+  0x4702fc  engine_calibration_sequence_video_ready

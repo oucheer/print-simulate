@@ -1,0 +1,27 @@
+{
+	"led": [
+		{
+			"device_name": "panel_led_red",
+			"device_id": 1,
+			"device_node": "/dev/panel_led",
+			"device_ctrl": "false"
+		},
+		{
+			"device_name": "panel_led_blue",
+			"device_id": 4,
+			"device_node": "/dev/panel_led",
+			"device_ctrl": "false"
+		},
+		{
+			"device_name": "print_led",
+			"device_id": 41,
+			"device_node": "/dev/low_power",
+			"device_ctrl": "false"
+		},
+		{
+			"device_name": "power_led",
+			"device_id": 12,
+			"device_node": "/dev/power_led"
+		}
+	]
+}

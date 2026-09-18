@@ -1,0 +1,459 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 000BFDB6000 start failed: 00000001
+Error: Image at 000BFD6D000 start failed: Not Found
+Error: Image at 000BFCBA000 start failed: Unsupported
+Error: Image at 000BFB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0xbfed0000 MEMATTR=0xbe18b018 ACPI 2.0=0xbcb43018 INITRD=0xbcb40f18 MEMRESERVE=0xbcb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000BCB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x00000000BCB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x00000000BCB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BCB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x00000000BCB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x00000000BCB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x00000000BCB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x00000000BCB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x00000000BCB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x00000000BCB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x00000000BCB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0xbf855b80-0xbf857fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000bc76ffff]
+[    0.000000]   node   0: [mem 0x00000000bc770000-0x00000000bcb3ffff]
+[    0.000000]   node   0: [mem 0x00000000bcb40000-0x00000000bfe1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfe20000-0x00000000bfeaffff]
+[    0.000000]   node   0: [mem 0x00000000bfeb0000-0x00000000bfebffff]
+[    0.000000]   node   0: [mem 0x00000000bfec0000-0x00000000bffdffff]
+[    0.000000]   node   0: [mem 0x00000000bffe0000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 524288
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 2MB
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000bf2b4000-0x00000000bf4b4000] (2MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000822] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.080591] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.245493] Console: colour dummy device 80x25
+[    0.384425] ACPI: Core revision 20240827
+[    0.609988] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.612860] pid_max: default: 32768 minimum: 301
+[    1.206171] LSM: initializing lsm=lockdown,capability,landlock
+[    1.319171] landlock: Up and running.
+[    1.399330] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    1.400020] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    2.511819] rcu: Hierarchical SRCU implementation.
+[    2.512390] rcu: 	Max phase no-delay instances is 1000.
+[    2.573306] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    2.663526] Remapping and enabling EFI services.
+[    2.755662] smp: Bringing up secondary CPUs ...
+[    2.869306] Detected PIPT I-cache on CPU1
+[    2.880036] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    2.992061] smp: Brought up 1 node, 2 CPUs
+[    2.995499] SMP: Total of 2 processors activated.
+[    2.996826] CPU: All CPU(s) started at EL1
+[    2.998823] CPU features: detected: 32-bit EL0 Support
+[    2.999305] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    3.001404] CPU features: detected: Common not Private translations
+[    3.001528] CPU features: detected: CRC32 instructions
+[    3.003037] CPU features: detected: RCpc load-acquire (LDAPR)
+[    3.003432] CPU features: detected: LSE atomic instructions
+[    3.003490] CPU features: detected: Privileged Access Never
+[    3.003520] CPU features: detected: RAS Extension Support
+[    3.003803] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    3.234175] alternatives: applying system-wide alternatives
+[    3.633650] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    4.212111] Memory: 2003472K/2097152K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 89376K reserved, 0K cma-reserved)
+[    4.819124] devtmpfs: initialized
+[    5.254345] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    5.262128] 24304 pages in range for non-PLT usage
+[    5.262533] 515824 pages in range for PLT usage
+[    5.358415] pinctrl core: initialized pinctrl subsystem
+[    5.666917] SMBIOS 3.0.0 present.
+[    5.670207] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    5.681123] DMI: Memory slots populated: 1/1
+[    6.015782] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    6.105524] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    6.124494] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    6.131836] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    6.135786] audit: initializing netlink subsys (disabled)
+[    6.171343] audit: type=2000 audit(2.900:1): state=initialized audit_enabled=0 res=1
+[    6.288534] thermal_sys: Registered thermal governor 'step_wise'
+[    6.354852] cpuidle: using governor ladder
+[    6.357361] cpuidle: using governor menu
+[    6.419180] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    6.424784] ASID allocator initialised with 65536 entries
+[    6.436887] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    6.455487] Serial: AMBA PL011 UART driver
+[    6.738106] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    6.738960] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    6.739116] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    6.739158] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    6.739260] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    6.739295] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    6.739342] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    6.739375] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    7.159789] ACPI: Added _OSI(Module Device)
+[    7.160167] ACPI: Added _OSI(Processor Device)
+[    7.160226] ACPI: Added _OSI(Processor Aggregator Device)
+[    7.516902] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    7.806336] ACPI: Interpreter enabled
+[    7.806630] ACPI: Using GIC for interrupt routing
+[    7.818351] ACPI: MCFG table detected, 1 entries
+[    9.008605] ACPI: CPU0 has been hot-added
+[    9.022476] ACPI: CPU1 has been hot-added
+[    9.438176] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    9.568383] printk: legacy console [ttyAMA0] enabled
+[   11.496172] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[   11.499353] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[   11.501276] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[   11.767714] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[   11.772536] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[   12.019309] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[   12.335820] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[   12.347346] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[   12.522279] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[   12.531866] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[   12.541627] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[   12.936141] PCI host bridge to bus 0000:00
+[   12.951846] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[   12.953685] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[   12.967853] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[   12.991116] pci_bus 0000:00: root bus resource [bus 00-ff]
+[   13.088791] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[   13.415912] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+[   13.421607] pci 0000:00:01.0: BAR 0 [io  0x0080-0x009f]
+[   13.424256] pci 0000:00:01.0: BAR 1 [mem 0x10041000-0x10041fff]
+[   13.437727] pci 0000:00:01.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[   13.441171] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[   13.499986] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[   13.502619] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[   13.505352] pci 0000:00:02.0: BAR 1 [mem 0x10040000-0x10040fff]
+[   13.506914] pci 0000:00:02.0: BAR 4 [mem 0x8000004000-0x8000007fff 64bit pref]
+[   13.613752] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[   13.617630] pci 0000:00:01.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[   13.621982] pci 0000:00:02.0: BAR 4 [mem 0x8000004000-0x8000007fff 64bit pref]: assigned
+[   13.665722] pci 0000:00:01.0: BAR 1 [mem 0x10040000-0x10040fff]: assigned
+[   13.685985] pci 0000:00:02.0: BAR 1 [mem 0x10041000-0x10041fff]: assigned
+[   13.689601] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[   13.719485] pci 0000:00:01.0: BAR 0 [io  0x1080-0x109f]: assigned
+[   13.736767] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[   13.739240] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[   13.740680] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[   13.820782] iommu: Default domain type: Translated
+[   13.824690] iommu: DMA domain TLB invalidation policy: lazy mode
+[   14.091497] efivars: Registered efivars operations
+[   14.505977] clocksource: Switched to clocksource arch_sys_counter
+[   14.701650] VFS: Disk quotas dquot_6.6.0
+[   14.705903] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[   14.831994] pnp: PnP ACPI init
+[   14.895602] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[   14.901860] pnp: PnP ACPI: found 1 devices
+[   16.109648] NET: Registered PF_INET protocol family
+[   16.231415] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[   18.171269] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[   18.178560] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[   18.190500] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[   18.200252] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[   18.207584] TCP: Hash tables configured (established 16384 bind 16384)
+[   18.293819] MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+[   18.305732] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[   18.312734] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[   18.350261] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[   18.357835] NET: Registered PF_XDP protocol family
+[   18.370081] PCI: CLS 0 bytes, default 64
+[   18.456927] kvm [1]: HYP mode not available
+[   18.471966] Unpacking initramfs...
+[   18.546732] Initialise system trusted keyrings
+[   18.670056] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[   20.437357] Key type asymmetric registered
+[   20.439645] Asymmetric key parser 'x509' registered
+[   20.450676] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[   20.480400] io scheduler mq-deadline registered
+[   20.482642] io scheduler kyber registered
+[   20.601039] io scheduler bfq registered
+[   21.406280] ACPI: \_SB_.L001: Enabled at IRQ 36
+[   21.421101] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+[   21.582668] ACPI: \_SB_.L002: Enabled at IRQ 37
+[   21.585288] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[   21.638973] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[   22.446590] hv_vmbus: registering driver hyperv_keyboard
+[   22.598802] rtc-efi rtc-efi.0: registered as rtc0
+[   22.650122] rtc-efi rtc-efi.0: setting system clock to 2026-08-22T06:46:18 UTC (1787381178)
+[   22.740296] NET: Registered PF_INET6 protocol family
+[   22.967352] Segment Routing with IPv6
+[   22.970263] In-situ OAM (IOAM) with IPv6
+[   23.648359] registered taskstats version 1
+[   23.719143] Loading compiled-in X.509 certificates
+[   25.002592] Freeing initrd memory: 5180K
+[   28.006249] hrtimer: interrupt took 289356496 ns
+[   30.969750] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[   31.426132] Demotion targets for Node 0: null
+[   31.471418] Key type .fscrypt registered
+[   31.473644] Key type fscrypt-provisioning registered
+[   32.157112] clk: Disabling unused clocks
+[   32.169052] PM: genpd: Disabling unused power domains
+[   33.417654] Freeing unused kernel memory: 1920K
+[   33.457968] Run /init as init process
+[   37.464691] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[   37.584693] Loading boot drivers...
+ * Loading boot drivers: [   38.595602] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[   39.501527] Invalid ELF header magic: != ELF
+[   39.982250] virtio_blk virtio1: 2/0/0 default/read/poll queues
+[   40.344717] virtio_blk virtio1: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[   40.931800] Invalid ELF header magic: != ELF
+[   41.264398] Invalid ELF header magic: != ELF
+[   41.540387] Invalid ELF header magic: != ELF
+[   41.779625] Invalid ELF header magic: != ELF
+[   42.589731] Invalid ELF header magic: != ELF
+[   49.348080] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: root mounted rw, running real mfp.afx
+STRACE_PID=407
+=== STRACE LOG (first 120) ===
+411   06:46:53.644325 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8c03a000
+411   06:46:54.143657 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+411   06:46:54.444265 openat(AT_FDCWD, "/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:54.551242 mmap(NULL, 2411648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8bc00000
+411   06:46:54.562376 mmap(0xffff8be3b000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23b000) = 0xffff8be3b000
+411   06:46:54.592700 mmap(0xffff8be49000, 15488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8be49000
+411   06:46:54.679333 openat(AT_FDCWD, "/lib64/libcommon.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:54.800064 mmap(NULL, 305712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8bfef000
+411   06:46:54.819674 mmap(0xffff8c033000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x43000) = 0xffff8c033000
+411   06:46:54.842155 mmap(0xffff8c036000, 14896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8c036000
+411   06:46:54.890602 openat(AT_FDCWD, "/lib64/libevent_mgr.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:54.920156 mmap(NULL, 16648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8bfea000
+411   06:46:54.936587 mmap(0xffff8bfed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0xffff8bfed000
+411   06:46:54.958341 openat(AT_FDCWD, "/lib64/libosal.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.015679 mmap(NULL, 147864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8bfc5000
+411   06:46:55.030706 mmap(0xffff8bfd9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0xffff8bfd9000
+411   06:46:55.059703 mmap(0xffff8bfdb000, 57752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8bfdb000
+411   06:46:55.084660 openat(AT_FDCWD, "/lib64/libhal.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.121867 mmap(NULL, 356496, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8bf6d000
+411   06:46:55.174578 mmap(0xffff8bfc4000, 144, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8bfc4000
+411   06:46:55.188580 openat(AT_FDCWD, "/lib64/libsqlite3mc.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.238973 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8bf6b000
+411   06:46:55.259303 mmap(NULL, 1793192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ba4a000
+411   06:46:55.265752 mmap(0xffff8bbf2000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a7000) = 0xffff8bbf2000
+411   06:46:55.298024 mmap(0xffff8bbff000, 3240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8bbff000
+411   06:46:55.361709 openat(AT_FDCWD, "/lib64/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.469196 mmap(NULL, 945680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8be84000
+411   06:46:55.483489 mmap(0xffff8bf5c000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd7000) = 0xffff8bf5c000
+411   06:46:55.530193 openat(AT_FDCWD, "/lib64/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.557396 mmap(NULL, 4994928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b400000
+411   06:46:55.563444 mmap(0xffff8b865000, 376832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x465000) = 0xffff8b865000
+411   06:46:55.572290 mmap(0xffff8b8c1000, 10096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8b8c1000
+411   06:46:55.638387 openat(AT_FDCWD, "/lib64/libcjson.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:55.760367 mmap(NULL, 33144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8be7b000
+411   06:46:55.783983 mmap(0xffff8be82000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0xffff8be82000
+411   06:46:55.947892 openat(AT_FDCWD, "/lib64/libparser_ips.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:56.332980 mmap(NULL, 294240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ba02000
+411   06:46:56.342634 mmap(0xffff8ba45000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x42000) = 0xffff8ba45000
+411   06:46:56.378559 mmap(0xffff8ba49000, 3424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8ba49000
+411   06:46:56.393092 openat(AT_FDCWD, "/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:56.500516 mmap(NULL, 544792, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b97c000
+411   06:46:56.514382 mmap(0xffff8ba00000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x83000) = 0xffff8ba00000
+411   06:46:56.569552 openat(AT_FDCWD, "/lib64/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:56.612627 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8be79000
+411   06:46:56.651614 mmap(NULL, 86424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8be63000
+411   06:46:56.695089 mmap(0xffff8be77000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0xffff8be77000
+411   06:46:56.726812 openat(AT_FDCWD, "/lib64/libusb-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:56.764859 mmap(NULL, 120152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b95e000
+411   06:46:56.810332 mmap(0xffff8b97a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0xffff8b97a000
+411   06:46:56.831916 openat(AT_FDCWD, "/lib64/libcurl.so.4", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:56.893738 mmap(NULL, 614912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b8c7000
+411   06:46:56.900754 mmap(0xffff8b957000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0xffff8b957000
+411   06:46:56.947411 mmap(0xffff8b95d000, 512, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8b95d000
+411   06:46:57.046196 openat(AT_FDCWD, "/lib64/libnvram.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.082503 mmap(NULL, 49880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8be56000
+411   06:46:57.207658 mmap(0xffff8be61000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0xffff8be61000
+411   06:46:57.253111 openat(AT_FDCWD, "/lib64/libipm.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.319542 mmap(NULL, 2788104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b000000
+411   06:46:57.333699 mmap(0xffff8b248000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x247000) = 0xffff8b248000
+411   06:46:57.357608 mmap(0xffff8b256000, 338696, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8b256000
+411   06:46:57.428975 openat(AT_FDCWD, "/lib64/libptencryption.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.465309 mmap(NULL, 62368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b3f0000
+411   06:46:57.475697 mmap(0xffff8b3fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0xffff8b3fe000
+411   06:46:57.506452 openat(AT_FDCWD, "/lib64/libplog.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.552131 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8be54000
+411   06:46:57.564951 mmap(NULL, 63296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b3e0000
+411   06:46:57.596121 mmap(0xffff8b3ee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0xffff8b3ee000
+411   06:46:57.648368 openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.682568 mmap(NULL, 1650592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ae6d000
+411   06:46:57.758247 mmap(0xffff8afef000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x182000) = 0xffff8afef000
+411   06:46:57.768148 mmap(0xffff8aff4000, 49056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8aff4000
+411   06:46:57.798689 openat(AT_FDCWD, "/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:57.841040 mmap(NULL, 103264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b3c6000
+411   06:46:57.865104 mmap(0xffff8b3de000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0xffff8b3de000
+411   06:46:57.926923 openat(AT_FDCWD, "/lib64/libofd.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:58.030314 mmap(NULL, 241616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b38b000
+411   06:46:58.042162 mmap(0xffff8b394000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0xffff8b394000
+411   06:46:58.097320 mmap(0xffff8b396000, 196560, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8b396000
+411   06:46:58.132558 openat(AT_FDCWD, "/lib64/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:58.199569 mmap(NULL, 167424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b362000
+411   06:46:58.208981 mmap(0xffff8b389000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0xffff8b389000
+411   06:46:58.252593 openat(AT_FDCWD, "/lib64/libatomic.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:58.349239 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8be52000
+411   06:46:58.467730 mmap(NULL, 45280, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b356000
+411   06:46:58.477765 mmap(0xffff8b35f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0xffff8b35f000
+411   06:46:58.494595 mmap(0xffff8b361000, 224, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8b361000
+411   06:46:58.526705 openat(AT_FDCWD, "/lib64/libopencv_core.so.409", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:58.649311 mmap(NULL, 2480352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ac00000
+411   06:46:58.677041 mmap(0xffff8ae4a000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24a000) = 0xffff8ae4a000
+411   06:46:58.728228 mmap(0xffff8ae59000, 18656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8ae59000
+411   06:46:58.879693 openat(AT_FDCWD, "/lib64/libopencv_imgproc.so.409", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.002411 mmap(NULL, 3268704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8a800000
+411   06:46:59.044606 mmap(0xffff8aa6d000, 86016, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26d000) = 0xffff8aa6d000
+411   06:46:59.060880 mmap(0xffff8aa82000, 639072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8aa82000
+411   06:46:59.126772 openat(AT_FDCWD, "/lib64/libopencv_imgcodecs.so.409", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.200510 mmap(NULL, 301160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b30c000
+411   06:46:59.241208 mmap(0xffff8b352000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x45000) = 0xffff8b352000
+411   06:46:59.311418 openat(AT_FDCWD, "/lib64/libimageproc.so", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.434165 mmap(NULL, 19331184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff89400000
+411   06:46:59.442610 mmap(0xffff8a621000, 299008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1220000) = 0xffff8a621000
+411   06:46:59.468950 mmap(0xffff8a66a000, 22640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8a66a000
+411   06:46:59.543229 openat(AT_FDCWD, "/lib64/libgstreamer-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.573827 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8be50000
+411   06:46:59.584651 mmap(NULL, 1195648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8a6dc000
+411   06:46:59.611627 mmap(0xffff8a7f6000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11a000) = 0xffff8a7f6000
+411   06:46:59.632196 mmap(0xffff8a7ff000, 3712, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8a7ff000
+411   06:46:59.662465 openat(AT_FDCWD, "/lib64/libturbojpeg.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.763755 mmap(NULL, 389904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8b2ac000
+411   06:46:59.778628 mmap(0xffff8b30a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5e000) = 0xffff8b30a000
+411   06:46:59.848275 openat(AT_FDCWD, "/lib64/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:46:59.889191 mmap(NULL, 1353968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff892b5000
+411   06:46:59.924181 mmap(0xffff893fd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x147000) = 0xffff893fd000
+411   06:46:59.949747 mmap(0xffff893ff000, 2288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff893ff000
+411   06:46:59.984658 openat(AT_FDCWD, "/lib64/libdrm.so.2", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:00.165261 mmap(NULL, 97592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8abe8000
+411   06:47:00.181192 mmap(0xffff8abfe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0xffff8abfe000
+411   06:47:00.209188 openat(AT_FDCWD, "/lib64/libmali.so.1", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:00.341586 mmap(NULL, 58082296, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffff85b50000
+411   06:47:00.366741 mmap(0xffff85b50000, 58016760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff85b50000
+411   06:47:00.465369 mmap(0xffff890bb000, 1470464, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x355b000) = 0xffff890bb000
+=== STRACE LOG (last 60) ===
+411   06:47:02.594906 openat(AT_FDCWD, "/lib64/libopencv_video.so.409", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:02.634763 mmap(NULL, 326176, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8588b000
+411   06:47:02.647360 mmap(0xffff858d8000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4d000) = 0xffff858d8000
+411   06:47:02.735163 openat(AT_FDCWD, "/lib64/libopencv_videoio.so.409", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:02.781546 mmap(NULL, 494976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff85812000
+411   06:47:02.794369 mmap(0xffff85886000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x74000) = 0xffff85886000
+411   06:47:02.813333 mmap(0xffff85889000, 7552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff85889000
+411   06:47:02.865109 openat(AT_FDCWD, "/lib64/libgobject-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:02.947439 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8b2aa000
+411   06:47:02.956763 mmap(NULL, 415456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff857ac000
+411   06:47:02.966139 mmap(0xffff8580d000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x60000) = 0xffff8580d000
+411   06:47:02.992130 mmap(0xffff85811000, 1760, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff85811000
+411   06:47:03.103384 openat(AT_FDCWD, "/lib64/libgmodule-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:03.147591 mmap(NULL, 16840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ae68000
+411   06:47:03.272131 mmap(0xffff8ae6b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0xffff8ae6b000
+411   06:47:03.284101 openat(AT_FDCWD, "/lib64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:03.367825 mmap(NULL, 352848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff85755000
+411   06:47:03.380324 mmap(0xffff857aa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x54000) = 0xffff857aa000
+411   06:47:03.419895 openat(AT_FDCWD, "/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:03.766857 mmap(NULL, 8208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ae65000
+411   06:47:03.784185 mmap(0xffff8ae66000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff8ae66000
+411   06:47:03.959372 openat(AT_FDCWD, "/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:04.048113 mmap(NULL, 8208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ae62000
+411   06:47:04.057102 mmap(0xffff8ae63000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff8ae63000
+411   06:47:04.227511 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8ae60000
+411   06:47:04.241592 openat(AT_FDCWD, "/lib64/libgstbase-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:04.351018 mmap(NULL, 470632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff856e2000
+411   06:47:04.516660 mmap(0xffff85753000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x71000) = 0xffff85753000
+411   06:47:04.556063 openat(AT_FDCWD, "/lib64/libgstapp-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:04.718353 mmap(NULL, 75168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ab3d000
+411   06:47:04.733087 mmap(0xffff8ab4e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0xffff8ab4e000
+411   06:47:04.863759 openat(AT_FDCWD, "/lib64/libgstriff-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:04.923969 mmap(NULL, 57776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ab2e000
+411   06:47:04.943025 mmap(0xffff8ab3b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0xffff8ab3b000
+411   06:47:05.110742 openat(AT_FDCWD, "/lib64/libgstpbutils-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:05.141676 mmap(NULL, 249840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff856a5000
+411   06:47:05.210004 mmap(0xffff856de000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x38000) = 0xffff856de000
+411   06:47:05.252833 openat(AT_FDCWD, "/lib64/libgstvideo-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:05.357759 mmap(NULL, 693776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff855fb000
+411   06:47:05.373152 mmap(0xffff85693000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000) = 0xffff85693000
+411   06:47:05.498098 openat(AT_FDCWD, "/lib64/libgstaudio-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:05.606005 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8ae5e000
+411   06:47:05.619786 mmap(NULL, 438488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8558f000
+411   06:47:05.630241 mmap(0xffff855f6000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x66000) = 0xffff855f6000
+411   06:47:05.645168 mmap(0xffff855fa000, 216, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff855fa000
+411   06:47:05.865005 openat(AT_FDCWD, "/lib64/libffi.so.8", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:06.013258 mmap(NULL, 38464, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8ab24000
+411   06:47:06.032771 mmap(0xffff8ab2c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0xffff8ab2c000
+411   06:47:06.096600 openat(AT_FDCWD, "/lib64/libgsttag-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:06.211123 mmap(NULL, 244616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff85553000
+411   06:47:06.236469 mmap(0xffff8558c000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x39000) = 0xffff8558c000
+411   06:47:06.379463 openat(AT_FDCWD, "/lib64/librga.so.2", O_RDONLY|O_CLOEXEC) = 3
+411   06:47:06.407959 mmap(NULL, 210344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff8a673000
+411   06:47:06.414231 mmap(0xffff8a6a4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0xffff8a6a4000
+411   06:47:06.532595 mmap(0xffff8a6a6000, 1448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8a6a6000
+411   06:47:06.591013 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8ab22000
+411   06:47:06.743190 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8ab20000
+411   06:47:06.780733 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8a671000
+411   06:47:07.205079 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff892b3000
+411   06:47:39.483645 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff892b0000
+=== STRACE LINES ===
+209 /strace.log
+=== PLOG FULL ===
+cat: '/tmp/.plog/*.log': No such file or directory
+=== MFP5 LOG ===
+done
+SIMBOOT: mfp run finished, keeping shell
+/bin/sh: can't access tty; job control turned off
+~ # [6n[  193.420134] random: crng init done

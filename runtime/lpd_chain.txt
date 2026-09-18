@@ -1,0 +1,42 @@
+
+=== callers of 0x66b524 (net_socket_reload_tcpserver) ===
+  (none via direct bl)
+
+=== callers of 0x74c4c0 (pedk_msg_proc) ===
+  0x73b280  in recv_pedk_data_proc
+  0x73b2c8  in recv_pedk_data_proc
+
+=== callers of 0x66c058 (net_socket_peek_readable_number) ===
+  0x66cf28  in net_socket_peek_connection
+
+=== ptr table refs to 0x66c12c (net_socket_accept_connection) ===
+  0xa409fb  [.bss]
+  0xc5c4ef  [.bss]
+  0xedf2f0  [.bss]
+  0xfdd9cb  [.bss]
+  0x101a8a8  [.bss]
+  0x105bea0  [.bss]
+
+=== ptr table refs to 0x66ac5c (net_socket_create_tcpserver) ===
+  0xa4099b  [.bss]
+  0xc5ca0b  [.bss]
+  0xedecdc  [.bss]
+  0xfdd989  [.bss]
+  0x101a6f8  [.bss]
+  0x104cc78  [.bss]
+
+=== ptr table refs to 0x66b524 (net_socket_reload_tcpserver) ===
+  0xa409ab  [.bss]
+  0xc5c947  [.bss]
+  0xedefcd  [.bss]
+  0xfdd994  [.bss]
+  0x101a740  [.bss]
+  0x105a598  [.bss]
+
+=== ptr table refs to 0x74c604 (server_thread) ===
+  0xa4b29b  [.bss]
+  0xde9ce3  [.bss]
+  0xf24133  [.bss]
+  0xfe4850  [.bss]
+  0x103ef50  [.bss]
+  0x103ef68  [.bss]

@@ -1,0 +1,108 @@
+=== 0x5f3310 FULL (network_prolog precheck) ===
+0x5f3310: sub       sp, sp, #0x50
+0x5f3314: stp       x29, x30, [sp, #0x40]
+0x5f3318: add       x29, sp, #0x40
+0x5f331c: str       x0, [sp, #0x18]
+0x5f3320: str       x1, [sp, #0x10]
+0x5f3324: str       x2, [sp, #8]
+0x5f3328: adrp      x0, #0x8a5000
+0x5f332c: add       x0, x0, #0xcb0
+0x5f3330: ldr       x1, [x0]
+0x5f3334: str       x1, [sp, #0x38]
+0x5f3338: mov       x1, #0
+0x5f333c: mov       w0, #0x1007
+0x5f3340: movk      w0, #0x3060, lsl #16
+0x5f3344: str       w0, [sp, #0x28]
+0x5f3348: mov       w0, #-1
+0x5f334c: str       w0, [sp, #0x2c]
+0x5f3350: mov       w0, #-1
+0x5f3354: str       w0, [sp, #0x30]
+0x5f3358: mov       w0, #-1
+0x5f335c: str       w0, [sp, #0x34]
+0x5f3360: ldr       x0, [sp, #0x10]
+0x5f3364: mov       w1, #1
+0x5f3368: str       w1, [x0]
+0x5f336c: ldr       x0, [sp, #8]
+0x5f3370: str       wzr, [x0]
+0x5f3374: adrp      x0, #0x8b5000
+0x5f3378: add       x0, x0, #0x7a0
+0x5f337c: ldr       w0, [x0]
+0x5f3380: cmp       w0, #4
+0x5f3384: b.le      #0x5f33b4
+0x5f3388: ldr       x0, [sp, #0x10]
+0x5f338c: ldr       w1, [x0]
+0x5f3390: ldr       x0, [sp, #8]
+0x5f3394: ldr       w0, [x0]
+0x5f3398: mov       w3, w0
+0x5f339c: mov       w2, w1
+0x5f33a0: adrp      x0, #0x7e1000
+0x5f33a4: add       x1, x0, #0x170
+0x5f33a8: adrp      x0, #0x7e0000
+0x5f33ac: add       x0, x0, #0xe78
+0x5f33b0: bl        #0x44ac00
+0x5f33b4: ldr       x0, [sp, #0x10]
+0x5f33b8: ldr       w1, [x0]
+0x5f33bc: ldr       x0, [sp, #8]
+0x5f33c0: ldr       w0, [x0]
+0x5f33c4: mov       w3, w0
+0x5f33c8: mov       w2, w1
+0x5f33cc: adrp      x0, #0x7e0000
+0x5f33d0: add       x1, x0, #0xeb0
+0x5f33d4: adrp      x0, #0x7e1000
+0x5f33d8: add       x0, x0, #0x188
+0x5f33dc: bl        #0x44a8f0
+0x5f33e0: ldr       x0, [sp, #0x10]
+0x5f33e4: ldr       w0, [x0]
+0x5f33e8: cmp       w0, #0
+0x5f33ec: b.ne      #0x5f3454
+0x5f33f0: ldr       x0, [sp, #8]
+0x5f33f4: ldr       w0, [x0]
+0x5f33f8: cmp       w0, #0
+0x5f33fc: b.ne      #0x5f3454
+0x5f3400: adrp      x0, #0x8b5000
+0x5f3404: add       x0, x0, #0x7a0
+0x5f3408: ldr       w0, [x0]
+0x5f340c: cmp       w0, #2
+0x5f3410: b.le      #0x5f3430
+0x5f3414: mov       x3, #-1
+0x5f3418: mov       w2, #0x2b
+0x5f341c: adrp      x0, #0x7e1000
+0x5f3420: add       x1, x0, #0x170
+0x5f3424: adrp      x0, #0x7e0000
+0x5f3428: add       x0, x0, #0xed8
+0x5f342c: bl        #0x44ac00
+0x5f3430: mov       x3, #-1
+0x5f3434: mov       w2, #0x2b
+0x5f3438: adrp      x0, #0x7e0000
+0x5f343c: add       x1, x0, #0xf38
+0x5f3440: adrp      x0, #0x7e1000
+0x5f3444: add       x0, x0, #0x188
+0x5f3448: bl        #0x44ad40
+0x5f344c: mov       w0, #-1
+0x5f3450: b         #0x5f3488
+0x5f3454: mov       w1, #0
+0x5f3458: adrp      x0, #0x7e0000
+0x5f345c: add       x0, x0, #0xf88
+0x5f3460: bl        #0x44b760
+0x5f3464: cmp       w0, #0
+0x5f3468: b.eq      #0x5f347c
+0x5f346c: mov       w1, #0x1fd
+0x5f3470: adrp      x0, #0x7e0000
+0x5f3474: add       x0, x0, #0xf88
+0x5f3478: bl        #0x44ae60
+0x5f347c: ldr       x0, [sp, #0x18]
+0x5f3480: bl        #0x5f5b7c
+0x5f3484: mov       w0, #0
+0x5f3488: mov       w1, w0
+0x5f348c: adrp      x0, #0x8a5000
+0x5f3490: add       x0, x0, #0xcb0
+0x5f3494: ldr       x3, [sp, #0x38]
+0x5f3498: ldr       x2, [x0]
+0x5f349c: subs      x3, x3, x2
+0x5f34a0: mov       x2, #0
+0x5f34a4: b.eq      #0x5f34ac
+0x5f34a8: bl        #0x44be20
+0x5f34ac: mov       w0, w1
+0x5f34b0: ldp       x29, x30, [sp, #0x40]
+0x5f34b4: add       sp, sp, #0x50
+0x5f34b8: ret       

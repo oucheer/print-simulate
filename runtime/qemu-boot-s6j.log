@@ -1,0 +1,584 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e176018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000138] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.168824] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.584628] Console: colour dummy device 80x25
+[    0.731101] ACPI: Core revision 20240827
+[    0.832793] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.833106] pid_max: default: 32768 minimum: 301
+[    1.230972] LSM: initializing lsm=lockdown,capability,landlock
+[    1.649869] landlock: Up and running.
+[    2.176778] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    2.177051] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    5.733071] rcu: Hierarchical SRCU implementation.
+[    5.733501] rcu: 	Max phase no-delay instances is 1000.
+[    5.782622] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    5.865179] Remapping and enabling EFI services.
+[    5.901597] smp: Bringing up secondary CPUs ...
+[    5.962152] Detected PIPT I-cache on CPU1
+[    5.966561] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    6.009804] smp: Brought up 1 node, 2 CPUs
+[    6.010423] SMP: Total of 2 processors activated.
+[    6.010616] CPU: All CPU(s) started at EL1
+[    6.029391] CPU features: detected: 32-bit EL0 Support
+[    6.029619] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    6.029769] CPU features: detected: Common not Private translations
+[    6.029786] CPU features: detected: CRC32 instructions
+[    6.030338] CPU features: detected: RCpc load-acquire (LDAPR)
+[    6.030819] CPU features: detected: LSE atomic instructions
+[    6.030841] CPU features: detected: Privileged Access Never
+[    6.030850] CPU features: detected: RAS Extension Support
+[    6.030929] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    6.131374] alternatives: applying system-wide alternatives
+[    6.235245] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    6.435134] Memory: 3995976K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193644K reserved, 0K cma-reserved)
+[    6.735873] devtmpfs: initialized
+[    6.916689] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    6.925619] 24304 pages in range for non-PLT usage
+[    6.925758] 515824 pages in range for PLT usage
+[    6.949854] pinctrl core: initialized pinctrl subsystem
+[    6.993948] SMBIOS 3.0.0 present.
+[    6.994836] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    6.995594] DMI: Memory slots populated: 1/1
+[    7.127918] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    7.193581] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    7.198876] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    7.201134] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    7.211855] audit: initializing netlink subsys (disabled)
+[    7.225738] audit: type=2000 audit(1.570:1): state=initialized audit_enabled=0 res=1
+[    7.266543] thermal_sys: Registered thermal governor 'step_wise'
+[    7.285301] cpuidle: using governor ladder
+[    7.298559] cpuidle: using governor menu
+[    7.362984] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    7.365766] ASID allocator initialised with 65536 entries
+[    7.367899] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    7.497836] Serial: AMBA PL011 UART driver
+[    8.215556] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    8.215683] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    8.215715] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    8.215726] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    8.215737] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    8.215746] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    8.215757] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    8.215764] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    9.214466] ACPI: Added _OSI(Module Device)
+[    9.214589] ACPI: Added _OSI(Processor Device)
+[    9.214604] ACPI: Added _OSI(Processor Aggregator Device)
+[   10.899895] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[   12.630020] ACPI: Interpreter enabled
+[   12.630119] ACPI: Using GIC for interrupt routing
+[   12.651579] ACPI: MCFG table detected, 1 entries
+[   15.914793] ACPI: CPU0 has been hot-added
+[   16.085023] ACPI: CPU1 has been hot-added
+[   16.649374] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[   16.712915] printk: legacy console [ttyAMA0] enabled
+[   18.213382] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[   18.215818] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[   18.217740] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[   18.218364] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[   18.231313] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[   18.295868] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[   18.484424] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[   18.514796] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[   18.676571] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[   18.701423] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[   18.751562] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[   19.014511] PCI host bridge to bus 0000:00
+[   19.015763] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[   19.065684] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[   19.066152] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[   19.066790] pci_bus 0000:00: root bus resource [bus 00-ff]
+[   19.211486] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[   19.432388] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[   19.434647] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[   19.449457] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[   19.450053] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[   19.466415] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[   19.467007] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[   19.500735] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[   19.528620] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[   19.558542] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[   19.598660] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[   19.617021] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[   19.617794] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[   19.618227] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[   19.618625] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[   19.668076] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[   19.733331] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[   19.733774] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[   20.084208] iommu: Default domain type: Translated
+[   20.167408] iommu: DMA domain TLB invalidation policy: lazy mode
+[   20.690804] efivars: Registered efivars operations
+[   21.450941] clocksource: Switched to clocksource arch_sys_counter
+[   21.989656] VFS: Disk quotas dquot_6.6.0
+[   22.023247] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[   22.122285] pnp: PnP ACPI init
+[   22.200543] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[   22.206334] pnp: PnP ACPI: found 1 devices
+[   23.922740] NET: Registered PF_INET protocol family
+[   24.003649] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[   25.767210] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[   25.772748] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[   25.789411] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[   25.901026] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[   25.921837] TCP: Hash tables configured (established 32768 bind 32768)
+[   26.211059] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[   26.221780] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[   26.267845] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[   26.344166] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[   26.345928] NET: Registered PF_XDP protocol family
+[   26.349948] PCI: CLS 0 bytes, default 64
+[   26.420417] kvm [1]: HYP mode not available
+[   26.453463] Unpacking initramfs...
+[   26.504244] Initialise system trusted keyrings
+[   26.846486] hrtimer: interrupt took 39723600 ns
+[   26.888394] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[   28.855211] Key type asymmetric registered
+[   28.871674] Asymmetric key parser 'x509' registered
+[   28.888054] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[   28.906334] io scheduler mq-deadline registered
+[   28.911257] io scheduler kyber registered
+[   28.923112] io scheduler bfq registered
+[   29.337280] ACPI: \_SB_.L002: Enabled at IRQ 37
+[   29.348858] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[   29.472537] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[   29.662357] hv_vmbus: registering driver hyperv_keyboard
+[   29.737186] rtc-efi rtc-efi.0: registered as rtc0
+[   29.739566] rtc-efi rtc-efi.0: setting system clock to 2026-09-16T06:24:17 UTC (1789539857)
+[   29.770484] NET: Registered PF_INET6 protocol family
+[   29.902616] Segment Routing with IPv6
+[   29.915157] In-situ OAM (IOAM) with IPv6
+[   30.332828] registered taskstats version 1
+[   30.365572] Loading compiled-in X.509 certificates
+[   31.549331] Freeing initrd memory: 5268K
+[   34.830346] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[   34.972152] Demotion targets for Node 0: null
+[   34.988870] Key type .fscrypt registered
+[   34.998172] Key type fscrypt-provisioning registered
+[   35.300566] clk: Disabling unused clocks
+[   35.305458] PM: genpd: Disabling unused power domains
+[   36.199010] Freeing unused kernel memory: 1920K
+[   36.206239] Run /init as init process
+[   37.200061] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[   37.232155] Loading boot drivers...
+ * Loading boot drivers: [   37.465479] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[   37.717022] Invalid ELF header magic: != ELF
+[   37.838103] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[   37.922078] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[   38.052097] Invalid ELF header magic: != ELF
+[   38.128894] Invalid ELF header magic: != ELF
+[   38.211914] Invalid ELF header magic: != ELF
+[   38.299490] Invalid ELF header magic: != ELF
+[   38.503706] Invalid ELF header magic: != ELF
+[   40.968640] Invalid ELF header magic: != ELF
+[   41.153721] e1000: Intel(R) PRO/1000 Network Driver
+[   41.154165] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   41.162582] ACPI: \_SB_.L001: Enabled at IRQ 36
+[   41.163677] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[   41.831540] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   41.833131] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[   43.304110] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+[   59.286211] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 16 06:25 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 16 06:25 /tmp/virtual_hal.c
+=== VHAL: extract ===
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+-rwxr-xr-x 1 root root 17056 Sep 16 06:25 /lib/virtual_hal.so
+=== VHAL: done ===
+MFP_PID=472
+[  130.879904] random: crng init done
+--- POLL 1: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 2: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 3: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 4: N=13 ---
+POLL: early init (N=13), wait before gdb patch
+--- POLL 5: N=44 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 6: N=52 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 7: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=0 7c=0 80=0 82=0
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 8: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 9: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- BT@POLL9 ---
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+[Switching to thread 1 (Thread 0xffffb2c82960 (LWP 472))]
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#1  0x0000ffffb3554618 in ?? () from /lib64/libc.so.6
+#2  0x0000ffffb35546b4 in ?? () from /lib64/libc.so.6
+#3  0x0000ffffb34ee0a4 in ?? () from /lib64/libc.so.6
+#4  0x0000ffffb34ee9b8 in pthread_create () from /lib64/libc.so.6
+#5  0x0000ffffb45a26f8 in pi_event_mgr_create_client () from /lib64/libevent_mgr.so
+#6  0x00000000006a18cc in stomgr_do_create_event_mgr_client (ctx=0x22c70830) at storage_manager/storage_mgr.c:557
+#7  0x00000000006a27c0 in stomgr_init_ctx (ret_ctx=0xfffff3418b40) at storage_manager/storage_mgr.c:892
+[Inferior 1 (process 472) detached]
+--- POLL 10: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 11: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 12: N=52 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 13: N=52 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 14: N=52 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 15: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 16: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 17: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 18: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- BT@POLL18 ---
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+[Switching to thread 1 (Thread 0xffffb2c82960 (LWP 472))]
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#1  0x0000ffffb3554618 in ?? () from /lib64/libc.so.6
+#2  0x0000ffffb35546b4 in ?? () from /lib64/libc.so.6
+#3  0x0000ffffb34ee0a4 in ?? () from /lib64/libc.so.6
+#4  0x0000ffffb34ee9b8 in pthread_create () from /lib64/libc.so.6
+#5  0x0000ffffb45a26f8 in pi_event_mgr_create_client () from /lib64/libevent_mgr.so
+#6  0x00000000006a18cc in stomgr_do_create_event_mgr_client (ctx=0x22c70830) at storage_manager/storage_mgr.c:557
+#7  0x00000000006a27c0 in stomgr_init_ctx (ret_ctx=0xfffff3418b40) at storage_manager/storage_mgr.c:892
+[Inferior 1 (process 472) detached]
+--- POLL 19: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 20: N=52 ---
+[New LWP 546]
+[New LWP 547]
+[New LWP 548]
+[New LWP 549]
+[New LWP 550]
+[Inferior 1 (process 472) detached]
+--- POLL 21: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 22: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 23: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 24: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 25: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 26: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 27: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- BT@POLL27 ---
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+[Switching to thread 1 (Thread 0xffffb2c82960 (LWP 472))]
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#1  0x0000ffffb3554618 in ?? () from /lib64/libc.so.6
+#2  0x0000ffffb35546b4 in ?? () from /lib64/libc.so.6
+#3  0x0000ffffb34ee0a4 in ?? () from /lib64/libc.so.6
+#4  0x0000ffffb34ee9b8 in pthread_create () from /lib64/libc.so.6
+#5  0x0000ffffb45a26f8 in pi_event_mgr_create_client () from /lib64/libevent_mgr.so
+#6  0x00000000006a18cc in stomgr_do_create_event_mgr_client (ctx=0x22c70830) at storage_manager/storage_mgr.c:557
+#7  0x00000000006a27c0 in stomgr_init_ctx (ret_ctx=0xfffff3418b40) at storage_manager/storage_mgr.c:892
+[Inferior 1 (process 472) detached]
+--- POLL 28: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 29: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 30: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 31: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 32: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 33: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 34: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 35: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 36: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- BT@POLL36 ---
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+[Switching to thread 1 (Thread 0xffffb2c82960 (LWP 472))]
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#0  0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+#1  0x0000ffffb3554618 in ?? () from /lib64/libc.so.6
+#2  0x0000ffffb35546b4 in ?? () from /lib64/libc.so.6
+#3  0x0000ffffb34ee0a4 in ?? () from /lib64/libc.so.6
+#4  0x0000ffffb34ee9b8 in pthread_create () from /lib64/libc.so.6
+#5  0x0000ffffb45a26f8 in pi_event_mgr_create_client () from /lib64/libevent_mgr.so
+#6  0x00000000006a18cc in stomgr_do_create_event_mgr_client (ctx=0x22c70830) at storage_manager/storage_mgr.c:557
+#7  0x00000000006a27c0 in stomgr_init_ctx (ret_ctx=0xfffff3418b40) at storage_manager/storage_mgr.c:892
+[Inferior 1 (process 472) detached]
+--- POLL 37: N=52 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb3554768 in ?? () from /lib64/libc.so.6
+B4: 5c=1 7c=1 80=1 82=1
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 472) detached]
+--- POLL 38: N=52 ---

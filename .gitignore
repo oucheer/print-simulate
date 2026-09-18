@@ -1,0 +1,20 @@
+# ── 大体积二进制 / 镜像（>100MB，GitHub 单文件上限，走 Release 资产包）──
+update.img
+runtime.zip
+mfp.afx
+runtime/unpacked/
+runtime/collected/
+
+# ── 第三方运行时与工具链（走 Release 资产包）──
+tools/qemu-native/
+tools/qemu-setup/
+tools/toolchain/
+tools/kernel/
+
+# ── 从固件中提取的二进制（走 Release 资产包）──
+printer-sim-poc/poc-out/firmware/usr/
+
+# ── 构建 / 运行缓存 ──
+__pycache__/
+*.pyc
+.pytest_cache/

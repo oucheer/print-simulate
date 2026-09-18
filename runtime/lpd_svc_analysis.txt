@@ -1,0 +1,354 @@
+== ELF 类型 ==
+  e_type = 2 (EXEC)
+  .text vaddr=0x44c180 size=0x3176e0 fileoff=0x4c180
+
+== 符号 PLT 区 (0x449e00..0x44c200) ==
+  0x44a7c0   size=0x0      alphasort
+  0x44b3a0   size=0x0      print_ips_api_debug
+
+== 符号 lpd_listen_create 内被调 (0x5f9e00..0x5fa400) ==
+  0x5fa208   size=0xd0     netdata_get_iface_switch
+  0x5fa2d8   size=0xd0     netdata_get_ipv4_usedhcp
+  0x5fa3a8   size=0xcc     netdata_get_ipv4_autodns
+
+== 符号 通用 server 框架（socket/bind/listen/accept） (0x669900..0x66c600) ==
+  0x669924   size=0x13c    netoid_init
+  0x669a60   size=0x1c8    net_socket_create_custom
+  0x669c28   size=0x71c    net_socket_create_multicast
+  0x66a344   size=0x918    net_socket_create_by_url
+  0x66ac5c   size=0x8c8    net_socket_create_tcpserver
+  0x66b524   size=0x40c    net_socket_reload_tcpserver
+  0x66b930   size=0x2ec    net_socket_join_multicast_group
+  0x66bc1c   size=0x244    net_socket_leave_multicast_group
+  0x66be60   size=0x1f8    net_socket_select
+  0x66c058   size=0xd4     net_socket_peek_readable_number
+  0x66c12c   size=0xb30    net_socket_accept_connection
+
+== 符号 lpd_listen_svc 区 (0x74c400..0x74c800) ==
+  0x74c4c0   size=0x124    pedk_msg_proc
+
+== 符号 lpd_svc_starter 区 (0x74f600..0x74f800) ==
+  0x74f6dc   size=0x17c    pedk_mgr_prolog
+
+== 符号 lpd.c lpd_thread 区 (0x683400..0x683f00) ==
+
+== 日志字符串 ==
+  0x85af10: 'socket() error'
+  0x85af20: '127.0.0.1'
+  0x85af30: 'strat bind'
+  0x85af38: 'nd'
+  0x85af40: 'bind() error'
+  0x85af48: 'rror'
+  0x85af50: 'strat listen'
+  0x85af60: 'listen() error'
+  0x85af68: ' error'
+  0x85af70: 'accept() error'
+  0x85c2f0: 'server_thread'
+  0x85c300: '[LINE:%d] condition (s_serv_tid == INVALIDTHREAD), break. \n'
+  0x85c340: 'pedk_ibc_recv'
+  0x85c350: '[LINE:%d] condition (s_ibc_tid == INVALIDTHREAD), break. \n'
+  0x85c390: 'pedk mgr event register ... \n'
+  0x85c3b0: 'pedk mgr event init error\n'
+  0x85c3d0: 'pedk manager initialize failed(%d)'
+
+=== lpd_listen_svc 疑似 @ 0x74c604 (size=0x1a0) ===
+  0x74c604: sub       sp, sp, #0x80
+  0x74c608: stp       x29, x30, [sp, #0x70]
+  0x74c60c: add       x29, sp, #0x70
+  0x74c610: str       x0, [sp, #8]
+  0x74c614: adrp      x0, #0x8a5000
+  0x74c618: add       x0, x0, #0xcb0
+  0x74c61c: ldr       x1, [x0]
+  0x74c620: str       x1, [sp, #0x68]
+  0x74c624: mov       x1, #0
+  0x74c628: str       xzr, [sp, #0x28]
+  0x74c62c: str       wzr, [sp, #0x14]
+  0x74c630: mov       w2, #0
+  0x74c634: mov       w1, #1
+  0x74c638: mov       w0, #2
+  0x74c63c: bl        #0x44aa70  ; sub_44aa70
+  0x74c640: str       w0, [sp, #0x18]
+  0x74c644: ldr       w0, [sp, #0x18]
+  0x74c648: cmn       w0, #1
+  0x74c64c: b.ne      #0x74c65c
+  0x74c650: adrp      x0, #0x85a000
+  0x74c654: add       x0, x0, #0xf10
+  0x74c658: bl        #0x74c5e4  ; sub_74c5e4
+  0x74c65c: add       x0, sp, #0x40
+  0x74c660: stp       xzr, xzr, [x0]
+  0x74c664: mov       w0, #2
+  0x74c668: strh      w0, [sp, #0x40]
+  0x74c66c: adrp      x0, #0x85a000
+  0x74c670: add       x0, x0, #0xf20
+  0x74c674: bl        #0x44b0b0  ; sub_44b0b0
+  0x74c678: str       w0, [sp, #0x44]
+  0x74c67c: mov       w0, #-0x38c9
+  0x74c680: bl        #0x44a420  ; sub_44a420
+  0x74c684: and       w0, w0, #0xffff
+  0x74c688: strh      w0, [sp, #0x42]
+  0x74c68c: adrp      x0, #0x85a000
+  0x74c690: add       x0, x0, #0xf30
+  0x74c694: bl        #0x44b280  ; sub_44b280
+  0x74c698: add       x0, sp, #0x40
+  0x74c69c: mov       w2, #0x10
+  0x74c6a0: mov       x1, x0
+  0x74c6a4: ldr       w0, [sp, #0x18]
+  0x74c6a8: bl        #0x44a470  ; sub_44a470
+  0x74c6ac: cmn       w0, #1
+  0x74c6b0: b.ne      #0x74c6c0
+  0x74c6b4: adrp      x0, #0x85a000
+  0x74c6b8: add       x0, x0, #0xf40
+  0x74c6bc: bl        #0x74c5e4  ; sub_74c5e4
+  0x74c6c0: adrp      x0, #0x85a000
+  0x74c6c4: add       x0, x0, #0xf50
+  0x74c6c8: bl        #0x44b280  ; sub_44b280
+  0x74c6cc: mov       w1, #5
+  0x74c6d0: ldr       w0, [sp, #0x18]
+  0x74c6d4: bl        #0x44b160  ; sub_44b160
+  0x74c6d8: cmn       w0, #1
+  0x74c6dc: b.ne      #0x74c6ec
+  0x74c6e0: adrp      x0, #0x85a000
+  0x74c6e4: add       x0, x0, #0xf60
+  0x74c6e8: bl        #0x74c5e4  ; sub_74c5e4
+  0x74c6ec: mov       w0, #0x10
+  0x74c6f0: str       w0, [sp, #0x10]
+  0x74c6f4: add       x0, sp, #0x50
+  0x74c6f8: mov       x1, x0
+  0x74c6fc: add       x0, sp, #0x10
+  0x74c700: mov       x2, x0
+  0x74c704: ldr       w0, [sp, #0x18]
+  0x74c708: bl        #0x449f10  ; sub_449f10
+  0x74c70c: str       w0, [sp, #0x1c]
+  0x74c710: ldr       w0, [sp, #0x1c]
+  0x74c714: cmn       w0, #1
+  0x74c718: b.ne      #0x74c728
+  0x74c71c: adrp      x0, #0x85a000
+  0x74c720: add       x0, x0, #0xf70
+  0x74c724: bl        #0x74c5e4  ; sub_74c5e4
+  0x74c728: adrp      x0, #0x85a000
+  0x74c72c: add       x0, x0, #0xf80
+  0x74c730: bl        #0x44b280  ; sub_44b280
+  0x74c734: mov       w2, #0x800
+  0x74c738: mov       w1, #4
+  0x74c73c: ldr       w0, [sp, #0x1c]
+  0x74c740: bl        #0x44bb90  ; sub_44bb90
+  0x74c744: add       x0, sp, #0x38
+  0x74c748: mov       x2, #3
+  0x74c74c: mov       w1, #0
+  0x74c750: bl        #0x44a6c0  ; sub_44a6c0
+  0x74c754: bl        #0x74c06c  ; message_queue_pop
+  0x74c758: str       x0, [sp, #0x28]
+  0x74c75c: ldr       x0, [sp, #0x28]
+  0x74c760: cmp       x0, #0
+  0x74c764: b.eq      #0x74c7b4
+  0x74c768: ldr       x0, [sp, #0x28]
+  0x74c76c: ldrb      w0, [x0, #1]
+  0x74c770: lsl       w0, w0, #8
+  0x74c774: and       w0, w0, #0xffff
+  0x74c778: ldr       x1, [sp, #0x28]
+  0x74c77c: ldrb      w1, [x1, #2]
+  0x74c780: orr       w0, w0, w1
+  0x74c784: str       w0, [sp, #0x20]
+  0x74c788: ldr       w0, [sp, #0x20]
+  0x74c78c: add       x0, x0, #3
+  0x74c790: mov       x2, x0
+  0x74c794: ldr       x1, [sp, #0x28]
+  0x74c798: ldr       w0, [sp, #0x1c]
+  0x74c79c: bl        #0x44b170  ; sub_44b170
+  0x74c7a0: cmp       x0, #0
+
+=== lpd_listen_create 调用1 @ 0x5fa168 (size=0x180) ===
+  0x5fa168: sub       sp, sp, #0x10
+  0x5fa16c: str       x0, [sp, #8]
+  0x5fa170: ldr       x0, [sp, #8]
+  0x5fa174: ldr       x0, [x0]
+  0x5fa178: ldr       x1, [sp, #8]
+  0x5fa17c: cmp       x1, x0
+  0x5fa180: cset      w0, eq
+  0x5fa184: and       w0, w0, #0xff
+  0x5fa188: add       sp, sp, #0x10
+  0x5fa18c: ret       
+  0x5fa190: sub       sp, sp, #0x10
+  0x5fa194: str       x0, [sp, #8]
+  0x5fa198: ldr       x0, [sp, #8]
+  0x5fa19c: ldr       x0, [x0]
+  0x5fa1a0: ldr       x1, [sp, #8]
+  0x5fa1a4: cmp       x1, x0
+  0x5fa1a8: cset      w0, eq
+  0x5fa1ac: and       w0, w0, #0xff
+  0x5fa1b0: add       sp, sp, #0x10
+  0x5fa1b4: ret       
+  0x5fa1b8: sub       sp, sp, #0x10
+  0x5fa1bc: str       x0, [sp, #8]
+  0x5fa1c0: ldr       x0, [sp, #8]
+  0x5fa1c4: ldr       x0, [x0]
+  0x5fa1c8: ldr       x1, [sp, #8]
+  0x5fa1cc: cmp       x1, x0
+  0x5fa1d0: cset      w0, eq
+  0x5fa1d4: and       w0, w0, #0xff
+  0x5fa1d8: add       sp, sp, #0x10
+  0x5fa1dc: ret       
+  0x5fa1e0: sub       sp, sp, #0x10
+  0x5fa1e4: str       x0, [sp, #8]
+  0x5fa1e8: ldr       x0, [sp, #8]
+  0x5fa1ec: ldr       x0, [x0]
+  0x5fa1f0: ldr       x1, [sp, #8]
+  0x5fa1f4: cmp       x1, x0
+  0x5fa1f8: cset      w0, eq
+  0x5fa1fc: and       w0, w0, #0xff
+  0x5fa200: add       sp, sp, #0x10
+  0x5fa204: ret       
+  0x5fa208: stp       x29, x30, [sp, #-0x30]!
+  0x5fa20c: mov       x29, sp
+  0x5fa210: str       x0, [sp, #0x18]
+  0x5fa214: str       w1, [sp, #0x14]
+  0x5fa218: ldr       x0, [sp, #0x18]
+  0x5fa21c: cmp       x0, #0
+  0x5fa220: b.eq      #0x5fa230
+  0x5fa224: ldr       w0, [sp, #0x14]
+  0x5fa228: cmp       w0, #0
+  0x5fa22c: b.eq      #0x5fa284
+  0x5fa230: adrp      x0, #0x8b5000
+  0x5fa234: add       x0, x0, #0x7a0
+  0x5fa238: ldr       w0, [x0]
+  0x5fa23c: cmp       w0, #2
+  0x5fa240: b.le      #0x5fa260
+  0x5fa244: mov       x3, #0
+  0x5fa248: mov       w2, #0xda
+  0x5fa24c: adrp      x0, #0x7f4000
+  0x5fa250: add       x1, x0, #0x510
+  0x5fa254: adrp      x0, #0x7e3000
+  0x5fa258: add       x0, x0, #0xc78
+  0x5fa25c: bl        #0x44ac00  ; sub_44ac00
+  0x5fa260: mov       x3, #0
+  0x5fa264: mov       w2, #0xda
+  0x5fa268: adrp      x0, #0x7e3000
+  0x5fa26c: add       x1, x0, #0xce8
+  0x5fa270: adrp      x0, #0x7f4000
+  0x5fa274: add       x0, x0, #0x530
+  0x5fa278: bl        #0x44ad40  ; sub_44ad40
+  0x5fa27c: mov       w0, #0
+  0x5fa280: b         #0x5fa2d0  ; netdata_get_iface_switch
+  0x5fa284: ldr       x0, [sp, #0x18]
+  0x5fa288: ldr       x2, [x0]
+  0x5fa28c: adrp      x0, #0x7f4000
+  0x5fa290: add       x1, x0, #0x510
+  0x5fa294: mov       x0, x2
+  0x5fa298: bl        #0x44b510  ; sub_44b510
+  0x5fa29c: ldr       x1, [sp, #0x18]
+  0x5fa2a0: ldr       w0, [sp, #0x14]
+  0x5fa2a4: lsl       x0, x0, #2
+  0x5fa2a8: add       x0, x1, x0
+  0x5fa2ac: ldr       w0, [x0, #8]
+  0x5fa2b0: str       w0, [sp, #0x2c]
+  0x5fa2b4: ldr       x0, [sp, #0x18]
+  0x5fa2b8: ldr       x2, [x0]
+  0x5fa2bc: adrp      x0, #0x7f4000
+  0x5fa2c0: add       x1, x0, #0x510
+  0x5fa2c4: mov       x0, x2
+  0x5fa2c8: bl        #0x44b820  ; sub_44b820
+  0x5fa2cc: ldr       w0, [sp, #0x2c]
+  0x5fa2d0: ldp       x29, x30, [sp], #0x30
+  0x5fa2d4: ret       
+  0x5fa2d8: stp       x29, x30, [sp, #-0x30]!
+  0x5fa2dc: mov       x29, sp
+  0x5fa2e0: str       x0, [sp, #0x18]
+  0x5fa2e4: str       w1, [sp, #0x14]
+
+=== lpd_listen_create 调用2 @ 0x5f9f78 (size=0x180) ===
+  0x5f9f78: stp       x29, x30, [sp, #-0x20]!
+  0x5f9f7c: mov       x29, sp
+  0x5f9f80: str       x0, [sp, #0x18]
+  0x5f9f84: ldr       x0, [sp, #0x18]
+  0x5f9f88: ldr       x2, [x0, #8]
+  0x5f9f8c: ldr       x0, [sp, #0x18]
+  0x5f9f90: ldr       x0, [x0]
+  0x5f9f94: mov       x1, x0
+  0x5f9f98: mov       x0, x2
+  0x5f9f9c: bl        #0x5f9d68  ; sub_5f9d68
+  0x5f9fa0: ldr       x0, [sp, #0x18]
+  0x5f9fa4: mov       x1, #0x100
+  0x5f9fa8: movk      x1, #0x10, lsl #16
+  0x5f9fac: str       x1, [x0]
+  0x5f9fb0: ldr       x0, [sp, #0x18]
+  0x5f9fb4: mov       x1, #0x200
+  0x5f9fb8: movk      x1, #0x20, lsl #16
+  0x5f9fbc: str       x1, [x0, #8]
+  0x5f9fc0: nop       
+  0x5f9fc4: ldp       x29, x30, [sp], #0x20
+  0x5f9fc8: ret       
+  0x5f9fcc: stp       x29, x30, [sp, #-0x20]!
+  0x5f9fd0: mov       x29, sp
+  0x5f9fd4: str       x0, [sp, #0x18]
+  0x5f9fd8: ldr       x0, [sp, #0x18]
+  0x5f9fdc: ldr       x2, [x0, #8]
+  0x5f9fe0: ldr       x0, [sp, #0x18]
+  0x5f9fe4: ldr       x0, [x0]
+  0x5f9fe8: mov       x1, x0
+  0x5f9fec: mov       x0, x2
+  0x5f9ff0: bl        #0x5f9d98  ; sub_5f9d98
+  0x5f9ff4: ldr       x0, [sp, #0x18]
+  0x5f9ff8: mov       x1, #0x100
+  0x5f9ffc: movk      x1, #0x10, lsl #16
+  0x5fa000: str       x1, [x0]
+  0x5fa004: ldr       x0, [sp, #0x18]
+  0x5fa008: mov       x1, #0x200
+  0x5fa00c: movk      x1, #0x20, lsl #16
+  0x5fa010: str       x1, [x0, #8]
+  0x5fa014: nop       
+  0x5fa018: ldp       x29, x30, [sp], #0x20
+  0x5fa01c: ret       
+  0x5fa020: stp       x29, x30, [sp, #-0x20]!
+  0x5fa024: mov       x29, sp
+  0x5fa028: str       x0, [sp, #0x18]
+  0x5fa02c: ldr       x0, [sp, #0x18]
+  0x5fa030: ldr       x2, [x0, #8]
+  0x5fa034: ldr       x0, [sp, #0x18]
+  0x5fa038: ldr       x0, [x0]
+  0x5fa03c: mov       x1, x0
+  0x5fa040: mov       x0, x2
+  0x5fa044: bl        #0x5f9dc8  ; sub_5f9dc8
+  0x5fa048: ldr       x0, [sp, #0x18]
+  0x5fa04c: mov       x1, #0x100
+  0x5fa050: movk      x1, #0x10, lsl #16
+  0x5fa054: str       x1, [x0]
+  0x5fa058: ldr       x0, [sp, #0x18]
+  0x5fa05c: mov       x1, #0x200
+  0x5fa060: movk      x1, #0x20, lsl #16
+  0x5fa064: str       x1, [x0, #8]
+  0x5fa068: nop       
+  0x5fa06c: ldp       x29, x30, [sp], #0x20
+  0x5fa070: ret       
+  0x5fa074: stp       x29, x30, [sp, #-0x20]!
+  0x5fa078: mov       x29, sp
+  0x5fa07c: str       x0, [sp, #0x18]
+  0x5fa080: ldr       x0, [sp, #0x18]
+  0x5fa084: ldr       x2, [x0, #8]
+  0x5fa088: ldr       x0, [sp, #0x18]
+  0x5fa08c: ldr       x0, [x0]
+  0x5fa090: mov       x1, x0
+  0x5fa094: mov       x0, x2
+  0x5fa098: bl        #0x5f9df8  ; sub_5f9df8
+  0x5fa09c: ldr       x0, [sp, #0x18]
+  0x5fa0a0: mov       x1, #0x100
+  0x5fa0a4: movk      x1, #0x10, lsl #16
+  0x5fa0a8: str       x1, [x0]
+  0x5fa0ac: ldr       x0, [sp, #0x18]
+  0x5fa0b0: mov       x1, #0x200
+  0x5fa0b4: movk      x1, #0x20, lsl #16
+  0x5fa0b8: str       x1, [x0, #8]
+  0x5fa0bc: nop       
+  0x5fa0c0: ldp       x29, x30, [sp], #0x20
+  0x5fa0c4: ret       
+  0x5fa0c8: sub       sp, sp, #0x10
+  0x5fa0cc: str       x0, [sp, #8]
+  0x5fa0d0: ldr       x0, [sp, #8]
+  0x5fa0d4: ldr       x0, [x0]
+  0x5fa0d8: ldr       x1, [sp, #8]
+  0x5fa0dc: cmp       x1, x0
+  0x5fa0e0: cset      w0, eq
+  0x5fa0e4: and       w0, w0, #0xff
+  0x5fa0e8: add       sp, sp, #0x10
+  0x5fa0ec: ret       
+  0x5fa0f0: sub       sp, sp, #0x10
+  0x5fa0f4: str       x0, [sp, #8]

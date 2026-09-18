@@ -1,0 +1,138 @@
+
+=== server_thread @ 0x74c604 (size=0x1a0) ===
+  0x74c604: sub       sp, sp, #0x80
+  0x74c608: stp       x29, x30, [sp, #0x70]
+  0x74c60c: add       x29, sp, #0x70
+  0x74c610: str       x0, [sp, #8]
+  0x74c614: adrp      x0, #0x8a5000
+  0x74c618: add       x0, x0, #0xcb0
+  0x74c61c: ldr       x1, [x0]
+  0x74c620: str       x1, [sp, #0x68]
+  0x74c624: mov       x1, #0
+  0x74c628: str       xzr, [sp, #0x28]
+  0x74c62c: str       wzr, [sp, #0x14]
+  0x74c630: mov       w2, #0
+  0x74c634: mov       w1, #1
+  0x74c638: mov       w0, #2
+  0x74c63c: bl        #0x44aa70  ; socket(plt)
+  0x74c640: str       w0, [sp, #0x18]
+  0x74c644: ldr       w0, [sp, #0x18]
+  0x74c648: cmn       w0, #1
+  0x74c64c: b.ne      #0x74c65c
+  0x74c650: adrp      x0, #0x85a000
+  0x74c654: add       x0, x0, #0xf10
+  0x74c658: bl        #0x74c5e4  ; error_handing
+  0x74c65c: add       x0, sp, #0x40
+  0x74c660: stp       xzr, xzr, [x0]
+  0x74c664: mov       w0, #2
+  0x74c668: strh      w0, [sp, #0x40]
+  0x74c66c: adrp      x0, #0x85a000
+  0x74c670: add       x0, x0, #0xf20
+  0x74c674: bl        #0x44b0b0  ; inet_addr(plt)
+  0x74c678: str       w0, [sp, #0x44]
+  0x74c67c: mov       w0, #-0x38c9
+  0x74c680: bl        #0x44a420  ; htons(plt)
+  0x74c684: and       w0, w0, #0xffff
+  0x74c688: strh      w0, [sp, #0x42]
+  0x74c68c: adrp      x0, #0x85a000
+  0x74c690: add       x0, x0, #0xf30
+  0x74c694: bl        #0x44b280  ; puts(plt)
+  0x74c698: add       x0, sp, #0x40
+  0x74c69c: mov       w2, #0x10
+  0x74c6a0: mov       x1, x0
+  0x74c6a4: ldr       w0, [sp, #0x18]
+  0x74c6a8: bl        #0x44a470  ; bind(plt)
+  0x74c6ac: cmn       w0, #1
+  0x74c6b0: b.ne      #0x74c6c0
+  0x74c6b4: adrp      x0, #0x85a000
+  0x74c6b8: add       x0, x0, #0xf40
+  0x74c6bc: bl        #0x74c5e4  ; error_handing
+  0x74c6c0: adrp      x0, #0x85a000
+  0x74c6c4: add       x0, x0, #0xf50
+  0x74c6c8: bl        #0x44b280  ; puts(plt)
+  0x74c6cc: mov       w1, #5
+  0x74c6d0: ldr       w0, [sp, #0x18]
+  0x74c6d4: bl        #0x44b160  ; listen(plt)
+  0x74c6d8: cmn       w0, #1
+  0x74c6dc: b.ne      #0x74c6ec
+  0x74c6e0: adrp      x0, #0x85a000
+  0x74c6e4: add       x0, x0, #0xf60
+  0x74c6e8: bl        #0x74c5e4  ; error_handing
+  0x74c6ec: mov       w0, #0x10
+  0x74c6f0: str       w0, [sp, #0x10]
+  0x74c6f4: add       x0, sp, #0x50
+  0x74c6f8: mov       x1, x0
+  0x74c6fc: add       x0, sp, #0x10
+  0x74c700: mov       x2, x0
+  0x74c704: ldr       w0, [sp, #0x18]
+  0x74c708: bl        #0x449f10  ; accept(plt)
+  0x74c70c: str       w0, [sp, #0x1c]
+  0x74c710: ldr       w0, [sp, #0x1c]
+  0x74c714: cmn       w0, #1
+  0x74c718: b.ne      #0x74c728
+  0x74c71c: adrp      x0, #0x85a000
+  0x74c720: add       x0, x0, #0xf70
+  0x74c724: bl        #0x74c5e4  ; error_handing
+  0x74c728: adrp      x0, #0x85a000
+  0x74c72c: add       x0, x0, #0xf80
+  0x74c730: bl        #0x44b280  ; puts(plt)
+  0x74c734: mov       w2, #0x800
+  0x74c738: mov       w1, #4
+  0x74c73c: ldr       w0, [sp, #0x1c]
+  0x74c740: bl        #0x44bb90  ; fcntl(plt)
+  0x74c744: add       x0, sp, #0x38
+  0x74c748: mov       x2, #3
+  0x74c74c: mov       w1, #0
+  0x74c750: bl        #0x44a6c0  ; memset(plt)
+  0x74c754: bl        #0x74c06c  ; message_queue_pop
+  0x74c758: str       x0, [sp, #0x28]
+  0x74c75c: ldr       x0, [sp, #0x28]
+  0x74c760: cmp       x0, #0
+  0x74c764: b.eq      #0x74c7b4
+  0x74c768: ldr       x0, [sp, #0x28]
+  0x74c76c: ldrb      w0, [x0, #1]
+  0x74c770: lsl       w0, w0, #8
+  0x74c774: and       w0, w0, #0xffff
+  0x74c778: ldr       x1, [sp, #0x28]
+  0x74c77c: ldrb      w1, [x1, #2]
+  0x74c780: orr       w0, w0, w1
+  0x74c784: str       w0, [sp, #0x20]
+  0x74c788: ldr       w0, [sp, #0x20]
+  0x74c78c: add       x0, x0, #3
+  0x74c790: mov       x2, x0
+  0x74c794: ldr       x1, [sp, #0x28]
+  0x74c798: ldr       w0, [sp, #0x1c]
+  0x74c79c: bl        #0x44b170  ; write(plt)
+  0x74c7a0: cmp       x0, #0
+
+=== xref -> 0x66ac5c (net_socket_create_tcpserver) ===
+
+=== xref -> 0x66c12c (net_socket_accept_connection) ===
+
+=== xref -> 0x68365c (lpd_dispatch_thread) ===
+  --- hit 0x6842c8 in lpd_prolog(0x0) ---
+     0x6842b0: add       x5, x0, #0x6b0
+     0x6842b4: mov       x4, #0
+     0x6842b8: mov       w3, #0xf
+     0x6842bc: mov       x2, #0
+     0x6842c0: mov       w1, #0x80000
+     0x6842c4: adrp      x0, #0x683000
+  >> 0x6842c8: add       x0, x0, #0x65c
+     0x6842cc: bl        #0x44a950  ; pi_thread_create(plt)
+     0x6842d0: str       x0, [x19, #0x88]
+     0x6842d4: adrp      x0, #0xc92000
+     0x6842d8: add       x0, x0, #0x730
+
+=== xref -> 0x74c604 (server_thread) ===
+  --- hit 0x74f70c in pedk_mgr_prolog(0x0) ---
+     0x74f6f4: add       x5, x0, #0x2f0
+     0x74f6f8: mov       x4, #0
+     0x74f6fc: mov       w3, #0xf
+     0x74f700: mov       x2, #0
+     0x74f704: mov       w1, #0x4000
+     0x74f708: adrp      x0, #0x74c000
+  >> 0x74f70c: add       x0, x0, #0x604
+     0x74f710: bl        #0x44a950  ; pi_thread_create(plt)
+     0x74f714: mov       x1, x0
+     0x74f718: adrp      x0, #0x15cf000
+     0x74f71c: add       x0, x0, #0xe58

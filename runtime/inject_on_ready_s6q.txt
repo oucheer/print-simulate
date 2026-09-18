@@ -1,0 +1,1 @@
+﻿=== inject_on_ready start 2026-09-17 17:20:30 log=runtime/qemu-boot-s6q.log monitor=14545 fwd=14279 ===

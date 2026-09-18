@@ -1,0 +1,225 @@
+== 1) 全局指针 [0xa76110] 所在段的符号 ==
+0xa76110 -> section .bss va=0xa32f30 off=0x431e0
+位于 .bss（无文件初值，运行时初始化）
+
+== 2) symtab 中 0xa76000~0xa76400 范围符号 ==
+
+-- .symtab --
+  0xa760c8 (size 0x2, shndx 25)  s_engine_request
+  0xa760c8 (size 0x0, shndx 25)  $d
+  0xa760d0 (size 0x8, shndx 25)  s_p_process_if
+  0xa760d8 (size 0x8, shndx 25)  s_p_status_request_common_data
+  0xa760e0 (size 0x8, shndx 25)  s_engprocess_staus_request
+  0xa760e8 (size 0x8, shndx 25)  s_p_interface2process_send
+  0xa760e8 (size 0x0, shndx 25)  $d
+  0xa760f0 (size 0x8, shndx 25)  s_cmd_control_data_info
+  0xa760f8 (size 0x8, shndx 25)  s_engprocess_send
+  0xa76100 (size 0x4, shndx 25)  s_clear_communication_error
+  0xa76110 (size 0x8, shndx 25)  s_p_interface2process
+  0xa76109 (size 0x0, shndx 25)  $d
+  0xa76118 (size 0x10, shndx 25)  s_engine_status_list
+  0xa76128 (size 0x10, shndx 25)  s_engine_caution_status_list
+  0xa76138 (size 0x10, shndx 25)  s_engine_special_status_list
+  0xa76148 (size 0x10, shndx 25)  s_public_status_list
+  0xa76158 (size 0x10, shndx 25)  s_public_caution_status_list
+  0xa76168 (size 0x10, shndx 25)  s_public_special_status_list
+  0xa76178 (size 0x608, shndx 25)  s_interface2process
+  0xa76178 (size 0x0, shndx 25)  $d
+  0xa76108 (size 0x1, shndx 25)  s_recover_error_flag
+
+-- .dynsym --
+  0xa76108 (size 0x1, shndx 25)  s_recover_error_flag
+
+== 3) act_init_step1 (0x505f38) 反汇编 0x300 字节，标注 bl 目标符号 ==
+  0x505f38: stp      x29, x30, [sp, #-0x40]!
+  0x505f3c: mov      x29, sp
+  0x505f40: str      x0, [sp, #0x28]
+  0x505f44: str      w1, [sp, #0x24]
+  0x505f48: str      w2, [sp, #0x20]
+  0x505f4c: str      w3, [sp, #0x1c]
+  0x505f50: str      wzr, [sp, #0x3c]
+  0x505f54: adrp     x0, #0xa7d000  (page)
+  0x505f58: add      x0, x0, #0x2f8
+  0x505f5c: bl       #0x4977b8
+  0x505f60: mov      w0, #0
+  0x505f64: bl       #0x4f20c0
+  0x505f68: adrp     x0, #0xa7d000  (page)
+  0x505f6c: add      x0, x0, #0x300
+  0x505f70: ldr      x2, [x0]
+  0x505f74: adrp     x0, #0x7b0000  (page)
+  0x505f78: add      x1, x0, #0x460
+  0x505f7c: mov      x0, x2
+  0x505f80: bl       #0x44afe0
+  0x505f84: adrp     x0, #0xa7d000  (page)
+  0x505f88: add      x0, x0, #0x2f8
+  0x505f8c: ldr      x0, [x0]
+  0x505f90: mov      w1, #1
+  0x505f94: str      w1, [x0, #0x74]
+  0x505f98: adrp     x0, #0xa7d000  (page)
+  0x505f9c: add      x0, x0, #0x300
+  0x505fa0: ldr      x2, [x0]
+  0x505fa4: adrp     x0, #0x7b0000  (page)
+  0x505fa8: add      x1, x0, #0x460
+  0x505fac: mov      x0, x2
+  0x505fb0: bl       #0x44b1e0
+  0x505fb4: ldr      w0, [sp, #0x3c]
+  0x505fb8: ldp      x29, x30, [sp], #0x40
+  0x505fbc: ret      
+  0x505fc0: stp      x29, x30, [sp, #-0x40]!
+  0x505fc4: mov      x29, sp
+  0x505fc8: str      x0, [sp, #0x28]
+  0x505fcc: str      w1, [sp, #0x24]
+  0x505fd0: str      w2, [sp, #0x20]
+  0x505fd4: str      w3, [sp, #0x1c]
+  0x505fd8: mov      w0, #-1
+  0x505fdc: str      w0, [sp, #0x3c]
+  0x505fe0: mov      w0, #5
+  0x505fe4: strb     w0, [sp, #0x3b]
+  0x505fe8: adrp     x0, #0xa7d000  (page)
+  0x505fec: add      x0, x0, #0x2f8
+  0x505ff0: bl       #0x4977b8
+  0x505ff4: b        #0x50606c
+  0x505ff8: bl       #0x4f20e4
+  0x505ffc: str      w0, [sp, #0x3c]
+  0x506000: ldr      w0, [sp, #0x3c]
+  0x506004: cmp      w0, #0
+  0x506008: b.ne     #0x50603c
+  0x50600c: bl       #0x493e30
+  0x506010: cmp      w0, #3
+  0x506014: b.le     #0x506030
+  0x506018: mov      w2, #0x3a35
+  0x50601c: adrp     x0, #0x7ad000  (page)
+  0x506020: add      x1, x0, #0xb88
+  0x506024: adrp     x0, #0x7b0000  (page)
+  0x506028: add      x0, x0, #0x488
+  0x50602c: bl       #0x44b6f0
+  0x506030: mov      w0, #-1
+  0x506034: strb     w0, [sp, #0x3b]
+  0x506038: b        #0x50606c
+  0x50603c: mov      w0, #0x12c
+  0x506040: bl       #0x44b320
+  0x506044: ldrsb    w0, [sp, #0x3b]
+  0x506048: and      w0, w0, #0xff
+  0x50604c: sub      w0, w0, #1
+  0x506050: and      w0, w0, #0xff
+  0x506054: strb     w0, [sp, #0x3b]
+  0x506058: ldrsb    w0, [sp, #0x3b]
+  0x50605c: cmp      w0, #0
+  0x506060: b.ne     #0x50606c
+  0x506064: mov      w0, #7
+  0x506068: b        #0x5060c8
+  0x50606c: ldrsb    w0, [sp, #0x3b]
+  0x506070: cmp      w0, #0
+  0x506074: b.ge     #0x505ff8
+  0x506078: adrp     x0, #0xa7d000  (page)
+  0x50607c: add      x0, x0, #0x300
+  0x506080: ldr      x2, [x0]
+  0x506084: adrp     x0, #0x7b0000  (page)
+  0x506088: add      x1, x0, #0x4b0
+  0x50608c: mov      x0, x2
+  0x506090: bl       #0x44afe0
+  0x506094: adrp     x0, #0xa7d000  (page)
+  0x506098: add      x0, x0, #0x2f8
+  0x50609c: ldr      x0, [x0]
+  0x5060a0: mov      w1, #2
+  0x5060a4: str      w1, [x0, #0x74]
+  0x5060a8: adrp     x0, #0xa7d000  (page)
+  0x5060ac: add      x0, x0, #0x300
+  0x5060b0: ldr      x2, [x0]
+  0x5060b4: adrp     x0, #0x7b0000  (page)
+  0x5060b8: add      x1, x0, #0x4b0
+  0x5060bc: mov      x0, x2
+  0x5060c0: bl       #0x44b1e0
+  0x5060c4: mov      w0, #0
+  0x5060c8: ldp      x29, x30, [sp], #0x40
+  0x5060cc: ret      
+  0x5060d0: sub      sp, sp, #0x50
+  0x5060d4: stp      x29, x30, [sp, #0x40]
+  0x5060d8: add      x29, sp, #0x40
+  0x5060dc: str      x0, [sp, #0x18]
+  0x5060e0: str      w1, [sp, #0x14]
+  0x5060e4: str      w2, [sp, #0x10]
+  0x5060e8: str      w3, [sp, #0xc]
+  0x5060ec: adrp     x0, #0x8a5000  (page)
+  0x5060f0: add      x0, x0, #0xcb0
+  0x5060f4: ldr      x1, [x0]
+  0x5060f8: str      x1, [sp, #0x38]
+  0x5060fc: mov      x1, #0
+  0x506100: str      wzr, [sp, #0x30]
+  0x506104: str      wzr, [sp, #0x34]
+  0x506108: mov      w0, #5
+  0x50610c: strb     w0, [sp, #0x27]
+  0x506110: adrp     x0, #0xa7d000  (page)
+  0x506114: add      x0, x0, #0x2f8
+  0x506118: bl       #0x4977b8
+  0x50611c: adrp     x0, #0xa7d000  (page)
+  0x506120: add      x0, x0, #0x300
+  0x506124: ldr      x2, [x0]
+  0x506128: adrp     x0, #0x7b0000  (page)
+  0x50612c: add      x1, x0, #0x4d8
+  0x506130: mov      x0, x2
+  0x506134: bl       #0x44afe0
+  0x506138: adrp     x0, #0xa7d000  (page)
+  0x50613c: add      x0, x0, #0x2f8
+  0x506140: ldr      x0, [x0]
+  0x506144: strb     wzr, [x0, #0x84]
+  0x506148: adrp     x0, #0xa7d000  (page)
+  0x50614c: add      x0, x0, #0x300
+  0x506150: ldr      x2, [x0]
+  0x506154: adrp     x0, #0x7b0000  (page)
+  0x506158: add      x1, x0, #0x4d8
+  0x50615c: mov      x0, x2
+  0x506160: bl       #0x44b1e0
+  0x506164: adrp     x0, #0x8a9000  (page)
+  0x506168: add      x0, x0, #0xdf8
+  0x50616c: bl       #0x4e855c
+  0x506170: mov      w0, #-0x71
+  0x506174: strb     w0, [sp, #0x28]
+  0x506178: mov      w0, #0x4f
+  0x50617c: strb     w0, [sp, #0x29]
+  0x506180: strb     wzr, [sp, #0x2a]
+  0x506184: mov      w0, #3
+  0x506188: str      w0, [sp, #0x34]
+  0x50618c: adrp     x0, #0x8a9000  (page)
+  0x506190: add      x0, x0, #0xdf8
+  0x506194: ldr      w0, [x0]
+  0x506198: add      w2, w0, #1
+  0x50619c: adrp     x1, #0x8a9000  (page)
+  0x5061a0: add      x1, x1, #0xdf8
+  0x5061a4: str      w2, [x1]
+  0x5061a8: add      x4, sp, #0x28
+  0x5061ac: mov      w3, #1
+  0x5061b0: mov      w2, w0
+  0x5061b4: ldr      w1, [sp, #0x34]
+  0x5061b8: mov      x0, x4
+  0x5061bc: bl       #0x492ba0
+  0x5061c0: str      w0, [sp, #0x30]
+  0x5061c4: b        #0x506240
+  0x5061c8: adrp     x0, #0xa7d000  (page)
+  0x5061cc: add      x0, x0, #0x2f8
+  0x5061d0: ldr      x0, [x0]
+  0x5061d4: ldrb     w0, [x0, #0x84]
+  0x5061d8: cmp      w0, #1
+  0x5061dc: b.ne     #0x5061ec
+  0x5061e0: mov      w0, #-1
+  0x5061e4: strb     w0, [sp, #0x27]
+  0x5061e8: b        #0x506240
+  0x5061ec: mov      w0, #0x32
+  0x5061f0: bl       #0x44b320
+  0x5061f4: ldrsb    w0, [sp, #0x27]
+  0x5061f8: and      w0, w0, #0xff
+  0x5061fc: sub      w0, w0, #1
+  0x506200: and      w0, w0, #0xff
+  0x506204: strb     w0, [sp, #0x27]
+  0x506208: ldrsb    w0, [sp, #0x27]
+  0x50620c: cmp      w0, #0
+  0x506210: b.ne     #0x506240
+  0x506214: bl       #0x493e30
+  0x506218: cmp      w0, #2
+  0x50621c: b.le     #0x506238
+  0x506220: mov      w2, #0x3a81
+  0x506224: adrp     x0, #0x7ad000  (page)
+  0x506228: add      x1, x0, #0xba8
+  0x50622c: adrp     x0, #0x7b0000  (page)
+  0x506230: add      x0, x0, #0x500
+  0x506234: bl       #0x44ad40

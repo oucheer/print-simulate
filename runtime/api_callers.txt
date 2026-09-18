@@ -1,0 +1,51 @@
+== 1) 引擎 API 的 bl 调用者 ==
+
+  act_init_step1 (0x505f38) : 0 个调用者
+
+  act_init_step2 (0x505fc0) : 0 个调用者
+
+  act_init_step3 (0x5060d0) : 0 个调用者
+
+  act_init_step4 (0x5062d0) : 0 个调用者
+
+  act_init_step5 (0x5064dc) : 0 个调用者
+
+  act_init_step6 (0x506e88) : 0 个调用者
+
+  act_warmup_step1 (0x506fbc) : 0 个调用者
+
+  act_warmup_step2 (0x5071b4) : 0 个调用者
+
+  act_warmup_step3 (0x5072c4) : 0 个调用者
+
+  act_warmup_step4 (0x5074c4) : 0 个调用者
+
+  act_warmup_step5 (0x5076d0) : 0 个调用者
+
+  act_warmup_step6 (0x5080bc) : 0 个调用者
+
+  act_reinit_step1 (0x5081dc) : 0 个调用者
+
+  act_reinit_step2 (0x508328) : 0 个调用者
+
+  act_reinit_step3 (0x50844c) : 0 个调用者
+
+  act_reinit_step4 (0x508660) : 0 个调用者
+
+  act_reinit_step5 (0x508880) : 0 个调用者
+
+  act_reinit_step6 (0x509240) : 0 个调用者
+
+  prepare_print (0x509360) : 0 个调用者
+
+  set_paper_type (0x50939c) : 0 个调用者
+
+  set_paper_size (0x509774) : 0 个调用者
+
+  set_print_mode (0x5098ec) : 0 个调用者
+
+  print_execute (0x509ad4) : 0 个调用者
+
+== 2) 调用多个引擎 API 的汇聚函数（likely state machine 驱动） ==
+
+== 3) 调用者上下文反汇编 ==

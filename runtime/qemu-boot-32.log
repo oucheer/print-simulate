@@ -1,0 +1,453 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 000BFDB6000 start failed: 00000001
+Error: Image at 000BFD6D000 start failed: Not Found
+Error: Image at 000BFCBA000 start failed: Unsupported
+Error: Image at 000BFB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0xbfed0000 MEMATTR=0xbe18a018 ACPI 2.0=0xbcb43018 INITRD=0xbcb40f18 MEMRESERVE=0xbcb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000BCB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x00000000BCB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x00000000BCB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BCB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x00000000BCB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x00000000BCB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x00000000BCB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x00000000BCB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x00000000BCB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x00000000BCB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x00000000BCB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0xbf855b80-0xbf857fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000bc76ffff]
+[    0.000000]   node   0: [mem 0x00000000bc770000-0x00000000bcb3ffff]
+[    0.000000]   node   0: [mem 0x00000000bcb40000-0x00000000bfe1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfe20000-0x00000000bfeaffff]
+[    0.000000]   node   0: [mem 0x00000000bfeb0000-0x00000000bfebffff]
+[    0.000000]   node   0: [mem 0x00000000bfec0000-0x00000000bffdffff]
+[    0.000000]   node   0: [mem 0x00000000bffe0000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 524288
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 2MB
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000bf2b4000-0x00000000bf4b4000] (2MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000155] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.016767] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.042982] Console: colour dummy device 80x25
+[    0.057698] ACPI: Core revision 20240827
+[    0.072392] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.072933] pid_max: default: 32768 minimum: 301
+[    0.100987] LSM: initializing lsm=lockdown,capability,landlock
+[    0.106381] landlock: Up and running.
+[    0.118609] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.118796] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.307961] rcu: Hierarchical SRCU implementation.
+[    0.308149] rcu: 	Max phase no-delay instances is 1000.
+[    0.320340] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.351198] Remapping and enabling EFI services.
+[    0.371961] smp: Bringing up secondary CPUs ...
+[    0.390360] Detected PIPT I-cache on CPU1
+[    0.392460] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.440769] smp: Brought up 1 node, 2 CPUs
+[    0.440895] SMP: Total of 2 processors activated.
+[    0.440992] CPU: All CPU(s) started at EL1
+[    0.441472] CPU features: detected: 32-bit EL0 Support
+[    0.441576] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.442561] CPU features: detected: Common not Private translations
+[    0.442598] CPU features: detected: CRC32 instructions
+[    0.443021] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.443106] CPU features: detected: LSE atomic instructions
+[    0.443118] CPU features: detected: Privileged Access Never
+[    0.443127] CPU features: detected: RAS Extension Support
+[    0.443208] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.540412] alternatives: applying system-wide alternatives
+[    0.624150] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.702408] Memory: 2003216K/2097152K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 89380K reserved, 0K cma-reserved)
+[    0.857006] devtmpfs: initialized
+[    1.009787] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    1.022572] 24304 pages in range for non-PLT usage
+[    1.022698] 515824 pages in range for PLT usage
+[    1.042718] pinctrl core: initialized pinctrl subsystem
+[    1.059930] SMBIOS 3.0.0 present.
+[    1.064981] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    1.065883] DMI: Memory slots populated: 1/1
+[    1.134712] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    1.154384] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    1.156231] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    1.157069] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    1.157887] audit: initializing netlink subsys (disabled)
+[    1.168985] audit: type=2000 audit(0.780:1): state=initialized audit_enabled=0 res=1
+[    1.176196] thermal_sys: Registered thermal governor 'step_wise'
+[    1.186287] cpuidle: using governor ladder
+[    1.188947] cpuidle: using governor menu
+[    1.193725] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    1.199591] ASID allocator initialised with 65536 entries
+[    1.209078] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    1.224351] Serial: AMBA PL011 UART driver
+[    1.257145] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    1.257211] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    1.257236] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    1.257247] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    1.257262] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.257272] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    1.257286] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    1.257296] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    1.317918] ACPI: Added _OSI(Module Device)
+[    1.318022] ACPI: Added _OSI(Processor Device)
+[    1.318037] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.375387] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    1.454119] ACPI: Interpreter enabled
+[    1.454211] ACPI: Using GIC for interrupt routing
+[    1.455348] ACPI: MCFG table detected, 1 entries
+[    1.676033] ACPI: CPU0 has been hot-added
+[    1.689176] ACPI: CPU1 has been hot-added
+[    1.755371] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    1.758225] printk: legacy console [ttyAMA0] enabled
+[    1.953080] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    1.953865] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    1.954313] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    1.954795] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    1.955972] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.959965] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    1.992020] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    2.001687] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    2.008937] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    2.021197] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    2.023517] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    2.041964] PCI host bridge to bus 0000:00
+[    2.049163] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    2.049945] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    2.050441] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    2.051339] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.055203] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    2.074743] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+[    2.076274] pci 0000:00:01.0: BAR 0 [io  0x0080-0x009f]
+[    2.076769] pci 0000:00:01.0: BAR 1 [mem 0x10041000-0x10041fff]
+[    2.084108] pci 0000:00:01.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    2.084912] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    2.087293] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    2.088056] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    2.088380] pci 0000:00:02.0: BAR 1 [mem 0x10040000-0x10040fff]
+[    2.088730] pci 0000:00:02.0: BAR 4 [mem 0x8000004000-0x8000007fff 64bit pref]
+[    2.100779] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    2.101776] pci 0000:00:01.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    2.102550] pci 0000:00:02.0: BAR 4 [mem 0x8000004000-0x8000007fff 64bit pref]: assigned
+[    2.103035] pci 0000:00:01.0: BAR 1 [mem 0x10040000-0x10040fff]: assigned
+[    2.103502] pci 0000:00:02.0: BAR 1 [mem 0x10041000-0x10041fff]: assigned
+[    2.103891] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    2.104255] pci 0000:00:01.0: BAR 0 [io  0x1080-0x109f]: assigned
+[    2.105266] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    2.105686] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    2.106001] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    2.121778] iommu: Default domain type: Translated
+[    2.122197] iommu: DMA domain TLB invalidation policy: lazy mode
+[    2.152714] efivars: Registered efivars operations
+[    2.203090] clocksource: Switched to clocksource arch_sys_counter
+[    2.239736] VFS: Disk quotas dquot_6.6.0
+[    2.240622] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.255085] pnp: PnP ACPI init
+[    2.266665] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    2.268034] pnp: PnP ACPI: found 1 devices
+[    2.389340] NET: Registered PF_INET protocol family
+[    2.392693] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    2.589357] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    2.590424] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    2.591653] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    2.593559] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    2.598067] TCP: Hash tables configured (established 16384 bind 16384)
+[    2.604716] MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+[    2.606684] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    2.608248] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    2.624834] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    2.626507] NET: Registered PF_XDP protocol family
+[    2.631476] PCI: CLS 0 bytes, default 64
+[    2.660053] kvm [1]: HYP mode not available
+[    2.676512] Initialise system trusted keyrings
+[    2.692283] Unpacking initramfs...
+[    2.709087] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[    2.932476] Key type asymmetric registered
+[    2.935395] Asymmetric key parser 'x509' registered
+[    2.937160] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    2.939907] io scheduler mq-deadline registered
+[    2.940444] io scheduler kyber registered
+[    2.941452] io scheduler bfq registered
+[    3.057714] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    3.060007] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+[    3.075638] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    3.076197] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    3.101394] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    3.157704] hv_vmbus: registering driver hyperv_keyboard
+[    3.176904] rtc-efi rtc-efi.0: registered as rtc0
+[    3.187411] rtc-efi rtc-efi.0: setting system clock to 2026-08-24T02:48:50 UTC (1787539730)
+[    3.198644] NET: Registered PF_INET6 protocol family
+[    3.235480] Segment Routing with IPv6
+[    3.236437] In-situ OAM (IOAM) with IPv6
+[    3.308434] Freeing initrd memory: 5184K
+[    3.554643] registered taskstats version 1
+[    3.568032] Loading compiled-in X.509 certificates
+[    4.176735] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    4.257274] Demotion targets for Node 0: null
+[    4.269124] Key type .fscrypt registered
+[    4.269474] Key type fscrypt-provisioning registered
+[    4.420596] clk: Disabling unused clocks
+[    4.422330] PM: genpd: Disabling unused power domains
+[    4.659160] Freeing unused kernel memory: 1920K
+[    4.669282] Run /init as init process
+[    5.552022] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    5.588008] Loading boot drivers...
+ * Loading boot drivers: [    6.003485] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    6.233025] Invalid ELF header magic: != ELF
+[    6.321767] virtio_blk virtio1: 2/0/0 default/read/poll queues
+[    6.642821] virtio_blk virtio1: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    6.840535] Invalid ELF header magic: != ELF
+[    6.939956] Invalid ELF header magic: != ELF
+[    7.018964] Invalid ELF header magic: != ELF
+[    7.121644] Invalid ELF header magic: != ELF
+[    7.321174] Invalid ELF header magic: != ELF
+[    8.926512] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+STUB_LS: -rw-r--r-- 1 root root 1068 Aug 24 02:48 /lib/libbinder_stub.so
+STUB_TEST: Mon Aug 24 02:49:02 UTC 2026
+rc=0
+MFP_PID=431
+[   22.503806] random: crng init done
+[   38.958001] hrtimer: interrupt took 148042704 ns
+MFP2=435
+=== FD LIST ===
+total 0
+dr-x------ 2 root root 29 Aug 24 02:50 .
+dr-xr-xr-x 9 root root  0 Aug 24 02:49 ..
+lr-x------ 1 root root 64 Aug 24 02:50 0 -> /dev/null
+l-wx------ 1 root root 64 Aug 24 02:50 1 -> pipe:[1474]
+lrwx------ 1 root root 64 Aug 24 02:50 10 -> anon_inode:[eventpoll]
+lrwx------ 1 root root 64 Aug 24 02:50 11 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 12 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 13 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 14 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 15 -> /dev/pantumpci-main
+lrwx------ 1 root root 64 Aug 24 02:50 16 -> anon_inode:[eventpoll]
+lrwx------ 1 root root 64 Aug 24 02:50 17 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 18 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 19 -> anon_inode:[eventfd]
+l-wx------ 1 root root 64 Aug 24 02:50 2 -> /mfp.log
+lrwx------ 1 root root 64 Aug 24 02:50 20 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 21 -> /dev/pantumpci-main-video
+lrwx------ 1 root root 64 Aug 24 02:50 22 -> anon_inode:[eventpoll]
+lrwx------ 1 root root 64 Aug 24 02:50 23 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 24 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 25 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 26 -> anon_inode:[eventfd]
+lrwx------ 1 root root 64 Aug 24 02:50 28 -> /nvram/nv.db
+l-wx------ 1 root root 64 Aug 24 02:50 3 -> /mfp.log
+l-wx------ 1 root root 64 Aug 24 02:50 4 -> /tmp/.plog/mfp_2rk3588_master_local_0.log
+lr-x------ 1 root root 64 Aug 24 02:50 5 -> pipe:[1474]
+l-wx------ 1 root root 64 Aug 24 02:50 6 -> pipe:[1474]
+lrwx------ 1 root root 64 Aug 24 02:50 7 -> socket:[271]
+l-wx------ 1 root root 64 Aug 24 02:50 8 -> /dev/netlog_dev
+lrwx------ 1 root root 64 Aug 24 02:50 9 -> anon_inode:[eventpoll]
+=== MAIN SYSCALL ===
+98 0xffff85ff4580 0x80 0x2 0x0 0xffff85ff4580 0x0 0xfffff3a03610 0xffff85eeb254
+=== WCHAN ===
+435: futex_wait_queue
+436: pipe_write
+437: futex_wait_queue
+438: ptrace_stop.part.0
+439: do_epoll_wait
+440: ptrace_stop.part.0
+441: do_wait_intr_irq
+442: do_epoll_wait
+443: do_wait_intr_irq
+444: do_wait_intr_irq
+445: wait_for_partner
+446: futex_wait_queue
+=== STRACE OPENS ===
+435   openat(AT_FDCWD, "/lib/libbinder_stub.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+435   openat(AT_FDCWD, "/lib64/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libcommon.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libevent_mgr.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libosal.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libhal.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libsqlite3mc.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libcjson.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libparser_ips.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libusb-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libcurl.so.4", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libnvram.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libipm.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libptencryption.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libplog.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libofd.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libatomic.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_core.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_imgproc.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_imgcodecs.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libimageproc.so", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgstreamer-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libturbojpeg.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libdrm.so.2", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libmali.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgomp.so.1", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libjpeg.so.8", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libpng16.so.16", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libtiff.so.6", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_features2d.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_flann.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_ml.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_photo.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_video.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libopencv_videoio.so.409", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgobject-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgmodule-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+435   openat(AT_FDCWD, "/lib64/libgstbase-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+=== STRACE OPEN ===
+=== STRACE MMAP ===
+435   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86f4c000
+435   mmap(NULL, 1068, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86f4b000
+435   mmap(NULL, 2411648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86c00000
+435   mmap(0xffff86e3b000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23b000) = 0xffff86e3b000
+435   mmap(0xffff86e49000, 15488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff86e49000
+435   mmap(NULL, 305712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86f00000
+435   mmap(0xffff86f44000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x43000) = 0xffff86f44000
+435   mmap(0xffff86f47000, 14896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff86f47000
+435   mmap(NULL, 16648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86efb000
+435   mmap(0xffff86efe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0xffff86efe000
+435   mmap(NULL, 147864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86ed6000
+435   mmap(0xffff86eea000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0xffff86eea000
+435   mmap(0xffff86eec000, 57752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff86eec000
+435   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86ed4000
+435   mmap(NULL, 356496, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86e7c000
+435   mmap(0xffff86ed3000, 144, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff86ed3000
+435   mmap(NULL, 1793192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86a4a000
+435   mmap(0xffff86bf2000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a7000) = 0xffff86bf2000
+435   mmap(0xffff86bff000, 3240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff86bff000
+435   mmap(NULL, 945680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86963000
+435   mmap(0xffff86a3b000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd7000) = 0xffff86a3b000
+435   mmap(NULL, 4994928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86400000
+435   mmap(0xffff86865000, 376832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x465000) = 0xffff86865000
+435   mmap(0xffff868c1000, 10096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff868c1000
+435   mmap(NULL, 33144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffff86e73000
+=== STRACE BINDER ===
+435   openat(AT_FDCWD, "/lib/libbinder_stub.so", O_RDONLY|O_CLOEXEC) = 3
+=== STRACE IOCTL HEAD ===
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10) <unfinished ...>
+440   <... ioctl resumed>, 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+=== STRACE TAIL ===
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8)  = 8
+440   ioctl(15, _IOC(_IOC_WRITE, 0x74, 0x8, 0x10), 0xffff7ed0b208) = -1 ENOTTY (Inappropriate ioctl for device)
+440   write(19, "\1\0\0\0\0\0\0\0", 8=== GDB BT ===
+warning: process 435 is already traced by process 431
+ptrace: Operation not permitted.
+done
+SIMBOOT: mfp run finished, keeping shell
+/bin/sh: can't access tty; job control turned off
+~ # [6n

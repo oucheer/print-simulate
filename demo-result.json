@@ -1,0 +1,31 @@
+{
+  "normal": {
+    "pass": true,
+    "pages": 1,
+    "events": [
+      "BOOT",
+      "VIRTUAL_HAL=READY",
+      "PRINTER_STATE=IDLE",
+      "SENSOR1=ON (paper inserted)",
+      "JOB_START pages=1",
+      "SENSOR2=ON",
+      "JOB_COMPLETED pages=1"
+    ]
+  },
+  "paper_jam_recovery": {
+    "pass": true,
+    "pages": 1,
+    "events": [
+      "BOOT",
+      "VIRTUAL_HAL=READY",
+      "SENSOR1=ON (paper inserted)",
+      "FAULT=paper_jam",
+      "JOB_START pages=1",
+      "JOB_STOPPED reason=PAPER_JAM",
+      "FAULT_CLEARED=paper_jam",
+      "JOB_START pages=1",
+      "SENSOR2=ON",
+      "JOB_COMPLETED pages=1"
+    ]
+  }
+}

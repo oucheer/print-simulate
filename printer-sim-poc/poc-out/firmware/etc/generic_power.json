@@ -1,0 +1,67 @@
+{
+	"generic_power": [
+		{
+			"device_name": "fan_power",
+			"device_id": 21,
+			"gpio": 129,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "usb_host1_power",
+			"device_id": 25,
+			"gpio": 49,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "usb_host2_power",
+			"device_id": 26,
+			"gpio": 51,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "usb_host3_power",
+			"device_id": 27,
+			"gpio": 53,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "harddisk_power",
+			"device_id": 36,
+			"gpio": 56,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "sleep_power",
+			"device_id": 38,
+			"gpio": 38,
+			"direction": "out",
+			"poweron_value": "low"
+		},
+		{
+			"device_name": "fpga_power",
+			"device_id": 37,
+			"gpio": 117,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "m6220_ccd_power",
+			"device_id": 100,
+			"gpio": 58,
+			"direction": "out",
+			"poweron_value": "high"
+		},
+		{
+			"device_name": "m6220_cis_power",
+			"device_id": 101,
+			"gpio": 57,
+			"direction": "out",
+			"poweron_value": "high"
+		}
+	]
+}

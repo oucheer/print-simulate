@@ -1,0 +1,820 @@
+
+==== engine_hal_send_data @ 0x490b50 (0x60) ====
+  0x490b50: stp      x29, x30, [sp, #-0x10]!
+  0x490b54: mov      x29, sp
+  0x490b58: sub      sp, sp, #0x220
+  0x490b5c: str      x0, [sp, #8]
+  0x490b60: str      w1, [sp, #4]
+  0x490b64: adrp     x0, #0x8a5000
+  0x490b68: add      x0, x0, #0xcb0
+  0x490b6c: ldr      x1, [x0]
+  0x490b70: str      x1, [sp, #0x218]
+  0x490b74: mov      x1, #0
+  0x490b78: str      wzr, [sp, #0x14]
+  0x490b7c: adrp     x0, #0xa75000
+  0x490b80: add      x0, x0, #0x880
+  0x490b84: ldr      x0, [x0]
+  0x490b88: cmp      x0, #0
+  0x490b8c: b.ne     #0x490bbc
+  0x490b90: bl       #0x493e30  -> (内部 0x9249c4)
+  0x490b94: cmp      w0, #1
+  0x490b98: b.le     #0x490bb4
+  0x490b9c: mov      w2, #0x7c
+  0x490ba0: adrp     x0, #0x77e000
+  0x490ba4: add      x1, x0, #0x170
+  0x490ba8: adrp     x0, #0x77e000
+  0x490bac: add      x0, x0, #0x438
+
+==== engine_hal_receive_data @ 0x490d10 (0x60) ====
+  0x490d10: stp      x29, x30, [sp, #-0x50]!
+  0x490d14: mov      x29, sp
+  0x490d18: str      x0, [sp, #0x38]
+  0x490d1c: str      x1, [sp, #0x30]
+  0x490d20: str      w2, [sp, #0x2c]
+  0x490d24: str      w3, [sp, #0x28]
+  0x490d28: str      w4, [sp, #0x24]
+  0x490d2c: str      x5, [sp, #0x18]
+  0x490d30: str      wzr, [sp, #0x4c]
+  0x490d34: str      wzr, [sp, #0x48]
+  0x490d38: adrp     x0, #0xa75000
+  0x490d3c: add      x0, x0, #0x880
+  0x490d40: ldr      x0, [x0]
+  0x490d44: cmp      x0, #0
+  0x490d48: b.ne     #0x490d84
+  0x490d4c: bl       #0x493e30  -> (内部 0x924b80)
+  0x490d50: cmp      w0, #1
+  0x490d54: b.le     #0x490d70
+  0x490d58: mov      w2, #0xc5
+  0x490d5c: adrp     x0, #0x77e000
+  0x490d60: add      x1, x0, #0x170
+  0x490d64: adrp     x0, #0x77e000
+  0x490d68: add      x0, x0, #0x450
+  0x490d6c: bl       #0x44bda0  -> (内部 0x8dcb10)
+
+==== engine_hal_dev_com_init @ 0x490fa8 (0x100) ====
+  0x490fa8: stp      x29, x30, [sp, #-0x10]!
+  0x490fac: mov      x29, sp
+  0x490fb0: mov      w5, #0
+  0x490fb4: mov      w4, #1
+  0x490fb8: mov      w3, #1
+  0x490fbc: mov      w2, #8
+  0x490fc0: mov      w1, #0x9600
+  0x490fc4: mov      w0, #7
+  0x490fc8: bl       #0x44bb70  -> (内部 0x8dcb3c)
+  0x490fcc: mov      x1, x0
+  0x490fd0: adrp     x0, #0xa75000
+  0x490fd4: add      x0, x0, #0x880
+  0x490fd8: str      x1, [x0]
+  0x490fdc: adrp     x0, #0x77e000
+  0x490fe0: add      x1, x0, #0x468
+  0x490fe4: mov      w0, #1
+  0x490fe8: bl       #0x44a410  -> (内部 0x8db3fc)
+  0x490fec: mov      x1, x0
+  0x490ff0: adrp     x0, #0xa75000
+  0x490ff4: add      x0, x0, #0x880
+  0x490ff8: str      x1, [x0, #8]
+  0x490ffc: adrp     x0, #0xa75000
+  0x491000: add      x0, x0, #0x880
+  0x491004: ldr      x0, [x0]
+  0x491008: cmp      x0, #0
+  0x49100c: b.eq     #0x491018
+  0x491010: mov      w0, #0
+  0x491014: b        #0x49101c  -> (内部 0x922034)
+  0x491018: mov      w0, #-1
+  0x49101c: ldp      x29, x30, [sp], #0x10
+  0x491020: ret      
+  0x491024: stp      x29, x30, [sp, #-0x10]!
+  0x491028: mov      x29, sp
+  0x49102c: adrp     x0, #0xa75000
+  0x491030: add      x0, x0, #0x880
+  0x491034: ldr      x0, [x0]
+  0x491038: cmp      x0, #0
+  0x49103c: b.ne     #0x49106c
+  0x491040: bl       #0x493e30  -> (内部 0x924e74)
+  0x491044: cmp      w0, #1
+  0x491048: b.le     #0x491064
+  0x49104c: mov      w2, #0x13a
+  0x491050: adrp     x0, #0x77e000
+  0x491054: add      x1, x0, #0x248
+  0x491058: adrp     x0, #0x77e000
+  0x49105c: add      x0, x0, #0x480
+  0x491060: bl       #0x44bda0  -> (内部 0x8dce04)
+  0x491064: mov      w0, #-1
+  0x491068: b        #0x4910c4  -> (内部 0x922130)
+  0x49106c: adrp     x0, #0xa75000
+  0x491070: add      x0, x0, #0x880
+  0x491074: ldr      x0, [x0]
+  0x491078: ldr      x1, [x0, #0x40]
+  0x49107c: adrp     x0, #0xa75000
+  0x491080: add      x0, x0, #0x880
+  0x491084: ldr      x0, [x0]
+  0x491088: blr      x1
+  0x49108c: adrp     x0, #0xa75000
+  0x491090: add      x0, x0, #0x880
+  0x491094: str      xzr, [x0]
+  0x491098: adrp     x0, #0xa75000
+  0x49109c: add      x0, x0, #0x880
+  0x4910a0: ldr      x2, [x0, #8]
+  0x4910a4: adrp     x0, #0x77e000
+
+==== engine_hal_dev_com_close @ 0x491024 (0x40) ====
+  0x491024: stp      x29, x30, [sp, #-0x10]!
+  0x491028: mov      x29, sp
+  0x49102c: adrp     x0, #0xa75000
+  0x491030: add      x0, x0, #0x880
+  0x491034: ldr      x0, [x0]
+  0x491038: cmp      x0, #0
+  0x49103c: b.ne     #0x49106c
+  0x491040: bl       #0x493e30  -> (内部 0x924e74)
+  0x491044: cmp      w0, #1
+  0x491048: b.le     #0x491064
+  0x49104c: mov      w2, #0x13a
+  0x491050: adrp     x0, #0x77e000
+  0x491054: add      x1, x0, #0x248
+  0x491058: adrp     x0, #0x77e000
+  0x49105c: add      x0, x0, #0x480
+  0x491060: bl       #0x44bda0  -> (内部 0x8dce04)
+
+==== engine_hal_dev_gpio_init @ 0x4910cc (0x60) ====
+  0x4910cc: stp      x29, x30, [sp, #-0x20]!
+  0x4910d0: mov      x29, sp
+  0x4910d4: str      wzr, [sp, #0x1c]
+  0x4910d8: adrp     x0, #0xa75000
+  0x4910dc: add      x0, x0, #0x880
+  0x4910e0: str      xzr, [x0, #0x10]
+  0x4910e4: adrp     x0, #0xa75000
+  0x4910e8: add      x0, x0, #0x880
+  0x4910ec: str      xzr, [x0, #0x18]
+  0x4910f0: mov      w2, #0
+  0x4910f4: adrp     x0, #0xa75000
+  0x4910f8: add      x1, x0, #0x890
+  0x4910fc: mov      w0, #1
+  0x491100: bl       #0x44b630  -> (内部 0x8dc734)
+  0x491104: str      w0, [sp, #0x1c]
+  0x491108: ldr      w0, [sp, #0x1c]
+  0x49110c: cmp      w0, #0
+  0x491110: b.eq     #0x491144
+  0x491114: bl       #0x493e30  -> (内部 0x924f48)
+  0x491118: cmp      w0, #1
+  0x49111c: b.le     #0x49113c
+  0x491120: mov      w3, #1
+  0x491124: mov      w2, #0x15b
+  0x491128: adrp     x0, #0x77e000
+
+==== engine_hal_set_gpio_value @ 0x4911a4 (0x60) ====
+  0x4911a4: stp      x29, x30, [sp, #-0x30]!
+  0x4911a8: mov      x29, sp
+  0x4911ac: str      w0, [sp, #0x1c]
+  0x4911b0: str      w1, [sp, #0x18]
+  0x4911b4: str      wzr, [sp, #0x2c]
+  0x4911b8: ldr      w0, [sp, #0x1c]
+  0x4911bc: cmp      w0, #0x22
+  0x4911c0: b.eq     #0x4911d4
+  0x4911c4: ldr      w0, [sp, #0x1c]
+  0x4911c8: cmp      w0, #0x50
+  0x4911cc: b.eq     #0x4912e4
+  0x4911d0: b        #0x4912b4  -> (内部 0x922488)
+  0x4911d4: ldr      w0, [sp, #0x18]
+  0x4911d8: cmp      w0, #1
+  0x4911dc: b.eq     #0x4911ec
+  0x4911e0: ldr      w0, [sp, #0x18]
+  0x4911e4: cmp      w0, #0
+  0x4911e8: b.ne     #0x49127c
+  0x4911ec: adrp     x0, #0xa75000
+  0x4911f0: add      x0, x0, #0x880
+  0x4911f4: ldr      x0, [x0, #0x18]
+  0x4911f8: cmp      x0, #0
+  0x4911fc: b.eq     #0x491250
+  0x491200: adrp     x0, #0xa75000
+
+==== engine_hal_get_gpio_value @ 0x491320 (0x60) ====
+  0x491320: sub      sp, sp, #0x40
+  0x491324: stp      x29, x30, [sp, #0x30]
+  0x491328: add      x29, sp, #0x30
+  0x49132c: str      w0, [sp, #0xc]
+  0x491330: adrp     x0, #0x8a5000
+  0x491334: add      x0, x0, #0xcb0
+  0x491338: ldr      x1, [x0]
+  0x49133c: str      x1, [sp, #0x28]
+  0x491340: mov      x1, #0
+  0x491344: str      wzr, [sp, #0x20]
+  0x491348: str      wzr, [sp, #0x24]
+  0x49134c: str      wzr, [sp, #0x1c]
+  0x491350: ldr      w0, [sp, #0xc]
+  0x491354: cmp      w0, #0x23
+  0x491358: b.ne     #0x491408
+  0x49135c: adrp     x0, #0xa75000
+  0x491360: add      x0, x0, #0x880
+  0x491364: ldr      x0, [x0, #0x10]
+  0x491368: cmp      x0, #0
+  0x49136c: b.eq     #0x4913dc
+  0x491370: adrp     x0, #0xa75000
+  0x491374: add      x0, x0, #0x880
+  0x491378: ldr      x0, [x0, #0x10]
+  0x49137c: add      x1, sp, #0x1c
+
+== .rela.plt 全部导入符号 (GOT槽 -> 符号) ==
+  CPMCalSm3: got=(0x8a70e0)
+  CPMSm4Decrypt_Ecb: got=(0x8a6d40)
+  CPMSm4Encrypt_Ecb: got=(0x8a6320)
+  EVP_CIPHER_CTX_free: got=(0x8a6918)
+  EVP_CIPHER_CTX_new: got=(0x8a6aa8)
+  EVP_CIPHER_CTX_set_key_length: got=(0x8a6428)
+  EVP_DigestFinal_ex: got=(0x8a70a8)
+  EVP_DigestInit_ex: got=(0x8a6bf0)
+  EVP_DigestUpdate: got=(0x8a6150)
+  EVP_EncryptFinal_ex: got=(0x8a7018)
+  EVP_EncryptInit_ex: got=(0x8a6238)
+  EVP_EncryptUpdate: got=(0x8a64b0)
+  EVP_MD_CTX_free: got=(0x8a6688)
+  EVP_MD_CTX_new: got=(0x8a61f8)
+  EVP_md5: got=(0x8a6ab8)
+  EVP_rc4: got=(0x8a61c0)
+  KeyManage_Get_key: got=(0x8a62f0)
+  OSSL_PROVIDER_load: got=(0x8a6c20)
+  OSSL_PROVIDER_unload: got=(0x8a6118)
+  PEM_read_X509: got=(0x8a6ab0)
+  QIOXPScreate: got=(0x8a6010)
+  X509_free: got=(0x8a7078)
+  X509_getm_notAfter: got=(0x8a67f8)
+  __ctype_b_loc: got=(0x8a6540)
+  __errno_location: got=(0x8a65f8)
+  __gmon_start__: got=(0x8a64d8)
+  __isoc23_fscanf: got=(0x8a62a8)
+  __isoc23_sscanf: got=(0x8a6ca0)
+  __isoc23_strtol: got=(0x8a6c68)
+  __isoc23_strtoll: got=(0x8a6468)
+  __isoc23_strtoul: got=(0x8a6098)
+  __libc_current_sigrtmin: got=(0x8a6fb0)
+  __libc_start_main: got=(0x8a70f0)
+  __stack_chk_fail: got=(0x8a6f90)
+  __xpg_basename: got=(0x8a6b88)
+  abort: got=(0x8a6808)
+  accept: got=(0x8a6008)
+  access: got=(0x8a6c30)
+  algorithm_params_parse: got=(0x8a6ad0)
+  alphasort: got=(0x8a6460)
+  asctime: got=(0x8a6880)
+  atoi: got=(0x8a6858)
+  atol: got=(0x8a6848)
+  base64_encode: got=(0x8a6480)
+  bind: got=(0x8a62b8)
+  binder_add_target: got=(0x8a6b20)
+  binder_call: got=(0x8a6108)
+  binder_done: got=(0x8a6d38)
+  binder_start: got=(0x8a6e68)
+  bio_get_buffer: got=(0x8a7128)
+  bio_get_string8: got=(0x8a61b8)
+  bio_get_uint32: got=(0x8a66f8)
+  bio_init: got=(0x8a6ea0)
+  bio_put_buffer: got=(0x8a7030)
+  bio_put_fd: got=(0x8a6968)
+  bio_put_uint32: got=(0x8a70d8)
+  book_copy_back_cover_init_step: got=(0x8a6ff8)
+  book_copy_init_step: got=(0x8a6b10)
+  cJSON_AddBoolToObject: got=(0x8a6da0)
+  cJSON_AddItemToArray: got=(0x8a6f78)
+  cJSON_AddItemToObject: got=(0x8a6c48)
+  cJSON_AddNumberToObject: got=(0x8a6828)
+  cJSON_AddStringToObject: got=(0x8a70b8)
+  cJSON_CreateArray: got=(0x8a6f38)
+  cJSON_CreateBool: got=(0x8a6868)
+  cJSON_CreateNumber: got=(0x8a6448)
+  cJSON_CreateObject: got=(0x8a60e8)
+  cJSON_CreateString: got=(0x8a6d70)
+  cJSON_Delete: got=(0x8a6418)
+  cJSON_DetachItemFromObject: got=(0x8a69b0)
+  cJSON_Duplicate: got=(0x8a7040)
+  cJSON_GetArrayItem: got=(0x8a61f0)
+  cJSON_GetArraySize: got=(0x8a6e90)
+  cJSON_GetErrorPtr: got=(0x8a68b0)
+  cJSON_GetObjectItem: got=(0x8a6188)
+  cJSON_GetStringValue: got=(0x8a61d0)
+  cJSON_IsBool: got=(0x8a6c10)
+  cJSON_IsObject: got=(0x8a6080)
+  cJSON_IsString: got=(0x8a6d80)
+  cJSON_IsTrue: got=(0x8a6af0)
+  cJSON_Parse: got=(0x8a6138)
+  cJSON_Print: got=(0x8a6908)
+  cJSON_PrintUnformatted: got=(0x8a66d8)
+  cJSON_ReplaceItemInObject: got=(0x8a64a8)
+  cache_init_step: got=(0x8a6bc0)
+  calloc: got=(0x8a6830)
+  clock_gettime: got=(0x8a6408)
+  close: got=(0x8a6a28)
+  closedir: got=(0x8a61a0)
+  cmd_prolog: got=(0x8a68a8)
+  cmd_register: got=(0x8a6220)
+  compressBound: got=(0x8a60b8)
+  connect: got=(0x8a60c8)
+  copy_halftone_pu_init_step: got=(0x8a6c98)
+  copy_oly_create_init_step: got=(0x8a68e8)
+  copy_overlay_pu_init_step: got=(0x8a6a08)
+  copy_pu_init_step: got=(0x8a69d8)
+  cover_blank_init_step: got=(0x8a6d78)
+  cover_empty_init_step: got=(0x8a6f18)
+  cover_sort_init_step: got=(0x8a6338)
+  cross_offset_init_step: got=(0x8a64a0)
+  ctime: got=(0x8a6478)
+  deflate: got=(0x8a6e00)
+  deflateEnd: got=(0x8a6ea8)
+  deflateInit_: got=(0x8a6ac8)
+  edge_clean_init_step: got=(0x8a62b0)
+  epoll_create: got=(0x8a6420)
+  epoll_create1: got=(0x8a6810)
+  epoll_ctl: got=(0x8a6a78)
+  epoll_wait: got=(0x8a66e8)
+  eventfd: got=(0x8a63b8)
+  execl: got=(0x8a6d30)
+  exit: got=(0x8a6340)
+  fclose: got=(0x8a6cc8)
+  fcntl: got=(0x8a6e48)
+  feof: got=(0x8a6400)
+  ferror: got=(0x8a60e0)
+  fflush: got=(0x8a6798)
+  fgetc: got=(0x8a65a8)
+  fgets: got=(0x8a6518)
+  fileno: got=(0x8a6dc8)
+  flock: got=(0x8a7048)
+  fopen: got=(0x8a6040)
+  fprintf: got=(0x8a6ce8)
+  fputs: got=(0x8a6f60)
+  fread: got=(0x8a6b68)
+  free: got=(0x8a6fa8)
+  freeaddrinfo: got=(0x8a6738)
+  fseek: got=(0x8a6c78)
+  fstat: got=(0x8a6b90)
+  fsync: got=(0x8a6d08)
+  ftell: got=(0x8a6578)
+  ftruncate: got=(0x8a69a8)
+  fwrite: got=(0x8a67d8)
+  get_connect_status: got=(0x8a7020)
+  get_ibc_enp: got=(0x8a6950)
+  get_ipm_job_id: got=(0x8a6048)
+  get_parser_log_level: got=(0x8a6838)
+  getaddrinfo: got=(0x8a6aa0)
+  getline: got=(0x8a7110)
+  getopt_long: got=(0x8a6a48)
+  getpid: got=(0x8a6698)
+  getsockname: got=(0x8a6c38)
+  getsockopt: got=(0x8a6180)
+  gettimeofday: got=(0x8a6078)
+  gmtime: got=(0x8a6760)
+  gqio_create: got=(0x8a64e8)
+  htonl: got=(0x8a6450)
+  htons: got=(0x8a6290)
+  ibc_prolog: got=(0x8a6b58)
+  ibc_read_async: got=(0x8a6a58)
+  ibc_read_sync: got=(0x8a6210)
+  ibc_write_async: got=(0x8a6990)
+  ibc_write_sync: got=(0x8a6fc0)
+  iconv: got=(0x8a7070)
+  iconv_close: got=(0x8a6778)
+  iconv_open: got=(0x8a66b8)
+  if_nametoindex: got=(0x8a63b0)
+  imagemem_mmap: got=(0x8a6d60)
+  imagemem_unmap: got=(0x8a6be8)
+  inet_addr: got=(0x8a68d8)
+  inet_ntop: got=(0x8a6638)
+  inet_pton: got=(0x8a68f8)
+  init_Parser_Debug_Mode: got=(0x8a6c18)
+  init_algorithm_glsl_binary: got=(0x8a63a0)
+  initstep_backup_mode: got=(0x8a67c8)
+  initstep_booklet: got=(0x8a6710)
+  initstep_chapter: got=(0x8a6690)
+  initstep_clone: got=(0x8a6490)
+  initstep_duplex_print_insert_page: got=(0x8a6e60)
+  initstep_duplex_print_insert_page_have_back_cover: got=(0x8a6d00)
+  initstep_idcard: got=(0x8a66a8)
+  initstep_img_adjust_paper: got=(0x8a6430)
+  initstep_insert_image: got=(0x8a6368)
+  initstep_insert_page: got=(0x8a6cb0)
+  initstep_margin_adjust: got=(0x8a6748)
+  initstep_mix_duplex_print_insert_page: got=(0x8a7108)
+  initstep_nup: got=(0x8a67d0)
+  initstep_ohp_insert: got=(0x8a6a30)
+  initstep_oly_img_comp: got=(0x8a68e0)
+  initstep_oly_img_create: got=(0x8a6900)
+  initstep_page_header_page_footer: got=(0x8a6a18)
+  initstep_place: got=(0x8a69e0)
+  initstep_rgb_combine_page: got=(0x8a6b50)
+  initstep_scale_place_step: got=(0x8a63c0)
+  initstep_separator_page: got=(0x8a6370)
+  initstep_single_to_double: got=(0x8a6840)
+  initstep_stamp: got=(0x8a6258)
+  initstep_watermark: got=(0x8a6978)
+  inotify_add_watch: got=(0x8a6a90)
+  inotify_init: got=(0x8a6190)
+  inotify_rm_watch: got=(0x8a6308)
+  ioctl: got=(0x8a6f28)
+  ipm_debug_set_algorithm_enable_flag: got=(0x8a64c8)
+  ipm_debug_set_save_img_flag: got=(0x8a6758)
+  ipm_set_calibration_data: got=(0x8a67c0)
+  jpeg_pu_init_step: got=(0x8a6378)
+  kill: got=(0x8a6b18)
+  listen: got=(0x8a6930)
+  localtime: got=(0x8a6850)
+  localtime_r: got=(0x8a6208)
+  log_debug: got=(0x8a64f8)
+  log_error: got=(0x8a6f50)
+  log_fatal: got=(0x8a61c8)
+  log_info: got=(0x8a6bf8)
+  log_set_level: got=(0x8a6560)
+  log_set_mode: got=(0x8a69c8)
+  log_show_level: got=(0x8a61e0)
+  log_show_mode: got=(0x8a6318)
+  log_trace: got=(0x8a6bd8)
+  log_warn: got=(0x8a6720)
+  lseek: got=(0x8a6280)
+  malloc: got=(0x8a66e0)
+  memchr: got=(0x8a69f0)
+  memcmp: got=(0x8a6fd8)
+  memcpy: got=(0x8a6620)
+  memmem: got=(0x8a6728)
+  memmove: got=(0x8a6090)
+  memset: got=(0x8a63e0)
+  middle_clean_init_step: got=(0x8a7130)
+  mkdir: got=(0x8a67b0)
+  mkfifo: got=(0x8a6ca8)
+  mktime: got=(0x8a6c58)
+  msg_router_prolog: got=(0x8a6ce0)
+  msg_router_register_custom: got=(0x8a6548)
+  msg_router_unregister: got=(0x8a6360)
+  msgget: got=(0x8a6c80)
+  msgrcv: got=(0x8a6a80)
+  msgsnd: got=(0x8a62f8)
+  non_image_book_copy_init_step: got=(0x8a6e98)
+  ntohl: got=(0x8a60a8)
+  ntohs: got=(0x8a6b70)
+  observer_attach_to_subject: got=(0x8a63c8)
+  observer_construct: got=(0x8a6248)
+  open: got=(0x8a65e0)
+  open64: got=(0x8a6148)
+  opendir: got=(0x8a6310)
+  page_split_init_step: got=(0x8a6ed0)
+  parser_common_read: got=(0x8a6d28)
+  parser_common_rewind: got=(0x8a6058)
+  parser_common_write: got=(0x8a6948)
+  pclose: got=(0x8a6298)
+  perror: got=(0x8a63f8)
+  pi_band_create: got=(0x8a6a00)
+  pi_band_destroy: got=(0x8a6d88)
+  pi_band_get: got=(0x8a6ac0)
+  pi_band_get_pdata: got=(0x8a6f00)
+  pi_catch_signal: got=(0x8a7098)
+  pi_compr_create: got=(0x8a68c8)
+  pi_event_mgr_create_client: got=(0x8a6b28)
+  pi_event_mgr_destroy_client: got=(0x8a6910)
+  pi_event_mgr_notify: got=(0x8a6860)
+  pi_event_mgr_register: got=(0x8a6538)
+  pi_hal_boardinfo_free: got=(0x8a6170)
+  pi_hal_boardinfo_getinfo: got=(0x8a6350)
+  pi_hal_boardinfo_request: got=(0x8a6158)
+  pi_hal_exit: got=(0x8a6928)
+  pi_hal_gpio_get: got=(0x8a6330)
+  pi_hal_gpio_request: got=(0x8a6b98)
+  pi_hal_gpio_set: got=(0x8a67e0)
+  pi_hal_init: got=(0x8a6030)
+  pi_hal_led_ctrl: got=(0x8a60a0)
+  pi_hal_led_request: got=(0x8a6e88)
+  pi_hal_power_request: got=(0x8a6c60)
+  pi_hal_power_set: got=(0x8a6160)
+  pi_hal_rtc_free: got=(0x8a6110)
+  pi_hal_rtc_request: got=(0x8a63e8)
+  pi_hal_rtc_time_read: got=(0x8a7088)
+  pi_hal_storage_dirread: got=(0x8a6230)
+  pi_hal_storage_dirrelease: got=(0x8a6d18)
+  pi_hal_storage_dirrequest: got=(0x8a7008)
+  pi_hal_storage_file_dir_access: got=(0x8a6bb0)
+  pi_hal_storage_file_dir_remove: got=(0x8a6f88)
+  pi_hal_storage_filelseek: got=(0x8a6608)
+  pi_hal_storage_fileread: got=(0x8a6fe0)
+  pi_hal_storage_filerelease: got=(0x8a6d58)
+  pi_hal_storage_filerequest: got=(0x8a7068)
+  pi_hal_storage_filewrite: got=(0x8a6588)
+  pi_hal_storage_media_emmc_get_nominal_size: got=(0x8a6488)
+  pi_hal_storage_media_ssd_get_size: got=(0x8a6fa0)
+  pi_hal_storage_media_ssd_power_ctl: got=(0x8a6bd0)
+  pi_hal_storage_media_udisk_get_size: got=(0x8a63f0)
+  pi_hal_storage_mkdir: got=(0x8a6f68)
+  pi_hal_storage_partition_get_size: got=(0x8a6fb8)
+  pi_hal_virt_free: got=(0x8a66a0)
+  pi_hal_virt_platform: got=(0x8a6df0)
+  pi_hal_virt_request: got=(0x8a64c0)
+  pi_hal_wifi_free: got=(0x8a66d0)
+  pi_hal_wifi_load: got=(0x8a6ee8)
+  pi_hal_wifi_request: got=(0x8a65e8)
+  pi_image_append_bands: got=(0x8a6390)
+  pi_image_close: got=(0x8a64d0)
+  pi_image_count_height: got=(0x8a6a88)
+  pi_image_find_band_by_line: got=(0x8a6558)
+  pi_image_has_bands: got=(0x8a6130)
+  pi_image_has_row: got=(0x8a6d50)
+  pi_image_open: got=(0x8a6b60)
+  pi_image_processing_create_interface: got=(0x8a6520)
+  pi_image_processing_dataflow_start: got=(0x8a6c88)
+  pi_image_processing_dataflow_stop: got=(0x8a6018)
+  pi_image_processing_destroy_interface: got=(0x8a6f48)
+  pi_image_processing_get_interface_context: got=(0x8a6530)
+  pi_image_processing_page_data: got=(0x8a6fc8)
+  pi_image_processing_page_end: got=(0x8a6b00)
+  pi_image_processing_page_start: got=(0x8a6a38)
+  pi_image_processing_pipeline_init: got=(0x8a6660)
+  pi_imagemem_create: got=(0x8a6648)
+  pi_imagemem_destory: got=(0x8a6d10)
+  pi_imagemem_get_free_size: got=(0x8a6628)
+  pi_imagemem_get_memobj_id: got=(0x8a6568)
+  pi_imagemem_init: got=(0x8a6ec0)
+  pi_imagemem_memset: got=(0x8a6470)
+  pi_imagemem_recycle_multi_list: got=(0x8a6e70)
+  pi_log_set_level: got=(0x8a6c08)
+  pi_msg_recv_ent: got=(0x8a6cd8)
+  pi_msg_send_ent: got=(0x8a6f80)
+  pi_msgq_create_ent: got=(0x8a66c8)
+  pi_msleep: got=(0x8a6a10)
+  pi_mutex_create_ent: got=(0x8a6b38)
+  pi_mutex_destroy_ent: got=(0x8a6768)
+  pi_mutex_lock_ent: got=(0x8a6b08)
+  pi_mutex_unlock_ent: got=(0x8a6c90)
+  pi_nvram_get: got=(0x8a70b0)
+  pi_nvram_init: got=(0x8a6958)
+  pi_nvram_recover_factory: got=(0x8a6700)
+  pi_nvram_set: got=(0x8a6e10)
+  pi_plog_ctl_state: got=(0x8a6a68)
+  pi_plog_switch: got=(0x8a6af8)
+  pi_ptmem_dump_info: got=(0x8a6ec8)
+  pi_runcmd: got=(0x8a62a0)
+  pi_sem_create_ent: got=(0x8a6288)
+  pi_sem_destroy_ent: got=(0x8a6980)
+  pi_sem_post_ent: got=(0x8a6970)
+  pi_sem_timedwait_ent: got=(0x8a6db0)
+  pi_sem_wait_ent: got=(0x8a6870)
+  pi_thread_create: got=(0x8a6528)
+  pi_thread_destroy: got=(0x8a6440)
+  pi_threads_prolog: got=(0x8a6cb8)
+  pi_unregister_pub_client: got=(0x8a6db8)
+  pi_usleep: got=(0x8a6de8)
+  pix_alloc: got=(0x8a6458)
+  pix_free: got=(0x8a6cf8)
+  poll: got=(0x8a6570)
+  popen: got=(0x8a6cd0)
+  posix_fadvise: got=(0x8a7038)
+  poster_init_step: got=(0x8a6088)
+  print_image_init_step: got=(0x8a6878)
+  print_ips_api_debug: got=(0x8a6a50)
+  print_ips_api_if_prolog: got=(0x8a6d90)
+  print_ips_api_pre_parser: got=(0x8a6f70)
+  print_ips_interation_GetJobSettingType: got=(0x8a6e20)
+  print_ips_interation_add_band_to_page_output_queue_page_new: got=(0x8a68f0)
+  print_ips_interation_add_page_to_page_output_queue_set: got=(0x8a6f58)
+  print_ips_interation_answer_suspend_ack_by_ips: got=(0x8a7010)
+  print_ips_interation_config_get_finisher_install: got=(0x8a6358)
+  print_ips_interation_create_page_output_queue_set: got=(0x8a70e8)
+  print_ips_interation_finished_adding_pages_to_page_output_queue_set: got=(0x8a65d8)
+  print_ips_interation_finished_adding_to_page_output_queue_page: got=(0x8a66b0)
+  print_ips_interation_get_custom_size_table: got=(0x8a60d0)
+  print_ips_interation_get_first_pass_prn_pages: got=(0x8a68c0)
+  print_ips_interation_get_memobj_id: got=(0x8a7100)
+  print_ips_interation_get_mfp_ready: got=(0x8a6ef0)
+  print_ips_interation_get_param_harddisk_install: got=(0x8a6268)
+  print_ips_interation_get_parse_again_flag: got=(0x8a64f0)
+  print_ips_interation_get_system_status_for_mono: got=(0x8a6630)
+  print_ips_interation_get_timeout_flag: got=(0x8a6300)
+  print_ips_interation_get_tray_in_and_edge: got=(0x8a7028)
+  print_ips_interation_get_udisk_print_param: got=(0x8a6500)
+  print_ips_interation_inf_get_cancel_flag: got=(0x8a6fe8)
+  print_ips_interation_inf_get_timeout_value_int: got=(0x8a6da8)
+  print_ips_interation_ioSetDOEncryptWarn: got=(0x8a7000)
+  print_ips_interation_ioSetDOUnsupportedFileFormat: got=(0x8a6640)
+  print_ips_interation_io_always_in_sniffer: got=(0x8a6658)
+  print_ips_interation_io_end_of_job: got=(0x8a68a0)
+  print_ips_interation_io_file_read_data: got=(0x8a7090)
+  print_ips_interation_io_get_USB_dummy: got=(0x8a6ad8)
+  print_ips_interation_io_get_prn_read_enable_flag: got=(0x8a6cf0)
+  print_ips_interation_io_get_qio_error: got=(0x8a6100)
+  print_ips_interation_io_input_timeout: got=(0x8a6ae0)
+  print_ips_interation_io_is_air_print_pdf_job: got=(0x8a6770)
+  print_ips_interation_io_is_air_print_pdf_read_over: got=(0x8a6e50)
+  print_ips_interation_io_is_ips_in_use: got=(0x8a6eb0)
+  print_ips_interation_io_post_job_end_msg: got=(0x8a67f0)
+  print_ips_interation_io_post_job_pipelint_name: got=(0x8a6c40)
+  print_ips_interation_io_rewind_data: got=(0x8a6328)
+  print_ips_interation_io_set_file_encrypt_warn: got=(0x8a6740)
+  print_ips_interation_io_set_file_font_missing_warn: got=(0x8a60b0)
+  print_ips_interation_io_set_file_large_warn: got=(0x8a67e8)
+  print_ips_interation_io_set_file_unsupport_warn: got=(0x8a6f10)
+  print_ips_interation_io_set_pdf_encrypt_warn: got=(0x8a6600)
+  print_ips_interation_io_set_pdf_font_invalid_warn: got=(0x8a68d0)
+  print_ips_interation_io_set_pdf_font_missing_warn: got=(0x8a6e78)
+  print_ips_interation_io_set_timeout_flag: got=(0x8a6f30)
+  print_ips_interation_io_stop_file_read_data: got=(0x8a65f0)
+  print_ips_interation_io_stop_read_data: got=(0x8a67b8)
+  print_ips_interation_param_get_ips_lib_param: got=(0x8a6a40)
+  print_ips_interation_param_get_job_id_value: got=(0x8a6128)
+  print_ips_interation_param_get_job_suspend_status: got=(0x8a6ed8)
+  print_ips_interation_param_get_machine_color: got=(0x8a6410)
+  print_ips_interation_param_get_machine_speed: got=(0x8a67a8)
+  print_ips_interation_param_get_re_render_flag: got=(0x8a68b8)
+  print_ips_interation_param_get_re_render_job_info: got=(0x8a6550)
+  print_ips_interation_param_get_sample_param: got=(0x8a69a0)
+  print_ips_interation_param_get_tray_in_empty_status: got=(0x8a6200)
+  print_ips_interation_param_get_tray_install: got=(0x8a6bc8)
+  print_ips_interation_param_ips_get_paper_size: got=(0x8a6888)
+  print_ips_interation_param_pass_tray_get_paper_type: got=(0x8a70c0)
+  print_ips_interation_set_imagemem_release: got=(0x8a69b8)
+  print_ips_interation_set_parse_again_flag: got=(0x8a6168)
+  print_ips_interation_udisk_paper_size_valid_check: got=(0x8a61d8)
+  printf: got=(0x8a6680)
+  pthread_cond_broadcast: got=(0x8a6000)
+  pthread_cond_destroy: got=(0x8a65d0)
+  pthread_cond_init: got=(0x8a6898)
+  pthread_cond_signal: got=(0x8a6d68)
+  pthread_cond_timedwait: got=(0x8a6610)
+  pthread_cond_wait: got=(0x8a6678)
+  pthread_create: got=(0x8a6f98)
+  pthread_detach: got=(0x8a6380)
+  pthread_exit: got=(0x8a6de0)
+  pthread_join: got=(0x8a63a8)
+  pthread_mutex_destroy: got=(0x8a7120)
+  pthread_mutex_init: got=(0x8a6b30)
+  pthread_mutex_lock: got=(0x8a6a70)
+  pthread_mutex_unlock: got=(0x8a6820)
+  pthread_self: got=(0x8a70a0)
+  putchar: got=(0x8a6598)
+  puts: got=(0x8a69c0)
+  qio_file_create: got=(0x8a60c0)
+  qio_ofd_create: got=(0x8a62e8)
+  qio_pdf_begin_image: got=(0x8a6bb8)
+  qio_pdf_create: got=(0x8a6348)
+  qio_tiff_begin_image: got=(0x8a6198)
+  qio_tiff_create: got=(0x8a60f8)
+  qio_tty_create: got=(0x8a6e38)
+  qio_usbd_create: got=(0x8a70f8)
+  qio_usbd_get_context: got=(0x8a6eb8)
+  rand: got=(0x8a6508)
+  rc4_acl_data_process: got=(0x8a6388)
+  read: got=(0x8a6670)
+  readdir: got=(0x8a6730)
+  realloc: got=(0x8a6c28)
+  recv: got=(0x8a7118)
+  regcomp: got=(0x8a6f08)
+  regexec: got=(0x8a61b0)
+  regfree: got=(0x8a6960)
+  remove: got=(0x8a6ff0)
+  rename: got=(0x8a6140)
+  rotate_init_step: got=(0x8a6a20)
+  round: got=(0x8a69d0)
+  save_prod_serialnum: got=(0x8a6fd0)
+  scan_pu_init_step: got=(0x8a61a8)
+  scandir: got=(0x8a6580)
+  select: got=(0x8a6e18)
+  sem_destroy: got=(0x8a6800)
+  sem_init: got=(0x8a6228)
+  sem_post: got=(0x8a6dd0)
+  sem_timedwait: got=(0x8a64b8)
+  sem_wait: got=(0x8a6920)
+  set_gqio_read_fuc_type: got=(0x8a6cc0)
+  set_ipm_job_id: got=(0x8a6e80)
+  setsockopt: got=(0x8a6020)
+  settimeofday: got=(0x8a63d8)
+  sigaction: got=(0x8a6d48)
+  sigemptyset: got=(0x8a6270)
+  sleep: got=(0x8a6df8)
+  snprintf: got=(0x8a6278)
+  socket: got=(0x8a65b8)
+  socketpair: got=(0x8a6b80)
+  sort_init_step: got=(0x8a6e08)
+  split_band_init_step: got=(0x8a6178)
+  split_init_step: got=(0x8a6718)
+  split_jpeg_band_init_step: got=(0x8a6120)
+  sprintf: got=(0x8a6890)
+  sqlite3_bind_blob: got=(0x8a6250)
+  sqlite3_close: got=(0x8a6ef8)
+  sqlite3_column_blob: got=(0x8a6750)
+  sqlite3_column_bytes: got=(0x8a65a0)
+  sqlite3_column_count: got=(0x8a6e30)
+  sqlite3_column_text: got=(0x8a60d8)
+  sqlite3_db_cacheflush: got=(0x8a6060)
+  sqlite3_db_release_memory: got=(0x8a70c8)
+  sqlite3_errmsg: got=(0x8a7060)
+  sqlite3_exec: got=(0x8a6070)
+  sqlite3_finalize: got=(0x8a6a60)
+  sqlite3_free: got=(0x8a70d0)
+  sqlite3_mprintf: got=(0x8a6f20)
+  sqlite3_open: got=(0x8a6438)
+  sqlite3_prepare_v2: got=(0x8a69f8)
+  sqlite3_step: got=(0x8a62c0)
+  sqrt: got=(0x8a6940)
+  srand: got=(0x8a6788)
+  stat: got=(0x8a60f0)
+  storage_image_file_init_step: got=(0x8a65b0)
+  storage_mgr_ctl: got=(0x8a65c8)
+  storage_mgr_get: got=(0x8a6e40)
+  storage_mgr_put: got=(0x8a6c00)
+  strcasecmp: got=(0x8a6f40)
+  strcat: got=(0x8a6260)
+  strchr: got=(0x8a6780)
+  strcmp: got=(0x8a6ae8)
+  strcpy: got=(0x8a6590)
+  strdup: got=(0x8a6498)
+  strerror: got=(0x8a6068)
+  strftime: got=(0x8a6dc0)
+  strlen: got=(0x8a6d98)
+  strncasecmp: got=(0x8a6510)
+  strncat: got=(0x8a6028)
+  strncmp: got=(0x8a6668)
+  strncpy: got=(0x8a6988)
+  strptime: got=(0x8a6650)
+  strrchr: got=(0x8a6b78)
+  strsep: got=(0x8a61e8)
+  strstr: got=(0x8a65c0)
+  strtok: got=(0x8a7050)
+  strtok_r: got=(0x8a63d0)
+  subject_construct: got=(0x8a6050)
+  subject_destruct: got=(0x8a6708)
+  subject_notify_observers: got=(0x8a6038)
+  svcmgr_add_service: got=(0x8a64e0)
+  svcmgr_get_service: got=(0x8a6be0)
+  symlink: got=(0x8a6398)
+  sync: got=(0x8a6818)
+  sysconf: got=(0x8a6998)
+  system: got=(0x8a62c8)
+  systime_get: got=(0x8a6218)
+  systime_init: got=(0x8a6ba8)
+  task_msg_send_by_router: got=(0x8a6b48)
+  task_msg_send_forever_by_router: got=(0x8a6240)
+  task_msg_timeout_by_router: got=(0x8a6c50)
+  task_msg_tryto_get_msg_count: got=(0x8a6a98)
+  task_msg_wait_forever_by_router: got=(0x8a66f0)
+  task_msg_wait_timeout_by_router: got=(0x8a6c70)
+  time: got=(0x8a62e0)
+  timer_create: got=(0x8a6e28)
+  timer_delete: got=(0x8a6618)
+  timer_settime: got=(0x8a6b40)
+  ungetc: got=(0x8a69e8)
+  unlink: got=(0x8a6e58)
+  usb_close: got=(0x8a6ba0)
+  usb_ioctl_tx: got=(0x8a6d20)
+  usb_open: got=(0x8a62d8)
+  usb_poll: got=(0x8a67a0)
+  usb_write: got=(0x8a6ee0)
+  usbd_create_rx_thread: got=(0x8a7080)
+  usleep: got=(0x8a7058)
+  virtual_input_init_step: got=(0x8a66c0)
+  virtual_output_init_step: got=(0x8a62d0)
+  vsnprintf: got=(0x8a6dd8)
+  vsprintf: got=(0x8a6790)
+  write: got=(0x8a6938)
+
+== .dynsym UND 符号（外部导入）中 hal/ipm/usb/pci/gpio 相关 ==
+  pi_hal_init
+  get_ipm_job_id
+  pi_hal_led_ctrl
+  pi_hal_rtc_free
+  pi_hal_boardinfo_request
+  pi_hal_power_set
+  pi_hal_boardinfo_free
+  pi_hal_storage_dirread
+  usb_open
+  pi_hal_gpio_get
+  pi_hal_boardinfo_getinfo
+  pi_hal_rtc_request
+  pi_hal_storage_media_udisk_get_size
+  pi_hal_storage_media_emmc_get_nominal_size
+  pi_hal_virt_request
+  ipm_debug_set_algorithm_enable_flag
+  pi_hal_storage_filewrite
+  pi_hal_wifi_request
+  pi_hal_storage_filelseek
+  pi_hal_virt_free
+  pi_hal_wifi_free
+  ipm_debug_set_save_img_flag
+  usb_poll
+  ipm_set_calibration_data
+  pi_hal_gpio_set
+  pi_hal_exit
+  pi_hal_gpio_request
+  usb_close
+  pi_hal_storage_file_dir_access
+  pi_hal_storage_media_ssd_power_ctl
+  pi_hal_power_request
+  copy_halftone_pu_init_step
+  pi_hal_storage_dirrelease
+  usb_ioctl_tx
+  pi_hal_storage_filerelease
+  pi_hal_virt_platform
+  set_ipm_job_id
+  pi_hal_led_request
+  qio_usbd_get_context
+  usb_write
+  pi_hal_wifi_load
+  pi_hal_storage_mkdir
+  pi_hal_storage_file_dir_remove
+  pi_hal_storage_media_ssd_get_size
+  pi_hal_storage_partition_get_size
+  pi_hal_storage_fileread
+  pi_hal_storage_dirrequest
+  pi_hal_storage_filerequest
+  usbd_create_rx_thread
+  pi_hal_rtc_time_read
+  qio_usbd_create

@@ -1,0 +1,829 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e176018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000083] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.016066] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.043462] Console: colour dummy device 80x25
+[    0.050028] ACPI: Core revision 20240827
+[    0.063622] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.063836] pid_max: default: 32768 minimum: 301
+[    0.080041] LSM: initializing lsm=lockdown,capability,landlock
+[    0.084104] landlock: Up and running.
+[    0.096357] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.096640] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.236384] rcu: Hierarchical SRCU implementation.
+[    0.236475] rcu: 	Max phase no-delay instances is 1000.
+[    0.245982] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.259814] Remapping and enabling EFI services.
+[    0.269101] smp: Bringing up secondary CPUs ...
+[    0.284420] Detected PIPT I-cache on CPU1
+[    0.286025] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.301215] smp: Brought up 1 node, 2 CPUs
+[    0.301286] SMP: Total of 2 processors activated.
+[    0.301340] CPU: All CPU(s) started at EL1
+[    0.301632] CPU features: detected: 32-bit EL0 Support
+[    0.301696] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.301748] CPU features: detected: Common not Private translations
+[    0.301754] CPU features: detected: CRC32 instructions
+[    0.301993] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.302038] CPU features: detected: LSE atomic instructions
+[    0.302045] CPU features: detected: Privileged Access Never
+[    0.302050] CPU features: detected: RAS Extension Support
+[    0.302096] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.331104] alternatives: applying system-wide alternatives
+[    0.370708] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.444761] Memory: 3995976K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193644K reserved, 0K cma-reserved)
+[    0.578890] devtmpfs: initialized
+[    0.880317] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.881964] 24304 pages in range for non-PLT usage
+[    0.882070] 515824 pages in range for PLT usage
+[    0.896820] pinctrl core: initialized pinctrl subsystem
+[    0.920453] SMBIOS 3.0.0 present.
+[    0.933360] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.934065] DMI: Memory slots populated: 1/1
+[    1.046296] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    1.065946] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    1.067567] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    1.068375] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    1.068874] audit: initializing netlink subsys (disabled)
+[    1.083606] audit: type=2000 audit(0.450:1): state=initialized audit_enabled=0 res=1
+[    1.111203] thermal_sys: Registered thermal governor 'step_wise'
+[    1.118433] cpuidle: using governor ladder
+[    1.129713] cpuidle: using governor menu
+[    1.136147] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    1.150933] ASID allocator initialised with 65536 entries
+[    1.165738] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    1.169147] Serial: AMBA PL011 UART driver
+[    1.233957] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    1.234015] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    1.234042] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    1.234052] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    1.234065] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.234075] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    1.234088] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    1.234098] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    1.317509] ACPI: Added _OSI(Module Device)
+[    1.317603] ACPI: Added _OSI(Processor Device)
+[    1.317617] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.379721] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    1.448397] ACPI: Interpreter enabled
+[    1.448525] ACPI: Using GIC for interrupt routing
+[    1.449243] ACPI: MCFG table detected, 1 entries
+[    1.561022] ACPI: CPU0 has been hot-added
+[    1.562366] ACPI: CPU1 has been hot-added
+[    1.597963] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    1.599795] printk: legacy console [ttyAMA0] enabled
+[    1.718836] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    1.733229] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    1.733914] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    1.734287] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    1.736077] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.747725] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    1.767271] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    1.768364] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    1.783550] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    1.784474] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    1.785603] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    1.800191] PCI host bridge to bus 0000:00
+[    1.800866] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    1.801142] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    1.801352] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    1.801709] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.817974] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    1.834970] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    1.835579] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    1.835846] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    1.836086] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    1.843962] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    1.845756] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    1.846030] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    1.846384] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    1.849723] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    1.850975] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    1.851376] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    1.851745] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    1.851969] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    1.852184] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    1.852701] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    1.852982] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    1.853239] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    1.877745] iommu: Default domain type: Translated
+[    1.878315] iommu: DMA domain TLB invalidation policy: lazy mode
+[    1.896956] efivars: Registered efivars operations
+[    1.933504] clocksource: Switched to clocksource arch_sys_counter
+[    1.966704] VFS: Disk quotas dquot_6.6.0
+[    1.967172] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.980750] pnp: PnP ACPI init
+[    1.984196] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    1.984811] pnp: PnP ACPI: found 1 devices
+[    2.099684] NET: Registered PF_INET protocol family
+[    2.102030] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    2.301702] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    2.302269] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    2.302723] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    2.304092] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    2.313404] TCP: Hash tables configured (established 32768 bind 32768)
+[    2.317340] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    2.318424] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.319102] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.330769] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    2.332758] NET: Registered PF_XDP protocol family
+[    2.333451] PCI: CLS 0 bytes, default 64
+[    2.336209] kvm [1]: HYP mode not available
+[    2.368230] Unpacking initramfs...
+[    2.381701] Initialise system trusted keyrings
+[    2.466562] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[    2.632747] Key type asymmetric registered
+[    2.633310] Asymmetric key parser 'x509' registered
+[    2.634684] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    2.644711] io scheduler mq-deadline registered
+[    2.645207] io scheduler kyber registered
+[    2.646180] io scheduler bfq registered
+[    2.728227] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    2.729584] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    2.748775] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    2.786194] hv_vmbus: registering driver hyperv_keyboard
+[    2.812816] rtc-efi rtc-efi.0: registered as rtc0
+[    2.814827] rtc-efi rtc-efi.0: setting system clock to 2026-09-16T06:44:41 UTC (1789541081)
+[    2.819894] NET: Registered PF_INET6 protocol family
+[    2.849543] Segment Routing with IPv6
+[    2.850047] In-situ OAM (IOAM) with IPv6
+[    2.900786] registered taskstats version 1
+[    2.912065] Loading compiled-in X.509 certificates
+[    2.999596] Freeing initrd memory: 5268K
+[    3.276112] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    3.313897] Demotion targets for Node 0: null
+[    3.315918] Key type .fscrypt registered
+[    3.316131] Key type fscrypt-provisioning registered
+[    3.362376] clk: Disabling unused clocks
+[    3.363133] PM: genpd: Disabling unused power domains
+[    3.462561] Freeing unused kernel memory: 1920K
+[    3.465345] Run /init as init process
+[    3.785462] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    3.800562] Loading boot drivers...
+ * Loading boot drivers: [    3.863174] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    3.949161] Invalid ELF header magic: != ELF
+[    4.000441] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    4.033691] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    4.096566] Invalid ELF header magic: != ELF
+[    4.130712] Invalid ELF header magic: != ELF
+[    4.159758] Invalid ELF header magic: != ELF
+[    4.183027] Invalid ELF header magic: != ELF
+[    4.259139] Invalid ELF header magic: != ELF
+[    5.599048] Invalid ELF header magic: != ELF
+[    5.763648] e1000: Intel(R) PRO/1000 Network Driver
+[    5.764098] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    5.779790] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    5.780712] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[    7.362345] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    7.365311] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[    8.583759] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: baked netdata_get_lpd_switch->mov w0,#1;ret
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+[   20.617552] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 16 06:45 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 16 06:45 /tmp/virtual_hal.c
+=== VHAL: extract ===
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+[   87.201572] hrtimer: interrupt took 242850496 ns
+-rwxr-xr-x 1 root root 17056 Sep 16 06:45 /lib/virtual_hal.so
+=== VHAL: done ===
+MFP_PID=477
+--- POLL 1: N=1 ---
+POLL: early init (N=1), wait before gdb patch
+[  187.341070] random: crng init done
+--- POLL 2: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 3: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 4: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 5: N=11 ---
+POLL: early init (N=11), wait before gdb patch
+--- POLL 6: N=44 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+B4: 5c=0 7c=0 80=0 82=0
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 477) detached]
+--- POLL 7: N=45 ---
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+B4: 5c=0 7c=0 80=0 82=0
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 477) detached]
+--- POLL 8: N=179 ---
+POLL: passed print_info_status_init (N=179)
+--- ALIVE ---
+179
+--- LISTEN TCP ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 00000000:BFB3 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 60552 1 0000000084dbda19 100 0 0 10 0                     
+SIMBOOT_LPD_HEX=BFB3
+SIMBOOT_LPD_PORT=49075
+--- SOCK OWNER PRE ---
+SOCKOWNER port=BFB3 inode=60552 pid=477 comm=mfp.afx fd=45
+--- HALD LOG ---
+2147483648 hal_daemon process plog lib init 
+--- PLOGD LOG ---
+--- CMD REG TABLE ---
+[New LWP 693]
+[New LWP 694]
+[New LWP 695]
+[New LWP 696]
+[New LWP 698]
+[New LWP 699]
+[New LWP 701]
+[New LWP 706]
+[New LWP 707]
+[New LWP 708]
+[New LWP 709]
+[New LWP 710]
+[New LWP 711]
+[New LWP 712]
+[New LWP 713]
+[New LWP 714]
+[New LWP 715]
+[New LWP 716]
+[New LWP 717]
+[New LWP 718]
+[New LWP 719]
+[New LWP 720]
+[New LWP 721]
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+node=0x3923cd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x3923ca30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x39246e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x39246e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x39249650 cmd=0 cb=0x73b71c arg=(nil)
+node=0x39248f50 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x39249240 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x3924bf90 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x3926ff90 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x3926ffc0 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x393194a0 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x39343410 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x39357570 cmd=0xb cb=0x678d20 arg=0x39343680
+node=0x393575a0 cmd=0x10 cb=0x679120 arg=0x39343680
+node=0x393adf80 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x3923cd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x3923ca30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x39246e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x39246e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x39249650 cmd=0 cb=0x73b71c arg=(nil)
+node=0x39248f50 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x39249240 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x3924bf90 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x3926ff90 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x3926ffc0 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x393194a0 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x39343410 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x39357570 cmd=0xb cb=0x678d20 arg=0x39343680
+node=0x393575a0 cmd=0x10 cb=0x679120 arg=0x39343680
+node=0x393adf80 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x3923cd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x3923ca30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x39246e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x39246e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x39249650 cmd=0 cb=0x73b71c arg=(nil)
+node=0x39248f50 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x39249240 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x3924bf90 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x3926ff90 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x3926ffc0 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x393194a0 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x39343410 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x39357570 cmd=0xb cb=0x678d20 arg=0x39343680
+node=0x393575a0 cmd=0x10 cb=0x679120 arg=0x39343680
+node=0x393adf80 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x3923cd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x3923ca30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x39246e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x39246e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x39249650 cmd=0 cb=0x73b71c arg=(nil)
+node=0x39248f50 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x39249240 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x3924bf90 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x3926ff90 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x3926ffc0 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x393194a0 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x39343410 cmd=0x1 cb=0x722310 arg=(nil)
+[Inferior 1 (process 477) detached]
+--- LPD ENABLE ---
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=0
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_1
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_2
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_3
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_4
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_5
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_6
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_7
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_8
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_9
+[New LWP 780]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa7721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+HANDLE=0x39343680
+CTX=0x3938a2f0 SW_B4=1
+SW_AFTER_WRITE=1
+/tmp/gdblpd.txt:15: Error in sourced command file:
+Undefined command: "LPD_ENABLE_MEM_OK".  Try "help".
+[Inferior 1 (process 477) detached]
+GDBLPD_RETRY_10
+--- SOCK OWNER AFTER ENABLE ---
+SOCKOWNER port=BFB3 inode=60552 pid=477 comm=mfp.afx fd=45
+--- MFP LOG LPD LINES ---
+[ 3060.912198] watchdog: BUG: soft lockup - CPU#0 stuck for 48s! [mfp.afx:541]
+[ 3061.467262] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3061.856129] CPU: 0 UID: 0 PID: 541 Comm: mfp.afx Not tainted 6.12.103-0-virt #1-Alpine
+[ 3061.955617] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3061.956508] pstate: 20001000 (nzCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+[ 3061.956971] pc : 0000ffffa87c1964
+[ 3061.957299] lr : 0000ffffa87c1964
+[ 3061.957320] sp : 0000ffff75176080
+[ 3061.957341] x29: 0000ffff751762e0 x28: 0000ffff75176b60 x27: 0000ffff75176b60
+[ 3061.989168] x26: 0000000000000006 x25: 0000fffff38c2b50 x24: 0000000000000002
+[ 3061.989218] x23: 0000ffffa76ee1a0 x22: 0000ffffa73300a0 x21: 0000000000000050
+[ 3061.989248] x20: 0000ffff75176b60 x19: 0000ffff75176f7c x18: 0000000000000025
+[ 3061.989280] x17: 0000ffffa8848178 x16: 0000ffffa87d0520 x15: 0000000000000027
+[ 3061.989315] x14: 0000000000000000 x13: 0000000000002070 x12: 0000ffff75176b60
+[ 3061.989347] x11: 0000ffffa76ee1a0 x10: 0000fffff38c2a38 x9 : 0000000000000000
+[ 3061.989427] x8 : 0000000000000087 x7 : 0000ffff751772a0 x6 : 0000000000000060
+[ 3061.989457] x5 : 0000ffff75176b60 x4 : 0000ffffa87c175c x3 : 00000000c0046203
+[ 3061.989490] x2 : 0000ffff751760a8 x1 : 00000000c0306201 x0 : 0000000000000000
+[ 3062.158912] watchdog: BUG: soft lockup - CPU#1 stuck for 48s! [mfp.afx:718]
+[ 3062.159123] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3062.159690] CPU: 1 UID: 0 PID: 718 Comm: mfp.afx Tainted: G             L     6.12.103-0-virt #1-Alpine
+[ 3062.159851] Tainted: [L]=SOFTLOCKUP
+[ 3062.159915] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3062.159938] pstate: 20001000 (nzCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+[ 3062.159969] pc : 0000ffffa76c5200
+[ 3062.159979] lr : 0000ffffa76c51e0
+[ 3062.159988] sp : 0000ffff3fae8760
+[ 3062.159997] x29: 0000ffff3fae8780 x28: 00000000ffffffff x27: 0000000000000000
+[ 3062.160043] x26: 0000ffffa76c4d28 x25: 0000000000000000 x24: 0000000000000064
+[ 3062.160074] x23: 0000000000000000 x22: 0000ffff3fae8f00 x21: 0000000000822806
+[ 3062.160107] x20: 0000ffff3fae8d30 x19: 0000ffff3fae8d58 x18: 0000000000000064
+[ 3062.160140] x17: 0000ffffa76c27e0 x16: 00000000008a6278 x15: 0000000000004fd8
+[ 3062.160173] x14: 0000000000000000 x13: 0000000000000004 x12: 00a3d70a3d70a3d6
+[ 3062.160207] x11: 0000ffff3fae8ed0 x10: 000000000000002d x9 : 0000000000000000
+[ 3062.160238] x8 : 0000000000000000 x7 : 0000000000000004 x6 : 000000000000002d
+[ 3062.160270] x5 : 0000ffff9c000e06 x4 : 0000000000822807 x3 : 0000ffff3fae88d0
+[ 3062.160302] x2 : 0000000000822808 x1 : 0000000000000034 x0 : 0000000000822808
+[ 3069.352992] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 3069.353934] rcu: 	(detected by 1, t=6002 jiffies, g=70677, q=1179 ncpus=2)
+[ 3069.354389] rcu: All QSes seen, last rcu_preempt kthread activity 6002 (4295244124-4295238122), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[ 3069.406445] rcu: rcu_preempt kthread starved for 6002 jiffies! g70677 f0x2 RCU_GP_WAIT_FQS(5) ->state=0x0 ->cpu=0
+[ 3069.407240] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[ 3069.408072] rcu: RCU grace-period kthread stack dump:
+[ 3069.440955] task:rcu_preempt     state:R  running task     stack:0     pid:18    tgid:18    ppid:2      flags:0x00000008
+[ 3069.442585] Call trace:
+[ 3069.459111]  __switch_to+0xe8/0x160
+[ 3069.486398]  __schedule+0x394/0x1808
+[ 3069.486639]  schedule+0x34/0x120
+[ 3069.486825]  schedule_timeout+0x94/0x1b8
+[ 3069.487054]  rcu_gp_fqs_loop+0x120/0x524
+[ 3069.487391]  rcu_gp_kthread+0x144/0x18c
+[ 3069.495175]  kthread+0x110/0x114
+[ 3069.496597]  ret_from_fork+0x10/0x20
+[ 3069.542047] rcu: Stack dump where RCU GP kthread last ran:
+[ 3069.544125] Sending NMI from CPU 1 to CPUs 0:
+[ 3069.600395] NMI backtrace for cpu 0
+[ 3069.600580] CPU: 0 UID: 0 PID: 639 Comm: mfp.afx Tainted: G             L     6.12.103-0-virt #1-Alpine
+[ 3069.600640] Tainted: [L]=SOFTLOCKUP
+[ 3069.600651] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3069.600672] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 3069.600715] pc : mas_destroy+0x1f0/0x440
+[ 3069.601256] lr : mas_destroy+0x1f0/0x440
+[ 3069.601287] sp : ffff800082c33760
+[ 3069.601298] x29: ffff800082c33760 x28: 0000000000000000 x27: 0000000000000000
+[ 3069.601355] x26: 0000000000000001 x25: ffff0000df5aae70 x24: ffff00001522a008
+[ 3069.601392] x23: ffff8000820fe570 x22: 0000000000000004 x21: 0000000000000002
+[ 3069.601425] x20: ffff800082c33ab0 x19: ffff00001522a500 x18: 0000000000000000
+[ 3069.601460] x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+[ 3069.601492] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[ 3069.601526] x11: 0000000000000000 x10: 0000000000000000 x9 : 0000000000000000
+[ 3069.601558] x8 : ffff800082c33650 x7 : 0000000000000000 x6 : 0000000000000000
+[ 3069.601586] x5 : 0000000000000000 x4 : 0000000000000000 x3 : 0000000000000000
+[ 3069.601615] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 0000000000000000
+[ 3069.601687] Call trace:
+[ 3069.601707]  mas_destroy+0x1f0/0x440
+[ 3069.601746]  mas_store_prealloc+0x1b0/0x4a0
+[ 3069.601791]  commit_merge+0x26c/0x2e4
+[ 3069.602128]  vma_modify+0x574/0x77c
+[ 3069.602146]  vma_modify_flags+0x98/0xf0
+[ 3069.602163]  mprotect_fixup+0x8c/0x270
+[ 3069.602199]  do_mprotect_pkey+0x388/0x4d0
+[ 3069.602214]  __arm64_sys_mprotect+0x24/0x4c
+[ 3069.602230]  invoke_syscall+0x70/0x104
+[ 3069.602272]  el0_svc_common.constprop.0+0x54/0x128
+[ 3069.602292]  do_el0_svc+0x28/0x54
+[ 3069.602316]  el0_svc+0x38/0x1a0
+[ 3069.602342]  el0t_64_sync_handler+0xe0/0x100
+[ 3069.602362]  el0t_64_sync+0x190/0x194
+[ 3706.299864] ------------[ cut here ]------------
+[ 3710.597666] WARNING: CPU: 1 PID: 569 at kernel/time/hrtimer.c:1056 hrtimer_forward+0xc0/0x130
+[ 3714.475156] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3717.084029] CPU: 1 UID: 0 PID: 569 Comm: mfp.afx Tainted: G             L     6.12.103-0-virt #1-Alpine
+[ 3717.811374] Tainted: [L]=SOFTLOCKUP
+[ 3717.983025] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3718.693242] pstate: 204000c5 (nzCv daIF +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 3719.005360] pc : hrtimer_forward+0xc0/0x130
+[ 3719.386810] lr : dl_task_timer+0x348/0x898
+[ 3719.674121] sp : ffff8000821238d0
+[ 3719.994483] x29: ffff8000821238d0 x28: ffff0000ff423e80 x27: ffff0000ff412e00
+[ 3720.166561] x26: 0000000000000000 x25: ffff80008160efe8 x24: 00000000000000c0
+[ 3720.396672] x23: ffff0000ff412da8 x22: 000000002fc509f0 x21: 000000002fc509f0
+[ 3721.221292] x20: 0000035b516d8d10 x19: ffff0000ff412e00 x18: 0000000000000000
+[ 3721.515938] x17: 0000000000000000 x16: 0000000000000000 x15: 00004c4b40000000
+[ 3721.914940] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[ 3722.448968] x11: 0000000000000000 x10: 0000000000000000 x9 : 0000000000000000
+[ 3722.885392] x8 : ffff800082123870 x7 : 0000000000000000 x6 : 0000000000000000
+[ 3723.186261] x5 : 0000000000000000 x4 : 0000035a23d1c190 x3 : 0000000000000000
+[ 3723.386205] x2 : 000000002fc509f0 x1 : 0000000000000001 x0 : 000000012d9bcb80
+[ 3724.253468] Call trace:
+[ 3725.121186]  hrtimer_forward+0xc0/0x130
+[ 3725.415638]  dl_task_timer+0x348/0x898
+[ 3725.703647]  __hrtimer_run_queues+0x164/0x2c0
+[ 3726.335982]  hrtimer_interrupt+0xe8/0x280
+[ 3727.110940]  arch_timer_handler_virt+0x38/0x60
+[ 3728.163349]  handle_percpu_devid_irq+0x80/0x238
+[ 3728.698929]  handle_irq_desc+0x34/0x80
+[ 3728.700693]  generic_handle_domain_irq+0x2c/0x4c
+[ 3728.915410]  gic_handle_irq+0x40/0xe0
+[ 3729.167958]  do_interrupt_handler+0x54/0xa8
+[ 3729.812338]  el1_interrupt+0x34/0xa8
+[ 3730.558442]  el1h_64_irq_handler+0x18/0x40
+[ 3730.886400]  el1h_64_irq+0x64/0x68
+[ 3731.039052]  sched_balance_rq+0x7b0/0xdd8
+[ 3731.040816]  sched_balance_domains+0x274/0x3c0
+[ 3731.379532]  sched_balance_softirq+0x9c/0x118
+[ 3732.002347]  handle_softirqs+0x118/0x364
+[ 3732.935338]  __do_softirq+0x14/0x2c
+[ 3733.528282]  ____do_softirq+0x10/0x24
+[ 3733.836701]  call_on_irq_stack+0x30/0x48
+[ 3734.152799]  do_softirq_own_stack+0x1c/0x3c
+[ 3734.289200]  __irq_exit_rcu+0x120/0x140
+[ 3734.290962]  irq_exit_rcu+0x10/0x24
+[ 3734.631100]  el0_interrupt+0x50/0x168
+[ 3734.834943]  __el0_irq_handler_common+0x18/0x38
+[ 3734.836781]  el0t_64_irq_handler+0x10/0x28
+[ 3735.003030]  el0t_64_irq+0x190/0x194
+[ 3736.032116] ---[ end trace 0000000000000000 ]---
+[ 3738.882000] watchdog: BUG: soft lockup - CPU#0 stuck for 53s! [mfp.afx:621]
+[ 3739.034558] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3739.035436] CPU: 0 UID: 0 PID: 621 Comm: mfp.afx Tainted: G        W    L     6.12.103-0-virt #1-Alpine
+[ 3741.514478] Tainted: [W]=WARN, [L]=SOFTLOCKUP
+[ 3741.514669] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3741.514780] pstate: 20001000 (nzCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+[ 3741.514947] pc : 0000ffffa8848178
+[ 3741.515003] lr : 0000ffffa87c1964
+[ 3741.515054] sp : 0000ffff4928d080
+[ 3741.515103] x29: 0000ffff4928d2e0 x28: 0000ffff4928db60 x27: 0000ffff4928db60
+[ 3741.515378] x26: 0000000000000006 x25: 0000fffff38c2b70 x24: 0000000000000002
+[ 3741.515592] x23: 0000ffffa76ee1a0 x22: 0000ffffa73300a0 x21: 0000000000000050
+[ 3741.750362] x20: 0000ffff4928db60 x19: 0000ffff4928df7c x18: 0000000000000073
+[ 3741.750614] x17: 0000ffffa8848178 x16: 0000ffffa87d0520 x15: 00000000000000a2
+[ 3741.750833] x14: 0000000000000000 x13: 0000000000002070 x12: 0000ffff4928db60
+[ 3741.751051] x11: 0000ffffa76ee1a0 x10: 0000fffff38c2a58 x9 : 0000000000000000
+[ 3741.751264] x8 : 0000000000000087 x7 : 0000ffff4928e2a0 x6 : 0000000000000060
+[ 3741.751466] x5 : 0000ffff4928db60 x4 : 0000ffffa87c175c x3 : 0000000000000000
+[ 3741.751667] x2 : 0000ffff4928d0a8 x1 : 00000000c0306201 x0 : 0000000000000777
+[ 3742.197653] watchdog: BUG: soft lockup - CPU#1 stuck for 58s! [mfp.afx:569]
+[ 3742.198068] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3742.199209] CPU: 1 UID: 0 PID: 569 Comm: mfp.afx Tainted: G        W    L     6.12.103-0-virt #1-Alpine
+[ 3742.199453] Tainted: [W]=WARN, [L]=SOFTLOCKUP
+[ 3742.199559] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3742.199627] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 3742.199777] pc : sched_balance_rq+0x7b0/0xdd8
+[ 3742.199984] lr : sched_balance_rq+0x7a0/0xdd8
+[ 3742.200094] sp : ffff800082123d30
+[ 3742.200147] x29: ffff800082123e10 x28: ffff0000df5faa40 x27: ffff0000c2a91580
+[ 3742.200408] x26: ffff800081640780 x25: 0000000000000000 x24: 0000000000000002
+[ 3742.200630] x23: ffff0000ff412fb0 x22: ffff0000c28da980 x21: ffff0000c28daa40
+[ 3742.200843] x20: ffff800082123df8 x19: ffff0000ff412440 x18: 0000000000000000
+[ 3742.201060] x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+[ 3742.201266] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[ 3742.201480] x11: 0000000000000000 x10: 0000000000000000 x9 : 0000000000000000
+[ 3742.656783] x8 : 0000000000000000 x7 : 0000000000000000 x6 : 0000000000000000
+[ 3742.657689] x5 : 0000000000000000 x4 : 0000000000000000 x3 : 0000000000000000
+[ 3742.657920] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 0000000000000002
+[ 3742.658409] Call trace:
+[ 3742.658491]  sched_balance_rq+0x7b0/0xdd8
+[ 3742.658682]  sched_balance_domains+0x274/0x3c0
+[ 3742.829331]  sched_balance_softirq+0x9c/0x118
+[ 3742.829666]  handle_softirqs+0x118/0x364
+[ 3742.829806]  __do_softirq+0x14/0x2c
+[ 3742.829902]  ____do_softirq+0x10/0x24
+[ 3742.830005]  call_on_irq_stack+0x30/0x48
+[ 3742.830124]  do_softirq_own_stack+0x1c/0x3c
+[ 3742.830256]  __irq_exit_rcu+0x120/0x140
+[ 3742.830376]  irq_exit_rcu+0x10/0x24
+[ 3742.830494]  el0_interrupt+0x50/0x168
+[ 3742.830620]  __el0_irq_handler_common+0x18/0x38
+[ 3742.830720]  el0t_64_irq_handler+0x10/0x28
+[ 3742.830828]  el0t_64_irq+0x190/0x194
+[ 3742.986790] rcu: INFO: rcu_preempt detected stalls on CPUs/tasks:
+[ 3759.681042] rcu: 	(detected by 1, t=7963 jiffies, g=86485, q=9 ncpus=2)
+[ 3759.932220] rcu: All QSes seen, last rcu_preempt kthread activity 7963 (4295313108-4295305145), jiffies_till_next_fqs=1, root ->qsmask 0x0
+[ 3760.388757] rcu: rcu_preempt kthread starved for 8066 jiffies! g86485 f0x2 RCU_GP_WAIT_FQS(5) ->state=0x0 ->cpu=1
+[ 3761.935072] rcu: 	Unless rcu_preempt kthread gets sufficient CPU time, OOM is now expected behavior.
+[ 3762.469307] rcu: RCU grace-period kthread stack dump:
+[ 3762.860901] task:rcu_preempt     state:R  running task     stack:0     pid:18    tgid:18    ppid:2      flags:0x00000008
+[ 3763.617367] Call trace:
+[ 3763.629850]  __switch_to+0xe8/0x160
+[ 3764.094305]  __schedule+0x394/0x1808
+[ 3764.269654]  schedule+0x34/0x120
+[ 3764.271492]  schedule_timeout+0x94/0x1b8
+[ 3764.789217]  rcu_gp_fqs_loop+0x120/0x524
+[ 3764.791190]  rcu_gp_kthread+0x144/0x18c
+[ 3765.077342]  kthread+0x110/0x114
+[ 3765.079676]  ret_from_fork+0x10/0x20
+[ 3765.202219] rcu: Stack dump where RCU GP kthread last ran:
+[ 3765.663212] CPU: 1 UID: 0 PID: 569 Comm: mfp.afx Tainted: G        W    L     6.12.103-0-virt #1-Alpine
+[ 3766.161369] Tainted: [W]=WARN, [L]=SOFTLOCKUP
+[ 3766.539495] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3766.864655] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 3767.231581] pc : sched_balance_rq+0x7b0/0xdd8
+[ 3767.347945] lr : sched_balance_rq+0x7a0/0xdd8
+[ 3767.449758] sp : ffff800082123d30
+[ 3767.831940] x29: ffff800082123e10 x28: ffff0000df5faa40 x27: ffff0000c2a91580
+[ 3768.616954] x26: ffff800081640780 x25: 0000000000000000 x24: 0000000000000002
+[ 3768.868611] x23: ffff0000ff412fb0 x22: ffff0000c28da980 x21: ffff0000c28daa40
+[ 3769.652294] x20: ffff800082123df8 x19: ffff0000ff412440 x18: 0000000000000000
+[ 3769.850070] x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+[ 3770.047735] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[ 3770.184358] x11: 0000000000000000 x10: 0000000000000000 x9 : 0000000000000000
+[ 3770.899776] x8 : 0000000000000000 x7 : 0000000000000000 x6 : 0000000000000000
+[ 3771.278792] x5 : 0000000000000000 x4 : 0000000000000000 x3 : 0000000000000000
+[ 3771.501938] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 0000000000000002
+[ 3771.900018] Call trace:
+[ 3771.918366]  sched_balance_rq+0x7b0/0xdd8
+[ 3772.199310]  sched_balance_domains+0x274/0x3c0
+[ 3772.446988]  sched_balance_softirq+0x9c/0x118
+[ 3773.334207]  handle_softirqs+0x118/0x364
+[ 3773.537703]  __do_softirq+0x14/0x2c
+[ 3773.539612]  ____do_softirq+0x10/0x24
+[ 3773.834404]  call_on_irq_stack+0x30/0x48
+[ 3774.040489]  do_softirq_own_stack+0x1c/0x3c
+[ 3774.335624]  __irq_exit_rcu+0x120/0x140
+[ 3774.582243]  irq_exit_rcu+0x10/0x24
+[ 3774.584694]  el0_interrupt+0x50/0x168
+[ 3775.065617]  __el0_irq_handler_common+0x18/0x38
+[ 3775.289903]  el0t_64_irq_handler+0x10/0x28
+[ 3775.291523]  el0t_64_irq+0x190/0x194
+[ 3775.500228] watchdog: BUG: soft lockup - CPU#1 stuck for 92s! [mfp.afx:569]
+[ 3775.500482] Modules linked in: e1000 ext4 jbd2 mbcache crc32c_generic crc16 virtio_blk
+[ 3775.829302] CPU: 1 UID: 0 PID: 569 Comm: mfp.afx Tainted: G        W    L     6.12.103-0-virt #1-Alpine
+[ 3775.829542] Tainted: [W]=WARN, [L]=SOFTLOCKUP
+[ 3775.829606] Hardware name: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[ 3775.829673] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[ 3775.830651] pc : sched_balance_rq+0x7b0/0xdd8
+[ 3775.830885] lr : sched_balance_rq+0x7a0/0xdd8
+[ 3775.831034] sp : ffff800082123d30
+[ 3775.831090] x29: ffff800082123e10 x28: ffff0000df5faa40 x27: ffff0000c2a91580
+[ 3776.117697] x26: ffff800081640780 x25: 0000000000000000 x24: 0000000000000002
+[ 3776.117901] x23: ffff0000ff412fb0 x22: ffff0000c28da980 x21: ffff0000c28daa40
+[ 3776.118085] x20: ffff800082123df8 x19: ffff0000ff412440 x18: 0000000000000000
+[ 3776.118261] x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+[ 3776.118808] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000
+[ 3776.119014] x11: 0000000000000000 x10: 0000000000000000 x9 : 0000000000000000
+[ 3776.119207] x8 : 0000000000000000 x7 : 0000000000000000 x6 : 0000000000000000
+[ 3776.119388] x5 : 0000000000000000 x4 : 0000000000000000 x3 : 0000000000000000
+[ 3776.119574] x2 : 0000000000000000 x1 : 0000000000000000 x0 : 0000000000000002
+[ 3776.119752] Call trace:
+[ 3776.119811]  sched_balance_rq+0x7b0/0xdd8
+[ 3776.119986]  sched_balance_domains+0x274/0x3c0
+[ 3776.120095]  sched_balance_softirq+0x9c/0x118
+[ 3776.120203]  handle_softirqs+0x118/0x364
+[ 3776.120328]  __do_softirq+0x14/0x2c
+[ 3776.120425]  ____do_softirq+0x10/0x24
+[ 3776.120532]  call_on_irq_stack+0x30/0x48
+[ 3776.120637]  do_softirq_own_stack+0x1c/0x3c
+[ 3776.120742]  __irq_exit_rcu+0x120/0x140
+[ 3776.329050]  irq_exit_rcu+0x10/0x24
+[ 3776.329174]  el0_interrupt+0x50/0x168
+[ 3776.329280]  __el0_irq_handler_common+0x18/0x38
+[ 3776.329791]  el0t_64_irq_handler+0x10/0x28
+[ 3776.329938]  el0t_64_irq+0x190/0x194

@@ -1,0 +1,227 @@
+{
+	"hal_module_config": [
+		{
+			"module_name": "key",
+			"module_id": 1,
+			"state": "true",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "key_power",
+					"device_id": 0,
+					"device_node": "/dev/input/event0"
+				}
+            ]	
+		},
+		{
+			"module_name": "touch",
+			"module_id": 2,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "backlight",
+			"module_id": 3,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "frambuffer",
+			"module_id": 4,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "led",
+			"module_id": 5,
+			"state": "true",
+			"json_node": "/etc/led.json",
+			"node_parse": "true"
+		},
+		{
+			"module_name": "gpio",
+			"module_id": 6,
+			"state": "true",
+			"json_node": "/etc/gpio.json",
+			"node_parse": "true"
+		},
+		{
+			"module_name": "generic_power",
+			"module_id": 7,
+			"state": "true",
+			"json_node": "/etc/generic_power.json",
+			"node_parse": "true"
+		},
+		{
+			"module_name": "low_power",
+			"module_id": 8,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "print_comm",
+			"module_id": 9,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "scan_comm",
+			"module_id": 10,
+			"state": "false",
+			"json_node": "none"
+		},		
+		{
+			"module_name": "beep",
+			"module_id": 11,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "speaker",
+			"module_id": 12,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "fan",
+			"module_id": 13,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "usb_ocp",
+			"module_id": 14,
+			"state": "true",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "usb_ocp",
+					"device_id": 0,
+					"device_node": "/dev/qutps"
+				}
+			]
+		},
+		{
+			"module_name": "wifi",
+			"module_id": 15,
+			"state": "false",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "rtl8822bu",
+					"device_id": 0,
+					"device_class": "wireless",					
+					"device_driver": "rtk8822bu_wifi",
+					"pid": "0bda",
+					"vid": "b82c"
+				},
+				{
+					"device_name": "rtl8723",
+					"device_id": 1,
+					"device_class": "wireless",					
+					"device_driver": "rtk8723_wifi",
+					"pid": "0bda",
+					"vid": "d723"
+				}
+			]
+		},
+		{
+			"module_name": "bluetooth",
+			"module_id": 16,
+			"state": "false",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "rtl8822bu",
+					"device_id": 0,
+					"device_class": "wireless",					
+					"device_driver": "rtk8822bu_bt",
+					"pid": "0bda",
+					"vid": "b82c"
+				},
+				{
+					"device_name": "rtl8723",
+					"device_id": 1,
+					"device_class": "wireless",					
+					"device_driver": "rtk8723_bt",
+					"pid": "0bda",
+					"vid": "d723"
+				}
+			]
+		},
+		{
+			"module_name": "storage",
+			"module_id": 17,
+			"state": "true",
+			"json_node": "/etc/storage_config.json",
+			"node_parse": "false"
+		},
+		{
+			"module_name": "usb_device",
+			"module_id": 18,
+			"state": "true",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "usb_device_0",
+					"device_id": 0,
+					"device_node": "/sys/class/udc/ci_hdrc.0/soft_connect"
+				}
+			]
+		},
+		{
+			"module_name": "usb_host",
+			"module_id": 19,
+			"state": "false",
+			"json_node": "none"
+		},
+		{
+			"module_name": "rtc",
+			"module_id": 20,
+			"state": "true",
+			"json_node": "none",
+			"devices": [
+				{
+					"device_name": "rtc",
+					"device_id": 0,
+					"device_node": "/dev/rtc0"
+				}
+			]
+		},
+		{
+			"module_name": "virtual_platform",
+			"module_id": 21,
+			"state": "true",
+			"json_node": "none",
+			"node_parse": "false",
+			"devices": [
+				{
+					"device_name": "qemu_platform",
+					"device_id": 0,
+					"device_node": "/proc/cmdline"
+				}
+			]
+		},
+		{
+			"module_name": "board_info",
+			"module_id": 22,
+			"state": "true",
+			"json_node": "none",
+			"node_parse": "false",
+			"devices": [
+				{
+					"device_name": "board_info",
+					"device_id": 0,
+					"device_node": "/dev/board_desc"
+				}
+			]
+		},
+		{
+			"module_name": "pwm",
+			"module_id": 40,
+			"state": "true",
+			"json_node": "virtual",
+			"node_parse": "false"
+		}
+	]
+}

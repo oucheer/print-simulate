@@ -1,0 +1,797 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e175018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000148] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.011456] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.017808] Console: colour dummy device 80x25
+[    0.035780] ACPI: Core revision 20240827
+[    0.047396] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.047689] pid_max: default: 32768 minimum: 301
+[    0.060543] LSM: initializing lsm=lockdown,capability,landlock
+[    0.065852] landlock: Up and running.
+[    0.071837] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.071959] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.164265] rcu: Hierarchical SRCU implementation.
+[    0.164352] rcu: 	Max phase no-delay instances is 1000.
+[    0.167639] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.180907] Remapping and enabling EFI services.
+[    0.187974] smp: Bringing up secondary CPUs ...
+[    0.198948] Detected PIPT I-cache on CPU1
+[    0.200210] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.206745] smp: Brought up 1 node, 2 CPUs
+[    0.206830] SMP: Total of 2 processors activated.
+[    0.206996] CPU: All CPU(s) started at EL1
+[    0.207666] CPU features: detected: 32-bit EL0 Support
+[    0.207733] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.207787] CPU features: detected: Common not Private translations
+[    0.207794] CPU features: detected: CRC32 instructions
+[    0.209097] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.209271] CPU features: detected: LSE atomic instructions
+[    0.209283] CPU features: detected: Privileged Access Never
+[    0.209291] CPU features: detected: RAS Extension Support
+[    0.209394] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.233761] alternatives: applying system-wide alternatives
+[    0.254916] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.288954] Memory: 3995972K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193648K reserved, 0K cma-reserved)
+[    0.353888] devtmpfs: initialized
+[    0.393799] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.395294] 24304 pages in range for non-PLT usage
+[    0.395413] 515824 pages in range for PLT usage
+[    0.402531] pinctrl core: initialized pinctrl subsystem
+[    0.416381] SMBIOS 3.0.0 present.
+[    0.416968] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.417589] DMI: Memory slots populated: 1/1
+[    0.464997] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.480159] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.481993] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.483221] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.483941] audit: initializing netlink subsys (disabled)
+[    0.488694] audit: type=2000 audit(0.260:1): state=initialized audit_enabled=0 res=1
+[    0.500458] thermal_sys: Registered thermal governor 'step_wise'
+[    0.502823] cpuidle: using governor ladder
+[    0.503347] cpuidle: using governor menu
+[    0.506871] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.511210] ASID allocator initialised with 65536 entries
+[    0.512019] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.514190] Serial: AMBA PL011 UART driver
+[    0.545695] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.545749] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.545778] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.545788] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.545801] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.545811] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.545824] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.545834] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.621567] ACPI: Added _OSI(Module Device)
+[    0.621677] ACPI: Added _OSI(Processor Device)
+[    0.621693] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.651980] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.686939] ACPI: Interpreter enabled
+[    0.686996] ACPI: Using GIC for interrupt routing
+[    0.687853] ACPI: MCFG table detected, 1 entries
+[    0.740081] ACPI: CPU0 has been hot-added
+[    0.741141] ACPI: CPU1 has been hot-added
+[    0.761138] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    0.763495] printk: legacy console [ttyAMA0] enabled
+[    0.834215] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    0.834720] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    0.835014] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    0.835253] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    0.836300] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.840556] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.862676] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    0.864350] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    0.868323] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    0.869202] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.870327] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    0.877486] PCI host bridge to bus 0000:00
+[    0.878157] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    0.878427] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    0.878650] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    0.879005] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.880853] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    0.886541] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    0.887060] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    0.887316] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    0.887556] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    0.890836] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    0.891180] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    0.892120] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    0.892647] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.895919] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    0.896370] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    0.896743] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    0.897116] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    0.897340] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    0.897553] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    0.898039] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    0.898268] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    0.898466] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    0.902619] iommu: Default domain type: Translated
+[    0.902849] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.915888] efivars: Registered efivars operations
+[    0.934064] clocksource: Switched to clocksource arch_sys_counter
+[    0.939916] VFS: Disk quotas dquot_6.6.0
+[    0.940369] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.950263] pnp: PnP ACPI init
+[    0.953483] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    0.954133] pnp: PnP ACPI: found 1 devices
+[    0.998291] NET: Registered PF_INET protocol family
+[    1.000553] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.067606] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    1.068159] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.068602] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.069867] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    1.070639] TCP: Hash tables configured (established 32768 bind 32768)
+[    1.073100] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    1.073898] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.074490] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    1.079733] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.080592] NET: Registered PF_XDP protocol family
+[    1.081164] PCI: CLS 0 bytes, default 64
+[    1.087772] Unpacking initramfs...
+[    1.093844] kvm [1]: HYP mode not available
+[    1.099146] Initialise system trusted keyrings
+[    1.105891] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[    1.172948] Key type asymmetric registered
+[    1.173333] Asymmetric key parser 'x509' registered
+[    1.177563] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    1.179567] io scheduler mq-deadline registered
+[    1.179901] io scheduler kyber registered
+[    1.180498] io scheduler bfq registered
+[    1.234992] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    1.236236] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    1.244928] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.274416] hv_vmbus: registering driver hyperv_keyboard
+[    1.283447] rtc-efi rtc-efi.0: registered as rtc0
+[    1.285549] rtc-efi rtc-efi.0: setting system clock to 2026-09-18T02:57:20 UTC (1789700240)
+[    1.289026] NET: Registered PF_INET6 protocol family
+[    1.328381] Segment Routing with IPv6
+[    1.329331] In-situ OAM (IOAM) with IPv6
+[    1.351192] Freeing initrd memory: 5272K
+[    1.403300] registered taskstats version 1
+[    1.411094] Loading compiled-in X.509 certificates
+[    1.623869] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    1.646826] Demotion targets for Node 0: null
+[    1.648827] Key type .fscrypt registered
+[    1.649046] Key type fscrypt-provisioning registered
+[    1.681744] clk: Disabling unused clocks
+[    1.682471] PM: genpd: Disabling unused power domains
+[    1.744316] Freeing unused kernel memory: 1920K
+[    1.746690] Run /init as init process
+[    2.145275] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    2.151381] Loading boot drivers...
+ * Loading boot drivers: [    2.196545] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    2.288802] Invalid ELF header magic: != ELF
+[    2.322200] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    2.345240] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    2.396497] Invalid ELF header magic: != ELF
+[    2.418517] Invalid ELF header magic: != ELF
+[    2.435001] Invalid ELF header magic: != ELF
+[    2.463817] Invalid ELF header magic: != ELF
+[    2.516672] Invalid ELF header magic: != ELF
+[    2.683584] Invalid ELF header magic: != ELF
+[    2.712441] e1000: Intel(R) PRO/1000 Network Driver
+[    2.712701] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    2.714170] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    2.714644] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[    3.100502] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    3.101492] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[    4.215433] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: baked netdata_get_lpd_switch->mov w0,#1;ret
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+THP_ENABLED=always madvise [never]
+THP_DEFRAG=always defer defer+madvise madvise [never]
+PNTP_PID=
+PNTP_ALIVE=0
+srwxr-xr-x 1 root root 0 Sep 18 02:57 /tmp/.pntp_service
+2147483648 pntp_service process plog lib init 
+[   18.729935] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 18 02:57 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 18 02:57 /tmp/virtual_hal.c
+=== VHAL: extract ===
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+-rwxr-xr-x 1 root root 17056 Sep 18 02:58 /lib/virtual_hal.so
+=== VHAL: done ===
+CACHE_WARMED
+MemTotal:        4007848 kB
+MemFree:         3941744 kB
+MemAvailable:    3933748 kB
+Buffers:            1156 kB
+SIMBOOT_PREP_DONE
+MFP_LOG_READER_PID=510
+MFP_PID=511
+[   56.911017] random: crng init done
+GDBHOLD STARTED pid=524
+HOLD_ARMED wait=7x3s
+HOLD_OK=1
+[New LWP 514]
+[New LWP 515]
+[New LWP 516]
+[New LWP 517]
+[New LWP 518]
+[New LWP 519]
+POLL 10: N=11
+POLL 20: N=22
+POLL 30: N=44
+POLL 39: passed print_info_status_init (N=102)
+POLL_END N=102 tries=0
+GDBHOLD STOPPED N=128
+[New LWP 522]
+[New LWP 523]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffff8794e1f8 in fsync () from /lib64/libc.so.6
+HOLD armed
+Hardware watchpoint 1: *(unsigned int*)(0xa91370+0x7c)
+Quit
+LPD_OWNED fd=39 ino=83277 decport=44647
+LPD_SOCK_READY k=1
+SIMBOOT_LPD_PORT=44647
+SIMBOOT_LPD_PORTS=AE67
+--- THREAD COUNT PRE-INJECT ---
+170
+--- THREAD NAMES (top30) ---
+175 mfp.afx
+1 pub_client
+--- PRE: THREADS (tid comm wchan) ---
+511 mfp.afx vm_mmap_pgoff
+514 pub_client 0
+515 mfp.afx futex_wait_queue
+516 mfp.afx 0
+517 mfp.afx do_epoll_wait
+518 mfp.afx 0
+519 mfp.afx do_wait_intr_irq
+520 mfp.afx do_epoll_wait
+521 mfp.afx do_wait_intr_irq
+522 mfp.afx do_wait_intr_irq
+523 mfp.afx wait_for_partner
+594 mfp.afx do_select
+596 mfp.afx 0
+597 mfp.afx do_select
+598 mfp.afx hrtimer_nanosleep
+599 mfp.afx futex_wait_queue
+600 mfp.afx futex_wait_queue
+601 mfp.afx 0
+602 mfp.afx do_select
+603 mfp.afx do_select
+604 mfp.afx 0
+605 mfp.afx do_select
+618 mfp.afx 0
+619 mfp.afx do_select
+620 mfp.afx 0
+621 mfp.afx do_select
+622 mfp.afx hrtimer_nanosleep
+623 mfp.afx 0
+624 mfp.afx do_select
+625 mfp.afx inet_csk_accept
+626 mfp.afx 0
+628 mfp.afx 0
+629 mfp.afx do_select
+631 mfp.afx futex_wait_queue
+632 mfp.afx 0
+633 mfp.afx do_select
+634 mfp.afx 0
+636 mfp.afx do_select
+637 mfp.afx do_wait_intr_irq
+638 mfp.afx 0
+639 mfp.afx do_select
+640 mfp.afx hrtimer_nanosleep
+641 mfp.afx 0
+642 mfp.afx do_select
+669 mfp.afx futex_wait_queue
+671 mfp.afx 0
+672 mfp.afx do_select
+673 mfp.afx do_select
+674 mfp.afx 0
+675 mfp.afx do_select
+676 mfp.afx 0
+677 mfp.afx do_select
+679 mfp.afx hrtimer_nanosleep
+681 mfp.afx 0
+682 mfp.afx futex_wait_queue
+684 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+686 mfp.afx futex_wait_queue
+687 mfp.afx futex_wait_queue
+691 mfp.afx 0
+695 mfp.afx do_select
+696 mfp.afx futex_wait_queue
+697 mfp.afx futex_wait_queue
+698 mfp.afx __arm64_sys_restart_syscall
+699 mfp.afx 0
+700 mfp.afx do_select
+701 mfp.afx futex_wait_queue
+702 mfp.afx futex_wait_queue
+703 mfp.afx futex_wait_queue
+705 mfp.afx futex_wait_queue
+711 mfp.afx futex_wait_queue
+712 mfp.afx futex_wait_queue
+713 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+717 mfp.afx hrtimer_nanosleep
+718 mfp.afx futex_wait_queue
+720 mfp.afx futex_wait_queue
+721 mfp.afx futex_wait_queue
+722 mfp.afx futex_wait_queue
+723 mfp.afx futex_wait_queue
+724 mfp.afx futex_wait_queue
+725 mfp.afx futex_wait_queue
+726 mfp.afx futex_wait_queue
+727 mfp.afx futex_wait_queue
+728 mfp.afx futex_wait_queue
+729 mfp.afx futex_wait_queue
+731 mfp.afx futex_wait_queue
+732 mfp.afx futex_wait_queue
+733 mfp.afx futex_wait_queue
+735 mfp.afx futex_wait_queue
+736 mfp.afx futex_wait_queue
+737 mfp.afx futex_wait_queue
+738 mfp.afx futex_wait_queue
+740 mfp.afx futex_wait_queue
+741 mfp.afx futex_wait_queue
+742 mfp.afx futex_wait_queue
+743 mfp.afx futex_wait_queue
+744 mfp.afx futex_wait_queue
+745 mfp.afx do_select
+746 mfp.afx futex_wait_queue
+747 mfp.afx 0
+749 mfp.afx do_select
+751 mfp.afx futex_wait_queue
+752 mfp.afx futex_wait_queue
+753 mfp.afx 0
+754 mfp.afx futex_wait_queue
+757 mfp.afx do_select
+758 mfp.afx futex_wait_queue
+759 mfp.afx 0
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx 0
+764 mfp.afx do_select
+765 mfp.afx 0
+766 mfp.afx do_select
+767 mfp.afx futex_wait_queue
+768 mfp.afx do_mprotect_pkey
+769 mfp.afx 0
+770 mfp.afx hrtimer_nanosleep
+771 mfp.afx hrtimer_nanosleep
+772 mfp.afx hrtimer_nanosleep
+773 mfp.afx hrtimer_nanosleep
+774 mfp.afx hrtimer_nanosleep
+775 mfp.afx futex_wait_queue
+776 mfp.afx 0
+777 mfp.afx do_select
+778 mfp.afx do_msgrcv
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx futex_wait_queue
+789 mfp.afx futex_wait_queue
+790 mfp.afx futex_wait_queue
+791 mfp.afx futex_wait_queue
+792 mfp.afx futex_wait_queue
+793 mfp.afx futex_wait_queue
+794 mfp.afx futex_wait_queue
+795 mfp.afx futex_wait_queue
+796 mfp.afx futex_wait_queue
+797 mfp.afx futex_wait_queue
+798 mfp.afx futex_wait_queue
+799 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+801 mfp.afx futex_wait_queue
+802 mfp.afx futex_wait_queue
+803 mfp.afx futex_wait_queue
+804 mfp.afx futex_wait_queue
+805 mfp.afx futex_wait_queue
+806 mfp.afx futex_wait_queue
+807 mfp.afx futex_wait_queue
+808 mfp.afx futex_wait_queue
+809 mfp.afx futex_wait_queue
+810 mfp.afx futex_wait_queue
+811 mfp.afx futex_wait_queue
+812 mfp.afx futex_wait_queue
+813 mfp.afx futex_wait_queue
+814 mfp.afx futex_wait_queue
+815 mfp.afx futex_wait_queue
+816 mfp.afx futex_wait_queue
+817 mfp.afx futex_wait_queue
+818 mfp.afx futex_wait_queue
+819 mfp.afx futex_wait_queue
+820 mfp.afx futex_wait_queue
+821 mfp.afx futex_wait_queue
+822 mfp.afx futex_wait_queue
+823 mfp.afx futex_wait_queue
+824 mfp.afx futex_wait_queue
+825 mfp.afx futex_wait_queue
+826 mfp.afx futex_wait_queue
+827 mfp.afx futex_wait_queue
+829 mfp.afx futex_wait_queue
+830 mfp.afx futex_wait_queue
+831 mfp.afx futex_wait_queue
+832 mfp.afx futex_wait_queue
+833 mfp.afx futex_wait_queue
+834 mfp.afx 0
+838 mfp.afx futex_wait_queue
+839 mfp.afx 0
+840 mfp.afx do_select
+--- PRE: WCHAN HIST ---
+    110 futex_wait_queue
+     35 0
+     29 do_select
+     11 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 inet_csk_accept
+      1 do_msgrcv
+      1 __arm64_sys_restart_syscall
+--- PRE: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+/proc/511/task/511/syscall: 115 0x0 0x0 0xffffdcf577e0 0xffffdcf577e0 0x2 0xfffffffa 0xffffdcf57760 0xffff87921ae4
+/proc/511/task/514/syscall: running
+/proc/511/task/515/syscall: 98 0xffff3c000030 0x80 0x2 0x0 0xffff3c000030 0x40 0xffff818891e0 0xffff878eb254
+/proc/511/task/516/syscall: running
+/proc/511/task/517/syscall: 22 0xd 0xffff80f69218 0x2 0xbb8 0x0 0x8 0xffff80f691c0 0xffff87954a84
+/proc/511/task/518/syscall: running
+/proc/511/task/519/syscall: 63 0x9 0xffff7b7ee2b0 0x8 0x0 0xffff7b7ef2a0 0x0 0xffff7b7ee270 0xffff8794b10c
+/proc/511/task/520/syscall: 22 0x12 0xffff7afde218 0x2 0xbb8 0x0 0x8 0xffff7afde1c0 0xffff87954a84
+/proc/511/task/521/syscall: 63 0xb 0xffff7a7ce2b0 0x8 0x0 0xffff7a7cf2a0 0x0 0xffff7a7ce270 0xffff8794b10c
+/proc/511/task/522/syscall: 63 0xa 0xffff79fbe2b0 0x8 0x0 0xffff79fbf2a0 0x0 0xffff79fbe270 0xffff8794b10c
+/proc/511/task/523/syscall: 56 0xffffffffffffff9c 0xffff80346278 0x0 0x0 0x0 0x0 0xffff80346230 0xffff8899a14c
+/proc/511/task/594/syscall: 72 0x17 0xffff802371c8 0x0 0x0 0xffff802370e0 0x0 0xffff80237090 0xffff87952154
+/proc/511/task/596/syscall: running
+/proc/511/task/597/syscall: 72 0x18 0xffff794a0228 0x0 0x0 0x0 0x0 0xffff794a01c0 0xffff87952154
+/proc/511/task/598/syscall: 115 0x0 0x0 0xffff78c90250 0xffff78c90250 0x0 0xfffffffa 0xffff78c901d0 0xffff87921ae4
+/proc/511/task/599/syscall: 98 0x198b71b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff78b80090 0xffff878eb060
+/proc/511/task/600/syscall: 98 0x198b73f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff78a700d0 0xffff878eb060
+/proc/511/task/601/syscall: running
+/proc/511/task/602/syscall: 72 0x1c 0xffff73ffe228 0x0 0x0 0x0 0x0 0xffff73ffe1c0 0xffff87952154
+/proc/511/task/603/syscall: 72 0x1f 0xffff737ee258 0x0 0x0 0xffff737ee1f0 0x0 0xffff737ee1a0 0xffff87952154
+/proc/511/task/604/syscall: running
+/proc/511/task/605/syscall: 72 0x21 0xffff72fde228 0x0 0x0 0x0 0x0 0xffff72fde1c0 0xffff87952154
+/proc/511/task/618/syscall: running
+/proc/511/task/619/syscall: 72 0x23 0xffff727ce228 0x0 0x0 0x0 0x0 0xffff727ce1c0 0xffff87952154
+/proc/511/task/620/syscall: running
+/proc/511/task/621/syscall: 72 0x26 0xffff71cb0228 0x0 0x0 0x0 0x0 0xffff71cb01c0 0xffff87952154
+/proc/511/task/622/syscall: 115 0x0 0x0 0xffff7149fe00 0x0 0x0 0xfffffffa 0xffff7149fda0 0xffff87921ae4
+/proc/511/task/623/syscall: running
+/proc/511/task/624/syscall: 72 0x29 0xffff71082228 0x0 0x0 0x0 0x0 0xffff710821c0 0xffff87952154
+/proc/511/task/625/syscall: 202 0x27 0xffff70872280 0xffff70872240 0x0 0xffff708732a0 0x1987e670 0xffff70872200 0xffff8795660c
+/proc/511/task/626/syscall: 98 0xffff879f899c 0x80 0x2 0x0 0xffff879f899c 0x0 0xffff70761e90 0xffff878eb254
+/proc/511/task/628/syscall: running
+/proc/511/task/629/syscall: 72 0x2c 0xffff57ffe228 0x0 0x0 0x0 0x0 0xffff57ffe1c0 0xffff87952154
+/proc/511/task/631/syscall: 98 0x198bfe70 0x189 0x0 0x0 0x0 0xffffffff 0xffff577ee0c0 0xffff878eb060
+/proc/511/task/632/syscall: running
+/proc/511/task/633/syscall: 72 0x2f 0xffff573d0228 0x0 0x0 0x0 0x0 0xffff573d01c0 0xffff87952154
+/proc/511/task/634/syscall: running
+/proc/511/task/636/syscall: 72 0x31 0xffff568b2228 0x0 0x0 0x0 0x0 0xffff568b21c0 0xffff87952154
+/proc/511/task/637/syscall: 63 0x2d 0xffff560a2280 0x8 0x0 0xffff560a32a0 0x0 0xffff560a2240 0xffff8794b10c
+/proc/511/task/638/syscall: running
+/proc/511/task/639/syscall: 72 0x34 0xffff55c84228 0x0 0x0 0x0 0x0 0xffff55c841c0 0xffff87952154
+/proc/511/task/640/syscall: running
+/proc/511/task/641/syscall: running
+/proc/511/task/642/syscall: 72 0x36 0xffff55056228 0x0 0x0 0x0 0x0 0xffff550561c0 0xffff87952154
+/proc/511/task/669/syscall: 98 0xffff8897ccc8 0x89 0x0 0xffff54846118 0x0 0xffffffff 0xffff54846010 0xffff878eb060
+/proc/511/task/671/syscall: running
+/proc/511/task/672/syscall: 72 0x38 0xffff54428228 0x0 0x0 0x0 0x0 0xffff544281c0 0xffff87952154
+/proc/511/task/673/syscall: 72 0x3a 0xffff53c18258 0x0 0x0 0x0 0x0 0xffff53c181a0 0xffff87952154
+/proc/511/task/674/syscall: running
+/proc/511/task/675/syscall: 72 0x3b 0xffff530fa228 0x0 0x0 0x0 0x0 0xffff530fa1c0 0xffff87952154
+/proc/511/task/676/syscall: running
+/proc/511/task/677/syscall: 72 0x3d 0xffff525dc228 0x0 0x0 0x0 0x0 0xffff525dc1c0 0xffff87952154
+/proc/511/task/679/syscall: 115 0x0 0x0 0xffff51dcc248 0xffff51dcc248 0x0 0xfffffffa 0xffff51dcc1e0 0xffff87921ae4
+/proc/511/task/681/syscall: running
+/proc/511/task/682/syscall: 98 0x198c5320 0x189 0x0 0x0 0x0 0xffffffff 0xffff51bac0d0 0xffff878eb060
+/proc/511/task/684/syscall: 98 0x198d4820 0x189 0x0 0x0 0x0 0xffffffff 0xffff51a9c120 0xffff878eb060
+/proc/511/task/685/syscall: 98 0x198d4ad0 0x189 0x0 0x0 0x0 0xffffffff 0xffff5189b120 0xffff878eb060
+/proc/511/task/686/syscall: 98 0x198d4d80 0x189 0x0 0x0 0x0 0xffffffff 0xffff5169a120 0xffff878eb060
+/proc/511/task/687/syscall: 98 0x198d50a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff51499120 0xffff878eb060
+/proc/511/task/691/syscall: running
+/proc/511/task/695/syscall: 72 0x1a 0xffff5107b228 0x0 0x0 0x0 0x0 0xffff5107b1c0 0xffff87952154
+/proc/511/task/696/syscall: 98 0x198d6720 0x189 0x0 0x0 0x0 0xffffffff 0xffff5056a090 0xffff878eb060
+/proc/511/task/697/syscall: 98 0x198d6da0 0x189 0x0 0x0 0x0 0xffffffff 0xffff5045a170 0xffff878eb060
+/proc/511/task/698/syscall: 128 0x0 0x0 0xffff5034a270 0xffff5034a270 0x0 0xfffffffa 0xffff5034a1f0 0xffff87921ae4
+/proc/511/task/699/syscall: running
+/proc/511/task/700/syscall: 72 0x42 0xffff43dee258 0x0 0x0 0x0 0x0 0xffff43dee1a0 0xffff87952154
+/proc/511/task/701/syscall: 98 0x198d72c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff5013c150 0xffff878eb060
+/proc/511/task/702/syscall: 98 0x198d7360 0x189 0x0 0x0 0x0 0xffffffff 0xffff435de080 0xffff878eb060
+/proc/511/task/703/syscall: 98 0x198d7390 0x189 0x0 0x0 0x0 0xffffffff 0xffff434ce1a0 0xffff878eb060
+/proc/511/task/705/syscall: 98 0x198d9860 0x189 0x0 0x0 0x0 0xffffffff 0xffff433be0f0 0xffff878eb060
+/proc/511/task/711/syscall: 98 0x198d9d70 0x189 0x0 0x0 0x0 0xffffffff 0xffff432ae090 0xffff878eb060
+/proc/511/task/712/syscall: 98 0x198d9cc0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4319dff0 0xffff878eb060
+/proc/511/task/713/syscall: 98 0x198dbf30 0x189 0x0 0x0 0x0 0xffffffff 0xffff4308e080 0xffff878eb060
+/proc/511/task/715/syscall: 98 0x198dd9c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff42c7d090 0xffff878eb060
+/proc/511/task/717/syscall: 115 0x0 0x0 0xffff42b6d218 0xffff42b6d218 0x0 0xfffffffa 0xffff42b6d1b0 0xffff87921ae4
+/proc/511/task/718/syscall: 98 0x198e0010 0x189 0x0 0x0 0x0 0xffffffff 0xffff4275c090 0xffff878eb060
+/proc/511/task/720/syscall: 98 0x198e0250 0x189 0x0 0x0 0x0 0xffffffff 0xffff4234b090 0xffff878eb060
+/proc/511/task/721/syscall: 98 0x198e0490 0x189 0x0 0x0 0x0 0xffffffff 0xffff4223b0a0 0xffff878eb060
+/proc/511/task/722/syscall: 98 0x198e6790 0x189 0x0 0x0 0x0 0xffffffff 0xffff41e2a0c0 0xffff878eb060
+/proc/511/task/723/syscall: 98 0x198e6a58 0x189 0x0 0x0 0x0 0xffffffff 0xffff41a191f0 0xffff878eb060
+/proc/511/task/724/syscall: 98 0x198e6a58 0x189 0x0 0x0 0x0 0xffffffff 0xffff412091f0 0xffff878eb060
+/proc/511/task/725/syscall: 98 0x198e6a58 0x189 0x0 0x0 0x0 0xffffffff 0xffff409f91f0 0xffff878eb060
+/proc/511/task/726/syscall: 98 0x198e6a58 0x189 0x0 0x0 0x0 0xffffffff 0xffff33ffe1f0 0xffff878eb060
+/proc/511/task/727/syscall: 98 0x198e69d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff401e90c0 0xffff878eb060
+/proc/511/task/728/syscall: 98 0x198e7468 0x189 0x0 0x0 0x0 0xffffffff 0xffff334ed1f0 0xffff878eb060
+/proc/511/task/729/syscall: 98 0x198e7468 0x189 0x0 0x0 0x0 0xffffffff 0xffff32cdd1f0 0xffff878eb060
+/proc/511/task/731/syscall: 98 0x198e7468 0x189 0x0 0x0 0x0 0xffffffff 0xffff324cd1f0 0xffff878eb060
+/proc/511/task/732/syscall: 98 0x198e7468 0x189 0x0 0x0 0x0 0xffffffff 0xffff31cbd1f0 0xffff878eb060
+/proc/511/task/733/syscall: 98 0x198e73e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff314ad0c0 0xffff878eb060
+/proc/511/task/735/syscall: 98 0x198e7de8 0x189 0x0 0x0 0x0 0xffffffff 0xffff3109c1f0 0xffff878eb060
+/proc/511/task/736/syscall: 98 0x198e7de8 0x189 0x0 0x0 0x0 0xffffffff 0xffff3088c1f0 0xffff878eb060
+/proc/511/task/737/syscall: 98 0x198e7de8 0x189 0x0 0x0 0x0 0xffffffff 0xffff2bffe1f0 0xffff878eb060
+/proc/511/task/738/syscall: 98 0x198e7de8 0x189 0x0 0x0 0x0 0xffffffff 0xffff2b7ee1f0 0xffff878eb060
+/proc/511/task/740/syscall: 98 0x198e7d60 0x189 0x0 0x0 0x0 0xffffffff 0xffff2afde0c0 0xffff878eb060
+/proc/511/task/741/syscall: 98 0x198e97e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff2abcd090 0xffff878eb060
+/proc/511/task/742/syscall: 98 0x198e90d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff2a7bc090 0xffff878eb060
+/proc/511/task/743/syscall: 98 0x198e92e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff2a3ab080 0xffff878eb060
+/proc/511/task/744/syscall: 98 0x198efee0 0x189 0x0 0x0 0x0 0xffffffff 0xffff2a29b0d0 0xffff878eb060
+/proc/511/task/745/syscall: 72 0x41 0xffff2a18b258 0x0 0x0 0x0 0x0 0xffff2a18b1a0 0xffff87952154
+/proc/511/task/746/syscall: 98 0x19901750 0x189 0x0 0x0 0x0 0xffffffff 0xffff2967a090 0xffff878eb060
+/proc/511/task/747/syscall: running
+/proc/511/task/749/syscall: 72 0x44 0xffff2925c228 0x0 0x0 0x0 0x0 0xffff2925c1c0 0xffff87952154
+/proc/511/task/751/syscall: 98 0x19909280 0x189 0x0 0x0 0x0 0xffffffff 0xffff28a4c0d0 0xffff878eb060
+/proc/511/task/752/syscall: 98 0x19918530 0x189 0x0 0x0 0x0 0xffffffff 0xffff2893c0d0 0xffff878eb060
+/proc/511/task/753/syscall: 98 0x19927940 0x189 0x0 0xffff2882c0b8 0x0 0xffffffff 0xffff2882c020 0xffff878eb060
+/proc/511/task/754/syscall: 98 0x19945d30 0x189 0x0 0x0 0x0 0xffffffff 0xffff2871c0a0 0xffff878eb060
+/proc/511/task/757/syscall: 72 0x43 0xffff2860c258 0x0 0x0 0x0 0x0 0xffff2860c1a0 0xffff87952154
+/proc/511/task/758/syscall: 98 0x19955140 0x189 0x0 0x0 0x0 0xffffffff 0xffff27dfc0d0 0xffff878eb060
+/proc/511/task/759/syscall: running
+/proc/511/task/760/syscall: 98 0x19964560 0x189 0x0 0x0 0x0 0xffffffff 0xffff27bdc0d0 0xffff878eb060
+/proc/511/task/761/syscall: 98 0x199737b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff27acc0d0 0xffff878eb060
+/proc/511/task/762/syscall: 98 0x19982a60 0x189 0x0 0xffff279bc118 0x0 0xffffffff 0xffff279bc080 0xffff878eb060
+/proc/511/task/763/syscall: running
+/proc/511/task/764/syscall: 72 0x46 0xffff2759e218 0x0 0x0 0x0 0x0 0xffff2759e170 0xffff87952154
+/proc/511/task/765/syscall: running
+/proc/511/task/766/syscall: 72 0x49 0xffff27180218 0x0 0x0 0x0 0x0 0xffff27180170 0xffff87952154
+/proc/511/task/767/syscall: 98 0x19992670 0x189 0x0 0x0 0x0 0xffffffff 0xffff2706ef10 0xffff878eb060
+/proc/511/task/768/syscall: running
+/proc/511/task/769/syscall: running
+/proc/511/task/770/syscall: 115 0x0 0x0 0xffff26d40248 0xffff26d40248 0x0 0xfffffffa 0xffff26d401e0 0xffff87921ae4
+/proc/511/task/771/syscall: running
+/proc/511/task/772/syscall: 115 0x0 0x0 0xffff26b20248 0xffff26b20248 0x0 0xfffffffa 0xffff26b201e0 0xffff87921ae4
+/proc/511/task/773/syscall: 115 0x0 0x0 0xffff26a10258 0xffff26a10258 0x0 0xfffffffa 0xffff26a101f0 0xffff87921ae4
+/proc/511/task/774/syscall: 115 0x0 0x0 0xffff26900218 0xffff26900218 0x0 0xfffffffa 0xffff269001b0 0xffff87921ae4
+/proc/511/task/775/syscall: 98 0x1999ce10 0x189 0x0 0x0 0x0 0xffffffff 0xffff267f00d0 0xffff878eb060
+/proc/511/task/776/syscall: running
+/proc/511/task/777/syscall: 72 0x4b 0xffff263d2228 0x0 0x0 0x0 0x0 0xffff263d21c0 0xffff87952154
+/proc/511/task/778/syscall: 188 0x0 0xffff25bc2228 0x64 0x0 0x0 0x0 0xffff25bc21a0 0xffff87957600
+/proc/511/task/786/syscall: 98 0x199afae0 0x189 0x0 0x0 0x0 0xffffffff 0xffff25ab20d0 0xffff878eb060
+/proc/511/task/787/syscall: 98 0x199b5d30 0x189 0x0 0x0 0x0 0xffffffff 0xffff259a20d0 0xffff878eb060
+/proc/511/task/788/syscall: 98 0x199bbf80 0x189 0x0 0x0 0x0 0xffffffff 0xffff258920d0 0xffff878eb060
+/proc/511/task/789/syscall: 98 0x199bc210 0x189 0x0 0x0 0x0 0xffffffff 0xffff257821a0 0xffff878eb060
+/proc/511/task/790/syscall: 98 0x199bc4c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff256720d0 0xffff878eb060
+/proc/511/task/791/syscall: 98 0x199bc8a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff255621a0 0xffff878eb060
+/proc/511/task/792/syscall: 98 0x199c7590 0x189 0x0 0x0 0x0 0xffffffff 0xffff254521a0 0xffff878eb060
+/proc/511/task/793/syscall: 98 0x199c7790 0x189 0x0 0x0 0x0 0xffffffff 0xffff253421a0 0xffff878eb060
+/proc/511/task/794/syscall: 98 0x199c7990 0x189 0x0 0x0 0x0 0xffffffff 0xffff252321a0 0xffff878eb060
+/proc/511/task/795/syscall: 98 0x199c7b90 0x189 0x0 0x0 0x0 0xffffffff 0xffff251221a0 0xffff878eb060
+/proc/511/task/796/syscall: 98 0x199c7d90 0x189 0x0 0x0 0x0 0xffffffff 0xffff250121a0 0xffff878eb060
+/proc/511/task/797/syscall: 98 0x199c7f90 0x189 0x0 0x0 0x0 0xffffffff 0xffff24f021a0 0xffff878eb060
+/proc/511/task/798/syscall: 98 0x199c8190 0x189 0x0 0x0 0x0 0xffffffff 0xffff24df21a0 0xffff878eb060
+/proc/511/task/799/syscall: 98 0x199c8390 0x189 0x0 0x0 0x0 0xffffffff 0xffff24ce21a0 0xffff878eb060
+/proc/511/task/800/syscall: 98 0x199c8590 0x189 0x0 0x0 0x0 0xffffffff 0xffff24bd21a0 0xffff878eb060
+/proc/511/task/801/syscall: 98 0x199c8790 0x189 0x0 0x0 0x0 0xffffffff 0xffff24ac21a0 0xffff878eb060
+/proc/511/task/802/syscall: 98 0x199c8990 0x189 0x0 0x0 0x0 0xffffffff 0xffff249b21a0 0xffff878eb060
+/proc/511/task/803/syscall: 98 0x199c8b90 0x189 0x0 0x0 0x0 0xffffffff 0xffff248a21a0 0xffff878eb060
+/proc/511/task/804/syscall: 98 0x199c8d90 0x189 0x0 0x0 0x0 0xffffffff 0xffff247921a0 0xffff878eb060
+/proc/511/task/805/syscall: 98 0x199c8f90 0x189 0x0 0x0 0x0 0xffffffff 0xffff246821a0 0xffff878eb060
+/proc/511/task/806/syscall: 98 0x199c9190 0x189 0x0 0x0 0x0 0xffffffff 0xffff245721a0 0xffff878eb060
+/proc/511/task/807/syscall: 98 0x199c9390 0x189 0x0 0x0 0x0 0xffffffff 0xffff244621a0 0xffff878eb060
+/proc/511/task/808/syscall: 98 0x199c9590 0x189 0x0 0x0 0x0 0xffffffff 0xffff243521a0 0xffff878eb060
+/proc/511/task/809/syscall: 98 0x199c9790 0x189 0x0 0x0 0x0 0xffffffff 0xffff242421a0 0xffff878eb060
+/proc/511/task/810/syscall: 98 0x199c9990 0x189 0x0 0x0 0x0 0xffffffff 0xffff241321a0 0xffff878eb060
+/proc/511/task/811/syscall: 98 0x199c9b90 0x189 0x0 0x0 0x0 0xffffffff 0xffff240221a0 0xffff878eb060
+/proc/511/task/812/syscall: 98 0x199c9d90 0x189 0x0 0x0 0x0 0xffffffff 0xffff23f121a0 0xffff878eb060
+/proc/511/task/813/syscall: 98 0x199c9f90 0x189 0x0 0x0 0x0 0xffffffff 0xffff23e021a0 0xffff878eb060
+/proc/511/task/814/syscall: 98 0x199ca190 0x189 0x0 0x0 0x0 0xffffffff 0xffff23cf21a0 0xffff878eb060
+/proc/511/task/815/syscall: 98 0x199ca390 0x189 0x0 0x0 0x0 0xffffffff 0xffff23be21a0 0xffff878eb060
+/proc/511/task/816/syscall: 98 0x199ca590 0x189 0x0 0x0 0x0 0xffffffff 0xffff23ad21a0 0xffff878eb060
+/proc/511/task/817/syscall: 98 0x199ca790 0x189 0x0 0x0 0x0 0xffffffff 0xffff239c21a0 0xffff878eb060
+/proc/511/task/818/syscall: 98 0x199ca990 0x189 0x0 0x0 0x0 0xffffffff 0xffff238b21a0 0xffff878eb060
+/proc/511/task/819/syscall: 98 0x199cab90 0x189 0x0 0x0 0x0 0xffffffff 0xffff237a21a0 0xffff878eb060
+/proc/511/task/820/syscall: 98 0x199cad90 0x189 0x0 0x0 0x0 0xffffffff 0xffff236921a0 0xffff878eb060
+/proc/511/task/821/syscall: 98 0x199caf90 0x189 0x0 0x0 0x0 0xffffffff 0xffff235821a0 0xffff878eb060
+/proc/511/task/822/syscall: 98 0x199cb190 0x189 0x0 0x0 0x0 0xffffffff 0xffff234721a0 0xffff878eb060
+/proc/511/task/823/syscall: 98 0x199cb740 0x189 0x0 0x0 0x0 0xffffffff 0xffff233621a0 0xffff878eb060
+/proc/511/task/824/syscall: 98 0x199cb980 0x189 0x0 0x0 0x0 0xffffffff 0xffff232521a0 0xffff878eb060
+/proc/511/task/825/syscall: 98 0x199cbbc0 0x189 0x0 0x0 0x0 0xffffffff 0xffff231421a0 0xffff878eb060
+/proc/511/task/826/syscall: 98 0x199cbe00 0x189 0x0 0x0 0x0 0xffffffff 0xffff230321a0 0xffff878eb060
+/proc/511/task/827/syscall: 98 0x199cc040 0x189 0x0 0x0 0x0 0xffffffff 0xffff22f221a0 0xffff878eb060
+/proc/511/task/829/syscall: 98 0x199cc280 0x189 0x0 0x0 0x0 0xffffffff 0xffff22e121a0 0xffff878eb060
+/proc/511/task/830/syscall: 98 0x199cc4c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff22d021a0 0xffff878eb060
+/proc/511/task/831/syscall: 98 0x199cc700 0x189 0x0 0x0 0x0 0xffffffff 0xffff22bf21a0 0xffff878eb060
+/proc/511/task/832/syscall: 98 0x199cc940 0x189 0x0 0x0 0x0 0xffffffff 0xffff22ae21a0 0xffff878eb060
+/proc/511/task/833/syscall: 98 0x199ccb80 0x189 0x0 0x0 0x0 0xffffffff 0xffff229d21a0 0xffff878eb060
+/proc/511/task/834/syscall: running
+/proc/511/task/838/syscall: 98 0x199ce3d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff227a84e0 0xffff878eb060
+/proc/511/task/839/syscall: running
+/proc/511/task/840/syscall: 72 0x48 0xffff22394228 0x0 0x0 0x0 0x0 0xffff223941c0 0xffff87952154
+/proc/511/task/843/syscall: 98 0x199cf150 0x189 0x0 0x0 0x0 0xffffffff 0xffff21b84150 0xffff878eb060
+/proc/511/task/844/syscall: 98 0x199cf4a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff21a74130 0xffff878eb060
+/proc/511/task/845/syscall: 115 0x0 0x0 0xffff21964228 0xffff21964228 0x0 0xfffffffa 0xffff219641c0 0xffff87921ae4
+/proc/511/task/846/syscall: 98 0x199cf9c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff21854150 0xffff878eb060
+/proc/511/task/847/syscall: 98 0x199cfd80 0x189 0x0 0x0 0x0 0xffffffff 0xffff21744140 0xffff878eb060
+/proc/511/task/848/syscall: 98 0x199d00a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff21634140 0xffff878eb060
+/proc/511/task/849/syscall: 98 0x199d03b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff21524160 0xffff878eb060
+/proc/511/task/850/syscall: running
+/proc/511/task/851/syscall: 72 0x4e 0xffff21106228 0x0 0x0 0x0 0x0 0xffff211061c0 0xffff87952154
+/proc/511/task/852/syscall: running
+/proc/511/task/853/syscall: 72 0x50 0xffff205e8228 0x0 0x0 0x0 0x0 0xffff205e81c0 0xffff87952154
+/proc/511/task/854/syscall: 98 0x19a24a50 0x189 0x0 0x0 0x0 0xffffffff 0xffff1fdd80d0 0xffff878eb060
+/proc/511/task/855/syscall: running
+/proc/511/task/856/syscall: 98 0x15cf9b8 0x189 0x0 0x0 0x0 0xffffffff 0xffff1fbb81b0 0xffff878eb060
+/proc/511/task/857/syscall: running
+/proc/511/task/858/syscall: 72 0x53 0xffff1f79a228 0x0 0x0 0x0 0x0 0xffff1f79a1c0 0xffff87952154
+--- SOCKET FDS ---
+lrwx------ 1 root root 64 Sep 18 02:59 23 -> socket:[70615]
+lrwx------ 1 root root 64 Sep 18 02:59 25 -> socket:[98322]
+lrwx------ 1 root root 64 Sep 18 02:59 26 -> socket:[70616]
+lrwx------ 1 root root 64 Sep 18 02:59 27 -> socket:[70617]
+lrwx------ 1 root root 64 Sep 18 02:59 28 -> socket:[70618]
+lrwx------ 1 root root 64 Sep 18 02:59 32 -> socket:[70619]
+lrwx------ 1 root root 64 Sep 18 02:59 33 -> socket:[70620]
+lrwx------ 1 root root 64 Sep 18 02:59 34 -> socket:[83271]
+lrwx------ 1 root root 64 Sep 18 02:59 35 -> socket:[83272]
+lrwx------ 1 root root 64 Sep 18 02:59 37 -> socket:[83273]
+lrwx------ 1 root root 64 Sep 18 02:59 38 -> socket:[83274]
+lrwx------ 1 root root 64 Sep 18 02:59 39 -> socket:[83277]
+lrwx------ 1 root root 64 Sep 18 02:59 40 -> socket:[83275]
+lrwx------ 1 root root 64 Sep 18 02:59 41 -> socket:[83276]
+lrwx------ 1 root root 64 Sep 18 02:59 42 -> socket:[98323]
+lrwx------ 1 root root 64 Sep 18 02:59 43 -> socket:[83280]
+lrwx------ 1 root root 64 Sep 18 02:59 44 -> socket:[83281]
+lrwx------ 1 root root 64 Sep 18 02:59 46 -> socket:[83302]
+lrwx------ 1 root root 64 Sep 18 02:59 47 -> socket:[83303]
+lrwx------ 1 root root 64 Sep 18 02:59 48 -> socket:[84647]
+lrwx------ 1 root root 64 Sep 18 02:59 49 -> socket:[84648]
+lrwx------ 1 root root 64 Sep 18 02:59 51 -> socket:[83305]
+lrwx------ 1 root root 64 Sep 18 02:59 52 -> socket:[83306]
+lrwx------ 1 root root 64 Sep 18 02:59 53 -> socket:[83308]
+lrwx------ 1 root root 64 Sep 18 02:59 54 -> socket:[83309]
+lrwx------ 1 root root 64 Sep 18 02:59 55 -> socket:[92239]
+lrwx------ 1 root root 64 Sep 18 02:59 56 -> socket:[92240]
+lrwx------ 1 root root 64 Sep 18 02:59 58 -> socket:[92242]
+lrwx------ 1 root root 64 Sep 18 02:59 59 -> socket:[92243]
+lrwx------ 1 root root 64 Sep 18 02:59 60 -> socket:[92244]
+lrwx------ 1 root root 64 Sep 18 02:59 61 -> socket:[92245]
+lrwx------ 1 root root 64 Sep 18 02:59 67 -> socket:[103389]
+lrwx------ 1 root root 64 Sep 18 02:59 68 -> socket:[103390]
+lrwx------ 1 root root 64 Sep 18 02:59 69 -> socket:[97542]
+lrwx------ 1 root root 64 Sep 18 02:59 70 -> socket:[97543]
+lrwx------ 1 root root 64 Sep 18 02:59 71 -> socket:[106575]
+lrwx------ 1 root root 64 Sep 18 02:59 72 -> socket:[97544]
+lrwx------ 1 root root 64 Sep 18 02:59 73 -> socket:[97545]
+lrwx------ 1 root root 64 Sep 18 02:59 74 -> socket:[97546]
+lrwx------ 1 root root 64 Sep 18 02:59 75 -> socket:[97547]
+lrwx------ 1 root root 64 Sep 18 03:00 76 -> socket:[106576]
+lrwx------ 1 root root 64 Sep 18 03:00 77 -> socket:[106828]
+lrwx------ 1 root root 64 Sep 18 03:00 78 -> socket:[106829]
+lrwx------ 1 root root 64 Sep 18 03:00 79 -> socket:[106830]
+lrwx------ 1 root root 64 Sep 18 02:59 8 -> socket:[1663]
+lrwx------ 1 root root 64 Sep 18 03:00 80 -> socket:[106831]
+lrwx------ 1 root root 64 Sep 18 03:00 81 -> socket:[111629]
+lrwx------ 1 root root 64 Sep 18 03:00 82 -> socket:[106832]
+lrwx------ 1 root root 64 Sep 18 03:00 83 -> socket:[106833]
+MFP_PRE_SNAP=10403840
+MFP_PRE_UPLOAD_RC=0 size=10403840
+TRACE1_ARMED wait=6x2s
+TRACE1 GDB STARTED pid=875 armed=1
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 9 at 0x683f84: file net/lpd/lpd.c, line 580.
+Breakpoint 10 at 0x684050: file net/lpd/lpd.c, line 605.
+TRACE1 armed
+--- PREREADY: MFP LOG size=19521536 ---
+--- PREREADY: SNAP size=4194304 ---
+--- PREREADY: MFP LOG TAIL ---
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.7READY FOR INJECT

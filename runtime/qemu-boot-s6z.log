@@ -1,0 +1,2157 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e175018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000087] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.006754] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.020984] Console: colour dummy device 80x25
+[    0.026947] ACPI: Core revision 20240827
+[    0.038450] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.038655] pid_max: default: 32768 minimum: 301
+[    0.048542] LSM: initializing lsm=lockdown,capability,landlock
+[    0.051643] landlock: Up and running.
+[    0.055400] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.055555] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.159842] rcu: Hierarchical SRCU implementation.
+[    0.159942] rcu: 	Max phase no-delay instances is 1000.
+[    0.167712] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.174414] Remapping and enabling EFI services.
+[    0.186182] smp: Bringing up secondary CPUs ...
+[    0.192116] Detected PIPT I-cache on CPU1
+[    0.193636] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.204088] smp: Brought up 1 node, 2 CPUs
+[    0.204154] SMP: Total of 2 processors activated.
+[    0.204207] CPU: All CPU(s) started at EL1
+[    0.204488] CPU features: detected: 32-bit EL0 Support
+[    0.204550] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.204604] CPU features: detected: Common not Private translations
+[    0.204610] CPU features: detected: CRC32 instructions
+[    0.204842] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.204888] CPU features: detected: LSE atomic instructions
+[    0.204894] CPU features: detected: Privileged Access Never
+[    0.204899] CPU features: detected: RAS Extension Support
+[    0.204947] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.221523] alternatives: applying system-wide alternatives
+[    0.241362] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.273681] Memory: 3995972K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193648K reserved, 0K cma-reserved)
+[    0.354822] devtmpfs: initialized
+[    0.393018] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.393960] 24304 pages in range for non-PLT usage
+[    0.394029] 515824 pages in range for PLT usage
+[    0.402169] pinctrl core: initialized pinctrl subsystem
+[    0.409035] SMBIOS 3.0.0 present.
+[    0.409485] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.409871] DMI: Memory slots populated: 1/1
+[    0.450299] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.457538] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.459446] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.460232] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.460709] audit: initializing netlink subsys (disabled)
+[    0.466868] audit: type=2000 audit(0.260:1): state=initialized audit_enabled=0 res=1
+[    0.471632] thermal_sys: Registered thermal governor 'step_wise'
+[    0.474232] cpuidle: using governor ladder
+[    0.474704] cpuidle: using governor menu
+[    0.476891] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.477946] ASID allocator initialised with 65536 entries
+[    0.484300] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.487928] Serial: AMBA PL011 UART driver
+[    0.506741] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.506775] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.506791] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.506797] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.506804] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.506809] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.506816] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.506821] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.544106] ACPI: Added _OSI(Module Device)
+[    0.547587] ACPI: Added _OSI(Processor Device)
+[    0.547632] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.576313] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.607046] ACPI: Interpreter enabled
+[    0.607123] ACPI: Using GIC for interrupt routing
+[    0.608114] ACPI: MCFG table detected, 1 entries
+[    0.672469] ACPI: CPU0 has been hot-added
+[    0.673372] ACPI: CPU1 has been hot-added
+[    0.692724] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    0.694161] printk: legacy console [ttyAMA0] enabled
+[    0.753824] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    0.754296] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    0.754538] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    0.754767] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    0.755438] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.757389] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.768264] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    0.769412] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    0.772424] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    0.773211] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.774310] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    0.781119] PCI host bridge to bus 0000:00
+[    0.781859] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    0.782135] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    0.782343] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    0.782710] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.784621] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    0.790424] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    0.790958] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    0.791213] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    0.791450] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    0.792587] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    0.792887] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    0.793058] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    0.793301] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.798650] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    0.799163] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    0.799535] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    0.799933] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    0.800159] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    0.800374] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    0.800865] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    0.801110] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    0.801300] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    0.805683] iommu: Default domain type: Translated
+[    0.805926] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.818559] efivars: Registered efivars operations
+[    0.839736] clocksource: Switched to clocksource arch_sys_counter
+[    0.848792] VFS: Disk quotas dquot_6.6.0
+[    0.849458] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.853518] pnp: PnP ACPI init
+[    0.856835] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    0.857460] pnp: PnP ACPI: found 1 devices
+[    0.891975] NET: Registered PF_INET protocol family
+[    0.896361] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.967722] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.968308] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.968808] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.970079] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.970742] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.973192] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    0.974029] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.974618] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.976986] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.977764] NET: Registered PF_XDP protocol family
+[    0.980669] PCI: CLS 0 bytes, default 64
+[    0.986877] Unpacking initramfs...
+[    1.001172] kvm [1]: HYP mode not available
+[    1.005853] Initialise system trusted keyrings
+[    1.018493] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[    1.095119] Key type asymmetric registered
+[    1.098347] Asymmetric key parser 'x509' registered
+[    1.099621] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    1.102892] io scheduler mq-deadline registered
+[    1.103312] io scheduler kyber registered
+[    1.104147] io scheduler bfq registered
+[    1.136494] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    1.138343] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    1.150427] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    1.187036] hv_vmbus: registering driver hyperv_keyboard
+[    1.201170] rtc-efi rtc-efi.0: registered as rtc0
+[    1.203204] rtc-efi rtc-efi.0: setting system clock to 2026-09-18T02:26:25 UTC (1789698385)
+[    1.206952] NET: Registered PF_INET6 protocol family
+[    1.223062] Segment Routing with IPv6
+[    1.223569] In-situ OAM (IOAM) with IPv6
+[    1.271373] Freeing initrd memory: 5272K
+[    1.304912] registered taskstats version 1
+[    1.309540] Loading compiled-in X.509 certificates
+[    1.477375] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    1.507290] Demotion targets for Node 0: null
+[    1.509238] Key type .fscrypt registered
+[    1.509446] Key type fscrypt-provisioning registered
+[    1.540065] clk: Disabling unused clocks
+[    1.540816] PM: genpd: Disabling unused power domains
+[    1.602670] Freeing unused kernel memory: 1920K
+[    1.606002] Run /init as init process
+[    1.789406] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    1.799778] Loading boot drivers...
+ * Loading boot drivers: [    1.837468] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    1.893963] Invalid ELF header magic: != ELF
+[    1.928488] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    1.952697] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    1.983291] Invalid ELF header magic: != ELF
+[    1.997682] Invalid ELF header magic: != ELF
+[    2.010711] Invalid ELF header magic: != ELF
+[    2.025899] Invalid ELF header magic: != ELF
+[    2.081623] Invalid ELF header magic: != ELF
+[    2.254490] Invalid ELF header magic: != ELF
+[    2.286148] e1000: Intel(R) PRO/1000 Network Driver
+[    2.286410] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    2.287885] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    2.288376] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[    2.635138] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    2.636232] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[    3.732703] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: baked netdata_get_lpd_switch->mov w0,#1;ret
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+THP_ENABLED=always madvise [never]
+THP_DEFRAG=always defer defer+madvise madvise [never]
+[   15.031775] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 18 02:26 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 18 02:26 /tmp/virtual_hal.c
+=== VHAL: extract ===
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+-rwxr-xr-x 1 root root 17056 Sep 18 02:26 /lib/virtual_hal.so
+=== VHAL: done ===
+CACHE_WARMED
+MemTotal:        4007848 kB
+MemFree:         3943892 kB
+MemAvailable:    3935828 kB
+Buffers:            1156 kB
+SIMBOOT_PREP_DONE
+MFP_LOG_READER_PID=503
+MFP_PID=504
+[   35.079920] random: crng init done
+GDBHOLD STARTED pid=517
+HOLD_ARMED wait=4x3s
+HOLD_OK=1
+[New LWP 507]
+[New LWP 508]
+[New LWP 509]
+[New LWP 510]
+[New LWP 511]
+[New LWP 512]
+POLL 10: N=43
+POLL 20: N=44
+POLL 28: passed print_info_status_init (N=102)
+POLL_END N=102 tries=0
+GDBHOLD STOPPED N=128
+[New LWP 515]
+[New LWP 516]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa074e1f8 in fsync () from /lib64/libc.so.6
+HOLD armed
+Hardware watchpoint 1: *(unsigned int*)(0xa91370+0x7c)
+Quit
+LPD_OWNED fd=41 ino=95688 decport=34011
+LPD_SOCK_READY k=1
+SIMBOOT_LPD_PORT=34011
+SIMBOOT_LPD_PORTS=84DB
+--- THREAD COUNT PRE-INJECT ---
+151
+--- THREAD NAMES (top30) ---
+175 mfp.afx
+1 pub_client
+--- PRE: THREADS (tid comm wchan) ---
+504 mfp.afx hrtimer_nanosleep
+507 pub_client 0
+508 mfp.afx futex_wait_queue
+509 mfp.afx hrtimer_nanosleep
+510 mfp.afx do_epoll_wait
+511 mfp.afx 0
+512 mfp.afx do_wait_intr_irq
+513 mfp.afx do_epoll_wait
+514 mfp.afx do_wait_intr_irq
+515 mfp.afx do_wait_intr_irq
+516 mfp.afx wait_for_partner
+543 mfp.afx jbd2_log_wait_commit
+544 mfp.afx 0
+545 mfp.afx do_select
+546 mfp.afx hrtimer_nanosleep
+547 mfp.afx futex_wait_queue
+548 mfp.afx futex_wait_queue
+549 mfp.afx 0
+550 mfp.afx do_select
+551 mfp.afx do_select
+552 mfp.afx 0
+553 mfp.afx do_select
+568 mfp.afx 0
+569 mfp.afx do_select
+571 mfp.afx 0
+572 mfp.afx do_select
+573 mfp.afx hrtimer_nanosleep
+574 mfp.afx 0
+575 mfp.afx do_select
+576 mfp.afx inet_csk_accept
+577 mfp.afx 0
+578 mfp.afx 0
+579 mfp.afx do_select
+580 mfp.afx futex_wait_queue
+581 mfp.afx 0
+582 mfp.afx do_select
+583 mfp.afx 0
+584 mfp.afx do_select
+585 mfp.afx do_wait_intr_irq
+586 mfp.afx 0
+587 mfp.afx do_select
+588 mfp.afx 0
+589 mfp.afx 0
+592 mfp.afx do_select
+623 mfp.afx futex_wait_queue
+625 mfp.afx 0
+626 mfp.afx do_select
+627 mfp.afx do_select
+628 mfp.afx 0
+629 mfp.afx do_select
+630 mfp.afx 0
+631 mfp.afx do_select
+632 mfp.afx hrtimer_nanosleep
+634 mfp.afx 0
+636 mfp.afx futex_wait_queue
+638 mfp.afx futex_wait_queue
+639 mfp.afx futex_wait_queue
+640 mfp.afx futex_wait_queue
+641 mfp.afx futex_wait_queue
+645 mfp.afx 0
+646 mfp.afx do_select
+647 mfp.afx futex_wait_queue
+648 mfp.afx futex_wait_queue
+649 mfp.afx __arm64_sys_restart_syscall
+650 mfp.afx 0
+651 mfp.afx do_select
+654 mfp.afx futex_wait_queue
+655 mfp.afx futex_wait_queue
+656 mfp.afx futex_wait_queue
+658 mfp.afx futex_wait_queue
+665 mfp.afx futex_wait_queue
+666 mfp.afx futex_wait_queue
+667 mfp.afx futex_wait_queue
+668 mfp.afx futex_wait_queue
+669 mfp.afx hrtimer_nanosleep
+670 mfp.afx futex_wait_queue
+671 mfp.afx futex_wait_queue
+672 mfp.afx futex_wait_queue
+674 mfp.afx futex_wait_queue
+675 mfp.afx futex_wait_queue
+677 mfp.afx futex_wait_queue
+678 mfp.afx futex_wait_queue
+679 mfp.afx futex_wait_queue
+681 mfp.afx futex_wait_queue
+682 mfp.afx futex_wait_queue
+683 mfp.afx futex_wait_queue
+684 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+686 mfp.afx futex_wait_queue
+687 mfp.afx futex_wait_queue
+688 mfp.afx futex_wait_queue
+689 mfp.afx futex_wait_queue
+690 mfp.afx futex_wait_queue
+692 mfp.afx futex_wait_queue
+694 mfp.afx futex_wait_queue
+695 mfp.afx futex_wait_queue
+696 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx do_select
+700 mfp.afx futex_wait_queue
+701 mfp.afx 0
+702 mfp.afx do_select
+705 mfp.afx futex_wait_queue
+706 mfp.afx futex_wait_queue
+707 mfp.afx futex_wait_queue
+709 mfp.afx futex_wait_queue
+710 mfp.afx do_select
+712 mfp.afx futex_wait_queue
+713 mfp.afx 0
+714 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+716 mfp.afx futex_wait_queue
+717 mfp.afx 0
+718 mfp.afx do_select
+719 mfp.afx 0
+720 mfp.afx do_select
+721 mfp.afx futex_wait_queue
+722 mfp.afx do_mprotect_pkey
+723 mfp.afx 0
+724 mfp.afx hrtimer_nanosleep
+725 mfp.afx hrtimer_nanosleep
+726 mfp.afx hrtimer_nanosleep
+727 mfp.afx hrtimer_nanosleep
+728 mfp.afx hrtimer_nanosleep
+729 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx do_select
+732 mfp.afx do_msgrcv
+738 mfp.afx futex_wait_queue
+739 mfp.afx futex_wait_queue
+740 mfp.afx futex_wait_queue
+741 mfp.afx futex_wait_queue
+742 mfp.afx futex_wait_queue
+745 mfp.afx futex_wait_queue
+746 mfp.afx futex_wait_queue
+747 mfp.afx futex_wait_queue
+748 mfp.afx futex_wait_queue
+749 mfp.afx futex_wait_queue
+750 mfp.afx futex_wait_queue
+751 mfp.afx futex_wait_queue
+752 mfp.afx futex_wait_queue
+753 mfp.afx futex_wait_queue
+754 mfp.afx futex_wait_queue
+755 mfp.afx futex_wait_queue
+756 mfp.afx futex_wait_queue
+757 mfp.afx futex_wait_queue
+758 mfp.afx futex_wait_queue
+759 mfp.afx futex_wait_queue
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx futex_wait_queue
+764 mfp.afx futex_wait_queue
+765 mfp.afx futex_wait_queue
+766 mfp.afx futex_wait_queue
+767 mfp.afx futex_wait_queue
+769 mfp.afx futex_wait_queue
+770 mfp.afx futex_wait_queue
+771 mfp.afx futex_wait_queue
+772 mfp.afx futex_wait_queue
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+780 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx 0
+792 mfp.afx futex_wait_queue
+793 mfp.afx 0
+794 mfp.afx do_select
+--- PRE: WCHAN HIST ---
+    103 futex_wait_queue
+     35 0
+     26 do_select
+      7 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 inet_csk_accept
+      1 do_msgrcv
+      1 __arm64_sys_restart_syscall
+--- PRE: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+/proc/504/task/504/syscall: 115 0x0 0x0 0xffffce2338a0 0xffffce2338a0 0x2 0xfffffffa 0xffffce233820 0xffffa0721ae4
+/proc/504/task/507/syscall: running
+/proc/504/task/508/syscall: 98 0xffffa07f899c 0x80 0x2 0x0 0xffffa07f899c 0x0 0xffff9a776cf0 0xffffa06eb254
+/proc/504/task/509/syscall: 115 0x0 0x0 0xffff9a6671a0 0x0 0x0 0xfffffffa 0xffff9a667140 0xffffa0721ae4
+/proc/504/task/510/syscall: 22 0xc 0xffff99e57218 0x2 0xbb8 0x0 0x8 0xffff99e571c0 0xffffa0754a84
+/proc/504/task/511/syscall: running
+/proc/504/task/512/syscall: 63 0xa 0xffff98c362b0 0x8 0x0 0xffff98c372a0 0x0 0xffff98c36270 0xffffa074b10c
+/proc/504/task/513/syscall: 22 0x10 0xffff93ffe218 0x2 0xbb8 0x0 0x8 0xffff93ffe1c0 0xffffa0754a84
+/proc/504/task/514/syscall: 63 0xf 0xffff937ee2b0 0x8 0x0 0xffff937ef2a0 0x0 0xffff937ee270 0xffffa074b10c
+/proc/504/task/515/syscall: 63 0x4 0xffff92fde2b0 0x8 0x0 0xffff92fdf2a0 0x0 0xffff92fde270 0xffffa074b10c
+/proc/504/task/516/syscall: 56 0xffffffffffffff9c 0xffff98214278 0x0 0x0 0x0 0x0 0xffff98214230 0xffffa189814c
+/proc/504/task/543/syscall: 72 0x17 0xffff927ce1c8 0x0 0x0 0xffff927ce0e0 0x0 0xffff927ce090 0xffffa0752154
+/proc/504/task/544/syscall: running
+/proc/504/task/545/syscall: 72 0x16 0xffff923ae228 0x0 0x0 0x0 0x0 0xffff923ae1c0 0xffffa0752154
+/proc/504/task/546/syscall: 115 0x0 0x0 0xffff91b9e250 0xffff91b9e250 0x0 0xfffffffa 0xffff91b9e1d0 0xffffa0721ae4
+/proc/504/task/547/syscall: 98 0x642d1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff91a8e090 0xffffa06eb060
+/proc/504/task/548/syscall: 98 0x642d3f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff9197e0d0 0xffffa06eb060
+/proc/504/task/549/syscall: running
+/proc/504/task/550/syscall: 72 0x1c 0xffff91560228 0x0 0x0 0x0 0x0 0xffff915601c0 0xffffa0752154
+/proc/504/task/551/syscall: 72 0x1e 0xffff90d50258 0x0 0x0 0xffff90d501f0 0x0 0xffff90d501a0 0xffffa0752154
+/proc/504/task/552/syscall: running
+/proc/504/task/553/syscall: 72 0x21 0xffff87ffe228 0x0 0x0 0x0 0x0 0xffff87ffe1c0 0xffffa0752154
+/proc/504/task/568/syscall: running
+/proc/504/task/569/syscall: 72 0x1b 0xffff875de228 0x0 0x0 0x0 0x0 0xffff875de1c0 0xffffa0752154
+/proc/504/task/571/syscall: running
+/proc/504/task/572/syscall: 72 0x25 0xffff86bbe228 0x0 0x0 0x0 0x0 0xffff86bbe1c0 0xffffa0752154
+/proc/504/task/573/syscall: 115 0x0 0x0 0xffff863ade00 0x0 0x0 0xfffffffa 0xffff863adda0 0xffffa0721ae4
+/proc/504/task/574/syscall: running
+/proc/504/task/575/syscall: 72 0x26 0xffff85f90228 0x0 0x0 0x0 0x0 0xffff85f901c0 0xffffa0752154
+/proc/504/task/576/syscall: 202 0x29 0xffff85780280 0xffff85780240 0x0 0xffff857812a0 0x63f4672 0xffff85780200 0xffffa075660c
+/proc/504/task/577/syscall: running
+/proc/504/task/578/syscall: running
+/proc/504/task/579/syscall: 72 0x2c 0xffff84ffe228 0x0 0x0 0x0 0x0 0xffff84ffe1c0 0xffffa0752154
+/proc/504/task/580/syscall: 98 0x6436310 0x189 0x0 0x0 0x0 0xffffffff 0xffff847ee0c0 0xffffa06eb060
+/proc/504/task/581/syscall: running
+/proc/504/task/582/syscall: 72 0x2e 0xffff6fffe228 0x0 0x0 0x0 0x0 0xffff6fffe1c0 0xffffa0752154
+/proc/504/task/583/syscall: running
+/proc/504/task/584/syscall: 72 0x31 0xffff6f7ee228 0x0 0x0 0x0 0x0 0xffff6f7ee1c0 0xffffa0752154
+/proc/504/task/585/syscall: 63 0x2f 0xffff6efde280 0x8 0x0 0xffff6efdf2a0 0x0 0xffff6efde240 0xffffa074b10c
+/proc/504/task/586/syscall: running
+/proc/504/task/587/syscall: 72 0x29 0xffff6ebc0228 0x0 0x0 0x0 0x0 0xffff6ebc01c0 0xffffa0752154
+/proc/504/task/588/syscall: 115 0x0 0x0 0xffff6e3b0280 0x0 0x0 0xfffffffa 0xffff6e3b0220 0xffffa0721ae4
+/proc/504/task/589/syscall: running
+/proc/504/task/592/syscall: 72 0x34 0xffff6df92228 0x0 0x0 0x0 0x0 0xffff6df921c0 0xffffa0752154
+/proc/504/task/623/syscall: 98 0xffffa15fcba8 0x89 0x0 0xffff6d782118 0x0 0xffffffff 0xffff6d782010 0xffffa06eb060
+/proc/504/task/625/syscall: running
+/proc/504/task/626/syscall: 72 0x36 0xffff6d364228 0x0 0x0 0x0 0x0 0xffff6d3641c0 0xffffa0752154
+/proc/504/task/627/syscall: 72 0x39 0xffff6cb54258 0x0 0x0 0x0 0x0 0xffff6cb541a0 0xffffa0752154
+/proc/504/task/628/syscall: running
+/proc/504/task/629/syscall: 72 0x3a 0xffff6c036228 0x0 0x0 0x0 0x0 0xffff6c0361c0 0xffffa0752154
+/proc/504/task/630/syscall: running
+/proc/504/task/631/syscall: 72 0x38 0xffff6b518228 0x0 0x0 0x0 0x0 0xffff6b5181c0 0xffffa0752154
+/proc/504/task/632/syscall: 115 0x0 0x0 0xffff6ad08248 0xffff6ad08248 0x0 0xfffffffa 0xffff6ad081e0 0xffffa0721ae4
+/proc/504/task/634/syscall: running
+/proc/504/task/636/syscall: 98 0x643b290 0x189 0x0 0x0 0x0 0xffffffff 0xffff6aae80d0 0xffffa06eb060
+/proc/504/task/638/syscall: 98 0x643b750 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a8e7120 0xffffa06eb060
+/proc/504/task/639/syscall: 98 0x643b990 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a6e6120 0xffffa06eb060
+/proc/504/task/640/syscall: 98 0x643bb90 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a4e5120 0xffffa06eb060
+/proc/504/task/641/syscall: 98 0x643beb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a2e4120 0xffffa06eb060
+/proc/504/task/645/syscall: running
+/proc/504/task/646/syscall: 72 0x18 0xffff69ec6228 0x0 0x0 0x0 0x0 0xffff69ec61c0 0xffffa0752154
+/proc/504/task/647/syscall: 98 0x643d530 0x189 0x0 0x0 0x0 0xffffffff 0xffff693b5090 0xffffa06eb060
+/proc/504/task/648/syscall: 98 0x643dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff692a5170 0xffffa06eb060
+/proc/504/task/649/syscall: 128 0x0 0x0 0xffff69195270 0xffff69195270 0x0 0xfffffffa 0xffff691951f0 0xffffa0721ae4
+/proc/504/task/650/syscall: running
+/proc/504/task/651/syscall: 72 0x41 0xffff68d77258 0x0 0x0 0x0 0x0 0xffff68d771a0 0xffffa0752154
+/proc/504/task/654/syscall: 98 0x643e800 0x189 0x0 0x0 0x0 0xffffffff 0xffff68567150 0xffffa06eb060
+/proc/504/task/655/syscall: 98 0x643ea40 0x189 0x0 0x0 0x0 0xffffffff 0xffff68457080 0xffffa06eb060
+/proc/504/task/656/syscall: 98 0x643ea70 0x189 0x0 0x0 0x0 0xffffffff 0xffff683471a0 0xffffa06eb060
+/proc/504/task/658/syscall: 98 0x643ee40 0x189 0x0 0x0 0x0 0xffffffff 0xffff682370f0 0xffffa06eb060
+/proc/504/task/665/syscall: 98 0x644fc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff68127090 0xffffa06eb060
+/proc/504/task/666/syscall: 98 0x643f2c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53ffdff0 0xffffa06eb060
+/proc/504/task/667/syscall: 98 0x6451dd0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53eee080 0xffffa06eb060
+/proc/504/task/668/syscall: 98 0x6453860 0x189 0x0 0x0 0x0 0xffffffff 0xffff53add090 0xffffa06eb060
+/proc/504/task/669/syscall: 115 0x0 0x0 0xffff539cd218 0xffff539cd218 0x0 0xfffffffa 0xffff539cd1b0 0xffffa0721ae4
+/proc/504/task/670/syscall: 98 0x6455eb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff535bc090 0xffffa06eb060
+/proc/504/task/671/syscall: 98 0x6456550 0x189 0x0 0x0 0x0 0xffffffff 0xffff531ab090 0xffffa06eb060
+/proc/504/task/672/syscall: 98 0x6456790 0x189 0x0 0x0 0x0 0xffffffff 0xffff5309b0a0 0xffffa06eb060
+/proc/504/task/674/syscall: 98 0x64561a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff52c8a0c0 0xffffa06eb060
+/proc/504/task/675/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff528791f0 0xffffa06eb060
+/proc/504/task/677/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff520691f0 0xffffa06eb060
+/proc/504/task/678/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff518591f0 0xffffa06eb060
+/proc/504/task/679/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff510491f0 0xffffa06eb060
+/proc/504/task/681/syscall: 98 0x64563e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff508390c0 0xffffa06eb060
+/proc/504/task/682/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4bffe1f0 0xffffa06eb060
+/proc/504/task/683/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4b7ee1f0 0xffffa06eb060
+/proc/504/task/684/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4afde1f0 0xffffa06eb060
+/proc/504/task/685/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4a7ce1f0 0xffffa06eb060
+/proc/504/task/686/syscall: 98 0x645d290 0x189 0x0 0x0 0x0 0xffffffff 0xffff504280c0 0xffffa06eb060
+/proc/504/task/687/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff49fbe1f0 0xffffa06eb060
+/proc/504/task/688/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff497ae1f0 0xffffa06eb060
+/proc/504/task/689/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff48f9e1f0 0xffffa06eb060
+/proc/504/task/690/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff43ffe1f0 0xffffa06eb060
+/proc/504/task/692/syscall: 98 0x645dc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff4878e0c0 0xffffa06eb060
+/proc/504/task/694/syscall: 98 0x645f6a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4837d090 0xffffa06eb060
+/proc/504/task/695/syscall: 98 0x645f110 0x189 0x0 0x0 0x0 0xffffffff 0xffff4826d090 0xffffa06eb060
+/proc/504/task/696/syscall: 98 0x645f320 0x189 0x0 0x0 0x0 0xffffffff 0xffff4815d080 0xffffa06eb060
+/proc/504/task/698/syscall: 98 0x64662a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff431ec0d0 0xffffa06eb060
+/proc/504/task/699/syscall: 72 0x42 0xffff430dc258 0x0 0x0 0x0 0x0 0xffff430dc1a0 0xffffa0752154
+/proc/504/task/700/syscall: 98 0x6477790 0x189 0x0 0x0 0x0 0xffffffff 0xffff425cb090 0xffffa06eb060
+/proc/504/task/701/syscall: running
+/proc/504/task/702/syscall: 72 0x3d 0xffff421ad228 0x0 0x0 0x0 0x0 0xffff421ad1c0 0xffffa0752154
+/proc/504/task/705/syscall: 98 0x647f2a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4199d0d0 0xffffa06eb060
+/proc/504/task/706/syscall: 98 0x648e550 0x189 0x0 0x0 0x0 0xffffffff 0xffff4188d0d0 0xffffa06eb060
+/proc/504/task/707/syscall: 98 0x649d960 0x189 0x0 0xffff4177d0b8 0x0 0xffffffff 0xffff4177d020 0xffffa06eb060
+/proc/504/task/709/syscall: 98 0x64bbd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff4166d0a0 0xffffa06eb060
+/proc/504/task/710/syscall: 72 0x45 0xffff4155d258 0x0 0x0 0x0 0x0 0xffff4155d1a0 0xffffa0752154
+/proc/504/task/712/syscall: 98 0x64cb160 0x189 0x0 0x0 0x0 0xffffffff 0xffff40d4d0d0 0xffffa06eb060
+/proc/504/task/713/syscall: running
+/proc/504/task/714/syscall: 98 0x64da580 0x189 0x0 0x0 0x0 0xffffffff 0xffff40b2d0d0 0xffffa06eb060
+/proc/504/task/715/syscall: 98 0x64e97d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff40a1d0d0 0xffffa06eb060
+/proc/504/task/716/syscall: 98 0x64f8a80 0x189 0x0 0xffff4090d118 0x0 0xffffffff 0xffff4090d080 0xffffa06eb060
+/proc/504/task/717/syscall: running
+/proc/504/task/718/syscall: 72 0x46 0xffff404ef218 0x0 0x0 0x0 0x0 0xffff404ef170 0xffffa0752154
+/proc/504/task/719/syscall: running
+/proc/504/task/720/syscall: 72 0x48 0xffff400d1218 0x0 0x0 0x0 0x0 0xffff400d1170 0xffffa0752154
+/proc/504/task/721/syscall: 98 0x6508690 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ffbff10 0xffffa06eb060
+/proc/504/task/722/syscall: running
+/proc/504/task/723/syscall: running
+/proc/504/task/724/syscall: 115 0x0 0x0 0xffff3fc91248 0xffff3fc91248 0x0 0xfffffffa 0xffff3fc911e0 0xffffa0721ae4
+/proc/504/task/725/syscall: running
+/proc/504/task/726/syscall: 115 0x0 0x0 0xffff3fa71248 0xffff3fa71248 0x0 0xfffffffa 0xffff3fa711e0 0xffffa0721ae4
+/proc/504/task/727/syscall: 115 0x0 0x0 0xffff3f961258 0xffff3f961258 0x0 0xfffffffa 0xffff3f9611f0 0xffffa0721ae4
+/proc/504/task/728/syscall: 115 0x0 0x0 0xffff3f851218 0xffff3f851218 0x0 0xfffffffa 0xffff3f8511b0 0xffffa0721ae4
+/proc/504/task/729/syscall: 98 0x6512e30 0x189 0x0 0x0 0x0 0xffffffff 0xffff3f7410d0 0xffffa06eb060
+/proc/504/task/730/syscall: running
+/proc/504/task/731/syscall: 72 0x4a 0xffff3f323228 0x0 0x0 0x0 0x0 0xffff3f3231c0 0xffffa0752154
+/proc/504/task/732/syscall: 188 0x0 0xffff3eb13228 0x64 0x0 0x0 0x0 0xffff3eb131a0 0xffffa0757600
+/proc/504/task/738/syscall: 98 0x6525b00 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ea030d0 0xffffa06eb060
+/proc/504/task/739/syscall: 98 0x652bd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e8f30d0 0xffffa06eb060
+/proc/504/task/740/syscall: 98 0x6531fa0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e7e30d0 0xffffa06eb060
+/proc/504/task/741/syscall: 98 0x6532230 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e6d31a0 0xffffa06eb060
+/proc/504/task/742/syscall: 98 0x65324e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e5c30d0 0xffffa06eb060
+/proc/504/task/745/syscall: 98 0x65328c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e4b31a0 0xffffa06eb060
+/proc/504/task/746/syscall: 98 0x653d5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e3a31a0 0xffffa06eb060
+/proc/504/task/747/syscall: 98 0x653d7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e2931a0 0xffffa06eb060
+/proc/504/task/748/syscall: 98 0x653d9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e1831a0 0xffffa06eb060
+/proc/504/task/749/syscall: 98 0x653dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e0731a0 0xffffa06eb060
+/proc/504/task/750/syscall: 98 0x653ddb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3df631a0 0xffffa06eb060
+/proc/504/task/751/syscall: 98 0x653dfb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3de531a0 0xffffa06eb060
+/proc/504/task/752/syscall: 98 0x653e1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dd431a0 0xffffa06eb060
+/proc/504/task/753/syscall: 98 0x653e3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dc331a0 0xffffa06eb060
+/proc/504/task/754/syscall: 98 0x653e5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3db231a0 0xffffa06eb060
+/proc/504/task/755/syscall: 98 0x653e7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3da131a0 0xffffa06eb060
+/proc/504/task/756/syscall: 98 0x653e9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d9031a0 0xffffa06eb060
+/proc/504/task/757/syscall: 98 0x653ebb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d7f31a0 0xffffa06eb060
+/proc/504/task/758/syscall: 98 0x653edb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d6e31a0 0xffffa06eb060
+/proc/504/task/759/syscall: 98 0x653efb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d5d31a0 0xffffa06eb060
+/proc/504/task/760/syscall: 98 0x653f1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d4c31a0 0xffffa06eb060
+/proc/504/task/761/syscall: 98 0x653f3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d3b31a0 0xffffa06eb060
+/proc/504/task/762/syscall: 98 0x653f5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d2a31a0 0xffffa06eb060
+/proc/504/task/763/syscall: 98 0x653f7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d1931a0 0xffffa06eb060
+/proc/504/task/764/syscall: 98 0x653f9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d0831a0 0xffffa06eb060
+/proc/504/task/765/syscall: 98 0x653fbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cf731a0 0xffffa06eb060
+/proc/504/task/766/syscall: 98 0x653fdb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ce631a0 0xffffa06eb060
+/proc/504/task/767/syscall: 98 0x653ffb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cd531a0 0xffffa06eb060
+/proc/504/task/769/syscall: 98 0x65401b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cc431a0 0xffffa06eb060
+/proc/504/task/770/syscall: 98 0x65403b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cb331a0 0xffffa06eb060
+/proc/504/task/771/syscall: 98 0x65405b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ca231a0 0xffffa06eb060
+/proc/504/task/772/syscall: 98 0x65407b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c9131a0 0xffffa06eb060
+/proc/504/task/773/syscall: 98 0x65409b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c8031a0 0xffffa06eb060
+/proc/504/task/774/syscall: 98 0x6540bb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c6f31a0 0xffffa06eb060
+/proc/504/task/775/syscall: 98 0x6540db0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c5e31a0 0xffffa06eb060
+/proc/504/task/776/syscall: 98 0x6540fb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c4d31a0 0xffffa06eb060
+/proc/504/task/777/syscall: 98 0x65411b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c3c31a0 0xffffa06eb060
+/proc/504/task/778/syscall: 98 0x6541760 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c2b31a0 0xffffa06eb060
+/proc/504/task/779/syscall: 98 0x65419a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c1a31a0 0xffffa06eb060
+/proc/504/task/780/syscall: 98 0x6541be0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c0931a0 0xffffa06eb060
+/proc/504/task/781/syscall: 98 0x6541e20 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bf831a0 0xffffa06eb060
+/proc/504/task/782/syscall: 98 0x6542060 0x189 0x0 0x0 0x0 0xffffffff 0xffff3be731a0 0xffffa06eb060
+/proc/504/task/783/syscall: 98 0x65422a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bd631a0 0xffffa06eb060
+/proc/504/task/784/syscall: 98 0x65424e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bc531a0 0xffffa06eb060
+/proc/504/task/785/syscall: 98 0x6542720 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bb431a0 0xffffa06eb060
+/proc/504/task/786/syscall: 98 0x6542960 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ba331a0 0xffffa06eb060
+/proc/504/task/787/syscall: 98 0x6542ba0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b9231a0 0xffffa06eb060
+/proc/504/task/788/syscall: 98 0xffffa07f899c 0x80 0x2 0x0 0xffffa07f899c 0x0 0xffff3b812e40 0xffffa06eb254
+/proc/504/task/792/syscall: 98 0x65443f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b6f94e0 0xffffa06eb060
+/proc/504/task/793/syscall: running
+/proc/504/task/794/syscall: 72 0x4d 0xffff3b2e5228 0x0 0x0 0x0 0x0 0xffff3b2e51c0 0xffffa0752154
+/proc/504/task/798/syscall: 98 0x6545170 0x189 0x0 0x0 0x0 0xffffffff 0xffff3aad5150 0xffffa06eb060
+/proc/504/task/800/syscall: 98 0x65454c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a9c5130 0xffffa06eb060
+/proc/504/task/802/syscall: 115 0x0 0x0 0xffff3a8b5228 0xffff3a8b5228 0x0 0xfffffffa 0xffff3a8b51c0 0xffffa0721ae4
+/proc/504/task/803/syscall: 98 0x65459e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a7a5150 0xffffa06eb060
+/proc/504/task/805/syscall: 98 0x6545da0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a695140 0xffffa06eb060
+/proc/504/task/806/syscall: 98 0x65460c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a585140 0xffffa06eb060
+/proc/504/task/808/syscall: 98 0x65463d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a475160 0xffffa06eb060
+/proc/504/task/809/syscall: running
+/proc/504/task/810/syscall: 72 0x44 0xffff3a057228 0x0 0x0 0x0 0x0 0xffff3a0571c0 0xffffa0752154
+/proc/504/task/811/syscall: running
+/proc/504/task/812/syscall: 72 0x50 0xffff39539228 0x0 0x0 0x0 0x0 0xffff395391c0 0xffffa0752154
+/proc/504/task/813/syscall: 98 0x659aa70 0x189 0x0 0x0 0x0 0xffffffff 0xffff38d290d0 0xffffa06eb060
+/proc/504/task/814/syscall: running
+/proc/504/task/815/syscall: 98 0x15cf9b8 0x189 0x0 0x0 0x0 0xffffffff 0xffff38b091b0 0xffffa06eb060
+/proc/504/task/816/syscall: running
+/proc/504/task/817/syscall: 72 0x52 0xffff386eb228 0x0 0x0 0x0 0x0 0xffff386eb1c0 0xffffa0752154
+--- SOCKET FDS ---
+lrwx------ 1 root root 64 Sep 18 02:28 21 -> socket:[89256]
+lrwx------ 1 root root 64 Sep 18 02:28 23 -> socket:[122376]
+lrwx------ 1 root root 64 Sep 18 02:28 25 -> socket:[89257]
+lrwx------ 1 root root 64 Sep 18 02:28 26 -> socket:[95684]
+lrwx------ 1 root root 64 Sep 18 02:28 27 -> socket:[89562]
+lrwx------ 1 root root 64 Sep 18 02:28 28 -> socket:[89563]
+lrwx------ 1 root root 64 Sep 18 02:28 32 -> socket:[89872]
+lrwx------ 1 root root 64 Sep 18 02:28 33 -> socket:[89873]
+lrwx------ 1 root root 64 Sep 18 02:28 34 -> socket:[95685]
+lrwx------ 1 root root 64 Sep 18 02:28 36 -> socket:[103753]
+lrwx------ 1 root root 64 Sep 18 02:28 37 -> socket:[95686]
+lrwx------ 1 root root 64 Sep 18 02:28 38 -> socket:[103754]
+lrwx------ 1 root root 64 Sep 18 02:28 39 -> socket:[95687]
+lrwx------ 1 root root 64 Sep 18 02:28 40 -> socket:[95697]
+lrwx------ 1 root root 64 Sep 18 02:28 41 -> socket:[95688]
+lrwx------ 1 root root 64 Sep 18 02:28 42 -> socket:[122377]
+lrwx------ 1 root root 64 Sep 18 02:28 43 -> socket:[95690]
+lrwx------ 1 root root 64 Sep 18 02:28 44 -> socket:[95691]
+lrwx------ 1 root root 64 Sep 18 02:28 45 -> socket:[95693]
+lrwx------ 1 root root 64 Sep 18 02:28 46 -> socket:[95694]
+lrwx------ 1 root root 64 Sep 18 02:28 48 -> socket:[95695]
+lrwx------ 1 root root 64 Sep 18 02:28 49 -> socket:[95696]
+lrwx------ 1 root root 64 Sep 18 02:28 50 -> socket:[95698]
+lrwx------ 1 root root 64 Sep 18 02:28 51 -> socket:[95700]
+lrwx------ 1 root root 64 Sep 18 02:28 52 -> socket:[95701]
+lrwx------ 1 root root 64 Sep 18 02:28 53 -> socket:[109406]
+lrwx------ 1 root root 64 Sep 18 02:28 54 -> socket:[109407]
+lrwx------ 1 root root 64 Sep 18 02:28 55 -> socket:[109410]
+lrwx------ 1 root root 64 Sep 18 02:28 57 -> socket:[109408]
+lrwx------ 1 root root 64 Sep 18 02:28 58 -> socket:[109409]
+lrwx------ 1 root root 64 Sep 18 02:28 59 -> socket:[109411]
+lrwx------ 1 root root 64 Sep 18 02:28 60 -> socket:[129043]
+lrwx------ 1 root root 64 Sep 18 02:28 66 -> socket:[129044]
+lrwx------ 1 root root 64 Sep 18 02:28 67 -> socket:[135358]
+lrwx------ 1 root root 64 Sep 18 02:28 69 -> socket:[130132]
+lrwx------ 1 root root 64 Sep 18 02:28 70 -> socket:[130133]
+lrwx------ 1 root root 64 Sep 18 02:28 71 -> socket:[130134]
+lrwx------ 1 root root 64 Sep 18 02:28 72 -> socket:[130135]
+lrwx------ 1 root root 64 Sep 18 02:28 73 -> socket:[130136]
+lrwx------ 1 root root 64 Sep 18 02:28 74 -> socket:[130137]
+lrwx------ 1 root root 64 Sep 18 02:28 75 -> socket:[135359]
+lrwx------ 1 root root 64 Sep 18 02:28 76 -> socket:[134714]
+lrwx------ 1 root root 64 Sep 18 02:28 77 -> socket:[134715]
+lrwx------ 1 root root 64 Sep 18 02:28 79 -> socket:[135360]
+lrwx------ 1 root root 64 Sep 18 02:28 80 -> socket:[135361]
+lrwx------ 1 root root 64 Sep 18 02:28 81 -> socket:[135362]
+lrwx------ 1 root root 64 Sep 18 02:28 82 -> socket:[135363]
+MFP_PRE_SNAP=11636736
+MFP_PRE_UPLOAD_RC=0 size=11636736
+TRACE1_ARMED wait=6x2s
+TRACE1 GDB STARTED pid=828 armed=1
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 9 at 0x683f84: file net/lpd/lpd.c, line 580.
+Breakpoint 10 at 0x684050: file net/lpd/lpd.c, line 605.
+TRACE1 armed
+--- PREREADY: MFP LOG size=20185088 ---
+--- PREREADY: SNAP size=4194304 ---
+--- PREREADY: MFP LOG TAIL ---
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:READY FOR INJECT
+[  256.592403] hrtimer: interrupt took 45749408 ns
+--- TRACE1 AFTER INJECT ---
+TRACE1_STOPPED threads=196
+209 /tmp/gdbtrace.out
+TRACE1_HITS=0
+[New LWP 813]
+[New LWP 814]
+[New LWP 815]
+[New LWP 816]
+[New LWP 817]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa0721ae0 in clock_nanosleep () from /lib64/libc.so.6
+Breakpoint 1 at 0x683e0c: file net/lpd/lpd.c, line 560.
+Breakpoint 2 at 0x6831e8: file net/lpd/lpd.c, line 360.
+Breakpoint 3 at 0x6830a4: file net/lpd/lpd.c, line 340.
+Breakpoint 4 at 0x68236c: file net/lpd/lpd.c, line 221.
+Breakpoint 5 at 0x68365c: file net/lpd/lpd.c, line 421.
+Breakpoint 6 at 0x683510: file net/lpd/lpd.c, line 400.
+Breakpoint 7 at 0x66c12c: file net/common/netsock.c, line 398.
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 9 at 0x683f84: file net/lpd/lpd.c, line 580.
+Breakpoint 10 at 0x684050: file net/lpd/lpd.c, line 605.
+TRACE1 armed
+Quit
+--- ALIVE ---
+196
+--- PORTS POST (full /proc/net/tcp) ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 00000000:84DB 00000000:0000 0A 00000000:00000002 00:00000000 00000000     0        0 95688 3 000000008b27b7af 100 0 0 10 0                     
+   1: 0F02000A:84DB 0202000A:EFD9 08 00000000:00000002 00:00000000 00000000     0        0 143357 1 000000005d88a950 168 4 28 10 -1                  
+   2: 0F02000A:84DB 0202000A:C21F 08 00000000:00000005 00:00000000 00000000     0        0 0 1 00000000bd296c11 168 4 28 10 -1                       
+   3: 0F02000A:84DB 0202000A:FC4F 08 00000000:00000005 00:00000000 00000000     0        0 0 1 000000000cad09e6 168 4 28 10 -1                       
+--- PORTS POST tcp6 ---
+  sl  local_address                         remote_address                        st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode
+--- LPD OWNED POST ---
+LPD_OWNED fd=41 ino=95688 decport=34011
+--- THREADS POST-INJECT ---
+--- POST: THREADS (tid comm wchan) ---
+504 mfp.afx hrtimer_nanosleep
+507 pub_client 0
+508 mfp.afx 0
+509 mfp.afx 0
+510 mfp.afx do_epoll_wait
+511 mfp.afx 0
+512 mfp.afx do_wait_intr_irq
+513 mfp.afx do_epoll_wait
+514 mfp.afx do_wait_intr_irq
+515 mfp.afx do_wait_intr_irq
+516 mfp.afx wait_for_partner
+543 mfp.afx do_select
+544 mfp.afx 0
+545 mfp.afx do_select
+546 mfp.afx futex_wait_queue
+547 mfp.afx futex_wait_queue
+548 mfp.afx futex_wait_queue
+549 mfp.afx 0
+550 mfp.afx do_select
+551 mfp.afx do_select
+552 mfp.afx 0
+553 mfp.afx do_select
+568 mfp.afx 0
+569 mfp.afx do_select
+571 mfp.afx 0
+572 mfp.afx do_select
+573 mfp.afx hrtimer_nanosleep
+574 mfp.afx 0
+575 mfp.afx do_select
+576 mfp.afx futex_wait_queue
+577 mfp.afx 0
+578 mfp.afx 0
+579 mfp.afx do_select
+580 mfp.afx futex_wait_queue
+581 mfp.afx 0
+582 mfp.afx do_select
+583 mfp.afx 0
+584 mfp.afx do_select
+585 mfp.afx do_wait_intr_irq
+586 mfp.afx 0
+587 mfp.afx do_select
+588 mfp.afx 0
+589 mfp.afx 0
+592 mfp.afx do_select
+623 mfp.afx futex_wait_queue
+625 mfp.afx 0
+626 mfp.afx do_select
+627 mfp.afx do_select
+628 mfp.afx 0
+629 mfp.afx do_select
+630 mfp.afx 0
+631 mfp.afx do_select
+632 mfp.afx hrtimer_nanosleep
+634 mfp.afx 0
+636 mfp.afx futex_wait_queue
+638 mfp.afx futex_wait_queue
+639 mfp.afx futex_wait_queue
+640 mfp.afx futex_wait_queue
+641 mfp.afx futex_wait_queue
+645 mfp.afx 0
+646 mfp.afx do_select
+647 mfp.afx futex_wait_queue
+648 mfp.afx futex_wait_queue
+649 mfp.afx __arm64_sys_restart_syscall
+650 mfp.afx 0
+651 mfp.afx do_select
+654 mfp.afx futex_wait_queue
+655 mfp.afx futex_wait_queue
+656 mfp.afx futex_wait_queue
+658 mfp.afx futex_wait_queue
+665 mfp.afx futex_wait_queue
+666 mfp.afx futex_wait_queue
+667 mfp.afx futex_wait_queue
+668 mfp.afx futex_wait_queue
+669 mfp.afx hrtimer_nanosleep
+670 mfp.afx futex_wait_queue
+671 mfp.afx futex_wait_queue
+672 mfp.afx futex_wait_queue
+674 mfp.afx futex_wait_queue
+675 mfp.afx futex_wait_queue
+677 mfp.afx futex_wait_queue
+678 mfp.afx futex_wait_queue
+679 mfp.afx futex_wait_queue
+681 mfp.afx futex_wait_queue
+682 mfp.afx futex_wait_queue
+683 mfp.afx futex_wait_queue
+684 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+686 mfp.afx futex_wait_queue
+687 mfp.afx futex_wait_queue
+688 mfp.afx futex_wait_queue
+689 mfp.afx futex_wait_queue
+690 mfp.afx futex_wait_queue
+692 mfp.afx futex_wait_queue
+694 mfp.afx futex_wait_queue
+695 mfp.afx futex_wait_queue
+696 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx do_select
+700 mfp.afx futex_wait_queue
+701 mfp.afx 0
+702 mfp.afx do_select
+705 mfp.afx futex_wait_queue
+706 mfp.afx futex_wait_queue
+707 mfp.afx futex_wait_queue
+709 mfp.afx futex_wait_queue
+710 mfp.afx do_select
+712 mfp.afx futex_wait_queue
+713 mfp.afx 0
+714 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+716 mfp.afx futex_wait_queue
+717 mfp.afx 0
+718 mfp.afx do_select
+719 mfp.afx 0
+720 mfp.afx do_select
+721 mfp.afx futex_wait_queue
+722 mfp.afx 0
+723 mfp.afx do_mprotect_pkey
+724 mfp.afx hrtimer_nanosleep
+725 mfp.afx 0
+726 mfp.afx 0
+727 mfp.afx hrtimer_nanosleep
+728 mfp.afx futex_wait_queue
+729 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx do_select
+732 mfp.afx do_msgrcv
+738 mfp.afx futex_wait_queue
+739 mfp.afx futex_wait_queue
+740 mfp.afx futex_wait_queue
+741 mfp.afx futex_wait_queue
+742 mfp.afx futex_wait_queue
+745 mfp.afx futex_wait_queue
+746 mfp.afx futex_wait_queue
+747 mfp.afx futex_wait_queue
+748 mfp.afx futex_wait_queue
+749 mfp.afx futex_wait_queue
+750 mfp.afx futex_wait_queue
+751 mfp.afx futex_wait_queue
+752 mfp.afx futex_wait_queue
+753 mfp.afx futex_wait_queue
+754 mfp.afx futex_wait_queue
+755 mfp.afx futex_wait_queue
+756 mfp.afx futex_wait_queue
+757 mfp.afx futex_wait_queue
+758 mfp.afx futex_wait_queue
+759 mfp.afx futex_wait_queue
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx futex_wait_queue
+764 mfp.afx futex_wait_queue
+765 mfp.afx futex_wait_queue
+766 mfp.afx futex_wait_queue
+767 mfp.afx futex_wait_queue
+769 mfp.afx futex_wait_queue
+770 mfp.afx futex_wait_queue
+771 mfp.afx futex_wait_queue
+772 mfp.afx futex_wait_queue
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+780 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx 0
+792 mfp.afx futex_wait_queue
+793 mfp.afx 0
+794 mfp.afx do_select
+798 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+802 mfp.afx hrtimer_nanosleep
+803 mfp.afx futex_wait_queue
+805 mfp.afx futex_wait_queue
+806 mfp.afx futex_wait_queue
+808 mfp.afx futex_wait_queue
+809 mfp.afx 0
+810 mfp.afx do_select
+811 mfp.afx 0
+812 mfp.afx do_select
+813 mfp.afx futex_wait_queue
+814 mfp.afx 0
+815 mfp.afx futex_wait_queue
+816 mfp.afx 0
+817 mfp.afx do_select
+853 mfp.afx do_select
+--- POST: WCHAN HIST ---
+    112 futex_wait_queue
+     37 0
+     30 do_select
+      8 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 do_msgrcv
+      1 __arm64_sys_restart_syscall
+--- POST: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+/proc/504/task/504/syscall: 115 0x0 0x0 0xffffce2338a0 0xffffce2338a0 0x2 0xfffffffa 0xffffce233820 0xffffa0721ae4
+/proc/504/task/507/syscall: running
+/proc/504/task/508/syscall: 98 0xffff54000030 0x80 0x2 0x0 0xffff54000030 0x40 0xffff9a7771e0 0xffffa06eb254
+/proc/504/task/509/syscall: running
+/proc/504/task/510/syscall: 22 0xc 0xffff99e57218 0x2 0xbb8 0x0 0x8 0xffff99e571c0 0xffffa0754a84
+/proc/504/task/511/syscall: running
+/proc/504/task/512/syscall: 63 0xa 0xffff98c362b0 0x8 0x0 0xffff98c372a0 0x0 0xffff98c36270 0xffffa074b10c
+/proc/504/task/513/syscall: 22 0x10 0xffff93ffe218 0x2 0xbb8 0x0 0x8 0xffff93ffe1c0 0xffffa0754a84
+/proc/504/task/514/syscall: 63 0xf 0xffff937ee2b0 0x8 0x0 0xffff937ef2a0 0x0 0xffff937ee270 0xffffa074b10c
+/proc/504/task/515/syscall: 63 0x4 0xffff92fde2b0 0x8 0x0 0xffff92fdf2a0 0x0 0xffff92fde270 0xffffa074b10c
+/proc/504/task/516/syscall: 56 0xffffffffffffff9c 0xffff98214278 0x0 0x0 0x0 0x0 0xffff98214230 0xffffa189814c
+/proc/504/task/543/syscall: 72 0x17 0xffff927ce1c8 0x0 0x0 0xffff927ce0e0 0x0 0xffff927ce090 0xffffa0752154
+/proc/504/task/544/syscall: running
+/proc/504/task/545/syscall: 72 0x16 0xffff923ae228 0x0 0x0 0x0 0x0 0xffff923ae1c0 0xffffa0752154
+/proc/504/task/546/syscall: 98 0x642a340 0x189 0x0 0xffff91b9e128 0x0 0xffffffff 0xffff91b9e090 0xffffa06eb060
+/proc/504/task/547/syscall: 98 0x642d1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff91a8e090 0xffffa06eb060
+/proc/504/task/548/syscall: 98 0x642d3f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff9197e0d0 0xffffa06eb060
+/proc/504/task/549/syscall: running
+/proc/504/task/550/syscall: 72 0x1c 0xffff91560228 0x0 0x0 0x0 0x0 0xffff915601c0 0xffffa0752154
+/proc/504/task/551/syscall: 72 0x1e 0xffff90d50258 0x0 0x0 0xffff90d501f0 0x0 0xffff90d501a0 0xffffa0752154
+/proc/504/task/552/syscall: running
+/proc/504/task/553/syscall: 72 0x21 0xffff87ffe228 0x0 0x0 0x0 0x0 0xffff87ffe1c0 0xffffa0752154
+/proc/504/task/568/syscall: running
+/proc/504/task/569/syscall: 72 0x1b 0xffff875de228 0x0 0x0 0x0 0x0 0xffff875de1c0 0xffffa0752154
+/proc/504/task/571/syscall: running
+/proc/504/task/572/syscall: 72 0x25 0xffff86bbe228 0x0 0x0 0x0 0x0 0xffff86bbe1c0 0xffffa0752154
+/proc/504/task/573/syscall: 115 0x0 0x0 0xffff863ade00 0x0 0x0 0xfffffffa 0xffff863adda0 0xffffa0721ae4
+/proc/504/task/574/syscall: running
+/proc/504/task/575/syscall: 72 0x26 0xffff85f90228 0x0 0x0 0x0 0x0 0xffff85f901c0 0xffffa0752154
+/proc/504/task/576/syscall: 98 0xffff9a667c30 0x109 0x1fd 0x0 0x0 0xffffffff 0xffff8577fe40 0xffffa06eb060
+/proc/504/task/577/syscall: running
+/proc/504/task/578/syscall: running
+/proc/504/task/579/syscall: 72 0x2c 0xffff84ffe228 0x0 0x0 0x0 0x0 0xffff84ffe1c0 0xffffa0752154
+/proc/504/task/580/syscall: 98 0x6436310 0x189 0x0 0x0 0x0 0xffffffff 0xffff847ee0c0 0xffffa06eb060
+/proc/504/task/581/syscall: running
+/proc/504/task/582/syscall: 72 0x2e 0xffff6fffe228 0x0 0x0 0x0 0x0 0xffff6fffe1c0 0xffffa0752154
+/proc/504/task/583/syscall: running
+/proc/504/task/584/syscall: 72 0x31 0xffff6f7ee228 0x0 0x0 0x0 0x0 0xffff6f7ee1c0 0xffffa0752154
+/proc/504/task/585/syscall: 63 0x2f 0xffff6efde280 0x8 0x0 0xffff6efdf2a0 0x0 0xffff6efde240 0xffffa074b10c
+/proc/504/task/586/syscall: running
+/proc/504/task/587/syscall: 72 0x29 0xffff6ebc0228 0x0 0x0 0x0 0x0 0xffff6ebc01c0 0xffffa0752154
+/proc/504/task/588/syscall: 115 0x0 0x0 0xffff6e3b0280 0x0 0x0 0xfffffffa 0xffff6e3b0220 0xffffa0721ae4
+/proc/504/task/589/syscall: running
+/proc/504/task/592/syscall: 72 0x34 0xffff6df92228 0x0 0x0 0x0 0x0 0xffff6df921c0 0xffffa0752154
+/proc/504/task/623/syscall: 98 0xffffa15fccc8 0x89 0x0 0xffff6d782118 0x0 0xffffffff 0xffff6d782010 0xffffa06eb060
+/proc/504/task/625/syscall: running
+/proc/504/task/626/syscall: 72 0x36 0xffff6d364228 0x0 0x0 0x0 0x0 0xffff6d3641c0 0xffffa0752154
+/proc/504/task/627/syscall: 72 0x39 0xffff6cb54258 0x0 0x0 0x0 0x0 0xffff6cb541a0 0xffffa0752154
+/proc/504/task/628/syscall: running
+/proc/504/task/629/syscall: 72 0x3a 0xffff6c036228 0x0 0x0 0x0 0x0 0xffff6c0361c0 0xffffa0752154
+/proc/504/task/630/syscall: running
+/proc/504/task/631/syscall: 72 0x38 0xffff6b518228 0x0 0x0 0x0 0x0 0xffff6b5181c0 0xffffa0752154
+/proc/504/task/632/syscall: 115 0x0 0x0 0xffff6ad08248 0xffff6ad08248 0x0 0xfffffffa 0xffff6ad081e0 0xffffa0721ae4
+/proc/504/task/634/syscall: running
+/proc/504/task/636/syscall: 98 0x643b290 0x189 0x0 0x0 0x0 0xffffffff 0xffff6aae80d0 0xffffa06eb060
+/proc/504/task/638/syscall: 98 0x643b750 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a8e7120 0xffffa06eb060
+/proc/504/task/639/syscall: 98 0x643b990 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a6e6120 0xffffa06eb060
+/proc/504/task/640/syscall: 98 0x643bb90 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a4e5120 0xffffa06eb060
+/proc/504/task/641/syscall: 98 0x643beb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a2e4120 0xffffa06eb060
+/proc/504/task/645/syscall: running
+/proc/504/task/646/syscall: 72 0x18 0xffff69ec6228 0x0 0x0 0x0 0x0 0xffff69ec61c0 0xffffa0752154
+/proc/504/task/647/syscall: 98 0x643d530 0x189 0x0 0x0 0x0 0xffffffff 0xffff693b5090 0xffffa06eb060
+/proc/504/task/648/syscall: 98 0x643dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff692a5170 0xffffa06eb060
+/proc/504/task/649/syscall: 128 0x0 0x0 0xffff69195270 0xffff69195270 0x0 0xfffffffa 0xffff691951f0 0xffffa0721ae4
+/proc/504/task/650/syscall: running
+/proc/504/task/651/syscall: 72 0x41 0xffff68d77258 0x0 0x0 0x0 0x0 0xffff68d771a0 0xffffa0752154
+/proc/504/task/654/syscall: 98 0x643e800 0x189 0x0 0x0 0x0 0xffffffff 0xffff68567150 0xffffa06eb060
+/proc/504/task/655/syscall: 98 0x643ea40 0x189 0x0 0x0 0x0 0xffffffff 0xffff68457080 0xffffa06eb060
+/proc/504/task/656/syscall: 98 0x643ea70 0x189 0x0 0x0 0x0 0xffffffff 0xffff683471a0 0xffffa06eb060
+/proc/504/task/658/syscall: 98 0x643ee40 0x189 0x0 0x0 0x0 0xffffffff 0xffff682370f0 0xffffa06eb060
+/proc/504/task/665/syscall: 98 0x644fc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff68127090 0xffffa06eb060
+/proc/504/task/666/syscall: 98 0x643f2c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53ffdff0 0xffffa06eb060
+/proc/504/task/667/syscall: 98 0x6451dd0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53eee080 0xffffa06eb060
+/proc/504/task/668/syscall: 98 0x6453860 0x189 0x0 0x0 0x0 0xffffffff 0xffff53add090 0xffffa06eb060
+/proc/504/task/669/syscall: 115 0x0 0x0 0xffff539cd218 0xffff539cd218 0x0 0xfffffffa 0xffff539cd1b0 0xffffa0721ae4
+/proc/504/task/670/syscall: 98 0x6455eb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff535bc090 0xffffa06eb060
+/proc/504/task/671/syscall: 98 0x6456550 0x189 0x0 0x0 0x0 0xffffffff 0xffff531ab090 0xffffa06eb060
+/proc/504/task/672/syscall: 98 0x6456790 0x189 0x0 0x0 0x0 0xffffffff 0xffff5309b0a0 0xffffa06eb060
+/proc/504/task/674/syscall: 98 0x64561a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff52c8a0c0 0xffffa06eb060
+/proc/504/task/675/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff528791f0 0xffffa06eb060
+/proc/504/task/677/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff520691f0 0xffffa06eb060
+/proc/504/task/678/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff518591f0 0xffffa06eb060
+/proc/504/task/679/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff510491f0 0xffffa06eb060
+/proc/504/task/681/syscall: 98 0x64563e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff508390c0 0xffffa06eb060
+/proc/504/task/682/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4bffe1f0 0xffffa06eb060
+/proc/504/task/683/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4b7ee1f0 0xffffa06eb060
+/proc/504/task/684/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4afde1f0 0xffffa06eb060
+/proc/504/task/685/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4a7ce1f0 0xffffa06eb060
+/proc/504/task/686/syscall: 98 0x645d290 0x189 0x0 0x0 0x0 0xffffffff 0xffff504280c0 0xffffa06eb060
+/proc/504/task/687/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff49fbe1f0 0xffffa06eb060
+/proc/504/task/688/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff497ae1f0 0xffffa06eb060
+/proc/504/task/689/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff48f9e1f0 0xffffa06eb060
+/proc/504/task/690/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff43ffe1f0 0xffffa06eb060
+/proc/504/task/692/syscall: 98 0x645dc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff4878e0c0 0xffffa06eb060
+/proc/504/task/694/syscall: 98 0x645f6a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4837d090 0xffffa06eb060
+/proc/504/task/695/syscall: 98 0x645f110 0x189 0x0 0x0 0x0 0xffffffff 0xffff4826d090 0xffffa06eb060
+/proc/504/task/696/syscall: 98 0x645f320 0x189 0x0 0x0 0x0 0xffffffff 0xffff4815d080 0xffffa06eb060
+/proc/504/task/698/syscall: 98 0x64662a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff431ec0d0 0xffffa06eb060
+/proc/504/task/699/syscall: 72 0x42 0xffff430dc258 0x0 0x0 0x0 0x0 0xffff430dc1a0 0xffffa0752154
+/proc/504/task/700/syscall: 98 0x6477790 0x189 0x0 0x0 0x0 0xffffffff 0xffff425cb090 0xffffa06eb060
+/proc/504/task/701/syscall: running
+/proc/504/task/702/syscall: 72 0x3d 0xffff421ad228 0x0 0x0 0x0 0x0 0xffff421ad1c0 0xffffa0752154
+/proc/504/task/705/syscall: 98 0x647f2a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4199d0d0 0xffffa06eb060
+/proc/504/task/706/syscall: 98 0x648e550 0x189 0x0 0x0 0x0 0xffffffff 0xffff4188d0d0 0xffffa06eb060
+/proc/504/task/707/syscall: 98 0x649d960 0x189 0x0 0xffff4177d0b8 0x0 0xffffffff 0xffff4177d020 0xffffa06eb060
+/proc/504/task/709/syscall: 98 0x64bbd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff4166d0a0 0xffffa06eb060
+/proc/504/task/710/syscall: 72 0x45 0xffff4155d258 0x0 0x0 0x0 0x0 0xffff4155d1a0 0xffffa0752154
+/proc/504/task/712/syscall: 98 0x64cb160 0x189 0x0 0x0 0x0 0xffffffff 0xffff40d4d0d0 0xffffa06eb060
+/proc/504/task/713/syscall: running
+/proc/504/task/714/syscall: 98 0x64da580 0x189 0x0 0x0 0x0 0xffffffff 0xffff40b2d0d0 0xffffa06eb060
+/proc/504/task/715/syscall: 98 0x64e97d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff40a1d0d0 0xffffa06eb060
+/proc/504/task/716/syscall: 98 0x64f8a80 0x189 0x0 0xffff4090d118 0x0 0xffffffff 0xffff4090d080 0xffffa06eb060
+/proc/504/task/717/syscall: running
+/proc/504/task/718/syscall: 72 0x46 0xffff404ef218 0x0 0x0 0x0 0x0 0xffff404ef170 0xffffa0752154
+/proc/504/task/719/syscall: running
+/proc/504/task/720/syscall: 72 0x48 0xffff400d1218 0x0 0x0 0x0 0x0 0xffff400d1170 0xffffa0752154
+/proc/504/task/721/syscall: 98 0x6508690 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ffbff10 0xffffa06eb060
+/proc/504/task/722/syscall: running
+/proc/504/task/723/syscall: running
+/proc/504/task/724/syscall: 115 0x0 0x0 0xffff3fc91248 0xffff3fc91248 0x0 0xfffffffa 0xffff3fc911e0 0xffffa0721ae4
+/proc/504/task/725/syscall: 115 0x0 0x0 0xffff3fb81238 0xffff3fb81238 0x0 0xfffffffa 0xffff3fb811d0 0xffffa0721ae4
+/proc/504/task/726/syscall: 115 0x0 0x0 0xffff3fa71248 0xffff3fa71248 0x0 0xfffffffa 0xffff3fa711e0 0xffffa0721ae4
+/proc/504/task/727/syscall: 115 0x0 0x0 0xffff3f961258 0xffff3f961258 0x0 0xfffffffa 0xffff3f9611f0 0xffffa0721ae4
+/proc/504/task/728/syscall: 98 0x650f120 0x189 0x0 0x0 0x0 0xffffffff 0xffff3f8510d0 0xffffa06eb060
+/proc/504/task/729/syscall: 98 0x6512e30 0x189 0x0 0x0 0x0 0xffffffff 0xffff3f7410d0 0xffffa06eb060
+/proc/504/task/730/syscall: running
+/proc/504/task/731/syscall: 72 0x4a 0xffff3f323228 0x0 0x0 0x0 0x0 0xffff3f3231c0 0xffffa0752154
+/proc/504/task/732/syscall: 188 0x0 0xffff3eb13228 0x64 0x0 0x0 0x0 0xffff3eb131a0 0xffffa0757600
+/proc/504/task/738/syscall: 98 0x6525b00 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ea030d0 0xffffa06eb060
+/proc/504/task/739/syscall: 98 0x652bd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e8f30d0 0xffffa06eb060
+/proc/504/task/740/syscall: 98 0x6531fa0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e7e30d0 0xffffa06eb060
+/proc/504/task/741/syscall: 98 0x6532230 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e6d31a0 0xffffa06eb060
+/proc/504/task/742/syscall: 98 0x65324e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e5c30d0 0xffffa06eb060
+/proc/504/task/745/syscall: 98 0x65328c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e4b31a0 0xffffa06eb060
+/proc/504/task/746/syscall: 98 0x653d5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e3a31a0 0xffffa06eb060
+/proc/504/task/747/syscall: 98 0x653d7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e2931a0 0xffffa06eb060
+/proc/504/task/748/syscall: 98 0x653d9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e1831a0 0xffffa06eb060
+/proc/504/task/749/syscall: 98 0x653dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e0731a0 0xffffa06eb060
+/proc/504/task/750/syscall: 98 0x653ddb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3df631a0 0xffffa06eb060
+/proc/504/task/751/syscall: 98 0x653dfb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3de531a0 0xffffa06eb060
+/proc/504/task/752/syscall: 98 0x653e1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dd431a0 0xffffa06eb060
+/proc/504/task/753/syscall: 98 0x653e3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dc331a0 0xffffa06eb060
+/proc/504/task/754/syscall: 98 0x653e5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3db231a0 0xffffa06eb060
+/proc/504/task/755/syscall: 98 0x653e7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3da131a0 0xffffa06eb060
+/proc/504/task/756/syscall: 98 0x653e9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d9031a0 0xffffa06eb060
+/proc/504/task/757/syscall: 98 0x653ebb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d7f31a0 0xffffa06eb060
+/proc/504/task/758/syscall: 98 0x653edb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d6e31a0 0xffffa06eb060
+/proc/504/task/759/syscall: 98 0x653efb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d5d31a0 0xffffa06eb060
+/proc/504/task/760/syscall: 98 0x653f1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d4c31a0 0xffffa06eb060
+/proc/504/task/761/syscall: 98 0x653f3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d3b31a0 0xffffa06eb060
+/proc/504/task/762/syscall: 98 0x653f5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d2a31a0 0xffffa06eb060
+/proc/504/task/763/syscall: 98 0x653f7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d1931a0 0xffffa06eb060
+/proc/504/task/764/syscall: 98 0x653f9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d0831a0 0xffffa06eb060
+/proc/504/task/765/syscall: 98 0x653fbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cf731a0 0xffffa06eb060
+/proc/504/task/766/syscall: 98 0x653fdb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ce631a0 0xffffa06eb060
+/proc/504/task/767/syscall: 98 0x653ffb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cd531a0 0xffffa06eb060
+/proc/504/task/769/syscall: 98 0x65401b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cc431a0 0xffffa06eb060
+/proc/504/task/770/syscall: 98 0x65403b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cb331a0 0xffffa06eb060
+/proc/504/task/771/syscall: 98 0x65405b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ca231a0 0xffffa06eb060
+/proc/504/task/772/syscall: 98 0x65407b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c9131a0 0xffffa06eb060
+/proc/504/task/773/syscall: 98 0x65409b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c8031a0 0xffffa06eb060
+/proc/504/task/774/syscall: 98 0x6540bb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c6f31a0 0xffffa06eb060
+/proc/504/task/775/syscall: 98 0x6540db0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c5e31a0 0xffffa06eb060
+/proc/504/task/776/syscall: 98 0x6540fb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c4d31a0 0xffffa06eb060
+/proc/504/task/777/syscall: 98 0x65411b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c3c31a0 0xffffa06eb060
+/proc/504/task/778/syscall: 98 0x6541760 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c2b31a0 0xffffa06eb060
+/proc/504/task/779/syscall: 98 0x65419a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c1a31a0 0xffffa06eb060
+/proc/504/task/780/syscall: 98 0x6541be0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c0931a0 0xffffa06eb060
+/proc/504/task/781/syscall: 98 0x6541e20 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bf831a0 0xffffa06eb060
+/proc/504/task/782/syscall: 98 0x6542060 0x189 0x0 0x0 0x0 0xffffffff 0xffff3be731a0 0xffffa06eb060
+/proc/504/task/783/syscall: 98 0x65422a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bd631a0 0xffffa06eb060
+/proc/504/task/784/syscall: 98 0x65424e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bc531a0 0xffffa06eb060
+/proc/504/task/785/syscall: 98 0x6542720 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bb431a0 0xffffa06eb060
+/proc/504/task/786/syscall: 98 0x6542960 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ba331a0 0xffffa06eb060
+/proc/504/task/787/syscall: 98 0x6542ba0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b9231a0 0xffffa06eb060
+/proc/504/task/788/syscall: running
+/proc/504/task/792/syscall: 98 0x65443f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b6f94e0 0xffffa06eb060
+/proc/504/task/793/syscall: running
+/proc/504/task/794/syscall: 72 0x4d 0xffff3b2e5228 0x0 0x0 0x0 0x0 0xffff3b2e51c0 0xffffa0752154
+/proc/504/task/798/syscall: 98 0x6545170 0x189 0x0 0x0 0x0 0xffffffff 0xffff3aad5150 0xffffa06eb060
+/proc/504/task/800/syscall: 98 0x65454c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a9c5130 0xffffa06eb060
+/proc/504/task/802/syscall: 115 0x0 0x0 0xffff3a8b5228 0xffff3a8b5228 0x0 0xfffffffa 0xffff3a8b51c0 0xffffa0721ae4
+/proc/504/task/803/syscall: 98 0x65459e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a7a5150 0xffffa06eb060
+/proc/504/task/805/syscall: 98 0x6545da0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a695140 0xffffa06eb060
+/proc/504/task/806/syscall: 98 0x65460c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a585140 0xffffa06eb060
+/proc/504/task/808/syscall: 98 0x65463d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a475160 0xffffa06eb060
+/proc/504/task/809/syscall: running
+/proc/504/task/810/syscall: 72 0x44 0xffff3a057228 0x0 0x0 0x0 0x0 0xffff3a0571c0 0xffffa0752154
+/proc/504/task/811/syscall: running
+/proc/504/task/812/syscall: 72 0x50 0xffff39539228 0x0 0x0 0x0 0x0 0xffff395391c0 0xffffa0752154
+/proc/504/task/813/syscall: 98 0x659aa70 0x189 0x0 0x0 0x0 0xffffffff 0xffff38d290d0 0xffffa06eb060
+/proc/504/task/814/syscall: running
+/proc/504/task/815/syscall: 98 0x15cf9b8 0x189 0x0 0x0 0x0 0xffffffff 0xffff38b091b0 0xffffa06eb060
+/proc/504/task/816/syscall: running
+/proc/504/task/817/syscall: 72 0x52 0xffff386eb228 0x0 0x0 0x0 0x0 0xffff386eb1c0 0xffffa0752154
+/proc/504/task/853/syscall: 72 0x3f 0xffff37dcb258 0x0 0x0 0xffff37dcb1f0 0x0 0xffff37dcb1a0 0xffffa0752154
+--- POST: MFP LOG size=41943040 ---
+--- POST: SNAP size=4194304 ---
+--- POST: MFP LOG TAIL ---
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:wait failed
+[2026-09-18 02:27:46.294 ] _wait_for_peer:747 IBC WARN 504:--- MFP LOG UPLOAD ---
+MFP_LOG_UPLOAD_RC=0 size=8388608
+--- PLOG DIR ---
+total 40964
+drwxrwxrwt  4 root root      140 Sep 18 02:26 .
+drwxr-xr-x 33 root root     4096 Sep 18 02:26 ..
+-rw-r--r--  1 root root        0 Sep 18 02:26 all_topic_0.log
+drwxr--r--  2 root root       40 Sep 18 02:26 export
+-rw-r--r--  1 root root 41943040 Sep 18 02:32 mfp.out
+-rw-r--r--  1 root root        0 Sep 18 02:26 pol_log
+drwxr--r--  2 root root       40 Sep 18 02:26 upgrade
+PLOG_FILE /tslog/all_topic_0.log size=0
+PLOG_FILE /tslog/mfp.out size=41943040
+PLOG_FILE /tslog/pol_log size=0
+--- PLOG UPLOAD ---
+PLOG_UP all_topic_0.log rc=0
+PLOG_UP mfp.out rc=0
+PLOG_UP pol_log rc=0
+--- VHAL LOG ---
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+VHAL_UPLOAD_RC=0
+TRACE1_POST_HITS=0
+Breakpoint 7 at 0x66c12c: file net/common/netsock.c, line 398.
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 9 at 0x683f84: file net/lpd/lpd.c, line 580.
+Breakpoint 10 at 0x684050: file net/lpd/lpd.c, line 605.
+TRACE1 armed
+Quit
+--- AFTER TRACE1 KILL threads=196 ---
+--- ALL BT (filtered) ---
+ALLBT_RC=0 lines=1499
+196:[Thread debugging using libthread_db enabled]
+197:Using host libthread_db library "/lib64/libthread_db.so.1".
+198:0x0000ffffa0721ae0 in clock_nanosleep () from /lib64/libc.so.6
+200:Thread 196 (Thread 0xffff37dcbb60 (LWP 853) "mfp.afx"):
+202:#1  0x00000000006c1058 in _internal_thread (arg=0xe94a60 <jsm+48>) at proxy_transfer/ctimer.c:45
+206:Thread 195 (Thread 0xffff386ebb60 (LWP 817) "mfp.afx"):
+212:Thread 194 (Thread 0xffff388fbb60 (LWP 816) "mfp.afx"):
+218:Thread 193 (Thread 0xffff38b09b60 (LWP 815) "mfp.afx"):
+220:#1  0x0000ffffa06ed834 in pthread_cond_wait () from /lib64/libc.so.6
+221:#2  0x000000000074299c in poweroffmanager_handle_thread (argv=0x0) at power_manager/power_manager.c:1064
+222:#3  0x0000ffffa1864dbc in thread_start (arg=0x659ce90) at osal/pol/os/Linux/pol_linux.c:57
+225:Thread 192 (Thread 0xffff38c19b60 (LWP 814) "mfp.afx"):
+231:Thread 191 (Thread 0xffff38d29b60 (LWP 813) "mfp.afx"):
+234:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x659aa70) at osal/pol/os/Linux/pol_linux.c:255
+235:#3  0x0000ffffa1862d50 in pi_sem_timedwait_ent (sem=0xffffa1877b50 <s_semaphore_pool+976>, secs=-1, usecs=-1, caller=0xffffa1866708 <__func__.9> "pi_msg_recv_ent") at osal/pol/pol_threads/pol_semaphore.c:111
+236:#4  0x0000ffffa1861818 in pi_msg_recv_ent (msgq=0xffffa186be78 <s_msgq_pool+1800>, msg=0xffff38d29230, secs=-1, usecs=-1, caller=0xffffa15ef6b0 <__func__.18> "task_msg_wait_forever_by_router") at osal/pol/pol_threads/pol_msgq.c:143
+238:Thread 190 (Thread 0xffff39539b60 (LWP 812) "mfp.afx"):
+244:Thread 189 (Thread 0xffff39749b60 (LWP 811) "mfp.afx"):
+249:Thread 188 (Thread 0xffff3a057b60 (LWP 810) "mfp.afx"):
+255:Thread 187 (Thread 0xffff3a267b60 (LWP 809) "mfp.afx"):
+261:Thread 186 (Thread 0xffff3a475b60 (LWP 808) "mfp.afx"):
+264:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65463d0) at osal/pol/os/Linux/pol_linux.c:255
+265:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b40 <s_semaphore_pool+960>, caller=0x811bf8 <__func__.3> "websrv_thread_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+266:#4  0x000000000068a020 in websrv_thread_handler (arg=0x0) at net/websrv/websrv.c:275
+268:Thread 185 (Thread 0xffff3a585b60 (LWP 806) "mfp.afx"):
+271:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65460c0) at osal/pol/os/Linux/pol_linux.c:255
+272:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b38 <s_semaphore_pool+952>, caller=0x80b4c8 <__func__.10> "smtool_pcie_dispatch_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+273:#4  0x000000000067eb48 in smtool_pcie_dispatch_thread (arg=0x0) at net/smtool/smtool.c:839
+275:Thread 184 (Thread 0xffff3a695b60 (LWP 805) "mfp.afx"):
+278:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6545da0) at osal/pol/os/Linux/pol_linux.c:255
+279:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b30 <s_semaphore_pool+944>, caller=0x809980 <__func__.9> "port913x_handler_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+280:#4  0x000000000067bc78 in port913x_handler_thread (arg=0x0) at net/port913X/port913X.c:857
+282:Thread 183 (Thread 0xffff3a7a5b60 (LWP 803) "mfp.afx"):
+285:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65459e0) at osal/pol/os/Linux/pol_linux.c:255
+286:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b28 <s_semaphore_pool+936>, caller=0x80d860 <__func__.10> "lpd_dispatch_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+287:#4  0x00000000006836a4 in lpd_dispatch_thread (arg=0x0) at net/lpd/lpd.c:431
+289:Thread 182 (Thread 0xffff3a8b5b60 (LWP 802) "mfp.afx"):
+290:#0  0x0000ffffa0721ae0 in clock_nanosleep () from /lib64/libc.so.6
+291:#1  0x0000ffffa073189c in nanosleep () from /lib64/libc.so.6
+293:#3  0x00000000006887a0 in rawscan_timer_thread (arg=0x0) at net/rawscan/rawscan.c:650
+294:#4  0x0000ffffa1864dbc in thread_start (arg=0x65456c0) at osal/pol/os/Linux/pol_linux.c:57
+296:Thread 181 (Thread 0xffff3a9c5b60 (LWP 800) "mfp.afx"):
+299:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65454c0) at osal/pol/os/Linux/pol_linux.c:255
+300:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b20 <s_semaphore_pool+928>, caller=0x810be8 <__func__.12> "rawscan_pcie_dispatch_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+301:#4  0x0000000000687f78 in rawscan_pcie_dispatch_thread (arg=0x0) at net/rawscan/rawscan.c:503
+303:Thread 180 (Thread 0xffff3aad5b60 (LWP 798) "mfp.afx"):
+306:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6545170) at osal/pol/os/Linux/pol_linux.c:255
+307:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b18 <s_semaphore_pool+920>, caller=0x80f1d0 <__func__.10> "rawprint_pcie_dispatch_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+308:#4  0x00000000006858f0 in rawprint_pcie_dispatch_thread (arg=0x0) at net/rawprint/rawprint.c:521
+310:Thread 179 (Thread 0xffff3b2e5b60 (LWP 794) "mfp.afx"):
+316:Thread 178 (Thread 0xffff3b4f5b60 (LWP 793) "mfp.afx"):
+322:Thread 177 (Thread 0xffff3b703b60 (LWP 792) "mfp.afx"):
+325:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65443f0) at osal/pol/os/Linux/pol_linux.c:255
+326:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b10 <s_semaphore_pool+912>, caller=0x7fa8d0 <__func__.10> "netdata_thread") at osal/pol/pol_threads/pol_semaphore.c:89
+327:#4  0x000000000065c5cc in netdata_thread (arg=0x0) at net/common/netdata.c:1044
+329:Thread 176 (Thread 0xffff3b813b60 (LWP 788) "mfp.afx"):
+331:#1  0x00000000006c2ecc in ulog_print (name=0xffffa15f313c "IBC", file=0xffffa15f3136 "ibc.c", func=0xffffa15f34d3 <__func__.3> "_wait_for_peer", line=747, level=4, fmt=0xffffa15f337b "wait failed\n") at proxy_transfer/ulog.c:286
+332:#2  0x0000ffffa15e6554 in ibc_read_sync () from /lib64/libcommon.so
+333:#3  0x0000000000676c6c in net_proxy_data_recv_from_pcie (ds=NET_DATA, command_word=0, data=0xa924e8 <s_pcie_data_tmp> "", timeout_ms=50, code=0xffff3b813264) at net/netproxy/netproxy.c:392
+334:#4  0x0000000000678384 in net_proxy_data_thread_handle (arg=0x0) at net/netproxy/netproxy.c:797
+336:Thread 175 (Thread 0xffff3b923b60 (LWP 787) "mfp.afx"):
+339:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6542ba0) at osal/pol/os/Linux/pol_linux.c:255
+340:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b08 <s_semaphore_pool+904>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+341:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541648) at net/netproxy/netproxy.c:162
+343:Thread 174 (Thread 0xffff3ba33b60 (LWP 786) "mfp.afx"):
+346:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6542960) at osal/pol/os/Linux/pol_linux.c:255
+347:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877b00 <s_semaphore_pool+896>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+348:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541600) at net/netproxy/netproxy.c:162
+350:Thread 173 (Thread 0xffff3bb43b60 (LWP 785) "mfp.afx"):
+353:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6542720) at osal/pol/os/Linux/pol_linux.c:255
+354:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877af8 <s_semaphore_pool+888>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+355:#4  0x000000000067625c in protocol_thread_handle (arg=0x65415b8) at net/netproxy/netproxy.c:162
+357:Thread 172 (Thread 0xffff3bc53b60 (LWP 784) "mfp.afx"):
+360:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65424e0) at osal/pol/os/Linux/pol_linux.c:255
+361:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877af0 <s_semaphore_pool+880>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+362:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541570) at net/netproxy/netproxy.c:162
+364:Thread 171 (Thread 0xffff3bd63b60 (LWP 783) "mfp.afx"):
+367:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65422a0) at osal/pol/os/Linux/pol_linux.c:255
+368:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ae8 <s_semaphore_pool+872>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+369:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541528) at net/netproxy/netproxy.c:162
+371:Thread 170 (Thread 0xffff3be73b60 (LWP 782) "mfp.afx"):
+374:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6542060) at osal/pol/os/Linux/pol_linux.c:255
+375:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ae0 <s_semaphore_pool+864>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+376:#4  0x000000000067625c in protocol_thread_handle (arg=0x65414e0) at net/netproxy/netproxy.c:162
+378:Thread 169 (Thread 0xffff3bf83b60 (LWP 781) "mfp.afx"):
+381:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6541e20) at osal/pol/os/Linux/pol_linux.c:255
+382:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ad8 <s_semaphore_pool+856>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+383:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541498) at net/netproxy/netproxy.c:162
+385:Thread 168 (Thread 0xffff3c093b60 (LWP 780) "mfp.afx"):
+388:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6541be0) at osal/pol/os/Linux/pol_linux.c:255
+389:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ad0 <s_semaphore_pool+848>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+390:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541450) at net/netproxy/netproxy.c:162
+392:Thread 167 (Thread 0xffff3c1a3b60 (LWP 779) "mfp.afx"):
+395:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65419a0) at osal/pol/os/Linux/pol_linux.c:255
+396:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ac8 <s_semaphore_pool+840>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+397:#4  0x000000000067625c in protocol_thread_handle (arg=0x6541408) at net/netproxy/netproxy.c:162
+399:Thread 166 (Thread 0xffff3c2b3b60 (LWP 778) "mfp.afx"):
+402:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6541760) at osal/pol/os/Linux/pol_linux.c:255
+403:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ac0 <s_semaphore_pool+832>, caller=0x8076b8 <__func__.32> "protocol_thread_handle") at osal/pol/pol_threads/pol_semaphore.c:89
+404:#4  0x000000000067625c in protocol_thread_handle (arg=0x65413c0) at net/netproxy/netproxy.c:162
+406:Thread 165 (Thread 0xffff3c3c3b60 (LWP 777) "mfp.afx"):
+409:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65411b0) at osal/pol/os/Linux/pol_linux.c:255
+410:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ab8 <s_semaphore_pool+824>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+411:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d3a8) at net/common/threads_pool.c:37
+413:Thread 164 (Thread 0xffff3c4d3b60 (LWP 776) "mfp.afx"):
+416:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6540fb0) at osal/pol/os/Linux/pol_linux.c:255
+417:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877ab0 <s_semaphore_pool+816>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+418:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d380) at net/common/threads_pool.c:37
+420:Thread 163 (Thread 0xffff3c5e3b60 (LWP 775) "mfp.afx"):
+423:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6540db0) at osal/pol/os/Linux/pol_linux.c:255
+424:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877aa8 <s_semaphore_pool+808>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+425:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d358) at net/common/threads_pool.c:37
+427:Thread 162 (Thread 0xffff3c6f3b60 (LWP 774) "mfp.afx"):
+430:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x6540bb0) at osal/pol/os/Linux/pol_linux.c:255
+431:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877aa0 <s_semaphore_pool+800>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+432:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d330) at net/common/threads_pool.c:37
+434:Thread 161 (Thread 0xffff3c803b60 (LWP 773) "mfp.afx"):
+437:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65409b0) at osal/pol/os/Linux/pol_linux.c:255
+438:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a98 <s_semaphore_pool+792>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+439:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d308) at net/common/threads_pool.c:37
+441:Thread 160 (Thread 0xffff3c913b60 (LWP 772) "mfp.afx"):
+444:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65407b0) at osal/pol/os/Linux/pol_linux.c:255
+445:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a90 <s_semaphore_pool+784>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+446:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d2e0) at net/common/threads_pool.c:37
+448:Thread 159 (Thread 0xffff3ca23b60 (LWP 771) "mfp.afx"):
+451:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65405b0) at osal/pol/os/Linux/pol_linux.c:255
+452:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a88 <s_semaphore_pool+776>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+453:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d2b8) at net/common/threads_pool.c:37
+455:Thread 158 (Thread 0xffff3cb33b60 (LWP 770) "mfp.afx"):
+458:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65403b0) at osal/pol/os/Linux/pol_linux.c:255
+459:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a80 <s_semaphore_pool+768>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+460:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d290) at net/common/threads_pool.c:37
+462:Thread 157 (Thread 0xffff3cc43b60 (LWP 769) "mfp.afx"):
+465:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x65401b0) at osal/pol/os/Linux/pol_linux.c:255
+466:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a78 <s_semaphore_pool+760>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+467:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d268) at net/common/threads_pool.c:37
+469:Thread 156 (Thread 0xffff3cd53b60 (LWP 767) "mfp.afx"):
+472:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653ffb0) at osal/pol/os/Linux/pol_linux.c:255
+473:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a70 <s_semaphore_pool+752>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+474:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d240) at net/common/threads_pool.c:37
+476:Thread 155 (Thread 0xffff3ce63b60 (LWP 766) "mfp.afx"):
+479:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653fdb0) at osal/pol/os/Linux/pol_linux.c:255
+480:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a68 <s_semaphore_pool+744>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+481:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d218) at net/common/threads_pool.c:37
+483:Thread 154 (Thread 0xffff3cf73b60 (LWP 765) "mfp.afx"):
+486:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653fbb0) at osal/pol/os/Linux/pol_linux.c:255
+487:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a60 <s_semaphore_pool+736>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+488:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d1f0) at net/common/threads_pool.c:37
+490:Thread 153 (Thread 0xffff3d083b60 (LWP 764) "mfp.afx"):
+493:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653f9b0) at osal/pol/os/Linux/pol_linux.c:255
+494:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a58 <s_semaphore_pool+728>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+495:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d1c8) at net/common/threads_pool.c:37
+497:Thread 152 (Thread 0xffff3d193b60 (LWP 763) "mfp.afx"):
+500:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653f7b0) at osal/pol/os/Linux/pol_linux.c:255
+501:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a50 <s_semaphore_pool+720>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+502:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d1a0) at net/common/threads_pool.c:37
+504:Thread 151 (Thread 0xffff3d2a3b60 (LWP 762) "mfp.afx"):
+507:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653f5b0) at osal/pol/os/Linux/pol_linux.c:255
+508:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a48 <s_semaphore_pool+712>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+509:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d178) at net/common/threads_pool.c:37
+511:Thread 150 (Thread 0xffff3d3b3b60 (LWP 761) "mfp.afx"):
+514:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653f3b0) at osal/pol/os/Linux/pol_linux.c:255
+515:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a40 <s_semaphore_pool+704>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+516:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d150) at net/common/threads_pool.c:37
+518:Thread 149 (Thread 0xffff3d4c3b60 (LWP 760) "mfp.afx"):
+521:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653f1b0) at osal/pol/os/Linux/pol_linux.c:255
+522:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a38 <s_semaphore_pool+696>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+523:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d128) at net/common/threads_pool.c:37
+525:Thread 148 (Thread 0xffff3d5d3b60 (LWP 759) "mfp.afx"):
+528:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653efb0) at osal/pol/os/Linux/pol_linux.c:255
+529:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a30 <s_semaphore_pool+688>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+530:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d100) at net/common/threads_pool.c:37
+532:Thread 147 (Thread 0xffff3d6e3b60 (LWP 758) "mfp.afx"):
+535:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653edb0) at osal/pol/os/Linux/pol_linux.c:255
+536:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a28 <s_semaphore_pool+680>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+537:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d0d8) at net/common/threads_pool.c:37
+539:Thread 146 (Thread 0xffff3d7f3b60 (LWP 757) "mfp.afx"):
+542:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653ebb0) at osal/pol/os/Linux/pol_linux.c:255
+543:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a20 <s_semaphore_pool+672>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+544:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d0b0) at net/common/threads_pool.c:37
+546:Thread 145 (Thread 0xffff3d903b60 (LWP 756) "mfp.afx"):
+549:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653e9b0) at osal/pol/os/Linux/pol_linux.c:255
+550:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a18 <s_semaphore_pool+664>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+551:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d088) at net/common/threads_pool.c:37
+553:Thread 144 (Thread 0xffff3da13b60 (LWP 755) "mfp.afx"):
+556:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653e7b0) at osal/pol/os/Linux/pol_linux.c:255
+557:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a10 <s_semaphore_pool+656>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+558:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d060) at net/common/threads_pool.c:37
+560:Thread 143 (Thread 0xffff3db23b60 (LWP 754) "mfp.afx"):
+563:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653e5b0) at osal/pol/os/Linux/pol_linux.c:255
+564:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a08 <s_semaphore_pool+648>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+565:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d038) at net/common/threads_pool.c:37
+567:Thread 142 (Thread 0xffff3dc33b60 (LWP 753) "mfp.afx"):
+570:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653e3b0) at osal/pol/os/Linux/pol_linux.c:255
+571:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa1877a00 <s_semaphore_pool+640>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+572:#4  0x0000000000675a20 in thread_task_handler (arg=0x653d010) at net/common/threads_pool.c:37
+574:Thread 141 (Thread 0xffff3dd43b60 (LWP 752) "mfp.afx"):
+577:#2  0x0000ffffa1865564 in pol_sem_wait (os_sem=0x653e1b0) at osal/pol/os/Linux/pol_linux.c:255
+578:#3  0x0000ffffa1862be0 in pi_sem_wait_ent (sem=0xffffa18779f8 <s_semaphore_pool+632>, caller=0x805cc8 <__func__.5> "thread_task_handler") at osal/pol/pol_threads/pol_semaphore.c:89
+579:#4  0x0000000000675a20 in thread_task_handler (arg=0x653cfe8) at net/common/threads_pool.c:37
+ALLBT_UP_RC=0
+--- POSTBT: THREADS (tid comm wchan) ---
+504 mfp.afx hrtimer_nanosleep
+507 pub_client 0
+508 mfp.afx futex_wait_queue
+509 mfp.afx hrtimer_nanosleep
+510 mfp.afx do_epoll_wait
+511 mfp.afx 0
+512 mfp.afx do_wait_intr_irq
+513 mfp.afx do_epoll_wait
+514 mfp.afx do_wait_intr_irq
+515 mfp.afx do_wait_intr_irq
+516 mfp.afx wait_for_partner
+543 mfp.afx do_select
+544 mfp.afx 0
+545 mfp.afx do_select
+546 mfp.afx futex_wait_queue
+547 mfp.afx futex_wait_queue
+548 mfp.afx futex_wait_queue
+549 mfp.afx 0
+550 mfp.afx do_select
+551 mfp.afx do_select
+552 mfp.afx 0
+553 mfp.afx do_select
+568 mfp.afx 0
+569 mfp.afx do_select
+571 mfp.afx 0
+572 mfp.afx do_select
+573 mfp.afx futex_wait_queue
+574 mfp.afx 0
+575 mfp.afx do_select
+576 mfp.afx futex_wait_queue
+577 mfp.afx 0
+578 mfp.afx 0
+579 mfp.afx do_select
+580 mfp.afx futex_wait_queue
+581 mfp.afx 0
+582 mfp.afx do_select
+583 mfp.afx 0
+584 mfp.afx do_select
+585 mfp.afx do_wait_intr_irq
+586 mfp.afx 0
+587 mfp.afx do_select
+588 mfp.afx 0
+589 mfp.afx 0
+592 mfp.afx do_select
+623 mfp.afx 0
+625 mfp.afx 0
+626 mfp.afx do_select
+627 mfp.afx do_select
+628 mfp.afx 0
+629 mfp.afx do_select
+630 mfp.afx 0
+631 mfp.afx do_select
+632 mfp.afx hrtimer_nanosleep
+634 mfp.afx 0
+636 mfp.afx futex_wait_queue
+638 mfp.afx futex_wait_queue
+639 mfp.afx futex_wait_queue
+640 mfp.afx futex_wait_queue
+641 mfp.afx futex_wait_queue
+645 mfp.afx 0
+646 mfp.afx do_select
+647 mfp.afx futex_wait_queue
+648 mfp.afx futex_wait_queue
+649 mfp.afx __arm64_sys_restart_syscall
+650 mfp.afx 0
+651 mfp.afx do_select
+654 mfp.afx futex_wait_queue
+655 mfp.afx futex_wait_queue
+656 mfp.afx futex_wait_queue
+658 mfp.afx futex_wait_queue
+665 mfp.afx futex_wait_queue
+666 mfp.afx futex_wait_queue
+667 mfp.afx futex_wait_queue
+668 mfp.afx futex_wait_queue
+669 mfp.afx 0
+670 mfp.afx futex_wait_queue
+671 mfp.afx futex_wait_queue
+672 mfp.afx futex_wait_queue
+674 mfp.afx futex_wait_queue
+675 mfp.afx futex_wait_queue
+677 mfp.afx futex_wait_queue
+678 mfp.afx futex_wait_queue
+679 mfp.afx futex_wait_queue
+681 mfp.afx futex_wait_queue
+682 mfp.afx futex_wait_queue
+683 mfp.afx futex_wait_queue
+684 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+686 mfp.afx futex_wait_queue
+687 mfp.afx futex_wait_queue
+688 mfp.afx futex_wait_queue
+689 mfp.afx futex_wait_queue
+690 mfp.afx futex_wait_queue
+692 mfp.afx futex_wait_queue
+694 mfp.afx futex_wait_queue
+695 mfp.afx futex_wait_queue
+696 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx do_select
+700 mfp.afx futex_wait_queue
+701 mfp.afx 0
+702 mfp.afx do_select
+705 mfp.afx 0
+706 mfp.afx futex_wait_queue
+707 mfp.afx 0
+709 mfp.afx futex_wait_queue
+710 mfp.afx do_select
+712 mfp.afx futex_wait_queue
+713 mfp.afx 0
+714 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+716 mfp.afx futex_wait_queue
+717 mfp.afx 0
+718 mfp.afx do_select
+719 mfp.afx 0
+720 mfp.afx do_select
+721 mfp.afx futex_wait_queue
+722 mfp.afx 0
+723 mfp.afx 0
+724 mfp.afx hrtimer_nanosleep
+725 mfp.afx 0
+726 mfp.afx hrtimer_nanosleep
+727 mfp.afx 0
+728 mfp.afx futex_wait_queue
+729 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx do_select
+732 mfp.afx do_msgrcv
+738 mfp.afx futex_wait_queue
+739 mfp.afx futex_wait_queue
+740 mfp.afx futex_wait_queue
+741 mfp.afx futex_wait_queue
+742 mfp.afx futex_wait_queue
+745 mfp.afx futex_wait_queue
+746 mfp.afx futex_wait_queue
+747 mfp.afx futex_wait_queue
+748 mfp.afx futex_wait_queue
+749 mfp.afx futex_wait_queue
+750 mfp.afx futex_wait_queue
+751 mfp.afx futex_wait_queue
+752 mfp.afx futex_wait_queue
+753 mfp.afx futex_wait_queue
+754 mfp.afx futex_wait_queue
+755 mfp.afx futex_wait_queue
+756 mfp.afx futex_wait_queue
+757 mfp.afx futex_wait_queue
+758 mfp.afx futex_wait_queue
+759 mfp.afx futex_wait_queue
+760 mfp.afx futex_wait_queue
+761 mfp.afx futex_wait_queue
+762 mfp.afx futex_wait_queue
+763 mfp.afx futex_wait_queue
+764 mfp.afx futex_wait_queue
+765 mfp.afx futex_wait_queue
+766 mfp.afx futex_wait_queue
+767 mfp.afx futex_wait_queue
+769 mfp.afx futex_wait_queue
+770 mfp.afx futex_wait_queue
+771 mfp.afx futex_wait_queue
+772 mfp.afx futex_wait_queue
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+780 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+788 mfp.afx 0
+792 mfp.afx futex_wait_queue
+793 mfp.afx 0
+794 mfp.afx do_select
+798 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+802 mfp.afx hrtimer_nanosleep
+803 mfp.afx futex_wait_queue
+805 mfp.afx futex_wait_queue
+806 mfp.afx futex_wait_queue
+808 mfp.afx futex_wait_queue
+809 mfp.afx 0
+810 mfp.afx do_select
+811 mfp.afx 0
+812 mfp.afx do_select
+813 mfp.afx futex_wait_queue
+814 mfp.afx futex_wait_queue
+815 mfp.afx futex_wait_queue
+816 mfp.afx 0
+817 mfp.afx do_select
+853 mfp.afx do_select
+--- POSTBT: WCHAN HIST ---
+    112 futex_wait_queue
+     37 0
+     30 do_select
+      8 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 do_msgrcv
+      1 __arm64_sys_restart_syscall
+--- POSTBT: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+/proc/504/task/504/syscall: 115 0x0 0x0 0xffffce2338a0 0xffffce2338a0 0x2 0xfffffffa 0xffffce233820 0xffffa0721ae4
+/proc/504/task/507/syscall: running
+/proc/504/task/508/syscall: 98 0xffff60000030 0x80 0x2 0x0 0xffff60000030 0x40 0xffff9a7771e0 0xffffa06eb254
+/proc/504/task/509/syscall: 115 0x0 0x0 0xffff9a6671a0 0x0 0x0 0xfffffffa 0xffff9a667140 0xffffa0721ae4
+/proc/504/task/510/syscall: 22 0xc 0xffff99e57218 0x2 0xbb8 0x0 0x8 0xffff99e571c0 0xffffa0754a84
+/proc/504/task/511/syscall: running
+/proc/504/task/512/syscall: 63 0xa 0xffff98c362b0 0x8 0x0 0xffff98c372a0 0x0 0xffff98c36270 0xffffa074b10c
+/proc/504/task/513/syscall: 22 0x10 0xffff93ffe218 0x2 0xbb8 0x0 0x8 0xffff93ffe1c0 0xffffa0754a84
+/proc/504/task/514/syscall: 63 0xf 0xffff937ee2b0 0x8 0x0 0xffff937ef2a0 0x0 0xffff937ee270 0xffffa074b10c
+/proc/504/task/515/syscall: 63 0x4 0xffff92fde2b0 0x8 0x0 0xffff92fdf2a0 0x0 0xffff92fde270 0xffffa074b10c
+/proc/504/task/516/syscall: 56 0xffffffffffffff9c 0xffff98214278 0x0 0x0 0x0 0x0 0xffff98214230 0xffffa189814c
+/proc/504/task/543/syscall: 72 0x17 0xffff927ce1c8 0x0 0x0 0xffff927ce0e0 0x0 0xffff927ce090 0xffffa0752154
+/proc/504/task/544/syscall: running
+/proc/504/task/545/syscall: 72 0x16 0xffff923ae228 0x0 0x0 0x0 0x0 0xffff923ae1c0 0xffffa0752154
+/proc/504/task/546/syscall: 98 0x642a340 0x189 0x0 0xffff91b9e128 0x0 0xffffffff 0xffff91b9e090 0xffffa06eb060
+/proc/504/task/547/syscall: 98 0x642d1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff91a8e090 0xffffa06eb060
+/proc/504/task/548/syscall: 98 0x642d3f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff9197e0d0 0xffffa06eb060
+/proc/504/task/549/syscall: running
+/proc/504/task/550/syscall: 72 0x1c 0xffff91560228 0x0 0x0 0x0 0x0 0xffff915601c0 0xffffa0752154
+/proc/504/task/551/syscall: 72 0x1e 0xffff90d50258 0x0 0x0 0xffff90d501f0 0x0 0xffff90d501a0 0xffffa0752154
+/proc/504/task/552/syscall: running
+/proc/504/task/553/syscall: 72 0x21 0xffff87ffe228 0x0 0x0 0x0 0x0 0xffff87ffe1c0 0xffffa0752154
+/proc/504/task/568/syscall: running
+/proc/504/task/569/syscall: 72 0x1b 0xffff875de228 0x0 0x0 0x0 0x0 0xffff875de1c0 0xffffa0752154
+/proc/504/task/571/syscall: running
+/proc/504/task/572/syscall: 72 0x25 0xffff86bbe228 0x0 0x0 0x0 0x0 0xffff86bbe1c0 0xffffa0752154
+/proc/504/task/573/syscall: 115 0x0 0x0 0xffff863ade00 0x0 0x0 0xfffffffa 0xffff863adda0 0xffffa0721ae4
+/proc/504/task/574/syscall: running
+/proc/504/task/575/syscall: 72 0x26 0xffff85f90228 0x0 0x0 0x0 0x0 0xffff85f901c0 0xffffa0752154
+/proc/504/task/576/syscall: 98 0xffff9a667c30 0x109 0x1fd 0x0 0x0 0xffffffff 0xffff8577fe40 0xffffa06eb060
+/proc/504/task/577/syscall: running
+/proc/504/task/578/syscall: running
+/proc/504/task/579/syscall: 72 0x2c 0xffff84ffe228 0x0 0x0 0x0 0x0 0xffff84ffe1c0 0xffffa0752154
+/proc/504/task/580/syscall: 98 0x6436310 0x189 0x0 0x0 0x0 0xffffffff 0xffff847ee0c0 0xffffa06eb060
+/proc/504/task/581/syscall: running
+/proc/504/task/582/syscall: 72 0x2e 0xffff6fffe228 0x0 0x0 0x0 0x0 0xffff6fffe1c0 0xffffa0752154
+/proc/504/task/583/syscall: running
+/proc/504/task/584/syscall: 72 0x31 0xffff6f7ee228 0x0 0x0 0x0 0x0 0xffff6f7ee1c0 0xffffa0752154
+/proc/504/task/585/syscall: 63 0x2f 0xffff6efde280 0x8 0x0 0xffff6efdf2a0 0x0 0xffff6efde240 0xffffa074b10c
+/proc/504/task/586/syscall: running
+/proc/504/task/587/syscall: 72 0x29 0xffff6ebc0228 0x0 0x0 0x0 0x0 0xffff6ebc01c0 0xffffa0752154
+/proc/504/task/588/syscall: 115 0x0 0x0 0xffff6e3b0280 0x0 0x0 0xfffffffa 0xffff6e3b0220 0xffffa0721ae4
+/proc/504/task/589/syscall: running
+/proc/504/task/592/syscall: 72 0x34 0xffff6df92228 0x0 0x0 0x0 0x0 0xffff6df921c0 0xffffa0752154
+/proc/504/task/623/syscall: 98 0xffffa15fcba8 0x89 0x0 0xffff6d782118 0x0 0xffffffff 0xffff6d782010 0xffffa06eb060
+/proc/504/task/625/syscall: running
+/proc/504/task/626/syscall: 72 0x36 0xffff6d364228 0x0 0x0 0x0 0x0 0xffff6d3641c0 0xffffa0752154
+/proc/504/task/627/syscall: 72 0x39 0xffff6cb54258 0x0 0x0 0x0 0x0 0xffff6cb541a0 0xffffa0752154
+/proc/504/task/628/syscall: running
+/proc/504/task/629/syscall: 72 0x3a 0xffff6c036228 0x0 0x0 0x0 0x0 0xffff6c0361c0 0xffffa0752154
+/proc/504/task/630/syscall: running
+/proc/504/task/631/syscall: 72 0x38 0xffff6b518228 0x0 0x0 0x0 0x0 0xffff6b5181c0 0xffffa0752154
+/proc/504/task/632/syscall: 115 0x0 0x0 0xffff6ad08248 0xffff6ad08248 0x0 0xfffffffa 0xffff6ad081e0 0xffffa0721ae4
+/proc/504/task/634/syscall: running
+/proc/504/task/636/syscall: 98 0x643b290 0x189 0x0 0x0 0x0 0xffffffff 0xffff6aae80d0 0xffffa06eb060
+/proc/504/task/638/syscall: 98 0x643b750 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a8e7120 0xffffa06eb060
+/proc/504/task/639/syscall: 98 0x643b990 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a6e6120 0xffffa06eb060
+/proc/504/task/640/syscall: 98 0x643bb90 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a4e5120 0xffffa06eb060
+/proc/504/task/641/syscall: 98 0x643beb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff6a2e4120 0xffffa06eb060
+/proc/504/task/645/syscall: running
+/proc/504/task/646/syscall: 72 0x18 0xffff69ec6228 0x0 0x0 0x0 0x0 0xffff69ec61c0 0xffffa0752154
+/proc/504/task/647/syscall: 98 0x643d530 0x189 0x0 0x0 0x0 0xffffffff 0xffff693b5090 0xffffa06eb060
+/proc/504/task/648/syscall: 98 0x643dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff692a5170 0xffffa06eb060
+/proc/504/task/649/syscall: 128 0x0 0x0 0xffff69195270 0xffff69195270 0x0 0xfffffffa 0xffff691951f0 0xffffa0721ae4
+/proc/504/task/650/syscall: running
+/proc/504/task/651/syscall: 72 0x41 0xffff68d77258 0x0 0x0 0x0 0x0 0xffff68d771a0 0xffffa0752154
+/proc/504/task/654/syscall: 98 0x643e800 0x189 0x0 0x0 0x0 0xffffffff 0xffff68567150 0xffffa06eb060
+/proc/504/task/655/syscall: 98 0x643ea40 0x189 0x0 0x0 0x0 0xffffffff 0xffff68457080 0xffffa06eb060
+/proc/504/task/656/syscall: 98 0x643ea70 0x189 0x0 0x0 0x0 0xffffffff 0xffff683471a0 0xffffa06eb060
+/proc/504/task/658/syscall: 98 0x643ee40 0x189 0x0 0x0 0x0 0xffffffff 0xffff682370f0 0xffffa06eb060
+/proc/504/task/665/syscall: 98 0x644fc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff68127090 0xffffa06eb060
+/proc/504/task/666/syscall: 98 0x643f2c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53ffdff0 0xffffa06eb060
+/proc/504/task/667/syscall: 98 0x6451dd0 0x189 0x0 0x0 0x0 0xffffffff 0xffff53eee080 0xffffa06eb060
+/proc/504/task/668/syscall: 98 0x6453860 0x189 0x0 0x0 0x0 0xffffffff 0xffff53add090 0xffffa06eb060
+/proc/504/task/669/syscall: 115 0x0 0x0 0xffff539cd218 0xffff539cd218 0x0 0xfffffffa 0xffff539cd1b0 0xffffa0721ae4
+/proc/504/task/670/syscall: 98 0x6455eb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff535bc090 0xffffa06eb060
+/proc/504/task/671/syscall: 98 0x6456550 0x189 0x0 0x0 0x0 0xffffffff 0xffff531ab090 0xffffa06eb060
+/proc/504/task/672/syscall: 98 0x6456790 0x189 0x0 0x0 0x0 0xffffffff 0xffff5309b0a0 0xffffa06eb060
+/proc/504/task/674/syscall: 98 0x64561a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff52c8a0c0 0xffffa06eb060
+/proc/504/task/675/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff528791f0 0xffffa06eb060
+/proc/504/task/677/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff520691f0 0xffffa06eb060
+/proc/504/task/678/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff518591f0 0xffffa06eb060
+/proc/504/task/679/syscall: 98 0x6456468 0x189 0x0 0x0 0x0 0xffffffff 0xffff510491f0 0xffffa06eb060
+/proc/504/task/681/syscall: 98 0x64563e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff508390c0 0xffffa06eb060
+/proc/504/task/682/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4bffe1f0 0xffffa06eb060
+/proc/504/task/683/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4b7ee1f0 0xffffa06eb060
+/proc/504/task/684/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4afde1f0 0xffffa06eb060
+/proc/504/task/685/syscall: 98 0x645d318 0x189 0x0 0x0 0x0 0xffffffff 0xffff4a7ce1f0 0xffffa06eb060
+/proc/504/task/686/syscall: 98 0x645d290 0x189 0x0 0x0 0x0 0xffffffff 0xffff504280c0 0xffffa06eb060
+/proc/504/task/687/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff49fbe1f0 0xffffa06eb060
+/proc/504/task/688/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff497ae1f0 0xffffa06eb060
+/proc/504/task/689/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff48f9e1f0 0xffffa06eb060
+/proc/504/task/690/syscall: 98 0x645dc98 0x189 0x0 0x0 0x0 0xffffffff 0xffff43ffe1f0 0xffffa06eb060
+/proc/504/task/692/syscall: 98 0x645dc10 0x189 0x0 0x0 0x0 0xffffffff 0xffff4878e0c0 0xffffa06eb060
+/proc/504/task/694/syscall: 98 0x645f6a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4837d090 0xffffa06eb060
+/proc/504/task/695/syscall: 98 0x645f110 0x189 0x0 0x0 0x0 0xffffffff 0xffff4826d090 0xffffa06eb060
+/proc/504/task/696/syscall: 98 0x645f320 0x189 0x0 0x0 0x0 0xffffffff 0xffff4815d080 0xffffa06eb060
+/proc/504/task/698/syscall: 98 0x64662a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff431ec0d0 0xffffa06eb060
+/proc/504/task/699/syscall: 72 0x42 0xffff430dc258 0x0 0x0 0x0 0x0 0xffff430dc1a0 0xffffa0752154
+/proc/504/task/700/syscall: 98 0x6477790 0x189 0x0 0x0 0x0 0xffffffff 0xffff425cb090 0xffffa06eb060
+/proc/504/task/701/syscall: running
+/proc/504/task/702/syscall: 72 0x3d 0xffff421ad228 0x0 0x0 0x0 0x0 0xffff421ad1c0 0xffffa0752154
+/proc/504/task/705/syscall: 98 0x647f2a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff4199d0d0 0xffffa06eb060
+/proc/504/task/706/syscall: 98 0x648e550 0x189 0x0 0x0 0x0 0xffffffff 0xffff4188d0d0 0xffffa06eb060
+/proc/504/task/707/syscall: 98 0x649d960 0x189 0x0 0xffff4177d0b8 0x0 0xffffffff 0xffff4177d020 0xffffa06eb060
+/proc/504/task/709/syscall: 98 0x64bbd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff4166d0a0 0xffffa06eb060
+/proc/504/task/710/syscall: 72 0x45 0xffff4155d258 0x0 0x0 0x0 0x0 0xffff4155d1a0 0xffffa0752154
+/proc/504/task/712/syscall: 98 0x64cb160 0x189 0x0 0x0 0x0 0xffffffff 0xffff40d4d0d0 0xffffa06eb060
+/proc/504/task/713/syscall: running
+/proc/504/task/714/syscall: 98 0x64da580 0x189 0x0 0x0 0x0 0xffffffff 0xffff40b2d0d0 0xffffa06eb060
+/proc/504/task/715/syscall: 98 0x64e97d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff40a1d0d0 0xffffa06eb060
+/proc/504/task/716/syscall: 98 0x64f8a80 0x189 0x0 0xffff4090d118 0x0 0xffffffff 0xffff4090d080 0xffffa06eb060
+/proc/504/task/717/syscall: running
+/proc/504/task/718/syscall: 72 0x46 0xffff404ef218 0x0 0x0 0x0 0x0 0xffff404ef170 0xffffa0752154
+/proc/504/task/719/syscall: running
+/proc/504/task/720/syscall: 72 0x48 0xffff400d1218 0x0 0x0 0x0 0x0 0xffff400d1170 0xffffa0752154
+/proc/504/task/721/syscall: 98 0x6508690 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ffbff10 0xffffa06eb060
+/proc/504/task/722/syscall: running
+/proc/504/task/723/syscall: running
+/proc/504/task/724/syscall: 115 0x0 0x0 0xffff3fc91248 0xffff3fc91248 0x0 0xfffffffa 0xffff3fc911e0 0xffffa0721ae4
+/proc/504/task/725/syscall: 115 0x0 0x0 0xffff3fb81238 0xffff3fb81238 0x0 0xfffffffa 0xffff3fb811d0 0xffffa0721ae4
+/proc/504/task/726/syscall: 115 0x0 0x0 0xffff3fa71248 0xffff3fa71248 0x0 0xfffffffa 0xffff3fa711e0 0xffffa0721ae4
+/proc/504/task/727/syscall: 115 0x0 0x0 0xffff3f961258 0xffff3f961258 0x0 0xfffffffa 0xffff3f9611f0 0xffffa0721ae4
+/proc/504/task/728/syscall: 98 0x650f120 0x189 0x0 0x0 0x0 0xffffffff 0xffff3f8510d0 0xffffa06eb060
+/proc/504/task/729/syscall: 98 0x6512e30 0x189 0x0 0x0 0x0 0xffffffff 0xffff3f7410d0 0xffffa06eb060
+/proc/504/task/730/syscall: running
+/proc/504/task/731/syscall: 72 0x4a 0xffff3f323228 0x0 0x0 0x0 0x0 0xffff3f3231c0 0xffffa0752154
+/proc/504/task/732/syscall: 188 0x0 0xffff3eb13228 0x64 0x0 0x0 0x0 0xffff3eb131a0 0xffffa0757600
+/proc/504/task/738/syscall: 98 0x6525b00 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ea030d0 0xffffa06eb060
+/proc/504/task/739/syscall: 98 0x652bd50 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e8f30d0 0xffffa06eb060
+/proc/504/task/740/syscall: 98 0x6531fa0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e7e30d0 0xffffa06eb060
+/proc/504/task/741/syscall: 98 0x6532230 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e6d31a0 0xffffa06eb060
+/proc/504/task/742/syscall: 98 0x65324e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e5c30d0 0xffffa06eb060
+/proc/504/task/745/syscall: 98 0x65328c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e4b31a0 0xffffa06eb060
+/proc/504/task/746/syscall: 98 0x653d5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e3a31a0 0xffffa06eb060
+/proc/504/task/747/syscall: 98 0x653d7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e2931a0 0xffffa06eb060
+/proc/504/task/748/syscall: 98 0x653d9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e1831a0 0xffffa06eb060
+/proc/504/task/749/syscall: 98 0x653dbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3e0731a0 0xffffa06eb060
+/proc/504/task/750/syscall: 98 0x653ddb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3df631a0 0xffffa06eb060
+/proc/504/task/751/syscall: 98 0x653dfb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3de531a0 0xffffa06eb060
+/proc/504/task/752/syscall: 98 0x653e1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dd431a0 0xffffa06eb060
+/proc/504/task/753/syscall: 98 0x653e3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3dc331a0 0xffffa06eb060
+/proc/504/task/754/syscall: 98 0x653e5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3db231a0 0xffffa06eb060
+/proc/504/task/755/syscall: 98 0x653e7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3da131a0 0xffffa06eb060
+/proc/504/task/756/syscall: 98 0x653e9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d9031a0 0xffffa06eb060
+/proc/504/task/757/syscall: 98 0x653ebb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d7f31a0 0xffffa06eb060
+/proc/504/task/758/syscall: 98 0x653edb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d6e31a0 0xffffa06eb060
+/proc/504/task/759/syscall: 98 0x653efb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d5d31a0 0xffffa06eb060
+/proc/504/task/760/syscall: 98 0x653f1b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d4c31a0 0xffffa06eb060
+/proc/504/task/761/syscall: 98 0x653f3b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d3b31a0 0xffffa06eb060
+/proc/504/task/762/syscall: 98 0x653f5b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d2a31a0 0xffffa06eb060
+/proc/504/task/763/syscall: 98 0x653f7b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d1931a0 0xffffa06eb060
+/proc/504/task/764/syscall: 98 0x653f9b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3d0831a0 0xffffa06eb060
+/proc/504/task/765/syscall: 98 0x653fbb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cf731a0 0xffffa06eb060
+/proc/504/task/766/syscall: 98 0x653fdb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ce631a0 0xffffa06eb060
+/proc/504/task/767/syscall: 98 0x653ffb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cd531a0 0xffffa06eb060
+/proc/504/task/769/syscall: 98 0x65401b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cc431a0 0xffffa06eb060
+/proc/504/task/770/syscall: 98 0x65403b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3cb331a0 0xffffa06eb060
+/proc/504/task/771/syscall: 98 0x65405b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ca231a0 0xffffa06eb060
+/proc/504/task/772/syscall: 98 0x65407b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c9131a0 0xffffa06eb060
+/proc/504/task/773/syscall: 98 0x65409b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c8031a0 0xffffa06eb060
+/proc/504/task/774/syscall: 98 0x6540bb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c6f31a0 0xffffa06eb060
+/proc/504/task/775/syscall: 98 0x6540db0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c5e31a0 0xffffa06eb060
+/proc/504/task/776/syscall: 98 0x6540fb0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c4d31a0 0xffffa06eb060
+/proc/504/task/777/syscall: 98 0x65411b0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c3c31a0 0xffffa06eb060
+/proc/504/task/778/syscall: 98 0x6541760 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c2b31a0 0xffffa06eb060
+/proc/504/task/779/syscall: 98 0x65419a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c1a31a0 0xffffa06eb060
+/proc/504/task/780/syscall: 98 0x6541be0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3c0931a0 0xffffa06eb060
+/proc/504/task/781/syscall: 98 0x6541e20 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bf831a0 0xffffa06eb060
+/proc/504/task/782/syscall: 98 0x6542060 0x189 0x0 0x0 0x0 0xffffffff 0xffff3be731a0 0xffffa06eb060
+/proc/504/task/783/syscall: 98 0x65422a0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bd631a0 0xffffa06eb060
+/proc/504/task/784/syscall: 98 0x65424e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bc531a0 0xffffa06eb060
+/proc/504/task/785/syscall: 98 0x6542720 0x189 0x0 0x0 0x0 0xffffffff 0xffff3bb431a0 0xffffa06eb060
+/proc/504/task/786/syscall: 98 0x6542960 0x189 0x0 0x0 0x0 0xffffffff 0xffff3ba331a0 0xffffa06eb060
+/proc/504/task/787/syscall: 98 0x6542ba0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b9231a0 0xffffa06eb060
+/proc/504/task/788/syscall: running
+/proc/504/task/792/syscall: 98 0x65443f0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3b6f94e0 0xffffa06eb060
+/proc/504/task/793/syscall: running
+/proc/504/task/794/syscall: 72 0x4d 0xffff3b2e5228 0x0 0x0 0x0 0x0 0xffff3b2e51c0 0xffffa0752154
+/proc/504/task/798/syscall: 98 0x6545170 0x189 0x0 0x0 0x0 0xffffffff 0xffff3aad5150 0xffffa06eb060
+/proc/504/task/800/syscall: 98 0x65454c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a9c5130 0xffffa06eb060
+/proc/504/task/802/syscall: 115 0x0 0x0 0xffff3a8b5228 0xffff3a8b5228 0x0 0xfffffffa 0xffff3a8b51c0 0xffffa0721ae4
+/proc/504/task/803/syscall: 98 0x65459e0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a7a5150 0xffffa06eb060
+/proc/504/task/805/syscall: 98 0x6545da0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a695140 0xffffa06eb060
+/proc/504/task/806/syscall: 98 0x65460c0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a585140 0xffffa06eb060
+/proc/504/task/808/syscall: 98 0x65463d0 0x189 0x0 0x0 0x0 0xffffffff 0xffff3a475160 0xffffa06eb060
+/proc/504/task/809/syscall: running
+/proc/504/task/810/syscall: 72 0x44 0xffff3a057228 0x0 0x0 0x0 0x0 0xffff3a0571c0 0xffffa0752154
+/proc/504/task/811/syscall: running
+/proc/504/task/812/syscall: 72 0x50 0xffff39539228 0x0 0x0 0x0 0x0 0xffff395391c0 0xffffa0752154
+/proc/504/task/813/syscall: 98 0x659aa70 0x189 0x0 0x0 0x0 0xffffffff 0xffff38d290d0 0xffffa06eb060
+/proc/504/task/814/syscall: running
+/proc/504/task/815/syscall: 98 0x15cf9b8 0x189 0x0 0x0 0x0 0xffffffff 0xffff38b091b0 0xffffa06eb060
+/proc/504/task/816/syscall: running
+/proc/504/task/817/syscall: 72 0x52 0xffff386eb228 0x0 0x0 0x0 0x0 0xffff386eb1c0 0xffffa0752154
+/proc/504/task/853/syscall: 72 0x3f 0xffff37dcb258 0x0 0x0 0xffff37dcb1f0 0x0 0xffff37dcb1a0 0xffffa0752154
+--- TRACE2 ---
+210 /tmp/gdbtrace2.out
+[New LWP 763]
+[New LWP 764]
+[New LWP 765]
+[New LWP 766]
+[New LWP 767]
+[New LWP 769]
+[New LWP 770]
+[New LWP 771]
+[New LWP 772]
+[New LWP 773]
+[New LWP 774]
+[New LWP 775]
+[New LWP 776]
+[New LWP 777]
+[New LWP 778]
+[New LWP 779]
+[New LWP 780]
+[New LWP 781]
+[New LWP 782]
+[New LWP 783]
+[New LWP 784]
+[New LWP 785]
+[New LWP 786]
+[New LWP 787]
+[New LWP 788]
+[New LWP 792]
+[New LWP 793]
+[New LWP 794]
+[New LWP 798]
+[New LWP 800]
+[New LWP 802]
+[New LWP 803]
+[New LWP 805]
+[New LWP 806]
+[New LWP 808]
+[New LWP 809]
+[New LWP 810]
+[New LWP 811]
+[New LWP 812]
+[New LWP 813]
+[New LWP 814]
+[New LWP 815]
+[New LWP 816]
+[New LWP 817]
+[New LWP 853]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa0721ae0 in clock_nanosleep () from /lib64/libc.so.6
+Breakpoint 1 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 2 at 0x676ec4: file net/netproxy/netproxy.c, line 434.
+Breakpoint 3 at 0x61fbf8: file net/common/netdata.c, line 700.
+Breakpoint 4 at 0x74c960: file pedk_manager/pedk_mgr.c, line 357.
+Breakpoint 5 at 0x74c38c: file pedk_manager/pedk_mgr.c, line 205.
+Breakpoint 6 at 0x6b7570: file system_manager/job_pedkapi.c, line 591.
+Breakpoint 7 at 0x6b6adc: file system_manager/job_pedkapi.c, line 272.
+Breakpoint 8 at 0x6b6b64: file system_manager/job_pedkapi.c, line 300.
+Breakpoint 9 at 0x6b7060: file system_manager/job_pedkapi.c, line 449.
+Breakpoint 10 at 0x6b740c: file system_manager/job_pedkapi.c, line 551.
+Breakpoint 11 at 0x6b7500: file system_manager/job_pedkapi.c, line 578.
+Breakpoint 12 at 0x6b7158: file system_manager/job_pedkapi.c, line 476.
+--- CMD REG TABLE (post) ---
+[New LWP 785]
+[New LWP 786]
+[New LWP 787]
+[New LWP 788]
+[New LWP 792]
+[New LWP 793]
+[New LWP 794]
+[New LWP 798]
+[New LWP 800]
+[New LWP 802]
+[New LWP 803]
+[New LWP 805]
+[New LWP 806]
+[New LWP 808]
+[New LWP 809]
+[New LWP 810]
+[New LWP 811]
+[New LWP 812]
+[New LWP 813]
+[New LWP 814]
+[New LWP 815]
+[New LWP 816]
+[New LWP 817]
+[New LWP 853]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffa0721ae0 in clock_nanosleep () from /lib64/libc.so.6
+warning: could not convert '$h' from the host encoding (ANSI_X3.4-1968) to UTF-32.
+This normally should not happen, please file a bug report.
+node=0x642bd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x642ba30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x6435e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x6435e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x6439290 cmd=0 cb=0x73b71c arg=(nil)
+node=0x6435cf0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x6439ea0 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x643af50 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x645f030 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x645f060 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x6508500 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x6532470 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x6546670 cmd=0xb cb=0x678d20 arg=0x65326e0
+node=0x65466a0 cmd=0x10 cb=0x679120 arg=0x65326e0
+node=0x659d060 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x642bd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x642ba30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x6435e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x6435e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x6439290 cmd=0 cb=0x73b71c arg=(nil)
+node=0x6435cf0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x6439ea0 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x643af50 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x645f030 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x645f060 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x6508500 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x6532470 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x6546670 cmd=0xb cb=0x678d20 arg=0x65326e0
+node=0x65466a0 cmd=0x10 cb=0x679120 arg=0x65326e0
+node=0x659d060 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x642bd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x642ba30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x6435e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x6435e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x6439290 cmd=0 cb=0x73b71c arg=(nil)
+node=0x6435cf0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x6439ea0 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x643af50 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x645f030 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x645f060 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x6508500 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x6532470 cmd=0x1 cb=0x722310 arg=(nil)
+node=0x6546670 cmd=0xb cb=0x678d20 arg=0x65326e0
+node=0x65466a0 cmd=0x10 cb=0x679120 arg=0x65326e0
+node=0x659d060 cmd=0x4 cb=0x74105c arg=(nil)
+node=0x910e20 cmd=0x1 cb=0x100000001 arg=0x30b00002
+node=0x642bd00 cmd=0xd cb=0x6b7570 arg=(nil)
+node=0x642ba30 cmd=0x7 cb=0x6974e4 arg=(nil)
+node=0x6435e10 cmd=0xa cb=0x74fbcc arg=(nil)
+node=0x6435e40 cmd=0xe cb=0x74fb0c arg=(nil)
+node=0x6439290 cmd=0 cb=0x73b71c arg=(nil)
+node=0x6435cf0 cmd=0xc cb=0x6b8588 arg=(nil)
+node=0x6439ea0 cmd=0x6 cb=0x6cc6f8 arg=(nil)
+node=0x643af50 cmd=0x11 cb=0x6a77cc arg=(nil)
+node=0x645f030 cmd=0xf cb=0x4b01f0 arg=(nil)
+node=0x645f060 cmd=0x2 cb=0x4b03a8 arg=(nil)
+node=0x6508500 cmd=0x3 cb=0x70aba0 arg=(nil)
+node=0x6532470 cmd=0x1 cb=0x722310 arg=(nil)
+[Inferior 1 (process 504) detached]
+--- HALD LOG ---
+2147483648 hal_daemon process plog lib init 
+--- PLOGD LOG ---

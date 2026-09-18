@@ -1,0 +1,583 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 0013FDB6000 start failed: 00000001
+Error: Image at 0013FD6D000 start failed: Not Found
+Error: Image at 0013FCBA000 start failed: Unsupported
+Error: Image at 0013FB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0x13fed0000 MEMATTR=0x13e175018 ACPI 2.0=0x13cb43018 INITRD=0x13cb40f18 MEMRESERVE=0x13cb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x000000013CB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x000000013CB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x000000013CB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x000000013CB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x000000013CB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x000000013CB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x000000013CB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x000000013CB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x000000013CB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x000000013CB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x000000013CB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x13f453b80-0x13f455fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000013c76ffff]
+[    0.000000]   node   0: [mem 0x000000013c770000-0x000000013cb3ffff]
+[    0.000000]   node   0: [mem 0x000000013cb40000-0x000000013fe1ffff]
+[    0.000000]   node   0: [mem 0x000000013fe20000-0x000000013feaffff]
+[    0.000000]   node   0: [mem 0x000000013feb0000-0x000000013febffff]
+[    0.000000]   node   0: [mem 0x000000013fec0000-0x000000013ffdffff]
+[    0.000000]   node   0: [mem 0x000000013ffe0000-0x000000013fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1048576
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000147] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.171690] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.343083] Console: colour dummy device 80x25
+[    0.407618] ACPI: Core revision 20240827
+[    0.496314] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.496648] pid_max: default: 32768 minimum: 301
+[    0.629742] LSM: initializing lsm=lockdown,capability,landlock
+[    0.664826] landlock: Up and running.
+[    0.739795] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.740046] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.641375] rcu: Hierarchical SRCU implementation.
+[    1.646628] rcu: 	Max phase no-delay instances is 1000.
+[    1.663756] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    1.729408] Remapping and enabling EFI services.
+[    1.795425] smp: Bringing up secondary CPUs ...
+[    1.851058] Detected PIPT I-cache on CPU1
+[    1.862257] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    1.911435] smp: Brought up 1 node, 2 CPUs
+[    1.913720] SMP: Total of 2 processors activated.
+[    1.913872] CPU: All CPU(s) started at EL1
+[    1.914414] CPU features: detected: 32-bit EL0 Support
+[    1.914540] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    1.914664] CPU features: detected: Common not Private translations
+[    1.914679] CPU features: detected: CRC32 instructions
+[    1.915082] CPU features: detected: RCpc load-acquire (LDAPR)
+[    1.915172] CPU features: detected: LSE atomic instructions
+[    1.915189] CPU features: detected: Privileged Access Never
+[    1.915199] CPU features: detected: RAS Extension Support
+[    1.915294] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    2.056517] alternatives: applying system-wide alternatives
+[    2.280696] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    2.562161] Memory: 3996224K/4194304K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 193648K reserved, 0K cma-reserved)
+[    2.834971] devtmpfs: initialized
+[    3.227604] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    3.238387] 24304 pages in range for non-PLT usage
+[    3.238519] 515824 pages in range for PLT usage
+[    3.307020] pinctrl core: initialized pinctrl subsystem
+[    3.448516] SMBIOS 3.0.0 present.
+[    3.449450] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    3.449984] DMI: Memory slots populated: 1/1
+[    3.631665] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    3.729553] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    3.732883] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    3.747781] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    3.757304] audit: initializing netlink subsys (disabled)
+[    3.791215] audit: type=2000 audit(1.280:1): state=initialized audit_enabled=0 res=1
+[    3.896267] thermal_sys: Registered thermal governor 'step_wise'
+[    3.926213] cpuidle: using governor ladder
+[    3.959000] cpuidle: using governor menu
+[    3.977783] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    3.996260] ASID allocator initialised with 65536 entries
+[    4.012826] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    4.031773] Serial: AMBA PL011 UART driver
+[    4.205151] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    4.205228] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    4.205259] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    4.205270] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    4.205285] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    4.205295] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    4.205310] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    4.205320] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    4.441428] ACPI: Added _OSI(Module Device)
+[    4.443366] ACPI: Added _OSI(Processor Device)
+[    4.443415] ACPI: Added _OSI(Processor Aggregator Device)
+[    4.647460] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    4.756843] ACPI: Interpreter enabled
+[    4.756936] ACPI: Using GIC for interrupt routing
+[    4.761101] ACPI: MCFG table detected, 1 entries
+[    5.015488] ACPI: CPU0 has been hot-added
+[    5.028629] ACPI: CPU1 has been hot-added
+[    5.214995] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    5.226198] printk: legacy console [ttyAMA0] enabled
+[    5.676079] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    5.677103] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    5.677712] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    5.678177] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    5.679327] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    5.688411] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    5.712387] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    5.714878] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    5.726823] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    5.728498] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    5.736150] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    5.799240] PCI host bridge to bus 0000:00
+[    5.809428] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    5.811997] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    5.813078] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    5.813807] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    5.826769] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    5.845173] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    5.847602] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    5.848196] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    5.848686] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    5.865474] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    5.873122] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    5.874304] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    5.876627] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    5.913992] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    5.914901] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    5.915743] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    5.930671] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    5.931280] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    5.931733] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    5.941312] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    5.943776] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    5.947477] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    6.009948] iommu: Default domain type: Translated
+[    6.010688] iommu: DMA domain TLB invalidation policy: lazy mode
+[    6.081133] efivars: Registered efivars operations
+[    6.155490] clocksource: Switched to clocksource arch_sys_counter
+[    6.191600] VFS: Disk quotas dquot_6.6.0
+[    6.192345] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    6.215364] pnp: PnP ACPI init
+[    6.222478] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    6.225455] pnp: PnP ACPI: found 1 devices
+[    6.378346] NET: Registered PF_INET protocol family
+[    6.390218] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    6.629380] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    6.642922] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    6.644249] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    6.659396] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    6.669804] TCP: Hash tables configured (established 32768 bind 32768)
+[    6.679685] MPTCP token hash table entries: 4096 (order: 5, 98304 bytes, linear)
+[    6.693505] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    6.698513] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    6.711224] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    6.725803] NET: Registered PF_XDP protocol family
+[    6.727088] PCI: CLS 0 bytes, default 64
+[    6.792398] kvm [1]: HYP mode not available
+[    6.809639] Unpacking initramfs...
+[    6.830435] Initialise system trusted keyrings
+[    6.945379] workingset: timestamp_bits=44 max_order=20 bucket_order=0
+[    7.392592] Key type asymmetric registered
+[    7.394027] Asymmetric key parser 'x509' registered
+[    7.395909] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    7.398772] io scheduler mq-deadline registered
+[    7.399347] io scheduler kyber registered
+[    7.407301] io scheduler bfq registered
+[    7.457961] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    7.460323] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    7.477796] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    7.524746] hv_vmbus: registering driver hyperv_keyboard
+[    7.542662] rtc-efi rtc-efi.0: registered as rtc0
+[    7.545417] rtc-efi rtc-efi.0: setting system clock to 2026-09-17T09:42:07 UTC (1789638127)
+[    7.558162] NET: Registered PF_INET6 protocol family
+[    7.604461] Segment Routing with IPv6
+[    7.605415] In-situ OAM (IOAM) with IPv6
+[    7.728340] registered taskstats version 1
+[    7.757772] Loading compiled-in X.509 certificates
+[    8.020406] Freeing initrd memory: 5272K
+[    9.498009] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    9.574613] Demotion targets for Node 0: null
+[    9.578883] Key type .fscrypt registered
+[    9.579282] Key type fscrypt-provisioning registered
+[    9.660337] clk: Disabling unused clocks
+[    9.662512] PM: genpd: Disabling unused power domains
+[    9.842227] Freeing unused kernel memory: 1920K
+[    9.847474] Run /init as init process
+[   10.628780] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[   10.660976] Loading boot drivers...
+ * Loading boot drivers: [   10.904613] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[   11.076986] Invalid ELF header magic: != ELF
+[   11.163992] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[   11.220117] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[   11.303032] Invalid ELF header magic: != ELF
+[   11.340025] Invalid ELF header magic: != ELF
+[   11.374860] Invalid ELF header magic: != ELF
+[   11.412883] Invalid ELF header magic: != ELF
+[   11.611032] Invalid ELF header magic: != ELF
+[   12.172976] Invalid ELF header magic: != ELF
+[   12.298392] e1000: Intel(R) PRO/1000 Network Driver
+[   12.303620] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   12.309888] ACPI: \_SB_.L001: Enabled at IRQ 36
+[   12.311284] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[   14.563419] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   14.566265] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[   15.889133] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: baked netdata_get_lpd_switch->mov w0,#1;ret
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+THP_ENABLED=always madvise [never]
+THP_DEFRAG=always defer defer+madvise madvise [never]
+[   31.620258] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+=== VHAL: fetch toolchain ===
+VHAL_WGET_TC_RC=0
+-rw-r--r-- 1 root root 239206400 Sep 17 09:42 /tmp/musl-native.tar
+VHAL_WGET_SRC_RC=0
+-rw-r--r-- 1 root root 13902 Sep 17 09:42 /tmp/virtual_hal.c
+=== VHAL: extract ===
+[   60.125804] hrtimer: interrupt took 43389712 ns
+VHAL_TAR_RC=0
+-rwxr-xr-x 3 1000 1000 1428240 Nov 22  2021 /tmp/aarch64-linux-musl-native/bin/aarch64-linux-musl-gcc
+=== VHAL: compile ===
+VHAL_GCC_RC=0
+-rwxr-xr-x 1 root root 17056 Sep 17 09:43 /lib/virtual_hal.so
+=== VHAL: done ===
+[   82.762530] sh (425): drop_caches: 3
+MemTotal:        4007848 kB
+MemFree:         3956500 kB
+MemAvailable:    3940740 kB
+Buffers:             720 kB
+SIMBOOT_PREP_DONE
+MFP_PID=488
+[   95.759996] random: crng init done
+POLL 10: N=11
+POLL 20: N=11
+POLL 30: N=11
+--- GDBPATCH @POLL31 (N=22) try=1 ---
+[New LWP 659]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffffb1721ae4 in clock_nanosleep ([Inferior 1 (process 488) detached]
+--- GDBPATCH @POLL32 (N=44) try=2 ---
+0x0000ffffb1721ae0 in clock_nanosleep () from /lib64/libc.so.6
+B4: 5c=0 7c=0 80=0 82=0
+AF: 5c=1 7c=1 80=1 82=1
+[Inferior 1 (process 488) detached]
+POLL 33: passed print_info_status_init (N=124)
+POLL_END N=124 tries=2
+LPD_OWNED fd=43 ino=51249 decport=46053
+LPD_SOCK_READY k=1
+SIMBOOT_LPD_PORT=46053
+SIMBOOT_LPD_PORTS=B3E5
+--- THREAD COUNT PRE-INJECT ---
+196
+--- THREAD NAMES (top30) ---
+195 mfp.afx
+1 pub_client
+--- PRE: THREADS (tid comm wchan) ---
+488 mfp.afx hrtimer_nanosleep
+510 pub_client 0
+511 mfp.afx futex_wait_queue
+515 mfp.afx hrtimer_nanosleep
+516 mfp.afx do_epoll_wait
+517 mfp.afx 0
+518 mfp.afx do_wait_intr_irq
+520 mfp.afx do_epoll_wait
+521 mfp.afx do_wait_intr_irq
+522 mfp.afx do_wait_intr_irq
+523 mfp.afx wait_for_partner
+620 mfp.afx do_select
+621 mfp.afx 0
+622 mfp.afx do_select
+623 mfp.afx futex_wait_queue
+624 mfp.afx futex_wait_queue
+625 mfp.afx futex_wait_queue
+626 mfp.afx 0
+627 mfp.afx do_select
+628 mfp.afx do_select
+629 mfp.afx 0
+630 mfp.afx do_select
+637 mfp.afx 0
+638 mfp.afx do_select
+639 mfp.afx 0
+640 mfp.afx do_select
+641 mfp.afx hrtimer_nanosleep
+642 mfp.afx 0
+643 mfp.afx do_select
+644 mfp.afx inet_csk_accept
+645 mfp.afx 0
+646 mfp.afx 0
+647 mfp.afx do_select
+648 mfp.afx futex_wait_queue
+649 mfp.afx 0
+650 mfp.afx do_select
+652 mfp.afx 0
+653 mfp.afx do_select
+654 mfp.afx do_wait_intr_irq
+655 mfp.afx 0
+656 mfp.afx do_select
+657 mfp.afx hrtimer_nanosleep
+658 mfp.afx 0
+659 mfp.afx do_select
+670 mfp.afx futex_wait_queue
+671 mfp.afx 0
+672 mfp.afx do_select
+673 mfp.afx do_select
+674 mfp.afx 0
+675 mfp.afx do_select
+676 mfp.afx 0
+677 mfp.afx do_select
+678 mfp.afx hrtimer_nanosleep
+680 mfp.afx 0
+681 mfp.afx futex_wait_queue
+684 mfp.afx futex_wait_queue
+685 mfp.afx futex_wait_queue
+686 mfp.afx futex_wait_queue
+687 mfp.afx futex_wait_queue
+688 mfp.afx 0
+689 mfp.afx do_select
+690 mfp.afx futex_wait_queue
+692 mfp.afx futex_wait_queue
+693 mfp.afx hrtimer_nanosleep
+694 mfp.afx 0
+695 mfp.afx do_select
+696 mfp.afx futex_wait_queue
+697 mfp.afx futex_wait_queue
+698 mfp.afx futex_wait_queue
+699 mfp.afx futex_wait_queue
+700 mfp.afx futex_wait_queue
+701 mfp.afx futex_wait_queue
+702 mfp.afx futex_wait_queue
+703 mfp.afx futex_wait_queue
+704 mfp.afx hrtimer_nanosleep
+705 mfp.afx futex_wait_queue
+706 mfp.afx futex_wait_queue
+707 mfp.afx futex_wait_queue
+708 mfp.afx futex_wait_queue
+709 mfp.afx futex_wait_queue
+710 mfp.afx futex_wait_queue
+711 mfp.afx futex_wait_queue
+712 mfp.afx futex_wait_queue
+713 mfp.afx futex_wait_queue
+714 mfp.afx futex_wait_queue
+715 mfp.afx futex_wait_queue
+716 mfp.afx futex_wait_queue
+717 mfp.afx futex_wait_queue
+718 mfp.afx futex_wait_queue
+719 mfp.afx futex_wait_queue
+720 mfp.afx futex_wait_queue
+721 mfp.afx futex_wait_queue
+722 mfp.afx futex_wait_queue
+723 mfp.afx futex_wait_queue
+724 mfp.afx futex_wait_queue
+725 mfp.afx futex_wait_queue
+726 mfp.afx futex_wait_queue
+727 mfp.afx futex_wait_queue
+728 mfp.afx do_select
+729 mfp.afx futex_wait_queue
+730 mfp.afx 0
+731 mfp.afx do_select
+733 mfp.afx futex_wait_queue
+734 mfp.afx futex_wait_queue
+735 mfp.afx futex_wait_queue
+736 mfp.afx futex_wait_queue
+737 mfp.afx do_select
+738 mfp.afx futex_wait_queue
+739 mfp.afx 0
+740 mfp.afx futex_wait_queue
+741 mfp.afx futex_wait_queue
+742 mfp.afx futex_wait_queue
+743 mfp.afx 0
+744 mfp.afx do_select
+745 mfp.afx 0
+746 mfp.afx do_select
+748 mfp.afx futex_wait_queue
+750 mfp.afx 0
+752 mfp.afx 0
+753 mfp.afx hrtimer_nanosleep
+754 mfp.afx hrtimer_nanosleep
+755 mfp.afx hrtimer_nanosleep
+756 mfp.afx hrtimer_nanosleep
+757 mfp.afx futex_wait_queue
+758 mfp.afx futex_wait_queue
+759 mfp.afx 0
+760 mfp.afx do_select
+761 mfp.afx do_msgrcv
+773 mfp.afx futex_wait_queue
+774 mfp.afx futex_wait_queue
+775 mfp.afx futex_wait_queue
+776 mfp.afx futex_wait_queue
+777 mfp.afx futex_wait_queue
+778 mfp.afx futex_wait_queue
+779 mfp.afx futex_wait_queue
+781 mfp.afx futex_wait_queue
+782 mfp.afx futex_wait_queue
+783 mfp.afx futex_wait_queue
+784 mfp.afx futex_wait_queue
+785 mfp.afx futex_wait_queue
+786 mfp.afx futex_wait_queue
+787 mfp.afx futex_wait_queue
+789 mfp.afx futex_wait_queue
+790 mfp.afx futex_wait_queue
+791 mfp.afx futex_wait_queue
+792 mfp.afx futex_wait_queue
+793 mfp.afx futex_wait_queue
+794 mfp.afx futex_wait_queue
+795 mfp.afx futex_wait_queue
+796 mfp.afx futex_wait_queue
+797 mfp.afx futex_wait_queue
+798 mfp.afx futex_wait_queue
+799 mfp.afx futex_wait_queue
+800 mfp.afx futex_wait_queue
+801 mfp.afx futex_wait_queue
+802 mfp.afx futex_wait_queue
+803 mfp.afx futex_wait_queue
+804 mfp.afx futex_wait_queue
+805 mfp.afx futex_wait_queue
+807 mfp.afx futex_wait_queue
+808 mfp.afx futex_wait_queue
+809 mfp.afx futex_wait_queue
+810 mfp.afx futex_wait_queue
+811 mfp.afx futex_wait_queue
+812 mfp.afx futex_wait_queue
+813 mfp.afx futex_wait_queue
+814 mfp.afx futex_wait_queue
+815 mfp.afx futex_wait_queue
+816 mfp.afx futex_wait_queue
+817 mfp.afx futex_wait_queue
+818 mfp.afx futex_wait_queue
+820 mfp.afx futex_wait_queue
+821 mfp.afx futex_wait_queue
+822 mfp.afx futex_wait_queue
+823 mfp.afx futex_wait_queue
+824 mfp.afx 0
+827 mfp.afx futex_wait_queue
+828 mfp.afx 0
+829 mfp.afx do_select
+832 mfp.afx futex_wait_queue
+833 mfp.afx futex_wait_queue
+834 mfp.afx hrtimer_nanosleep
+835 mfp.afx futex_wait_queue
+836 mfp.afx futex_wait_queue
+837 mfp.afx futex_wait_queue
+838 mfp.afx futex_wait_queue
+839 mfp.afx 0
+840 mfp.afx do_select
+841 mfp.afx 0
+842 mfp.afx do_select
+843 mfp.afx futex_wait_queue
+844 mfp.afx futex_wait_queue
+845 mfp.afx futex_wait_queue
+846 mfp.afx 0
+847 mfp.afx do_select
+863 mfp.afx do_select
+--- PRE: WCHAN HIST ---
+    108 futex_wait_queue
+     39 0
+     30 do_select
+      8 hrtimer_nanosleep
+      4 do_wait_intr_irq
+      2 do_mprotect_pkey
+      2 do_epoll_wait
+      1 wait_for_partner
+      1 inet_csk_accept
+      1 do_msgrcv
+--- SOCKET FDS ---
+lrwx------ 1 root root 64 Sep 17 09:45 24 -> socket:[51243]
+lrwx------ 1 root root 64 Sep 17 09:45 25 -> socket:[47060]
+lrwx------ 1 root root 64 Sep 17 09:45 26 -> socket:[47061]
+lrwx------ 1 root root 64 Sep 17 09:45 27 -> socket:[49179]
+lrwx------ 1 root root 64 Sep 17 09:45 28 -> socket:[49180]
+lrwx------ 1 root root 64 Sep 17 09:45 32 -> socket:[49299]
+lrwx------ 1 root root 64 Sep 17 09:45 33 -> socket:[49300]
+lrwx------ 1 root root 64 Sep 17 09:45 34 -> socket:[49031]
+lrwx------ 1 root root 64 Sep 17 09:45 35 -> socket:[49032]
+lrwx------ 1 root root 64 Sep 17 09:45 37 -> socket:[51244]
+lrwx------ 1 root root 64 Sep 17 09:45 38 -> socket:[55554]
+lrwx------ 1 root root 64 Sep 17 09:45 39 -> socket:[51245]
+lrwx------ 1 root root 64 Sep 17 09:45 40 -> socket:[51246]
+lrwx------ 1 root root 64 Sep 17 09:45 41 -> socket:[51247]
+lrwx------ 1 root root 64 Sep 17 09:45 42 -> socket:[51248]
+lrwx------ 1 root root 64 Sep 17 09:45 43 -> socket:[51249]
+lrwx------ 1 root root 64 Sep 17 09:45 44 -> socket:[51250]
+lrwx------ 1 root root 64 Sep 17 09:45 45 -> socket:[51251]
+lrwx------ 1 root root 64 Sep 17 09:45 47 -> socket:[51337]
+lrwx------ 1 root root 64 Sep 17 09:45 48 -> socket:[56308]
+lrwx------ 1 root root 64 Sep 17 09:45 49 -> socket:[51338]
+lrwx------ 1 root root 64 Sep 17 09:45 50 -> socket:[51339]
+lrwx------ 1 root root 64 Sep 17 09:45 51 -> socket:[51340]
+lrwx------ 1 root root 64 Sep 17 09:45 52 -> socket:[51341]
+lrwx------ 1 root root 64 Sep 17 09:45 53 -> socket:[51342]
+lrwx------ 1 root root 64 Sep 17 09:45 54 -> socket:[54664]
+lrwx------ 1 root root 64 Sep 17 09:45 55 -> socket:[54665]
+lrwx------ 1 root root 64 Sep 17 09:45 57 -> socket:[54704]
+lrwx------ 1 root root 64 Sep 17 09:45 58 -> socket:[54705]
+lrwx------ 1 root root 64 Sep 17 09:45 59 -> socket:[54706]
+lrwx------ 1 root root 64 Sep 17 09:45 60 -> socket:[54707]
+lrwx------ 1 root root 64 Sep 17 09:45 62 -> socket:[55555]
+lrwx------ 1 root root 64 Sep 17 09:45 66 -> socket:[55928]
+lrwx------ 1 root root 64 Sep 17 09:45 67 -> socket:[55929]
+lrwx------ 1 root root 64 Sep 17 09:45 69 -> socket:[56309]
+lrwx------ 1 root root 64 Sep 17 09:45 70 -> socket:[56310]
+lrwx------ 1 root root 64 Sep 17 09:45 71 -> socket:[56311]
+lrwx------ 1 root root 64 Sep 17 09:45 72 -> socket:[60313]
+lrwx------ 1 root root 64 Sep 17 09:45 73 -> socket:[57612]
+lrwx------ 1 root root 64 Sep 17 09:45 74 -> socket:[57613]
+lrwx------ 1 root root 64 Sep 17 09:52 75 -> socket:[60227]
+lrwx------ 1 root root 64 Sep 17 09:52 76 -> socket:[60228]
+lrwx------ 1 root root 64 Sep 17 09:52 77 -> socket:[61111]
+lrwx------ 1 root root 64 Sep 17 09:52 78 -> socket:[61112]
+lrwx------ 1 root root 64 Sep 17 09:52 80 -> socket:[61114]
+lrwx------ 1 root root 64 Sep 17 09:52 81 -> socket:[61115]
+lrwx------ 1 root root 64 Sep 17 09:52 82 -> socket:[60314]
+TRACE1 GDB STARTED pid=1032
+READY FOR INJECT

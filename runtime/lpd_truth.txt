@@ -1,0 +1,339 @@
+== 结论性符号 ==
+  0x683510   -> lpd_list_take
+  0x68365c   -> lpd_dispatch_thread
+  0x66ac5c   -> net_socket_create_tcpserver
+  0x66c12c   -> net_socket_accept_connection
+  0x5fa168   -> pi_list_empty
+  0x5f9f78   -> pi_list_del_entry
+  0x682858   -> init_ptask
+  0x6838d4   -> sub_6838d4
+  0x6838f4   -> sub_6838f4
+  0x683e08   -> sub_683e08
+  0x683e0c   -> lpd_netproxy_handler
+  0x74c604   -> server_thread
+  0x74c5e4   -> error_handing
+  0x74c06c   -> message_queue_pop
+
+=== lpd_listen_create(疑似) @ 0x683510 (size=0x150) ===
+  0x683510: stp       x29, x30, [sp, #-0x40]!
+  0x683514: mov       x29, sp
+  0x683518: str       x0, [sp, #0x18]
+  0x68351c: mov       w0, #-1
+  0x683520: str       w0, [sp, #0x2c]
+  0x683524: adrp      x0, #0xc92000
+  0x683528: add       x0, x0, #0x730
+  0x68352c: ldr       x0, [x0]
+  0x683530: cmp       x0, #0
+  0x683534: b.eq      #0x683570
+  0x683538: adrp      x0, #0xc92000
+  0x68353c: add       x0, x0, #0x730
+  0x683540: ldr       x0, [x0]
+  0x683544: ldr       x0, [x0, #0x70]
+  0x683548: cmp       x0, #0
+  0x68354c: b.eq      #0x683570
+  0x683550: adrp      x0, #0xc92000
+  0x683554: add       x0, x0, #0x730
+  0x683558: ldr       x0, [x0]
+  0x68355c: ldr       x2, [x0, #0x70]
+  0x683560: adrp      x0, #0x80d000
+  0x683564: add       x1, x0, #0x850
+  0x683568: mov       x0, x2
+  0x68356c: bl        #0x44b510  ; pi_mutex_lock_ent (PLT)
+  0x683570: adrp      x0, #0xc92000
+  0x683574: add       x0, x0, #0x730
+  0x683578: ldr       x0, [x0]
+  0x68357c: add       x0, x0, #0x60
+  0x683580: bl        #0x5fa168  ; pi_list_empty
+  0x683584: cmp       w0, #0
+  0x683588: b.ne      #0x683604
+  0x68358c: adrp      x0, #0xc92000
+  0x683590: add       x0, x0, #0x730
+  0x683594: ldr       x0, [x0]
+  0x683598: add       x0, x0, #0x60
+  0x68359c: bl        #0x5fa168  ; pi_list_empty
+  0x6835a0: cmp       w0, #0
+  0x6835a4: b.ne      #0x6835c8
+  0x6835a8: adrp      x0, #0xc92000
+  0x6835ac: add       x0, x0, #0x730
+  0x6835b0: ldr       x0, [x0]
+  0x6835b4: ldr       x0, [x0, #0x60]
+  0x6835b8: str       x0, [sp, #0x30]
+  0x6835bc: ldr       x0, [sp, #0x30]
+  0x6835c0: sub       x0, x0, #0x28
+  0x6835c4: b         #0x6835cc  ; sub_6835cc
+  0x6835c8: mov       x0, #0
+  0x6835cc: str       x0, [sp, #0x38]
+  0x6835d0: ldr       x0, [sp, #0x38]
+  0x6835d4: cmp       x0, #0
+  0x6835d8: b.eq      #0x683604
+  0x6835dc: mov       x2, #0x38
+  0x6835e0: ldr       x1, [sp, #0x38]
+  0x6835e4: ldr       x0, [sp, #0x18]
+  0x6835e8: bl        #0x44ab40  ; memcpy (PLT)
+  0x6835ec: ldr       x0, [sp, #0x38]
+  0x6835f0: add       x0, x0, #0x28
+  0x6835f4: bl        #0x5f9f78  ; pi_list_del_entry
+  0x6835f8: ldr       x0, [sp, #0x38]
+  0x6835fc: bl        #0x44be50  ; free (PLT)
+  0x683600: str       wzr, [sp, #0x2c]
+  0x683604: adrp      x0, #0xc92000
+  0x683608: add       x0, x0, #0x730
+  0x68360c: ldr       x0, [x0]
+  0x683610: cmp       x0, #0
+  0x683614: b.eq      #0x683650
+  0x683618: adrp      x0, #0xc92000
+  0x68361c: add       x0, x0, #0x730
+  0x683620: ldr       x0, [x0]
+  0x683624: ldr       x0, [x0, #0x70]
+  0x683628: cmp       x0, #0
+  0x68362c: b.eq      #0x683650
+  0x683630: adrp      x0, #0xc92000
+  0x683634: add       x0, x0, #0x730
+  0x683638: ldr       x0, [x0]
+  0x68363c: ldr       x2, [x0, #0x70]
+  0x683640: adrp      x0, #0x80d000
+  0x683644: add       x1, x0, #0x850
+  0x683648: mov       x0, x2
+  0x68364c: bl        #0x44b820  ; pi_mutex_unlock_ent (PLT)
+  0x683650: ldr       w0, [sp, #0x2c]
+  0x683654: ldp       x29, x30, [sp], #0x40
+  0x683658: ret       
+  0x68365c: sub       sp, sp, #0x80
+
+=== net_socket_create_tcpserver 头部 @ 0x66ac5c (size=0x120) ===
+  0x66ac5c: sub       sp, sp, #0x90
+  0x66ac60: stp       x29, x30, [sp, #0x70]
+  0x66ac64: add       x29, sp, #0x70
+  0x66ac68: str       x19, [sp, #0x80]
+  0x66ac6c: str       x0, [sp, #0x18]
+  0x66ac70: strh      w1, [sp, #0x16]
+  0x66ac74: str       w2, [sp, #0x10]
+  0x66ac78: str       w3, [sp, #0xc]
+  0x66ac7c: str       w4, [sp, #8]
+  0x66ac80: str       x5, [sp]
+  0x66ac84: adrp      x0, #0x8a5000
+  0x66ac88: add       x0, x0, #0xcb0
+  0x66ac8c: ldr       x1, [x0]
+  0x66ac90: str       x1, [sp, #0x68]
+  0x66ac94: mov       x1, #0
+  0x66ac98: mov       w0, #-1
+  0x66ac9c: str       w0, [sp, #0x34]
+  0x66aca0: ldr       w0, [sp, #0xc]
+  0x66aca4: cmp       w0, #1
+  0x66aca8: b.ne      #0x66acb4
+  0x66acac: mov       w0, #0xa
+  0x66acb0: b         #0x66acb8  ; sub_66acb8
+  0x66acb4: mov       w0, #2
+  0x66acb8: ldr       x3, [sp]
+  0x66acbc: mov       w2, #0
+  0x66acc0: mov       w1, #1
+  0x66acc4: bl        #0x669a60  ; net_socket_create_custom
+  0x66acc8: str       w0, [sp, #0x34]
+  0x66accc: ldr       w0, [sp, #0x34]
+  0x66acd0: cmn       w0, #1
+  0x66acd4: b.ne      #0x66ad58
+  0x66acd8: adrp      x0, #0x8b5000
+  0x66acdc: add       x0, x0, #0x7a0
+  0x66ace0: ldr       w0, [x0]
+  0x66ace4: cmp       w0, #2
+  0x66ace8: b.le      #0x66ad20
+  0x66acec: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66acf0: ldr       w19, [x0]
+  0x66acf4: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66acf8: ldr       w0, [x0]
+  0x66acfc: bl        #0x449fd0  ; strerror (PLT)
+  0x66ad00: mov       x4, x0
+  0x66ad04: mov       w3, w19
+  0x66ad08: ldr       x2, [sp]
+  0x66ad0c: adrp      x0, #0x802000
+  0x66ad10: add       x1, x0, #0x970
+  0x66ad14: adrp      x0, #0x800000
+  0x66ad18: add       x0, x0, #0xd08
+  0x66ad1c: bl        #0x44ac00  ; printf (PLT)
+  0x66ad20: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66ad24: ldr       w19, [x0]
+  0x66ad28: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66ad2c: ldr       w0, [x0]
+  0x66ad30: bl        #0x449fd0  ; strerror (PLT)
+  0x66ad34: mov       x4, x0
+  0x66ad38: mov       w3, w19
+  0x66ad3c: ldr       x2, [sp]
+  0x66ad40: adrp      x0, #0x800000
+  0x66ad44: add       x1, x0, #0xd48
+  0x66ad48: adrp      x0, #0x802000
+  0x66ad4c: add       x0, x0, #0x990
+  0x66ad50: bl        #0x44ad40  ; log_warn (PLT)
+  0x66ad54: b         #0x66b4e8  ; sub_66b4e8
+  0x66ad58: mov       w2, #1
+  0x66ad5c: mov       w1, #2
+  0x66ad60: ldr       w0, [sp, #0x34]
+  0x66ad64: bl        #0x44bb90  ; fcntl (PLT)
+  0x66ad68: cmp       w0, #0
+  0x66ad6c: b.ge      #0x66ae00
+  0x66ad70: adrp      x0, #0x8b5000
+  0x66ad74: add       x0, x0, #0x7a0
+  0x66ad78: ldr       w0, [x0]
+
+=== net_socket_create_tcpserver listen 段 @ 0x66b1f0 (size=0xc0) ===
+  0x66b1f0: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b1f4: ldr       w19, [x0]
+  0x66b1f8: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b1fc: ldr       w0, [x0]
+  0x66b200: bl        #0x449fd0  ; strerror (PLT)
+  0x66b204: mov       x4, x0
+  0x66b208: mov       w3, w19
+  0x66b20c: ldr       x2, [sp]
+  0x66b210: adrp      x0, #0x802000
+  0x66b214: add       x1, x0, #0x970
+  0x66b218: adrp      x0, #0x801000
+  0x66b21c: add       x0, x0, #0x2a0
+  0x66b220: bl        #0x44ac00  ; printf (PLT)
+  0x66b224: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b228: ldr       w19, [x0]
+  0x66b22c: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b230: ldr       w0, [x0]
+  0x66b234: bl        #0x449fd0  ; strerror (PLT)
+  0x66b238: mov       x4, x0
+  0x66b23c: mov       w3, w19
+  0x66b240: ldr       x2, [sp]
+  0x66b244: adrp      x0, #0x801000
+  0x66b248: add       x1, x0, #0x310
+  0x66b24c: adrp      x0, #0x802000
+  0x66b250: add       x0, x0, #0x990
+  0x66b254: bl        #0x44ad40  ; log_warn (PLT)
+  0x66b258: ldr       w0, [sp, #0x34]
+  0x66b25c: bl        #0x44b350  ; close (PLT)
+  0x66b260: mov       w0, #-1
+  0x66b264: str       w0, [sp, #0x34]
+  0x66b268: b         #0x66b4e8  ; sub_66b4e8
+  0x66b26c: ldr       w1, [sp, #8]
+  0x66b270: ldr       w0, [sp, #0x34]
+  0x66b274: bl        #0x44b160  ; listen (PLT)
+  0x66b278: cmp       w0, #0
+  0x66b27c: b.ge      #0x66b310
+  0x66b280: adrp      x0, #0x8b5000
+  0x66b284: add       x0, x0, #0x7a0
+  0x66b288: ldr       w0, [x0]
+  0x66b28c: cmp       w0, #2
+  0x66b290: b.le      #0x66b2c8
+  0x66b294: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b298: ldr       w19, [x0]
+  0x66b29c: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66b2a0: ldr       w0, [x0]
+  0x66b2a4: bl        #0x449fd0  ; strerror (PLT)
+  0x66b2a8: mov       x4, x0
+  0x66b2ac: mov       w3, w19
+
+=== net_socket_accept_connection 头部 @ 0x66c12c (size=0x1c0) ===
+  0x66c12c: sub       sp, sp, #0x90
+  0x66c130: stp       x29, x30, [sp, #0x70]
+  0x66c134: add       x29, sp, #0x70
+  0x66c138: str       x19, [sp, #0x80]
+  0x66c13c: str       w0, [sp, #0xc]
+  0x66c140: str       w1, [sp, #8]
+  0x66c144: str       x2, [sp]
+  0x66c148: adrp      x0, #0x8a5000
+  0x66c14c: add       x0, x0, #0xcb0
+  0x66c150: ldr       x1, [x0]
+  0x66c154: str       x1, [sp, #0x68]
+  0x66c158: mov       x1, #0
+  0x66c15c: mov       w0, #-1
+  0x66c160: str       w0, [sp, #0x24]
+  0x66c164: ldr       w0, [sp, #0xc]
+  0x66c168: cmn       w0, #1
+  0x66c16c: b.ne      #0x66c1c4
+  0x66c170: adrp      x0, #0x8b5000
+  0x66c174: add       x0, x0, #0x7a0
+  0x66c178: ldr       w0, [x0]
+  0x66c17c: cmp       w0, #2
+  0x66c180: b.le      #0x66c1a0
+  0x66c184: mov       x3, #0
+  0x66c188: ldr       x2, [sp]
+  0x66c18c: adrp      x0, #0x802000
+  0x66c190: add       x1, x0, #0xaf0
+  0x66c194: adrp      x0, #0x802000
+  0x66c198: add       x0, x0, #0x178
+  0x66c19c: bl        #0x44ac00  ; printf (PLT)
+  0x66c1a0: mov       x3, #0
+  0x66c1a4: ldr       x2, [sp]
+  0x66c1a8: adrp      x0, #0x802000
+  0x66c1ac: add       x1, x0, #0x1d0
+  0x66c1b0: adrp      x0, #0x802000
+  0x66c1b4: add       x0, x0, #0xb10
+  0x66c1b8: bl        #0x44ad40  ; log_warn (PLT)
+  0x66c1bc: mov       x0, #0
+  0x66c1c0: b         #0x66cc24  ; sub_66cc24
+  0x66c1c4: mov       x1, #0x90
+  0x66c1c8: mov       x0, #1
+  0x66c1cc: bl        #0x44af60  ; calloc (PLT)
+  0x66c1d0: str       x0, [sp, #0x30]
+  0x66c1d4: ldr       x0, [sp, #0x30]
+  0x66c1d8: cmp       x0, #0
+  0x66c1dc: b.ne      #0x66c234
+  0x66c1e0: adrp      x0, #0x8b5000
+  0x66c1e4: add       x0, x0, #0x7a0
+  0x66c1e8: ldr       w0, [x0]
+  0x66c1ec: cmp       w0, #2
+  0x66c1f0: b.le      #0x66c210
+  0x66c1f4: mov       x3, #0
+  0x66c1f8: ldr       x2, [sp]
+  0x66c1fc: adrp      x0, #0x802000
+  0x66c200: add       x1, x0, #0xaf0
+  0x66c204: adrp      x0, #0x802000
+  0x66c208: add       x0, x0, #0x218
+  0x66c20c: bl        #0x44ac00  ; printf (PLT)
+  0x66c210: mov       x3, #0
+  0x66c214: ldr       x2, [sp]
+  0x66c218: adrp      x0, #0x802000
+  0x66c21c: add       x1, x0, #0x258
+  0x66c220: adrp      x0, #0x802000
+  0x66c224: add       x0, x0, #0xb10
+  0x66c228: bl        #0x44ad40  ; log_warn (PLT)
+  0x66c22c: mov       x0, #0
+  0x66c230: b         #0x66cc24  ; sub_66cc24
+  0x66c234: ldr       w0, [sp, #8]
+  0x66c238: cmp       w0, #1
+  0x66c23c: b.ne      #0x66c3b4
+  0x66c240: mov       w0, #0x1c
+  0x66c244: str       w0, [sp, #0x20]
+  0x66c248: ldr       w0, [sp, #0x20]
+  0x66c24c: mov       w1, w0
+  0x66c250: add       x0, sp, #0x48
+  0x66c254: mov       x2, x1
+  0x66c258: mov       w1, #0
+  0x66c25c: bl        #0x44a6c0  ; memset (PLT)
+  0x66c260: add       x0, sp, #0x48
+  0x66c264: mov       x1, x0
+  0x66c268: add       x0, sp, #0x20
+  0x66c26c: mov       x2, x0
+  0x66c270: ldr       w0, [sp, #0xc]
+  0x66c274: bl        #0x449f10  ; accept (PLT)
+  0x66c278: str       w0, [sp, #0x24]
+  0x66c27c: ldr       w0, [sp, #0x24]
+  0x66c280: cmn       w0, #1
+  0x66c284: b.ne      #0x66c308
+  0x66c288: adrp      x0, #0x8b5000
+  0x66c28c: add       x0, x0, #0x7a0
+  0x66c290: ldr       w0, [x0]
+  0x66c294: cmp       w0, #2
+  0x66c298: b.le      #0x66c2d0
+  0x66c29c: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66c2a0: ldr       w19, [x0]
+  0x66c2a4: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66c2a8: ldr       w0, [x0]
+  0x66c2ac: bl        #0x449fd0  ; strerror (PLT)
+  0x66c2b0: mov       x4, x0
+  0x66c2b4: mov       w3, w19
+  0x66c2b8: ldr       x2, [sp]
+  0x66c2bc: adrp      x0, #0x802000
+  0x66c2c0: add       x1, x0, #0xaf0
+  0x66c2c4: adrp      x0, #0x800000
+  0x66c2c8: add       x0, x0, #0xd08
+  0x66c2cc: bl        #0x44ac00  ; printf (PLT)
+  0x66c2d0: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66c2d4: ldr       w19, [x0]
+  0x66c2d8: bl        #0x44aaf0  ; __errno_location (PLT)
+  0x66c2dc: ldr       w0, [x0]
+  0x66c2e0: bl        #0x449fd0  ; strerror (PLT)
+  0x66c2e4: mov       x4, x0
+  0x66c2e8: mov       w3, w19

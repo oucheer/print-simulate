@@ -1,0 +1,44 @@
+== 1) bl 0x4e84fc (get_api_array) 调用点 ==
+
+== 2) getter 函数 0x4e84fc 反汇编 ==
+  0x4e84fc: stp      x29, x30, [sp, #-0x20]!
+  0x4e8500: mov      x29, sp
+  0x4e8504: str      x0, [sp, #0x18]
+  0x4e8508: ldr      x0, [sp, #0x18]
+  0x4e850c: cmp      x0, #0
+  0x4e8510: b.ne     #0x4e8540
+  0x4e8514: bl       #0x493e30
+  0x4e8518: cmp      w0, #1
+  0x4e851c: b.le     #0x4e8538
+  0x4e8520: mov      w2, #0x814
+  0x4e8524: adrp     x0, #0x7a9000
+  0x4e8528: add      x1, x0, #0x938
+  0x4e852c: adrp     x0, #0x7ae000
+  0x4e8530: add      x0, x0, #0xf08
+  0x4e8534: bl       #0x44bda0
+  0x4e8538: mov      w0, #-1
+  0x4e853c: b        #0x4e8554
+  0x4e8540: ldr      x0, [sp, #0x18]
+  0x4e8544: adrp     x1, #0x8b0000
+  0x4e8548: add      x1, x1, #0x6f0
+  0x4e854c: str      x1, [x0]
+  0x4e8550: mov      w0, #0
+  0x4e8554: ldp      x29, x30, [sp], #0x20
+  0x4e8558: ret      
+  0x4e855c: sub      sp, sp, #0x10
+  0x4e8560: str      x0, [sp, #8]
+  0x4e8564: ldr      x0, [sp, #8]
+  0x4e8568: cmp      x0, #0
+  0x4e856c: b.ne     #0x4e8578
+  0x4e8570: mov      w0, #-1
+  0x4e8574: b        #0x4e85b8
+  0x4e8578: ldr      x0, [sp, #8]
+  0x4e857c: ldr      w0, [x0]
+  0x4e8580: cmp      w0, #0
+  0x4e8584: b.ne     #0x4e8598
+  0x4e8588: ldr      x0, [sp, #8]
+
+== 3) 全段 8B 指针指向 0x8b06f0 ==
+  .debug_info @ 0x129073 -> 0x8b06f0
+  .symtab @ 0x19c70 -> 0x8b06f0
+  共 2 处

@@ -1,0 +1,52 @@
+{
+	"gpio": [
+		{
+			"device_name": "engine_busy",
+			"device_id": 1,
+			"direction": "in",
+			"gpio": 35 
+		},
+		{
+			"device_name": "control_busy",
+			"device_id": 2,
+			"direction": "out",
+			"gpio": 34
+		},
+		{
+			"device_name": "km_scan_ready",
+			"device_id": 128,
+			"direction": "in",
+			"gpio": 155
+		},
+		{
+			"device_name": "km_scan_soff_oe0",
+			"device_id": 129,
+			"direction": "out",
+			"gpio": 119
+		},
+		{
+			"device_name": "km_scan_wake_up",
+			"device_id": 130,
+			"direction": "in",
+			"gpio": 117
+		},
+        {
+			"device_name": "km_power_good",
+			"device_id": 134,
+			"direction": "in",
+			"gpio": 118
+		},
+        {
+			"device_name": "km_ac_off_mon",
+			"device_id": 135,
+			"direction": "in",
+			"gpio": 138
+		},
+        {
+			"device_name": "km_ac_off_mon_ir",
+			"device_id": 136,
+			"direction": "out",
+			"gpio": 115
+		}
+	]
+}

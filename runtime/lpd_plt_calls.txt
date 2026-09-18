@@ -1,0 +1,309 @@
+== PLT 目标（bind/listen/socket 等）==
+  plt 0x449f10 -> accept
+  plt 0x449f40 -> setsockopt
+  plt 0x44a090 -> connect
+  plt 0x44a200 -> getsockopt
+  plt 0x44a470 -> bind
+  plt 0x44a740 -> epoll_create
+  plt 0x44a9e0 -> poll
+  plt 0x44aa70 -> socket
+  plt 0x44acd0 -> epoll_wait
+  plt 0x44b160 -> listen
+  plt 0x44b3f0 -> epoll_ctl
+  plt 0x44b600 -> socketpair
+  plt 0x44b770 -> getsockname
+  plt 0x44bb30 -> select
+  plt 0x44c130 -> recv
+
+== bind/listen/socket 调用点 ==
+  0x44d974  bl epoll_create
+  0x44d9f0  bl epoll_ctl
+  0x44da3c  bl epoll_wait
+  0x44dbe0  bl epoll_create
+  0x44dc5c  bl epoll_ctl
+  0x44dcfc  bl epoll_wait
+  0x5e9b88  bl select
+  0x669aa8  bl socket
+  0x669b54  bl setsockopt
+  0x669ec4  bl setsockopt
+  0x669f78  bl setsockopt
+  0x66a020  bl setsockopt
+  0x66a0f0  bl bind
+  0x66a1ac  bl setsockopt
+  0x66a270  bl bind
+  0x66a76c  bl setsockopt
+  0x66a984  bl setsockopt
+  0x66aa3c  bl connect
+  0x66aad0  bl getsockopt
+  0x66aed4  bl setsockopt
+  0x66af9c  bl setsockopt
+  0x66b0c4  bl bind
+  0x66b1d0  bl bind
+  0x66b274  bl listen
+  0x66b334  bl getsockopt
+  0x66b3f8  bl setsockopt
+  0x66b420  bl getsockopt
+  0x66b4e4  bl setsockopt
+  0x66ba44  bl setsockopt
+  0x66ba90  bl setsockopt
+  0x66bca0  bl setsockopt
+  0x66bce4  bl setsockopt
+  0x66c020  bl select
+  0x66c0f4  bl recv
+  0x66c274  bl accept
+  0x66c374  bl getsockname
+  0x66c3e8  bl accept
+  0x66c4e8  bl getsockname
+  0x66c6a0  bl setsockopt
+  0x66c764  bl setsockopt
+  0x66c824  bl getsockopt
+  0x66c9a4  bl setsockopt
+  0x66c9cc  bl getsockopt
+  0x66cb4c  bl setsockopt
+  0x6be990  bl poll
+  0x6bebd8  bl poll
+  0x6c1054  bl select
+  0x706330  bl epoll_create
+  0x7063b8  bl epoll_ctl
+  0x70642c  bl epoll_wait
+  0x707b44  bl select
+  0x707d7c  bl select
+  0x707ff0  bl socketpair
+  0x708250  bl socketpair
+  0x74c30c  bl getsockopt
+  0x74c63c  bl socket
+  0x74c6a8  bl bind
+  0x74c6d4  bl listen
+  0x74c708  bl accept
+  0x762e60  bl socket
+  0x762ec4  bl connect
+  0x763614  bl epoll_wait
+  0x7636c0  bl epoll_ctl
+  0x76377c  bl epoll_ctl
+
+== 每个调用点上下文（前 12 条指令）==
+
+--- 0x669aa8 bl socket ---
+  0x669a78: str      w2, [sp, #0x14]
+  0x669a7c: str      x3, [sp, #8]
+  0x669a80: adrp     x0, #0x8a5000
+  0x669a84: add      x0, x0, #0xcb0
+  0x669a88: ldr      x1, [x0]
+  0x669a8c: str      x1, [sp, #0x28]
+  0x669a90: mov      x1, #0
+  0x669a94: mov      w0, #1
+  0x669a98: str      w0, [sp, #0x20]
+  0x669a9c: ldr      w2, [sp, #0x14]
+  0x669aa0: ldr      w1, [sp, #0x18]
+  0x669aa4: ldr      w0, [sp, #0x1c]
+  0x669aa8: bl       #0x44aa70
+
+--- 0x66a0f0 bl bind ---
+  0x66a0c0: ldp      x0, x1, [x0]
+  0x66a0c4: stp      x0, x1, [sp, #0x48]
+  0x66a0c8: ldrh     w0, [sp, #0x1e]
+  0x66a0cc: bl       #0x44a420
+  0x66a0d0: and      w0, w0, #0xffff
+  0x66a0d4: strh     w0, [sp, #0x42]
+  0x66a0d8: mov      w0, #0xa
+  0x66a0dc: strh     w0, [sp, #0x40]
+  0x66a0e0: add      x0, sp, #0x40
+  0x66a0e4: mov      w2, #0x1c
+  0x66a0e8: mov      x1, x0
+  0x66a0ec: ldr      w0, [sp, #0x2c]
+  0x66a0f0: bl       #0x44a470
+
+--- 0x66a270 bl bind ---
+  0x66a240: bl       #0x44a6c0
+  0x66a244: str      wzr, [sp, #0x34]
+  0x66a248: ldrh     w0, [sp, #0x1e]
+  0x66a24c: bl       #0x44a420
+  0x66a250: and      w0, w0, #0xffff
+  0x66a254: strh     w0, [sp, #0x32]
+  0x66a258: mov      w0, #2
+  0x66a25c: strh     w0, [sp, #0x30]
+  0x66a260: add      x0, sp, #0x30
+  0x66a264: mov      w2, #0x10
+  0x66a268: mov      x1, x0
+  0x66a26c: ldr      w0, [sp, #0x2c]
+  0x66a270: bl       #0x44a470
+
+--- 0x66aa3c bl connect ---
+  0x66aa0c: ldr      w0, [sp, #0x30]
+  0x66aa10: bl       #0x44b350
+  0x66aa14: mov      w0, #-1
+  0x66aa18: str      w0, [sp, #0x30]
+  0x66aa1c: b        #0x66ab64
+  0x66aa20: ldr      x0, [sp, #0x50]
+  0x66aa24: ldr      x0, [x0, #0x18]
+  0x66aa28: mov      x1, x0
+  0x66aa2c: ldr      x0, [sp, #0x50]
+  0x66aa30: ldr      w0, [x0, #0x10]
+  0x66aa34: mov      w2, w0
+  0x66aa38: ldr      w0, [sp, #0x38]
+  0x66aa3c: bl       #0x44a090
+
+--- 0x66b0c4 bl bind ---
+  0x66b094: ldr      x1, [sp, #0x18]
+  0x66b098: mov      w0, #0xa
+  0x66b09c: bl       #0x44b0f0
+  0x66b0a0: b        #0x66b0b4
+  0x66b0a4: adrp     x0, #0x8a5000
+  0x66b0a8: add      x0, x0, #0xca0
+  0x66b0ac: ldp      x0, x1, [x0]
+  0x66b0b0: stp      x0, x1, [sp, #0x50]
+  0x66b0b4: add      x0, sp, #0x48
+  0x66b0b8: mov      w2, #0x1c
+  0x66b0bc: mov      x1, x0
+  0x66b0c0: ldr      w0, [sp, #0x34]
+  0x66b0c4: bl       #0x44a470
+
+--- 0x66b1d0 bl bind ---
+  0x66b1a0: bl       #0x44b4d0
+  0x66b1a4: cmp      w0, #0
+  0x66b1a8: b.ne     #0x66b1b4
+  0x66b1ac: str      wzr, [sp, #0x3c]
+  0x66b1b0: b        #0x66b1c0
+  0x66b1b4: ldr      x0, [sp, #0x18]
+  0x66b1b8: bl       #0x44b0b0
+  0x66b1bc: str      w0, [sp, #0x3c]
+  0x66b1c0: add      x0, sp, #0x38
+  0x66b1c4: mov      w2, #0x10
+  0x66b1c8: mov      x1, x0
+  0x66b1cc: ldr      w0, [sp, #0x34]
+  0x66b1d0: bl       #0x44a470
+
+--- 0x66b274 bl listen ---
+  0x66b244: adrp     x0, #0x801000
+  0x66b248: add      x1, x0, #0x310
+  0x66b24c: adrp     x0, #0x802000
+  0x66b250: add      x0, x0, #0x990
+  0x66b254: bl       #0x44ad40
+  0x66b258: ldr      w0, [sp, #0x34]
+  0x66b25c: bl       #0x44b350
+  0x66b260: mov      w0, #-1
+  0x66b264: str      w0, [sp, #0x34]
+  0x66b268: b        #0x66b4e8
+  0x66b26c: ldr      w1, [sp, #8]
+  0x66b270: ldr      w0, [sp, #0x34]
+  0x66b274: bl       #0x44b160
+
+--- 0x66c274 bl accept ---
+  0x66c244: str      w0, [sp, #0x20]
+  0x66c248: ldr      w0, [sp, #0x20]
+  0x66c24c: mov      w1, w0
+  0x66c250: add      x0, sp, #0x48
+  0x66c254: mov      x2, x1
+  0x66c258: mov      w1, #0
+  0x66c25c: bl       #0x44a6c0
+  0x66c260: add      x0, sp, #0x48
+  0x66c264: mov      x1, x0
+  0x66c268: add      x0, sp, #0x20
+  0x66c26c: mov      x2, x0
+  0x66c270: ldr      w0, [sp, #0xc]
+  0x66c274: bl       #0x449f10
+
+--- 0x66c3e8 bl accept ---
+  0x66c3b8: str      w0, [sp, #0x20]
+  0x66c3bc: ldr      w0, [sp, #0x20]
+  0x66c3c0: mov      w1, w0
+  0x66c3c4: add      x0, sp, #0x38
+  0x66c3c8: mov      x2, x1
+  0x66c3cc: mov      w1, #0
+  0x66c3d0: bl       #0x44a6c0
+  0x66c3d4: add      x0, sp, #0x38
+  0x66c3d8: mov      x1, x0
+  0x66c3dc: add      x0, sp, #0x20
+  0x66c3e0: mov      x2, x0
+  0x66c3e4: ldr      w0, [sp, #0xc]
+  0x66c3e8: bl       #0x449f10
+
+--- 0x74c63c bl socket ---
+  0x74c60c: add      x29, sp, #0x70
+  0x74c610: str      x0, [sp, #8]
+  0x74c614: adrp     x0, #0x8a5000
+  0x74c618: add      x0, x0, #0xcb0
+  0x74c61c: ldr      x1, [x0]
+  0x74c620: str      x1, [sp, #0x68]
+  0x74c624: mov      x1, #0
+  0x74c628: str      xzr, [sp, #0x28]
+  0x74c62c: str      wzr, [sp, #0x14]
+  0x74c630: mov      w2, #0
+  0x74c634: mov      w1, #1
+  0x74c638: mov      w0, #2
+  0x74c63c: bl       #0x44aa70
+
+--- 0x74c6a8 bl bind ---
+  0x74c678: str      w0, [sp, #0x44]
+  0x74c67c: mov      w0, #-0x38c9
+  0x74c680: bl       #0x44a420
+  0x74c684: and      w0, w0, #0xffff
+  0x74c688: strh     w0, [sp, #0x42]
+  0x74c68c: adrp     x0, #0x85a000
+  0x74c690: add      x0, x0, #0xf30
+  0x74c694: bl       #0x44b280
+  0x74c698: add      x0, sp, #0x40
+  0x74c69c: mov      w2, #0x10
+  0x74c6a0: mov      x1, x0
+  0x74c6a4: ldr      w0, [sp, #0x18]
+  0x74c6a8: bl       #0x44a470
+
+--- 0x74c6d4 bl listen ---
+  0x74c6a4: ldr      w0, [sp, #0x18]
+  0x74c6a8: bl       #0x44a470
+  0x74c6ac: cmn      w0, #1
+  0x74c6b0: b.ne     #0x74c6c0
+  0x74c6b4: adrp     x0, #0x85a000
+  0x74c6b8: add      x0, x0, #0xf40
+  0x74c6bc: bl       #0x74c5e4
+  0x74c6c0: adrp     x0, #0x85a000
+  0x74c6c4: add      x0, x0, #0xf50
+  0x74c6c8: bl       #0x44b280
+  0x74c6cc: mov      w1, #5
+  0x74c6d0: ldr      w0, [sp, #0x18]
+  0x74c6d4: bl       #0x44b160
+
+--- 0x74c708 bl accept ---
+  0x74c6d8: cmn      w0, #1
+  0x74c6dc: b.ne     #0x74c6ec
+  0x74c6e0: adrp     x0, #0x85a000
+  0x74c6e4: add      x0, x0, #0xf60
+  0x74c6e8: bl       #0x74c5e4
+  0x74c6ec: mov      w0, #0x10
+  0x74c6f0: str      w0, [sp, #0x10]
+  0x74c6f4: add      x0, sp, #0x50
+  0x74c6f8: mov      x1, x0
+  0x74c6fc: add      x0, sp, #0x10
+  0x74c700: mov      x2, x0
+  0x74c704: ldr      w0, [sp, #0x18]
+  0x74c708: bl       #0x449f10
+
+--- 0x762e60 bl socket ---
+  0x762e30: add      x21, x21, #0xe80
+  0x762e34: b        #0x762e40
+  0x762e38: mov      w0, #0x3e8
+  0x762e3c: bl       #0x44bfb0
+  0x762e40: mov      x0, x21
+  0x762e44: mov      w1, #0
+  0x762e48: bl       #0x44b760
+  0x762e4c: mov      w20, w0
+  0x762e50: cbnz     w0, #0x762e38
+  0x762e54: mov      w1, #1
+  0x762e58: mov      w2, #0
+  0x762e5c: mov      w0, w1
+  0x762e60: bl       #0x44aa70
+
+--- 0x762ec4 bl connect ---
+  0x762e94: bl       #0x44aaf0
+  0x762e98: mov      x1, x0
+  0x762e9c: add      w21, w21, #1
+  0x762ea0: mov      w0, #0x2710
+  0x762ea4: ldr      w20, [x1]
+  0x762ea8: neg      w20, w20
+  0x762eac: bl       #0x44bfb0
+  0x762eb0: cmp      w21, w24
+  0x762eb4: b.eq     #0x7631a8
+  0x762eb8: add      x1, sp, #0x98
+  0x762ebc: mov      w0, w22
+  0x762ec0: mov      w2, #0x6e
+  0x762ec4: bl       #0x44a090

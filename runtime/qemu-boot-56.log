@@ -1,0 +1,582 @@
+UEFI firmware (version edk2-stable202408-prebuilt.qemu.org built at 16:28:50 on Sep 12 2024)
+ArmTrngLib could not be correctly initialized.
+Error: Image at 000BFDB6000 start failed: 00000001
+Error: Image at 000BFD6D000 start failed: Not Found
+Error: Image at 000BFCBA000 start failed: Unsupported
+Error: Image at 000BFB5E000 start failed: Aborted
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Image type X64 can't be loaded on AARCH64 UEFI system.
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HEFI stub: Decompressing Linux Kernel...
+EFI stub: Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path
+EFI stub: Generating empty DTB
+EFI stub: Exiting boot services...
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x414fd0b1]
+[    0.000000] Linux version 6.12.103-0-virt (buildozer@build-3-21-aarch64) (gcc (Alpine 14.2.0) 14.2.0, GNU ld (GNU Binutils) 2.43.1) #1-Alpine SMP PREEMPT_DYNAMIC 2026-08-10 14:25:03
+[    0.000000] efi: EFI v2.7 by EDK II
+[    0.000000] efi: SMBIOS 3.0=0xbfed0000 MEMATTR=0xbe176018 ACPI 2.0=0xbcb43018 INITRD=0xbcb40f18 MEMRESERVE=0xbcb40f98 
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000BCB43018 000024 (v02 BOCHS )
+[    0.000000] ACPI: XSDT 0x00000000BCB43F18 000064 (v01 BOCHS  BXPC     00000001      01000013)
+[    0.000000] ACPI: FACP 0x00000000BCB43B18 000114 (v06 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BCB41018 001506 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: APIC 0x00000000BCB43C98 0000FC (v04 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: PPTT 0x00000000BCB43E18 000074 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: GTDT 0x00000000BCB43098 000068 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: MCFG 0x00000000BCB43A98 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR 0x00000000BCB43818 000050 (v02 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: DBG2 0x00000000BCB43A18 000057 (v00 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: IORT 0x00000000BCB43898 000054 (v05 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x9000000,9600
+[    0.000000] ACPI: Use ACPI SPCR as default console: Yes
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0xbf855b80-0xbf857fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000bc76ffff]
+[    0.000000]   node   0: [mem 0x00000000bc770000-0x00000000bcb3ffff]
+[    0.000000]   node   0: [mem 0x00000000bcb40000-0x00000000bfe1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfe20000-0x00000000bfeaffff]
+[    0.000000]   node   0: [mem 0x00000000bfeb0000-0x00000000bfebffff]
+[    0.000000]   node   0: [mem 0x00000000bfec0000-0x00000000bffdffff]
+[    0.000000]   node   0: [mem 0x00000000bffe0000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 33 pages/cpu s96984 r8192 d29992 u135168
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: detected: Broken broadcast TLBI completion
+[    0.000000] CPU features: detected: SSBS not fully self-synchronizing
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/vda rw console=ttyAMA0 initrd=initrd
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 524288
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 2MB
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000bf2b4000-0x00000000bf4b4000] (2MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Dynamic Preempt: none
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: ACPI overriding V2M MSI_TYPER (base:80, num:64)
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000371] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.023312] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.056002] Console: colour dummy device 80x25
+[    0.073698] ACPI: Core revision 20240827
+[    0.091161] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=625000)
+[    0.091494] pid_max: default: 32768 minimum: 301
+[    0.115749] LSM: initializing lsm=lockdown,capability,landlock
+[    0.121537] landlock: Up and running.
+[    0.132226] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.132386] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.420004] rcu: Hierarchical SRCU implementation.
+[    0.420169] rcu: 	Max phase no-delay instances is 1000.
+[    0.440786] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.470120] Remapping and enabling EFI services.
+[    0.483105] smp: Bringing up secondary CPUs ...
+[    0.498212] Detected PIPT I-cache on CPU1
+[    0.501436] CPU1: Booted secondary processor 0x0000000001 [0x414fd0b1]
+[    0.515018] smp: Brought up 1 node, 2 CPUs
+[    0.516539] SMP: Total of 2 processors activated.
+[    0.516659] CPU: All CPU(s) started at EL1
+[    0.517062] CPU features: detected: 32-bit EL0 Support
+[    0.517157] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.517237] CPU features: detected: Common not Private translations
+[    0.517246] CPU features: detected: CRC32 instructions
+[    0.517631] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.517709] CPU features: detected: LSE atomic instructions
+[    0.517719] CPU features: detected: Privileged Access Never
+[    0.517726] CPU features: detected: RAS Extension Support
+[    0.517800] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.553314] alternatives: applying system-wide alternatives
+[    0.601787] CPU features: detected: Hardware dirty bit management on CPU0-1
+[    0.655895] Memory: 2003132K/2097152K available (12608K kernel code, 1950K rwdata, 7812K rodata, 1920K init, 9305K bss, 89464K reserved, 0K cma-reserved)
+[    0.749870] devtmpfs: initialized
+[    0.808013] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.808989] 24304 pages in range for non-PLT usage
+[    0.809058] 515824 pages in range for PLT usage
+[    0.821477] pinctrl core: initialized pinctrl subsystem
+[    0.838019] SMBIOS 3.0.0 present.
+[    0.838431] DMI: QEMU QEMU Virtual Machine, BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.838829] DMI: Memory slots populated: 1/1
+[    0.885244] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.901222] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.902400] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.903310] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.904025] audit: initializing netlink subsys (disabled)
+[    0.914171] audit: type=2000 audit(0.430:1): state=initialized audit_enabled=0 res=1
+[    0.921581] thermal_sys: Registered thermal governor 'step_wise'
+[    0.923885] cpuidle: using governor ladder
+[    0.924220] cpuidle: using governor menu
+[    0.931303] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.932925] ASID allocator initialised with 65536 entries
+[    0.934130] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.936662] Serial: AMBA PL011 UART driver
+[    0.969042] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.969108] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.969134] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.969143] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.969156] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.969164] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.969176] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.969185] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    1.039873] ACPI: Added _OSI(Module Device)
+[    1.039961] ACPI: Added _OSI(Processor Device)
+[    1.039974] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.103773] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    1.183999] ACPI: Interpreter enabled
+[    1.184085] ACPI: Using GIC for interrupt routing
+[    1.185568] ACPI: MCFG table detected, 1 entries
+[    1.318397] ACPI: CPU0 has been hot-added
+[    1.320308] ACPI: CPU1 has been hot-added
+[    1.356962] ARMH0011:00: ttyAMA0 at MMIO 0x9000000 (irq = 12, base_baud = 0) is a SBSA
+[    1.358786] printk: legacy console [ttyAMA0] enabled
+[    1.506008] ACPI: PCI: Interrupt link L000 configured for IRQ 35
+[    1.507036] ACPI: PCI: Interrupt link L001 configured for IRQ 36
+[    1.507913] ACPI: PCI: Interrupt link L002 configured for IRQ 37
+[    1.509034] ACPI: PCI: Interrupt link L003 configured for IRQ 38
+[    1.514916] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.519199] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    1.536098] acpi PNP0A08:00: _OSC: platform does not support [LTR]
+[    1.538004] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    1.549324] acpi PNP0A08:00: ECAM area [mem 0x4010000000-0x401fffffff] reserved by PNP0C02:00
+[    1.550827] acpi PNP0A08:00: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    1.552965] ACPI: Remapped I/O 0x000000003eff0000 to [io  0x0000-0xffff window]
+[    1.565358] PCI host bridge to bus 0000:00
+[    1.566562] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff window]
+[    1.567191] pci_bus 0000:00: root bus resource [io  0x0000-0xffff window]
+[    1.567617] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff window]
+[    1.568227] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.571558] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+[    1.586696] pci 0000:00:01.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    1.587628] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]
+[    1.588082] pci 0000:00:01.0: BAR 1 [io  0x0080-0x00bf]
+[    1.588561] pci 0000:00:01.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    1.590669] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000 conventional PCI endpoint
+[    1.591166] pci 0000:00:02.0: BAR 0 [io  0x0000-0x007f]
+[    1.591414] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]
+[    1.598736] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]
+[    1.607245] pci 0000:00:01.0: ROM [mem 0x10000000-0x1003ffff pref]: assigned
+[    1.608156] pci 0000:00:01.0: BAR 0 [mem 0x10040000-0x1005ffff]: assigned
+[    1.608839] pci 0000:00:02.0: BAR 4 [mem 0x8000000000-0x8000003fff 64bit pref]: assigned
+[    1.614779] pci 0000:00:02.0: BAR 1 [mem 0x10060000-0x10060fff]: assigned
+[    1.615383] pci 0000:00:02.0: BAR 0 [io  0x1000-0x107f]: assigned
+[    1.615783] pci 0000:00:01.0: BAR 1 [io  0x1080-0x10bf]: assigned
+[    1.616700] pci_bus 0000:00: resource 4 [mem 0x10000000-0x3efeffff window]
+[    1.617513] pci_bus 0000:00: resource 5 [io  0x0000-0xffff window]
+[    1.617848] pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff window]
+[    1.625771] iommu: Default domain type: Translated
+[    1.629202] iommu: DMA domain TLB invalidation policy: lazy mode
+[    1.653285] efivars: Registered efivars operations
+[    1.698171] clocksource: Switched to clocksource arch_sys_counter
+[    1.718834] VFS: Disk quotas dquot_6.6.0
+[    1.719646] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.732391] pnp: PnP ACPI init
+[    1.736845] system 00:00: [mem 0x4010000000-0x401fffffff window] could not be reserved
+[    1.737499] pnp: PnP ACPI: found 1 devices
+[    1.816919] NET: Registered PF_INET protocol family
+[    1.820559] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.924596] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    1.925525] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.926033] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.932717] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    1.933710] TCP: Hash tables configured (established 16384 bind 16384)
+[    1.937376] MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+[    1.938255] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.938868] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.942375] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.948262] NET: Registered PF_XDP protocol family
+[    1.949352] PCI: CLS 0 bytes, default 64
+[    1.953121] kvm [1]: HYP mode not available
+[    1.958987] Unpacking initramfs...
+[    1.962933] Initialise system trusted keyrings
+[    1.992072] workingset: timestamp_bits=44 max_order=19 bucket_order=0
+[    2.095476] Key type asymmetric registered
+[    2.096077] Asymmetric key parser 'x509' registered
+[    2.097365] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    2.116739] io scheduler mq-deadline registered
+[    2.117292] io scheduler kyber registered
+[    2.118453] io scheduler bfq registered
+[    2.147423] ACPI: \_SB_.L002: Enabled at IRQ 37
+[    2.149577] virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+[    2.156333] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    2.173755] hv_vmbus: registering driver hyperv_keyboard
+[    2.184829] rtc-efi rtc-efi.0: registered as rtc0
+[    2.187310] rtc-efi rtc-efi.0: setting system clock to 2026-08-24T09:47:55 UTC (1787564875)
+[    2.190988] NET: Registered PF_INET6 protocol family
+[    2.208173] Segment Routing with IPv6
+[    2.208635] In-situ OAM (IOAM) with IPv6
+[    2.279263] registered taskstats version 1
+[    2.285992] Loading compiled-in X.509 certificates
+[    2.323723] Freeing initrd memory: 5268K
+[    2.548282] Loaded X.509 cert 'alpinelinux.org: Alpine Linux kernel key: 87fa969a47f3e2a6aa35859eb932a17c95abcd82'
+[    2.574712] Demotion targets for Node 0: null
+[    2.580428] Key type .fscrypt registered
+[    2.580653] Key type fscrypt-provisioning registered
+[    2.619817] clk: Disabling unused clocks
+[    2.621254] PM: genpd: Disabling unused power domains
+[    2.715157] Freeing unused kernel memory: 1920K
+[    2.723503] Run /init as init process
+[    3.537299] Alpine Init 3.11.1-r0
+Alpine Init 3.11.1-r0
+[    3.569815] Loading boot drivers...
+ * Loading boot drivers: [    3.697695] Loading boot drivers: ok.
+ok.
+SIMBOOT: kernel=6.12.103-0-virt
+[    3.790163] Invalid ELF header magic: != ELF
+[    3.827911] virtio_blk virtio0: 2/0/0 default/read/poll queues
+[    3.851817] virtio_blk virtio0: [vda] 1411072 512-byte logical blocks (722 MB/689 MiB)
+[    3.889872] Invalid ELF header magic: != ELF
+[    3.908252] Invalid ELF header magic: != ELF
+[    3.925209] Invalid ELF header magic: != ELF
+[    3.952642] Invalid ELF header magic: != ELF
+[    4.039304] Invalid ELF header magic: != ELF
+[    4.291614] Invalid ELF header magic: != ELF
+[    4.335212] e1000: Intel(R) PRO/1000 Network Driver
+[    4.335477] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.337064] ACPI: \_SB_.L001: Enabled at IRQ 36
+[    4.337533] e1000 0000:00:01.0: enabling device (0000 -> 0003)
+[    4.756186] e1000 0000:00:01.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[    4.757015] e1000 0000:00:01.0 eth0: Intel(R) PRO/1000 Network Connection
+Module                  Size  Used by    Not tainted
+e1000                 163840  0 
+ext4                  929792  0 
+jbd2                  172032  1 ext4
+mbcache                20480  1 ext4
+crc32c_generic         12288  0 
+crc16                  12288  1 ext4
+virtio_blk             24576  0 
+[    6.672663] EXT4-fs (vda): mounted filesystem 1799a7eb-09df-4b80-8c57-0424de58e445 r/w with ordered data mode. Quota mode: none.
+SIMBOOT: root mounted rw, running real mfp.afx with binder stub
+[   17.775529] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+STUB_LS: -rw-r--r-- 1 root root 1762 Aug 24 09:48 /lib/libbinder_stub.so
+STUB_TEST: Mon Aug 24 09:48:11 UTC 2026
+rc=0
+MFP_PID=448
+[   19.491545] hrtimer: interrupt took 141449888 ns
+[   30.191985] random: crng init done
+--- MFP STATE ---
+Name:	mfp.afx
+Umask:	0022
+State:	S (sleeping)
+Tgid:	448
+Ngid:	0
+--- MFP MAIN WCHAN ---
+hrtimer_nanosleep--- THREADS ---
+448 st=S wc=hrtimer_nanosleep
+450 st=S wc=futex_wait_queue
+451 st=S wc=0
+452 st=S wc=do_epoll_wait
+453 st=R wc=0
+454 st=S wc=do_wait_intr_irq
+455 st=S wc=do_epoll_wait
+456 st=S wc=do_wait_intr_irq
+457 st=S wc=do_wait_intr_irq
+458 st=S wc=wait_for_partner
+459 st=S wc=do_select
+460 st=R wc=0
+461 st=S wc=do_select
+462 st=S wc=futex_wait_queue
+463 st=S wc=futex_wait_queue
+464 st=S wc=futex_wait_queue
+465 st=R wc=0
+466 st=S wc=do_select
+467 st=S wc=do_select
+468 st=R wc=0
+469 st=S wc=do_select
+470 st=R wc=0
+471 st=S wc=do_select
+472 st=R wc=0
+473 st=S wc=do_select
+474 st=S wc=hrtimer_nanosleep
+475 st=R wc=0
+476 st=S wc=do_select
+477 st=S wc=futex_wait_queue
+478 st=R wc=0
+479 st=R wc=0
+480 st=S wc=do_select
+481 st=S wc=futex_wait_queue
+482 st=R wc=0
+483 st=S wc=do_select
+484 st=R wc=0
+485 st=S wc=do_select
+486 st=S wc=do_wait_intr_irq
+487 st=R wc=0
+488 st=S wc=do_select
+489 st=S wc=hrtimer_nanosleep
+490 st=R wc=0
+491 st=S wc=do_select
+492 st=S wc=futex_wait_queue
+493 st=R wc=0
+494 st=S wc=do_select
+495 st=S wc=do_select
+496 st=R wc=0
+497 st=S wc=do_select
+498 st=R wc=0
+499 st=S wc=do_select
+500 st=S wc=hrtimer_nanosleep
+501 st=R wc=0
+502 st=S wc=futex_wait_queue
+503 st=S wc=futex_wait_queue
+504 st=S wc=futex_wait_queue
+505 st=S wc=futex_wait_queue
+506 st=S wc=futex_wait_queue
+507 st=R wc=0
+508 st=S wc=do_select
+509 st=S wc=futex_wait_queue
+511 st=S wc=do_select
+--- MFP FD SOCK ---
+31
+lrwx------ 1 root root 64 Aug 24 09:52 24 -> socket:[363]
+lrwx------ 1 root root 64 Aug 24 09:52 25 -> socket:[364]
+lrwx------ 1 root root 64 Aug 24 09:52 26 -> socket:[1643]
+lrwx------ 1 root root 64 Aug 24 09:52 27 -> socket:[1644]
+lrwx------ 1 root root 64 Aug 24 09:52 29 -> socket:[1645]
+lrwx------ 1 root root 64 Aug 24 09:52 30 -> socket:[1646]
+lrwx------ 1 root root 64 Aug 24 09:52 31 -> socket:[1647]
+lrwx------ 1 root root 64 Aug 24 09:52 32 -> socket:[1648]
+lrwx------ 1 root root 64 Aug 24 09:52 33 -> socket:[365]
+lrwx------ 1 root root 64 Aug 24 09:52 34 -> socket:[366]
+lrwx------ 1 root root 64 Aug 24 09:52 35 -> socket:[1649]
+lrwx------ 1 root root 64 Aug 24 09:52 36 -> socket:[1650]
+lrwx------ 1 root root 64 Aug 24 09:52 37 -> socket:[1651]
+lrwx------ 1 root root 64 Aug 24 09:52 38 -> socket:[1652]
+lrwx------ 1 root root 64 Aug 24 09:52 39 -> socket:[1653]
+lrwx------ 1 root root 64 Aug 24 09:52 40 -> socket:[367]
+lrwx------ 1 root root 64 Aug 24 09:52 41 -> socket:[1654]
+lrwx------ 1 root root 64 Aug 24 09:52 43 -> socket:[1655]
+lrwx------ 1 root root 64 Aug 24 09:52 44 -> socket:[1656]
+lrwx------ 1 root root 64 Aug 24 09:52 45 -> socket:[1657]
+--- MFP FD COUNT ---
+61
+--- NET GLOBALS ---
+pie_base=00400000
+ 00000000
+ 0000000000000000
+--- IP ADDR ---
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 52:54:00:12:34:56 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fec0::5054:ff:fe12:3456/64 scope site dynamic mngtmpaddr proto kernel_ra 
+       valid_lft 86158sec preferred_lft 14158sec
+    inet6 fe80::5054:ff:fe12:3456/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+--- INI FILES ---
+-rw-r--r-- 1 root root 112 Aug 24 09:48 /root/en_machine_config.ini
+-rw-r--r-- 1 root root 112 Aug 24 09:48 /tmp/machine_config.ini
+--- INI DECODED ---
+[DeviceInfo]
+machine_tag=0x1
+mfg_name=PANTUM
+series_name=CM806ADN
+product_name=CM806ADN
+speed=30
+country_code=0
+--- LISTEN TCP ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+--- NET UNIX ---
+Num       RefCount Protocol Flags    Type St Inode Path
+0000000078eab57a: 00000003 00000000 00000000 0001 03  1660
+0000000052864e19: 00000003 00000000 00000000 0001 03   366
+00000000e7f12003: 00000003 00000000 00000000 0001 03   370
+0000000063fc3ec2: 00000003 00000000 00000000 0001 03   371
+000000007ffec66c: 00000003 00000000 00000000 0001 03   363
+00000000c2a7d6ed: 00000003 00000000 00000000 0001 03  1662
+0000000063636546: 00000003 00000000 00000000 0001 03   372
+0000000044c374f9: 00000003 00000000 00000000 0001 03   369
+000000009495cc94: 00000003 00000000 00000000 0001 03  1659
+0000000071982de3: 00000003 00000000 00000000 0001 03   365
+00000000239664fc: 00000003 00000000 00000000 0001 03   373
+000000009348d8a1: 00000003 00000000 00000000 0001 03  1661
+00000000a58c80dc: 00000003 00000000 00000000 0001 03   364
+000000000b2e3122: 00000003 00000000 00000000 0001 03   368
+0000000029641688: 00000003 00000000 00000000 0001 03  1653
+00000000d56a0b84: 00000003 00000000 00000000 0001 03  1656
+0000000019858ace: 00000003 00000000 00000000 0001 03  1645
+00000000b156faee: 00000003 00000000 00000000 0001 03  1644
+0000000019e3a76d: 00000003 00000000 00000000 0001 03  1658
+--- TMP NET ---
+total 20364
+drwxrwxrwt  3 root root      140 Aug 24 09:48 .
+drwxr-xr-x 33 root root     4096 Aug 24 09:48 ..
+srwxr-xr-x  1 root root        0 Aug 24 09:48 .logserver
+drwxr-xr-x  2 root root       40 Aug 24 09:48 .plog
+prwxr--r--  1 root root        0 Aug 24 09:48 cmd
+-rw-r--r--  1 root root      112 Aug 24 09:48 machine_config.ini
+-rw-r--r--  1 root root 20841240 Aug 24 09:52 mfp.log
+--- NETSTAT TCP ---
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+--- MFP LOG HEAD 80 ---
+plog lib mfp process init json config error 
+pntp socket client init 
+[2026-08-24 09:48:17.108 ] pcie_integrate_features:463 ULOG WARN vd:3 , send_offset:32768 , recv_offset:0
+[2026-08-24 09:48:17.120 ] pcie_integrate_features:463 ULOG WARN vd:5 , send_offset:32768 , recv_offset:0
+error:miss key;line:=
+[09:48:39.301] hal_core_init                  - core/hal_core_init.c L29    [HAL][INFO]  -->  Enter and init hal lib
+[09:48:39.332] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module touch do not have device config
+[09:48:39.332] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module backlight do not have device config
+[09:48:39.332] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module frambuffer do not have device config
+[09:48:39.334] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module low_power do not have device config
+[09:48:39.334] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module print_comm do not have device config
+[09:48:39.351] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module scan_comm do not have device config
+[09:48:39.351] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module beep do not have device config
+[09:48:39.352] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module speaker do not have device config
+[09:48:39.352] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module fan do not have device config
+[09:48:39.352] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module usb_host do not have device config
+[09:48:39.353] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node touch (id 2), do not need to call module init 
+[09:48:39.356] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node backlight (id 3), do not need to call module init 
+[09:48:39.356] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fb (id 4), do not need to call module init 
+[09:48:39.357] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node beep (id 11), do not need to call module init 
+[09:48:39.357] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node speaker (id 12), do not need to call module init 
+[09:48:39.357] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fan (id 13), do not need to call module init 
+[09:48:39.358] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node wifi (id 15), do not need to call module init 
+[09:48:39.358] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node bt (id 16), do not need to call module init 
+[09:48:39.358] storage_init                   - module/storage/storage_init/storage_init.c L23    [HAL][WARN]  -->  storage module has init
+[09:48:39.359] hal_save_proc_info             - intf/hal_init.c      L67    [HAL][ERROR]  -->  attach hal lib process id: 00000448  name: mfp.afx 
+[09:48:39.359] pi_hal_wifi_request            - intf/hal_wifi.c      L21    [HAL][ERROR]  -->  HAL interface pi_hal_wifi_request call failed
+[09:48:46.318] hal_common_ioctl               - core/hal_common_dev.c L128   [HAL][ERROR]  -->  ioctl error errno = No such file or directory
+[09:48:46.318] boardinfo_interface_getinfo    - module/boardinfo/boardinfo_interface.c L151   [HAL][ERROR]  -->  Error to get info from device /dev/board_desc
+[2026-08-24 09:48:46.349 ] _wait_for_peer:747 IBC WARN 448:wait failed
+[09:48:46.396] rtc_interface_time_read        - module/rtc/rtc_interface.c L196   [HAL][INFO]  -->  Read rawtime: 1787564927
+[09:48:46.396] rtc_interface_time_read        - module/rtc/rtc_interface.c L198   [HAL][INFO]  -->  Read RTC time is 2026-08-24 09:48:47.
+[2026-08-24 09:48:47.131 ] _wait_for_peer:747 IBC WARN 448:wait failed
+[2026-08-24 09:48:47.335 ] _wait_for_peer:747 IBC WARN 448:wait failed
+[2026-08-24 09:48:16-415.321][PLOG_JSON: ERROR] <json_int_node_parse: 146> parse 'slave_dev_id' attribute error 
+[2026-08-24 09:48:16-426.311][PLOG_JSON: ERROR] <json_int_node_parse: 146> parse 'debug_mode' attribute error 
+pol log construct successfully
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(450) statck size(0x00080000) name(log_record_async_thread)[0m
+hello world
+build time: 18:16:03 Aug 14 2026
+---------------------ibc-------init------------
+
+[09:48:17.144][mr-448]<init_fd:138>:open /dev/dma_heap/system failed: Operation not permitted
+[09:48:17.158][mr-448]<pi_imagemem_init:67>:imagemem init failed
+---------------------msg_router-------init------------
+
+---------------------cmd-------init------------
+
+---------------------nvram-------init------------
+
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(458) statck size(0x00004000) name(cmd process thread)[0m
+2026-08-24 09:48:22.844 448 281472791312736 _table_check:96L- sqlite3_step error:no more rows available
+2026-08-24 09:48:22.916 448 281472791312736 sql_init:545L- create table:int success
+2026-08-24 09:48:22.924 448 281472791312736 _table_check:96L- sqlite3_step error:no more rows available
+2026-08-24 09:48:22.949 448 281472791312736 sql_init:545L- create table:uint success
+2026-08-24 09:48:22.951 448 281472791312736 _table_check:96L- sqlite3_step error:no more rows available
+2026-08-24 09:48:22.979 448 281472791312736 sql_init:545L- create table:string success
+2026-08-24 09:48:22.980 448 281472791312736 _table_check:96L- sqlite3_step error:no more rows available
+2026-08-24 09:48:23.001 448 281472791312736 sql_init:545L- create table:struct success
+2026-08-24 09:48:23.001 448 281472791312736 sql_init:554L-  == insert default value == 
+---------------------log-------init------------
+
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(459) statck size(0x00200000) name(nvram_thread)[0m
+cmd register ok = log - set
+cmd register ok = log - get
+cmd register ok = log - set_nv
+---------------------job_manager-------init------------
+
+else
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(462) statck size(0x00002000) name(job_manager)[0m
+---------------------acl-------init------------
+
+else
+else
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(463) statck size(0x00008000) name(acl_parser_task)[0m
+[35m[osal/pol/os/Linux/pol_linux.c:55]tid(464) statck size(0x00008000) name(upgrade_task)[0m
+cmd register ok = parser - log
+---------------------mutual auth-------init------------
+
+---------------------mutual auth-------end------------
+--- MFP LOG NET ---
+--- MFP LOG TAIL FILTERED ---
+IBC WARN 448:wait failed
+--- PLOG CFG ---
+{"log_state":1,"log_level":2,"log_path":"/tslog","log_size":5120,"machine_name":"RK3588","machine_id":0,"dev_id":0,"root_node":"root","default_topic":"PLOG_PUB","tcp_server_state":0,"upgrade_log_state":0,"ui_connect":0,"debug_mode":0,"slave_config":{"slave_dev_id":0},"topic_config":[{"topic_name":"PLOG_PUB","topic_id":0,"console":0,"log_level":2,"subscription":0,"cache_size":512,"auto_register":1,"abort_flag":0,"local_dump":0,"state":1}]}
+--- PLOGD LOG ---
+root        31     2  0 09:47 ?        00:00:00 [khungtaskd]
+root        32     2  0 09:47 ?        00:00:00 [oom_reaper]
+root        33     2  0 09:47 ?        00:00:00 [kworker/R-writeback]
+root        34     2  0 09:47 ?        00:00:00 [kcompactd0]
+root        35     2  0 09:47 ?        00:00:00 [ksmd]
+root        36     2  0 09:47 ?        00:00:00 [khugepaged]
+root        37     2  0 09:47 ?        00:00:00 [kworker/R-kintegrityd]
+root        38     2  0 09:47 ?        00:00:00 [kworker/R-kblockd]
+root        39     2  0 09:47 ?        00:00:00 [kworker/R-blkcg_punt_bio]
+root        40     2  0 09:47 ?        00:00:00 [kworker/u8:2-events_unbound]
+root        41     2  0 09:47 ?        00:00:00 [kworker/1:1-events_power_efficient]
+root        42     2  0 09:47 ?        00:00:00 [kworker/R-md]
+root        43     2  0 09:47 ?        00:00:00 [kworker/R-md_bitmap]
+root        44     2  0 09:47 ?        00:00:00 [kworker/R-quota_events_unbound]
+root        45     2  0 09:47 ?        00:00:00 [kworker/0:1H-kblockd]
+root        59     2  0 09:47 ?        00:00:00 [kswapd0]
+root        61     2  0 09:47 ?        00:00:00 [kworker/R-kthrotld]
+root        62     2  0 09:47 ?        00:00:00 [irq/49-ACPI:Ged]
+root        77     2  0 09:47 ?        00:00:00 [kworker/u8:3-events_unbound]
+root       134     2  0 09:47 ?        00:00:00 [kworker/R-mld]
+root       141     2  0 09:47 ?        00:00:00 [kworker/R-ipv6_addrconf]
+root       142     2  0 09:47 ?        00:00:00 [kworker/R-kstrp]
+root       188     2  0 09:47 ?        00:00:00 [kworker/u8:4-events_unbound]
+root       242     2  0 09:47 ?        00:00:00 [kworker/u8:5-events_unbound]
+root       273     2  0 09:47 ?        00:00:00 [kworker/u8:6]
+root       342     2  0 09:47 ?        00:00:00 [kworker/u8:7]
+root       355     2  0 09:47 ?        00:00:00 [kworker/u9:0]
+root       384     2  0 09:47 ?        00:00:00 [kworker/0:2-mm_percpu_wq]
+root       405     2  0 09:47 ?        00:00:00 [jbd2/vda-8]
+root       406     2  0 09:47 ?        00:00:00 [kworker/R-ext4-rsv-conversion]
+--- HALD LOG ---
+[09:48:07.179] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module speaker do not have device config
+[09:48:07.179] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module fan do not have device config
+[09:48:07.186] cjson_get_dev_config           - core/hal_cjson_class.c L723   [HAL][INFO]  -->  Module usb_host do not have device config
+[09:48:07.232] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node touch (id 2), do not need to call module init 
+[09:48:07.238] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node backlight (id 3), do not need to call module init 
+[09:48:07.238] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fb (id 4), do not need to call module init 
+[09:48:07.249] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node beep (id 11), do not need to call module init 
+[09:48:07.255] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node speaker (id 12), do not need to call module init 
+[09:48:07.255] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node fan (id 13), do not need to call module init 
+[09:48:07.259] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node wifi (id 15), do not need to call module init 
+[09:48:07.263] hal_core_init                  - core/hal_core_init.c L57    [HAL][DEBUG]  -->  Module node bt (id 16), do not need to call module init 
+[09:48:07.450] storage_init                   - module/storage/storage_init/storage_init.c L164   [HAL][INFO]  -->  storage module init succ
+[09:48:07.464] cjson_module_config_read       - core/hal_cjson_class.c L109   [HAL][INFO]  -->  All the json module config has read
+[09:48:07.770] rtc_interface_time_read        - module/rtc/rtc_interface.c L196   [HAL][INFO]  -->  Read rawtime: 1787564887
+[09:48:07.771] rtc_interface_time_read        - module/rtc/rtc_interface.c L198   [HAL][INFO]  -->  Read RTC time is 2026-08-24 09:48:07.
+--- DF ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda        662M  555M   59M  91% /
+devtmpfs        2.0M     0  2.0M   0% /dev
+tmpfs           984M   21M  964M   3% /tmp
+tmpfs           984M     0  984M   0% /tslog
+done
+SIMBOOT: mfp run finished, keeping shell
+/bin/sh: can't access tty; job control turned off
+~ # [6n

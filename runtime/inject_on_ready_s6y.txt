@@ -1,0 +1,62 @@
+﻿=== inject_on_ready start 2026-09-18 09:48:49 log=runtime/qemu-boot-s6y.log monitor=14545 fwd=14279 ===
+09:57:26 LPD ports hex='E093' dec=57491
+09:57:27 hostfwd_add tcp::14279-:57491 resp='QEMU 11.1.0 monitor - type 'help' for more information (qemu) h[K[Dho[K[D[Dhos[K[D[D[Dhost[K[D[D[D[Dhostf[K[D[D[D[D[Dhostfw[K[D[D[D[D[D[Dhostfwd[K[D[D[D[D[D[D[Dhostfwd_[K[D[D[D[D[D[D[D[Dhostfwd_a[K[D[D[D[D[D[D[D[D[Dhostfwd_ad[K[D[D[D[D[D[D[D[D[D[Dhostfwd_add[K[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add [K[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add t[K[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tc[K[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp:[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::1[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::142[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::1427[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:5[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:57[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:574[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:5749[K[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dhostfwd_add tcp::14279-:57491[K (qemu) '
+10:08:51 READY FOR INJECT detected -> injecting PWG
+10:08:54 inject attempt port=57491 hostport=14279 try=1
+10:09:26 attempt 1 output:
+python.exe : Traceback (most recent call last):
+At D:\Apps\codex\files\simulate\runtime\inject_on_ready.ps1:107 char:30
++ ...         $o = & $py $send 'lpd' '127.0.0.1' "$hp" $pwgAbs 2>&1 | Out-S ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 67, in <module>
+    sys.exit(send_lpd(host, port, path) if mode == "lpd" else send_raw(host, port, path))
+             ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 30, in send_lpd
+    if not ack(what="recv-job"):
+           ~~~^^^^^^^^^^^^^^^^^
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 25, in ack
+    b = s.recv(1)
+TimeoutError: timed out
+10:09:31 inject attempt port=57491 hostport=14279 try=2
+10:09:43 attempt 2 output:
+python.exe : Traceback (most recent call last):
+At D:\Apps\codex\files\simulate\runtime\inject_on_ready.ps1:107 char:30
++ ...         $o = & $py $send 'lpd' '127.0.0.1' "$hp" $pwgAbs 2>&1 | Out-S ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 67, in <module>
+    sys.exit(send_lpd(host, port, path) if mode == "lpd" else send_raw(host, port, path))
+             ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 30, in send_lpd
+    if not ack(what="recv-job"):
+           ~~~^^^^^^^^^^^^^^^^^
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 25, in ack
+    b = s.recv(1)
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+10:09:47 inject attempt port=57491 hostport=14279 try=3
+10:09:50 attempt 3 output:
+python.exe : Traceback (most recent call last):
+At D:\Apps\codex\files\simulate\runtime\inject_on_ready.ps1:107 char:30
++ ...         $o = & $py $send 'lpd' '127.0.0.1' "$hp" $pwgAbs 2>&1 | Out-S ...
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 67, in <module>
+    sys.exit(send_lpd(host, port, path) if mode == "lpd" else send_raw(host, port, path))
+             ~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\Apps\codex\files\simulate\runtime\send_print_job.py", line 21, in send_lpd
+    s = socket.create_connection((host, port), timeout=30)
+  File "C:\Python314\Lib\socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "C:\Python314\Lib\socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+10:09:54 FAIL: ports=57491 fwd=True injected=False
+10:09:54 done

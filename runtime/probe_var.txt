@@ -1,0 +1,7 @@
+probe start 12:22:56
+12:23:13 A_cmd578_sub3_28B wrote=28 read-aborted
+12:23:23 B_12B_head wrote=12 read-aborted
+12:23:31 C_len16_sub3 wrote=16 read-aborted
+12:23:40 D_magic2B_len20 wrote=20 read-aborted
+12:23:49 E_cmd3e8_20B wrote=20 read-aborted
+12:23:57 F_empty wrote=0 read-aborted
