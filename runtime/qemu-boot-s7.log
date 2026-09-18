@@ -795,3 +795,276 @@ TRACE1 armed
 [2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
 [2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
 [2026-09-18 02:59:33.7READY FOR INJECT
+/tmp/simboot_payload.sh: line 264:   511 Aborted                 /usr/bin/mfp.afx > /tmp/mfp.fifo 2>&1
+--- TRACE1 AFTER INJECT ---
+TRACE1_STOPPED threads=0
+214 /tmp/gdbtrace.out
+TRACE1_HITS=0
+[New LWP 872]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x0000ffff87921ae0 in clock_nanosleep () from /lib64/libc.so.6
+Breakpoint 1 at 0x683e0c: file net/lpd/lpd.c, line 560.
+Breakpoint 2 at 0x6831e8: file net/lpd/lpd.c, line 360.
+Breakpoint 3 at 0x6830a4: file net/lpd/lpd.c, line 340.
+Breakpoint 4 at 0x68236c: file net/lpd/lpd.c, line 221.
+Breakpoint 5 at 0x68365c: file net/lpd/lpd.c, line 421.
+Breakpoint 6 at 0x683510: file net/lpd/lpd.c, line 400.
+Breakpoint 7 at 0x66c12c: file net/common/netsock.c, line 398.
+Breakpoint 8 at 0x6838f4: file net/lpd/lpd.c, line 476.
+Breakpoint 9 at 0x683f84: file net/lpd/lpd.c, line 580.
+Breakpoint 10 at 0x684050: file net/lpd/lpd.c, line 605.
+TRACE1 armed
+
+Thread 118 "mfp.afx" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0xffff26f60b60 (LWP 768)]
+0x0000ffff878f1124 in pthread_mutex_lock () from /lib64/libc.so.6
+[Inferior 1 (process 511) detached]
+--- ALIVE ---
+0
+--- PORTS POST (full /proc/net/tcp) ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+--- PORTS POST tcp6 ---
+  sl  local_address                         remote_address                        st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode
+--- LPD OWNED POST ---
+--- THREADS POST-INJECT ---
+--- POST: THREADS (tid comm wchan) ---
+--- POST: WCHAN HIST ---
+--- POST: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+--- POST: MFP LOG size=41943040 ---
+--- POST: SNAP size=4194304 ---
+--- POST: MFP LOG TAIL ---
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.724 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.725 ] _wait_for_peer:747 IBC WARN 511:wait failed
+[2026-09-18 02:59:33.7--- MFP LOG UPLOAD (filtered tail) ---
+MFP_TAIL_SIZE=20971520
+MFP_FILT_SIZE=38
+MFP_FILT_UPLOAD_RC=0 size=38
+--- PLOG DIR ---
+total 40964
+drwxrwxrwt  4 root root      140 Sep 18 02:58 .
+drwxr-xr-x 33 root root     4096 Sep 18 02:57 ..
+-rw-r--r--  1 root root        0 Sep 18 02:57 all_topic_0.log
+drwxr--r--  2 root root       40 Sep 18 02:57 export
+-rw-r--r--  1 root root 41943040 Sep 18 03:03 mfp.out
+-rw-r--r--  1 root root        0 Sep 18 02:57 pol_log
+drwxr--r--  2 root root       40 Sep 18 02:57 upgrade
+PLOG_FILE /tslog/all_topic_0.log size=0
+PLOG_FILE /tslog/mfp.out size=41943040
+PLOG_FILE /tslog/pol_log size=0
+--- TMP DIR + CMD PIPE PROBE ---
+total 34848
+drwxrwxrwt  5 root root      460 Sep 18 03:04 .
+drwxr-xr-x 33 root root     4096 Sep 18 02:57 ..
+srwxr-xr-x  1 root root        0 Sep 18 02:57 .logserver
+drwxr-xr-x  2 root root       40 Sep 18 02:57 .plog
+srwxr-xr-x  1 root root        0 Sep 18 02:57 .pntp_service
+prwxr--r--  1 root root        0 Sep 18 02:58 cmd
+-rw-r--r--  1 root root      256 Sep 18 02:57 gdbcmd.txt
+-rw-r--r--  1 root root      370 Sep 18 02:59 gdbhold.out
+-rw-r--r--  1 root root      556 Sep 18 02:57 gdbhold.txt
+-rw-r--r--  1 root root      560 Sep 18 02:57 gdbpatch.txt
+-rw-r--r--  1 root root     3696 Sep 18 03:03 gdbtrace.out
+-rw-r--r--  1 root root     1095 Sep 18 02:57 gdbtrace.txt
+-rw-r--r--  1 root root      977 Sep 18 02:57 gdbtrace2.txt
+-rw-r--r--  1 root root      112 Sep 18 02:58 machine_config.ini
+prw-r--r--  1 root root        0 Sep 18 03:03 mfp.fifo
+-rw-r--r--  1 root root       38 Sep 18 03:04 mfp.filt
+-rw-r--r--  1 root root 10403840 Sep 18 03:00 mfp.pre
+-rw-r--r--  1 root root  4194304 Sep 18 03:04 mfp.snap
+-rw-r--r--  1 root root 20971520 Sep 18 03:04 mfp.tail
+drwxr-xr-x  2 root root       40 Sep 18 02:59 net
+drwxr-xr-x  6 root root      120 Sep 18 02:57 r
+-rwxr-xr-x  1 root root    19232 Sep 18 02:57 simboot_payload.sh
+-rw-r--r--  1 root root    51806 Sep 18 03:03 vhal.log
+CMD_PIPE_PRESENT prwxr--r-- 1 root root 0 Sep 18 02:58 /tmp/cmd
+CMD_PROBE1_RC=124
+CMD_PROBE2_RC=124
+JOB_PWG_SIZE=1101633
+CMD_PROBE3_RC=124
+CMD_PROBE4_RC=124
+--- PLOG UPLOAD ---
+PLOG_UP all_topic_0.log rc=0
+PLOG_UP pol_log rc=0
+--- VHAL LOG ---
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+[vhal] gpio_get id=: 0x00000087
+ -> : 0x00000000
+VHAL_UPLOAD_RC=0
+TRACE1_POST_HITS=0
+TRACE1 armed
+
+Thread 118 "mfp.afx" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0xffff26f60b60 (LWP 768)]
+0x0000ffff878f1124 in pthread_mutex_lock () from /lib64/libc.so.6
+[Inferior 1 (process 511) detached]
+--- AFTER TRACE1 KILL threads=0 ---
+--- ALL BT (filtered) ---
+ALLBT_RC=0 lines=1
+ALLBT_UP_RC=0
+--- POSTBT: THREADS (tid comm wchan) ---
+--- POSTBT: WCHAN HIST ---
+--- POSTBT: THREAD SYSCALLS (path: nr arg0..arg5 sp pc) ---
+--- TRACE2 ---
+15 /tmp/gdbtrace2.out
+ptrace: No such process.
+Breakpoint 1 at 0x6838f4
+Breakpoint 2 at 0x676ec4
+Breakpoint 3 at 0x61fbf8
+Breakpoint 4 at 0x74c960
+Breakpoint 5 at 0x74c38c
+Breakpoint 6 at 0x6b7570
+Breakpoint 7 at 0x6b6adc
+Breakpoint 8 at 0x6b6b64
+Breakpoint 9 at 0x6b7060
+Breakpoint 10 at 0x6b740c
+Breakpoint 11 at 0x6b7500
+Breakpoint 12 at 0x6b7158
+/tmp/gdbtrace2.txt:78: Error in sourced command file:
+The program is not being run.
+--- CMD REG TABLE (post) ---
+ptrace: No such process.
+/tmp/gdbcmd.txt:3: Error in sourced command file:
+Cannot access memory at address 0x910e20
+--- HALD LOG ---
+2147483648 hal_daemon process plog lib init 
+--- PLOGD LOG ---
+--- PNTP LOG (post) ---
+2147483648 pntp_service process plog lib init 
+pol log destruct 
+2147483648 pntp_service process plog lib destory 
+srwxr-xr-x 1 root root 0 Sep 18 02:57 /tmp/.pntp_service
+--- POST PORTS ---
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+SIMBOOT: mfp pid 511 threads=0
+KEEPING MFP ALIVE
+SIMBOOT: mfp run finished, keeping shell
+/bin/sh: can't access tty; job control turned off
+~ # [6n[  878.431926] hrtimer: interrupt took 66811200 ns
+[ 7376.010796] sched: DL replenish lagged too much
